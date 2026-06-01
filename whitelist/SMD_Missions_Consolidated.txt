@@ -1,0 +1,1840 @@
+1M/1;Mars 1960A;Mars 1M No.1
+1M/2;Mars 1M No.2
+2001 Mars Odyssey
+3D Winds;3D-Winds;Three-Dimensional Tropospheric Winds from Space-Based Lidar
+3MI;Multi-Viewing Multi-Channel Multi-Polarization Imaging Mission;Multi Viewing Multi Channel Multi Polarisation Imaging Mission
+Able 1;Pioneer 0
+Able 2;Pioneer 1
+ABRIXAS;A Broadband Imaging X-ray All-sky Survey
+ACE;ACE (at L1);Advanced Composition Explorer
+ACRIMSAT;Active Cavity Radiometer Irradiance Monitor Satellite
+ADEOS;Advanced Earth Observing Satellite
+ADEOS-2;Advanced Earth Observing Satellite-2
+Aeolus;ADM Aeolus;ADM-Aeolus;Atmospheric Dynamics Mission-Aeolus
+AGBRESA 1;Artificial Gravity Bed Rest with ESA
+AGBRESA 2;Artificial Gravity Bed Rest with ESA
+AGILE;Astro-rivelatore Gamma a Immagini Leggero
+AIM;Aeronomy of Ice in the Mesosphere
+AISSat 2;AISSat-2;Automatic Identification System Satellite 2;Automatic Identification System Satellite-2
+AISSat 1;AISSat-1;Automatic Identification System Satellite-1;Automatic Identification System Satellite 1
+Aist-2T N2;Environmental Satellite Aist-2T N2
+Aist-2T N1;Environmental Satellite Aist-2T N1
+ALEXIS;Array of Low Energy X-Ray Imaging Sensors
+ALOS;Advanced Land Observing Satellite
+ALOS 2;ALOS-2;Advanced Land Observing Satellite-2
+ALOS 3;Advanced Land Observing Satellite-3
+ALOS 4;ALOS-4;Advanced Land Observing Satellite-4
+AlSat-1;AlSat 1;Algeria Satellite-1
+AlSat-1B;AlSat 1B;Algeria Satellite-1B
+AlSat-2;AlSat 2;Algeria Satellite-2
+AlSat 2B;AlSat-2B;Algeria Satellite-2B
+ALT;Radar Altimeter
+ALTIUS;Atmospheric Limb Tracker for Investigation of the Upcoming Stratosphere
+Amazonia-1;Amazonia 1
+Amazonia-1B;Amazonia 1B
+Amazonia-2
+ANS;Astronomische Nederlandse Satelliet
+Apollo
+Apollo 10
+Apollo 11
+Apollo 12
+Apollo 13
+Apollo 14
+Apollo 15
+Apollo 16
+Apollo 17
+ASTP;Apollo-Soyuz;Apollo–Soyuz Test Project
+Aqua;EOS PM-1
+ARCBedrest
+ARCTAS;Arctic Research of the Composition of the Troposphere from Aircraft and Satellites
+Arctica-M N1;Arctica M N1;Hydro-meteorological Satellite Arctica-M N1
+Arctica M N4;Arctica-M N4;Hydro-meteorological Satellite Arctica-M N4
+Arctica-M N2;Arctica M N2;Hydro-meteorological Satellite Arctica-M N2
+Arctica M N3;Arctica-M N3;Hydro-meteorological Satellite Arctica-M N3
+Arctica M N5;Arctica-M N5;Hydro-meteorological Satellite Arctica-M N5
+Ariel V
+Ariel VI
+ARTEMIS;Acceleration, Reconnection, Turbulence, and Electrodynamics of the Moon's Interaction with the Sun
+Aryabhata
+ASCA;Advanced Satellite for Cosmology and Astrophysics
+ASCENDS;Active Sensing of CO2 Emissions over Nights, Days, and Seasons
+HGS-1;PAS-22;AsiaSat 3
+ASNARO;Advanced Satellite with New System Architecture for Observation
+ASNARO 2;ASNARO-2;Advanced Satellite with New System Architecture for Observation-2
+ASNARO 1;ASNARO-1;Advanced Satellite with New System Architecture for Observation-1
+Astro-1;Astro 1;Astro Observatory 1
+Astro-E
+Astro-2;Astro 2;Astro Observatory-2
+Astron
+AstroSat
+ATHENA;Advanced Telescope for High-Energy Astrophysics
+ATMSAT 1;ATMSAT-1;Atmospheric Satellite 1;Atmospheric Satellite-1
+ATS;Application Technology Satellites
+ATS-1;Application Technology Satellites-1
+ATS-2;ATS 2;Application Technology Satellites-2
+ATS-3;Application Technology Satellites-3
+ATS-4;ATS 4;Application Technology Satellites-4
+ATS-5;ATS 5;Application Technology Satellites-5
+ATS-6;ATS 6;Application Technology Satellites-6
+Aura;EOS Chemistry
+AWS;Arctic Weather Satellite
+BARREL;Balloon Array for Radiation-belt Relativistic Electron Losses
+BBXRT;Broad Band X-ray Telescope
+Beijing
+DMC-3;DCM3;DCM 3;TripleSat;Beijing-2 Constellation;Disaster Monitoring Constellation-3
+Beijing-1;Beijing 1
+BepiColombo
+BeppoSAX
+BILSAT;BILSAT Research Satellite
+Biomass
+Bion-11
+Bion-M1
+Biosat 2;Biosatellite B;Biosatellite 2;Biosatellite II
+Biosat 3;Biosatellite 3;Biosatellite D;Biosatellite III
+BIRD;Bi-spectral Infrared Detection
+BlackSky Constellation
+BlackSky-1
+BlackSky-2;BlackSky 2
+BlackSky-3
+BlackSky-4
+BlackSky-5;BlackSky 5
+BlackSky-6;BlackSky 6
+BlackSky-7
+BlackSky-8
+BlackSky-9
+BlackSky-10;BlackSky 10
+BlackSky-11
+BlackSky-12
+BlackSky-13;BlackSky 13
+BlackSky-14;BlackSky 14
+BlackSky-15;BlackSky 15
+BlackSky-16;BlackSky 16
+BlackSky-17;BlackSky 17
+BRRISON;Balloon Rapid Response for ISON
+BurstCube
+C/NOFS;Communication/Navigation Outage Forecasting System
+CALET;Calorimetric Electron Telescope
+CALIPSO;Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observations
+Capella X-SAR;Capella X-band Synthetic Aperture Radar
+CBNT-1;CARBONITE 1;CARBONITE-1
+CBNT-2;CARBONITE 2;CARBONITE-2
+CartoSat;Cartography Satellite
+CartoSat 1;CartoSat-1;Cartography Satellite-1
+CartoSat 2;CartoSat-2;Cartography Satellite-2
+CartoSat 2A;CartoSat-2A;Cartography Satellite-2A
+CartoSat 2B;Cartography Satellite-2B
+CartoSat 2C;Cartography Satellite-2C
+CartoSat 2D;CartoSat-2D;Cartography Satellite-2D
+CartoSat 2E;CartoSat-2E;Cartography Satellite-2E
+CartoSat 2F;CartoSat-2F;Cartography Satellite-2F
+CartoSat 3;CartoSat-3;Cartography Satellite-3
+CAS500 2;CAS500-2;Compact Advanced Satellite 500 2;Compact Advanced Satellite 500-2
+CAS500 1;CAS500-1;Compact Advanced Satellite 500-1;Compact Advanced Satellite 500 1
+Cassini;Cassini–Huygens
+CASSIOPE;Cascade, Smallsat and Ionospheric Polar Explorer
+CATS;Cloud Aerosol Transport System;Cloud-Aerosol Transport System
+CBERS;China Brazil Earth Resources Satellite
+CBERS-1;CBERS 1;China Brazil Earth Resources Satellite-1
+CBERS-2;CBERS 2;China Brazil Earth Resources Satellite-2
+CBERS-2B;CBERS 2B;China Brazil Earth Resources Satellite-2B
+CBERS-4;CBERS 4;China Brazil Earth Resources Satellite-4
+CBERS-4A;CBERS 4A;China Brazil Earth Resources Satellite-4A
+CDARS;Cooperative Data and Rescue Services
+CFOSAT;Chinese-French Oceanic Satellite;Chinese-French Oceanography Satellite
+CFOSAT Follow-on;Chinese-French Oceanography Satellite - Follow-on
+CGRO;Compton Gamma Ray Observatory
+CHAMP;Challenging Mini-Satellite Payload for Geophysical Research and Application
+Chandra X Ray Observatory;Chandra X-Ray Observatory
+Chandrayaan-1;Chandrayaan 1
+Chang’e 1
+Chang’e 2
+Chang’e 5 T1
+CHIME;Copernicus Hyperspectral Imaging Mission for the Environment
+CHIPS;Cosmic Hot Interstellar Plasma Spectrometer
+CICERO;Community Initiative for Continuing Earth Radio Occultation
+CIMR;Copernicus Imaging Microwave Radiometer
+CINDI;Coupled Ion Neutral Dynamic Investigation
+CLARREO;Climate Absolute Radiance and Refractivity Observatory
+CLARREO 1B;Climate Absolute Radiance and Refractivity Observatory-1B
+CLARREO 2B;CLARREO-2B;Climate Absolute Radiance and Refractivity Observatory-2B
+ISS/CLARREO Pathfinder;CLARREO Pathfinder-on-ISS;CLARREO Pathfinder on ISS;International Space Station/Climate Absolute Radiance & Reflectivity Observatory Pathfinder
+CLARREO 1A;CLARREO-1A;Climate Absolute Radiance and Refractivity Observatory-1A
+CLARREO 2A;Climate Absolute Radiance and Refractivity Observatory-2A
+Clementine
+CloudSat
+Cluster
+Cluster II
+CO2Image
+CO2M;Copernicus Carbon Dioxide Monitoring Mission
+COBE;Explorer 66;Cosmic Background Explorer
+COMPIRA;Coastal and Ocean Measurement Mission with Precise and Innovative Radar Altimeter
+Compton Gamma Ray Observatory;Compton Gamma-Ray Observatory
+COMS;Communication, Oceanography, and Meteorology Satellite;Communication, Oceanographic, Meteorological Satellite
+CONTOUR;Comet Nucleus Tour
+OAO-3;Copernicus;Orbiting Astronomical Observatory-3
+Coriolis
+Coronas;Complex Orbital Observations Near Earth of Activity of the Sun;Complex Orbital Observations Near-Earth of Activity of the Sun
+Koronas-Foton;CORONAS-Photon;CORONAS Photon;Complex Orbital Observations Near-Earth of Activity of the Sun-Photon
+Coronas F;Coronas-F;AUOS-SM-KF;Complex Orbital Observations Near-Earth of Activity of the Sun-F
+Coronas-I;Coronas I;Complex Orbital Observations Near-Earth of Activity of the Sun-I
+Cos-B;Cos B
+COSMIC;Constellation Observing System for Meteorology, Ionosphere & Climate
+COSMIC-1;COSMIC 1
+COSMIC 2;COSMIC-2
+COSMIC-2b;COSMIC 2b
+COSMIC 2 FM1;COSMIC-2 FM1
+COSMIC 2 FM2;COSMIC-2 FM2
+COSMIC 2 FM3;COSMIC-2 FM3
+COSMIC 2 FM4;COSMIC-2 FM4
+COSMIC 2 FM5;COSMIC-2 FM5
+COSMIC-2 FM6;COSMIC 2 FM6
+COSMO SkyMed 1;COSMO-SkyMed 1;Constellation of Small Satellites for Mediterranean Basin Observation 1;Constellation of Small Satellites for Mediterranean Basin Observation-1
+COSMO-SkyMed 2;COSMO SkyMed 2;Constellation of Small Satellites for Mediterranean Basin Observation-2;Constellation of Small Satellites for Mediterranean Basin Observation 2
+COSMO SkyMed 3;COSMO-SkyMed 3;Constellation of Small Satellites for Mediterranean Basin Observation-3;Constellation of Small Satellites for Mediterranean Basin Observation 3
+COSMO-SkyMed 4;COSMO SkyMed 4;Constellation of Small Satellites for Mediterranean Basin Observation-4;Constellation of Small Satellites for Mediterranean Basin Observation 4
+Cosmos 1129
+Cosmos 1514
+Cosmos 1667
+Cosmos 1887
+Cosmos 2044
+Cosmos 2229
+Cosmos 782
+Cosmos 936
+Cosmos Series
+CRISTAL;Copernicus Polar Ice and Snow Topography Altimeter
+CRRES;Combined Release and Radiation Effects Satellite
+CryoSat
+CryoSat 2;CryoSat-2
+CSES;China Seismo-Electromagnetic Satellite
+CSG;COSMO-SkyMed Second Generation;COSMO SkyMed Second Generation
+CSG-1;COSMO-SkyMed Second Generation-1;COSMO-SkyMed Second Generation 1
+CSG-2;CSG 2;COSMO-SkyMed Second Generation 2;COSMO-SkyMed Second Generation-2
+CSG-3;CSG 3;COSMO-SkyMed Second Generation-3;COSMO-SkyMed Second Generation 3
+CSG-4;CSG 4;COSMO-SkyMed Second Generation 4;COSMO-SkyMed Second Generation-4
+CSK;COSMO-SkyMed;Constellation of Small Satellites for Mediterranean Basin Observation
+CSK-1;CSK 1;COSMO-SkyMed-1;Constellation of Small Satellites for Mediterranean Basin Observation-1
+CSK-2;CSK 2;COSMO-SkyMed-2;Constellation of Small Satellites for Mediterranean Basin Observation-2
+CSK-3;COSMO-SkyMed-3;Constellation of Small Satellites for Mediterranean Basin Observation-3
+CSK-4;COSMO-SkyMed-4;Constellation of Small Satellites for Mediterranean Basin Observation-4
+CubeSats
+Curiosity;Mars Science Laboratory
+CYGNSS;Cyclone Global Navigation Satellite System
+DAMPE;Dark Matter Particle Explorer
+DART;Double Asteroid Redirection Test
+DAVINCI;Deep Atmosphere Venus Investigation of Noble Gases, Chemistry, and Imaging
+Dawn
+DBLS;Daily Bone Load Stimulus
+EPOXI;Deep Impact
+Deep Impact/EPOXI
+Deep Space 1
+Deimos
+Deimos-1;Deimos 1
+Deimos-2;Deimos 2
+DESDynI;Deformation, Ecosystem Structure, and Dynamics of Ice
+DESIS-on-ISS;DLR Earth Sensing Imaging Spectrometer for MUSES
+ArtSat 2;DESPATCH;ArtSat-2;Fuji-OSCAR 81
+Diadéme
+Diadéme-1;Diadéme 1
+Diadéme-2;Diadéme 2
+DMC3;Disaster Monitoring Constellation 3;Disaster Monitoring Constellation-3
+DMSP;Defense Meteorological Satellite Program
+DMSP F01;DMSP-F01;Defense Meteorological Satellite Program F-01
+DMSP F02;DMSP-F02;Defense Meteorological Satellite Program F-02
+DMSP F03;Defense Meteorological Satellite Program F-03
+DMSP F04;Defense Meteorological Satellite Program F-04
+DMSP F05;Defense Meteorological Satellite Program F-05
+DMSP F06;Defense Meteorological Satellite Program F-06
+DMSP F07;Defense Meteorological Satellite Program F-07
+DMSP F08;Defense Meteorological Satellite Program F-08
+DMSP F09;DMSP-F09;Defense Meteorological Satellite Program F-09
+DMSP F10;DMSP-F10;Defense Meteorological Satellite Program F-10
+DMSP F11;Defense Meteorological Satellite Program F-11
+DMSP F12;DMSP-F12;Defense Meteorological Satellite Program F-12
+DMSP F13;Defense Meteorological Satellite Program F-13
+DMSP F14;DMSP-F14;Defense Meteorological Satellite Program F-14
+DMSP F15;DMSP-F15;Defense Meteorological Satellite Program F-15
+DMSP F16;DMSP-F16;Defense Meteorological Satellite Program F-16
+DMSP F17;Defense Meteorological Satellite Program F-17
+DMSP F18;DMSP-F18;Defense Meteorological Satellite Program F-18
+DMSP F19;Defense Meteorological Satellite Program F-19
+DoT-1;DoT 1;Demonstration of Technology 1;Demonstration of Technology-1
+Dragonfly
+DSCOVR;Deep Space Climate Observatory
+DubaiSat
+DubaiSat-1;DubaiSat 1
+DubaiSat-2;DubaiSat 2
+DubaiSat-3
+DWSS;Defense Weather Satellite System
+DXS;Diffuse X-Ray Spectrometer
+EO-1;Earth Observing-1;Earth Observing 1
+EarthCARE;Earth Clouds, Aerosol and Radiation Explorer
+ECOSTRESS;Ecosystem Spaceborne Thermal Radiometer Experiment on Space Station
+ECOSTRESS-on-ISS;ECOSTRESS on ISS;International Space Station/ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station
+EDRS;European Data Relay System
+EgyptSat
+MisrSat-1;EgyptSat-1;EgyptSat 1
+MisrSat-2;EgyptSat-2;EgyptSat 2
+MisrSat-A;EgyptSat-A;EgyptSat A
+Electro
+Electro-M N1
+Electro-M N2;Electro M N2
+Electro-M N3
+Electro GOMS;Electro-GOMS
+Electro-L N1;Electro L N1
+Electro-L N2
+Electro-L N3
+Electro-L N4;Electro L N4
+Electro-L N5;Electro L N5
+EM-1;EM 1;Artemis;Artemis ;Exploration Mission 1;Exploration Mission-1
+EM 2;EM-2;Artemis II;Exploration Mission 2;Exploration Mission-2
+EMIT;Earth Surface Mineral Dust Source Investigation
+EMIT-on-ISS;EMIT on ISS;International Space Station/Earth Surface Mineral Dust Source Investigation
+EnMAP;Environmental Mapping & Analysis Program;Environmental Mapping and Analysis Programme
+Envisat;Environmental Satellite
+EnVision
+EOS 03
+EOS 04
+EOS 01;EOS-01;Earth Observation Satellite-01
+EPOCh;Extrasolar Planet Observations and Characterization
+ePOP on CASSIOPE;Enhanced Polar Outflow Probe on the Cascade, Smallsat and Ionospheric Polar Explorer
+EPS;EUMETSAT Polar System
+EPS SG;EPS-SG;EUMETSAT Polar System-Second Generation
+EPSP;EVA Physiology, Systems, and Performance
+ERBS;Earth Radiation Budget Satellite
+ERG;Arase;Exploration of Energization and Radiation in Geospace
+ERM-1;ERM 1;Earth Radiation Measurement
+ERM-2;ERM 2;Improved Earth Radiation Measurement
+ERS;European Remote Sensing Satellite;European Remote-sensing Satellite
+ERS 1;ERS-1;European Remote Sensing Satellite-1
+ERS 2;European Remote Sensing Satellite-2
+ESA SSA;ESA Space Situational Awareness Programme
+CubeMAP;ESP-MACCS;Earth System Processes Monitored in the Atmosphere by a Constellation of CubeSats
+IRIS;ESRO-2;ESRO-2B;International Radiation Investigation Satellite
+ESSA 1;Environmental Science and Services Administration -1
+ESSA 2;ESSA-2;Environmental Science and Services Administration -2
+ESSA 3;Environmental Science and Services Administration -3
+ESSA 4;ESSA-4;Environmental Science and Services Administration -4
+ESSA 5;Environmental Science and Services Administration -5
+ESSA 6;ESSA-6;Environmental Science and Services Administration -6
+ESSA 7;ESSA-7;Environmental Science and Services Administration -7
+ESSA 8;Environmental Science and Services Administration -8
+ESSA 9;ESSA-9;Environmental Science and Services Administration -9
+Euclid
+EURECA;European Retrievable Carrier
+Europa Clipper;Europa Multiple Flyby Mission
+EUVE;Explorer 67;Extreme Ultraviolet Explorer
+TGO;ExoMars Orbiter;ExoMars Trace Gas Orbiter
+EXOSAT;European X-ray Observatory Satellite
+Expedition 1
+Expedition 2
+Expedition 3
+Expedition 4
+Expedition 5
+Expedition 6
+Expedition 7
+Expedition 8
+Expedition 9
+Expedition 10
+Expedition 11
+Expedition 12
+Expedition 13
+Expedition 14
+Expedition 15
+Expedition 16
+Expedition 17
+Expedition 18
+Expedition 19
+Expedition 20
+Expedition 21
+Expedition 22
+Expedition 23
+Expedition 24
+Expedition 25
+Expedition 26
+Expedition 27
+Expedition 28
+Expedition 29
+Expedition 30
+Expedition 31
+Expedition 32
+Expedition 33
+Expedition 34
+Expedition 35
+Expedition 36
+Expedition 37
+Expedition 38
+Expedition 39
+Expedition 40
+Expedition 41
+Expedition 42
+Expedition 43
+Expedition 44
+Expedition 45
+Expedition 46
+Expedition 47
+Expedition 48
+Expedition 49
+Expedition 50
+Expedition 51
+Expedition 52
+Expedition 53
+Expedition 54
+Expedition 55
+Expedition 56
+Expedition 57
+Expedition 58
+Expedition 59
+Expedition 60
+Expedition 61
+Expedition 62
+Expedition 63
+Expedition 64
+Expedition 65
+Expedition 66
+Expedition 67
+Explorer
+Explorer 11
+Explorer 33
+Explorer 49
+Explorer 35
+Explorer 7
+eXTP;Enhanced X-ray Timing and Polarimetry
+FAI;Fast Auroral Imager
+Falcon Eye;Falcon-Eye
+Falcon Eye 1
+Falcon Eye 2;Falcon-Eye 2
+FAST;Fast Auroral Snapshot Explorer
+FGST;FGRST;Fermi Gamma-ray Space Telescope
+Fire and Smoke
+FLEX;Fluorescence Explorer
+Flock
+Fobos-Grunt;Phobos-Grunt
+FORMOSAT
+FORMOSAT-2
+FORMOSAT-5;FORMOSAT 5
+FORMOSAT-1;FORMOSAT 1
+FORUM;Far-infrared Outgoing Radiation Understanding and Monitoring
+Foton M3;Foton-M3
+Foton M2;Foton-M2
+FUSE;Far Ultraviolet Spectroscopic Explorer
+FY 1A;FY-1A Polar-orbiting Meteorological Satellite
+FY 1B;FY-1B Polar-orbiting Meteorological Satellite
+FY 1C;FY-1C Polar-orbiting Meteorological Satellite
+FY 1D;FY-1D Polar-orbiting Meteorological Satellite
+FY 2A;FY-2A Geostationary Meteorological Satellite
+FY 2B;FY-2B;FY-2B Geostationary Meteorological Satellite
+FY 2C;FY-2C Geostationary Meteorological Satellite
+FY 2D;FY-2D Geostationary Meteorological Satellite
+FY 2E;FY-2E;FY-2E Geostationary Meteorological Satellite
+FY 2F;FY-2F;FY-2F Geostationary Meteorological Satellite
+FY 2G;FY-2G Geostationary Meteorological Satellite
+FY 2H;FY-2H;FY-2H Geostationary Meteorological Satellite
+FY 3A;FY-3A Polar-orbiting Meteorological Satellite
+FY 3B;FY-3B;FY-3B Polar-orbiting Meteorological Satellite
+FY 3C;FY-3C;FY-3C Polar-orbiting Meteorological Satellite
+FY 3D;FY-3D Polar-orbiting Meteorological Satellite
+FY 3E;FY-3E Polar-orbiting Meteorological Satellite
+FY 3F;FY-3F;FY-3F Polar-orbiting Meteorological Satellite
+FY 3G;FY-3G Polar-orbiting Meteorological Satellite
+FY 3H;FY-3H;FY-3H Polar-orbiting Meteorological Satellite
+FY 3I;FY-3I;FY-3I Polar-orbiting Meteorological Satellite
+FY 3J;FY-3J;FY-3J Polar-orbiting Meteorological Satellite
+FY 3G;FY 3RM 1;FY 3RM-1;FY-3 Rainfall Mission 1
+FY 3J;FY 3RM 2;FY-3RM-2;FY-3 Rainfall Mission 2
+FY 4A;FY-4A;FY-4A Geostationary Meteorological Satellite
+FY 4B;FY-4B Geostationary Meteorological Satellite
+FY 4C;FY-4C;FY-4C Geostationary Meteorological Satellite
+FY 4D;FY-4D;FY-4D Geostationary Meteorological Satellite
+FY 4E;FY-4E Geostationary Meteorological Satellite
+FY 4F;FY-4F;FY-4F Geostationary Meteorological Satellite
+FY 4G;FY-4G Geostationary Meteorological Satellite
+GACM;Global Atmospheric Composition Mission
+Gaia;Global Astrometric Interferometer for Astrophysics
+GALEX;Galaxy Evolution Explorer
+Galileo
+DSG;Gateway;Lunar Gateway;Deep Space Gateway
+GCOM;Global Change Observation Mission
+GCOM-C;Global Change Observation Mission-Climate
+GCOM-W;Global Change Observation Mission-Water
+GECAM;Gravitational Wave High-energy Electromagnetic Counterpart All-sky Monitor
+GEDI;Global Ecosystem Dynamics Investigation Lidar
+GEDI-on-ISS;International Space Station/Global Ecosystem Dynamics Investigation Lidar
+Gemini
+Gemini 1
+Gemini 2
+Gemini 3
+Gemini 4
+Gemini 5
+Gemini 6A
+Gemini 7
+Gemini 8
+Gemini 9A
+Gemini 10
+Gemini 11
+Gemini 12
+Genesis
+GEO CAPE;Geostationary Coastal and Air Pollution Events
+GEO KOMPSAT 2A;GEO-KOMPSAT-2A;Geostationary Korea Multi-Purpose Satellite-2A
+GEO KOMPSAT 2B;GEO-KOMPSAT-2B;Geostationary Korea Multi-Purpose Satellite-2B
+GeoCarb;Geostationary Carbon Cycle Observatory
+GeoEye-1;GeoEye 1;OrbView-5
+Geologic Remote Sensing Field Experiment
+GEOSat;Geodetic Satellite
+Geotail
+GeoXO1;Geostationary Extended Observations 1
+GeoXO2;Geostationary Extended Observations 2
+GF;Gaofen
+GF 1-03;GF 1 03
+GF 1 04;GF-1-04
+GF 12;GF-12
+GF 14;GF-14
+GF 2;GF-2;Gaofen-2
+GF 3;GF-3;Gaofen-3
+GF 4;GF-4;Gaofen-4
+GF 6
+GF 1;Gaofen-1
+GF 1-02;GF 1 02;Gaofen-1-02
+GF 3 02;GF-3-02;Gaofen-3-02
+GF 5;Gaofen-5
+GF 7;GF-7;Gaofen-7
+GF 8;Gaofen-8
+GF 9;GF-9;Gaofen-9
+GF 10;Gaofen-10
+GF 11;GF-11;Gaofen-11
+GF 11 02;GF-11-02;Gaofen-11-02
+GF 11 03;GF-11-03;Gaofen-11-03
+GF 12 02;GF-12-02;Gaofen-12-02
+GF 13;GF-13;Gaofen-13
+GF 5 02;GF-5-02;Gaofen-5-02
+GF 9 02;GF-9-02;Gaofen-9-02
+GF 9 03;GF-9-03;Gaofen-9-03
+GF 9 04;GF-9-04;Gaofen-9-04
+GF 9 05;GF-9-05;Gaofen-9-05
+GFO;GEOSat Follow-on
+GFZ 1;GFZ-1;GeoForschungsZentrum-1 Geodesy Satellite
+Ginga;ASTRO-C
+Giotto
+GEM;Giotto Extended Mission
+GISAT;GEO Imaging Satellite
+GISAT 2;GISAT-2
+GLIMR;Geosynchronous Littoral Imaging and Monitoring Radiometer
+Glory
+GNOMES;GNSS Navigation and Occultation Measurement Satellites
+GOCE;Gravity Field and Steady-State Ocean Circulation Explorer
+GOES;Geostationary Operational Environmental Satellite
+GOES U;GOES-U;Geostationary Operational Environmental Satellite - U
+GOES 1;Geostationary Operational Environmental Satellite - 1
+GOES 2;GOES-2;Geostationary Operational Environmental Satellite - 2
+GOES 3;GOES-3;Geostationary Operational Environmental Satellite - 3
+GOES 4;Geostationary Operational Environmental Satellite - 4
+GOES 5;GOES-5;Geostationary Operational Environmental Satellite - 5
+GOES 6;Geostationary Operational Environmental Satellite - 6
+GOES 7;Geostationary Operational Environmental Satellite - 7
+GOES 8;GOES-8;Geostationary Operational Environmental Satellite - 8
+GOES 9;Geostationary Operational Environmental Satellite - 9
+GOES 10;GOES-10;Geostationary Operational Environmental Satellite - 10
+GOES 11;Geostationary Operational Environmental Satellite - 11
+GOES 12;Geostationary Operational Environmental Satellite - 12
+GOES 13;Geostationary Operational Environmental Satellite - 13
+GOES 14;Geostationary Operational Environmental Satellite - 14
+GOES 15;GOES-15;Geostationary Operational Environmental Satellite - 15
+GOES 16;Geostationary Operational Environmental Satellite - 16
+GOES 17;GOES-17;Geostationary Operational Environmental Satellite - 17
+GOES T;GOES 18;GOES-18;Geostationary Operational Environmental Satellite - 18
+Göktürk-1;Göktürk-1A;Göktürk 1A
+Göktürk-2
+GOLD;Global-scale Observations of the Limb and Disk
+GOME-2;GOME 2;Global Ozone Monitoring Experiment 2;Global Ozone Monitoring Experiment - 2
+GOMX4;GomSpace Express-4
+GOSAT;Greenhouse Gas Observing Satellite;Greenhouse Gases Observing SATellite
+GOSAT-2;Greenhouse Gas Observing Satellite-2;Greenhouse Gases Observing SATellite-2
+GOSAT-GW;Global Observing Satellite for Greenhouse Gases and Water Cycle
+GP B;GP-B;Gravity Probe B
+GPM;Global Precipitation Measurement
+GRACE;Gravity Recovery and Climate Experiment
+GRACE FO;GRACE-FO;Gravity Recovery and Climate Experiment Follow-on;Gravity Recovery and Climate Experiment - Follow-On
+GRAIL;Gravity Recovery and Interior Laboratory
+Granat
+Gravity Probe-B;Gravity Probe B
+CORSA-b;Hakucho
+HaloSat
+Hayabusa
+Hayabusa 2
+HCMM;Heat Capacity Mapping Mission
+HDT30
+HEAO-1
+HEAO-2;Einstein Observatory
+HEAO-3
+Helios 1
+Helios 2
+HERA Campaign 1
+HERA Campaign 2
+HERA Campaign 3
+HERA Campaign 4
+HERA Campaign 5
+HERA Campaign 6
+Herschel Space Observatory
+HETE-2;HETE 2;High Energy Transient Explorer 2
+GMS;Himawari-1;Geostationary Meteorological Satellite
+GMS 2;Himawari-2;Geostationary Meteorological Satellite 2
+GMS 3;Himawari-3;Geostationary Meteorological Satellite 3
+GMS 4;Himawari-4;Geostationary Meteorological Satellite 4
+GMS 5;Himawari-5;Geostationary Meteorological Satellite 5
+GMS 6;Himawari-6;Geostationary Meteorological Satellite 6
+GMS 7;Himawari-7;Geostationary Meteorological Satellite 7
+GMS 8;Himawari-8;Geostationary Meteorological Satellite 8
+GMS 9;Himawari-9;Geostationary Meteorological Satellite 9
+Hinode;Solar-B
+Hiten;Muses-A
+Hitomi;Astro-H
+HJ;Huan Jing
+HJ-1A;HJ 1A;Huan Jing-1A
+HJ 1B;HJ-1B;Huan Jing-1B
+HJ-1C;HJ 1C;Huan Jing-1C
+HJ 2A;HJ-2A;Huan Jing-2A
+HJ 2B;HJ-2B;Huan Jing-2B
+HRMX;High Resolution Multi Spectral
+HRSAT;High Resolution Satellite Constellation
+HRSAT-1A;High Resolution Satellite 1A
+HRSAT-1B;HRSAT 1B;High Resolution Satellite 1B
+HRSAT-1C;HRSAT 1C;High Resolution Satellite 1C
+HST;Hubble Space Telescope
+Huygens
+Insight;HXMT Insight;HXMT - Insight;Hard X-ray Modulation Telescope
+HY 1;HY-1;Hai Yang 1
+HY 1A;HY-1A
+HY 1F;HY-1F;Ocean Color Satellite F
+HY 2A;HY-2A;Ocean Dynamics Satellite A
+HY 2D;HY-2D;Ocean Dynamics Satellite D
+HY 2F;HY-2F;Ocean Dynamics Satellite F
+HY 2H;HY-2H;Ocean Dynamics Satellite H
+HY 3;HY-3;Hai Yang 3
+HY 3A;HY-3A
+HY 3D;HY-3D
+HY-1B;HY 1B
+HY-1C;HY 1C;Ocean Color Satellite C
+HY-1D;HY 1D;Ocean Color Satellite D
+HY 1E;HY-1E;Ocean Color Satellite E
+HY 2;HY-2;Hai Yang 2
+HY 2B;HY-2B;Ocean Dynamics Satellite B
+HY-2C;HY 2C;Ocean Dynamics Satellite C
+HY 2E;HY-2E;Ocean Dynamics Satellite E
+HY 2G;HY-2G;Ocean Dynamics Satellite G
+HY 3B;HY-3B
+HY 3C;HY-3C
+HydroGNSS
+HyperScout 2;HyperScout-2;Hyperspectral VNIR and Multispectral TIR Imager
+HySIS;Hyper Spectral Imaging Spectrometer
+HyspIRI;Hyperspectral Infra-Red Imager
+IBEX;Interstellar Boundary Explorer
+OIB;IceBridge
+ICESat;Ice, Cloud and Land Elevation Satellite
+ICESat-2;ICESat 2;Ice, Cloud, and Land Elevation Satellite 2
+ICEYE
+ICON;Ionospheric Connection Explorer
+IKAROS
+Ikonos
+IMAGE;Explorer 78;Imager for Magnetopause-to-Aurora Global Exploration
+IMAP;Interstellar Mapping and Acceleration Probe
+IMP 6
+IMP 7
+IMS;Indian Mini-Satellite;Indian Mini Satellite
+IMS 1;IMS-1
+IRAS;INFRARED ASTRONOMICAL SATELLITE
+INSAT 1;Indian National Satellite 1;Indian National Satellite - 1
+INSAT 1A
+INSAT 1B
+INSAT 1C
+INSAT 1D;INSAT-1D
+INSAT 2A
+INSAT 2B
+INSAT 2C
+INSAT 2D
+INSAT 3;INSAT-3;Indian National Satellite 3;Indian National Satellite - 3
+INSAT 3B;INSAT-3B
+INSAT 3C;INSAT-3C
+INSAT 3DS
+INSAT 2;INSAT-2;Indian National Satellite 2;Indian National Satellite - 2
+INSAT 2E;INSAT-2E
+INSAT 3A;INSAT-3A
+INSAT 3D;Indian National Satellite - 3D
+INSAT 3DR;INSAT-3DR;Indian National Satellite - 3DR
+InSight;Interior Exploration Using Seismic Investigations, Geodesy and Heat Transport
+INTEGRAL;International Gamma-Ray Astrophysics Laboratory
+ICE;INTERNATIONAL COMETARY EXPLORER
+IHW;INTERNATIONAL HALLEY WATCH
+duplicate;INTERNATIONAL ROSETTA MISSION
+Ionosphera M N1;Hydro Meteorological Satellite Ionosphera M N1;Hydro-meteorological Satellite Ionosphera-M N1
+Ionosphera M N3;Ionosphera-M N3;Hydro-meteorological Satellite Ionosphera-M N3;Hydro Meteorological Satellite Ionosphera M N3
+Ionosphera M N3 & N4;Ionosphera-M N3 & N4
+Ionosphera M N4;Hydro Meteorological Satellite Ionosphera M N4;Hydro-meteorological Satellite Ionosphera-M N4
+Ionosphera M N1 & N2;Ionosphera-M N1 & N2
+Ionosphera M N2;Hydro-meteorological Satellite Ionosphera-M N2;Hydro Meteorological Satellite Ionosphera M N2
+Ionozond
+iRATS14
+IRIS;Interface Region Imaging Spectrograph
+IRS;Indian Remote-sensing Satellite;Indian Remote Sensing Satellite
+IRS 1A
+IRS 1B;IRS-1B
+IRS 1C;IRS-1C
+IRS 1D
+IRS P2;IRS-P2
+IRS P3
+IRS 1E
+ISEE-3/ICE;ISEE 3/ICE;International Cometary Explorer;International Sun-Earth Explorers - 3
+ISO;Infrared Space Observatory
+ISS;International Space Station
+ISS ASIM
+ISS CATS
+ISS CLARREO PF;ISS CLARREO-PF
+ISS COWVR
+ISS DESIS
+ISS ECOSTRESS
+ISS EMIT
+ISS GARI
+ISS GEDI
+ISS HICO
+ISS HISUI
+ISS LIS
+ISS MOLI
+ISS OCO-3;ISS OCO 3
+ISS RainCube
+ISS RapidScat
+ISS SAGE III;ISS SAGE-III
+ISS TEMPEST 1;ISS TEMPEST-1
+ISS TEMPEST-D;ISS TEMPEST D
+ISS TSIS 2
+ISS TSIS 1;ISS TSIS-1
+ITOS-1;ITOS 1;TIROS-M;Improved TIROS Operational System
+IUE;Explorer 57;International Ultraviolet Explorer;INTERNATIONAL ULTRAVIOLET EXPLORER
+IXPE;Imaging X Ray Polarimetry Explorer;Imaging X-ray Polarimetry Explorer
+Jason;JASON;Joint Altimetry Satellite Oceanography Network
+JASON-1;JASON 1
+Jason-3;JASON 3;JASON-3
+JASON-2;JASON 2
+JERS;Japanese Earth Resources Satellite
+Jilin
+Jilin 1;Jilin-1
+JPSS;Joint Polar Satellite System
+JPSS-2;JPSS 2;Joint Polar Satellite System - 2
+JPSS 4;JPSS-4;Joint Polar Satellite System - 4
+JPSS-1;JPSS 1;Joint Polar Satellite System 1;Joint Polar Satellite System - 1
+JPSS-3;JPSS 3;Joint Polar Satellite System - 3
+JUICE;JUpiter ICy Moons Explorer
+Juno
+JWST;James Webb Space Telescope
+Kaguya
+Kalpana
+Kalpana-1;Kalpana 1
+KANOPUS-V-IK-1;KANOPUS V IK 1
+Kanopus-V-IR N2;Kanopus V IR N2;Environmental Satellite Kanopus-V-IR N2;Environmental Satellite Kanopus V IR N2
+Kanopus-V N3;Environmental Satellite Kanopus-V N3;Environmental Satellite Kanopus V N3
+Kanopus-V N5;Environmental Satellite Kanopus-V N5;Environmental Satellite Kanopus V N5
+KANOPUS-V3
+KANOPUS-V5;KANOPUS V5
+KANOPUS-V;KANOPUS V;KANOPUS Vulkan
+Kanopus-V N4;Kanopus V N4;Environmental Satellite Kanopus-V N4;Environmental Satellite Kanopus V N4
+Kanopus-V N6;Environmental Satellite Kanopus V N6;Environmental Satellite Kanopus-V N6
+KANOPUS-V1;KANOPUS V1
+KANOPUS-V4;KANOPUS V4
+KANOPUS-V6;KANOPUS V6
+KazEOSat;Kazakhstan Earth Observation Satellite
+KazEOSat-1;KazEOSat 1
+KazEOSat 2;KazEOSat-2
+Kepler
+Kepler and K2
+KhalifaSat
+KOMPSAT;Korea Multi Purpose Satellite;Korea Multi-Purpose Satellite
+KOMPSAT-1;KOMPSAT 1
+KOMPSAT-2;KOMPSAT 2;Korea Multi-Purpose Satellite -2
+KOMPSAT-3;KOMPSAT 3;Korea Multi-Purpose Satellite -3
+KOMPSAT-3A;Korea Multi-Purpose Satellite -3A
+KOMPSAT-7A;KOMPSAT 7A;Korea Multi Purpose Satellite 7A;Korea Multi-Purpose Satellite -7A
+KOMPSAT-5;KOMPSAT 5;Korea Multi-Purpose Satellite -5
+KOMPSAT-6;Korea Multi-Purpose Satellite -6
+KOMPSAT-7;Korea Multi-Purpose Satellite -7
+Kondor E1;Kondor-E1
+Kondor FKA N2;Kondor-FKA N2;SAR Satellite Kondor-FKA N2;SAR Satellite Kondor FKA N2
+Kondor E;Kondor-E;Kondor-Experimental SAR Spacecraft
+Kondor FKA N1;Kondor-FKA N1;SAR Satellite Kondor-FKA N1;SAR Satellite Kondor FKA N1
+LADEE;Lunar Atmosphere Dust Environment Explorer
+LAFS
+LAFSP2
+LAGEOS;Laser Geodynamics Satellite
+LAGEOS 1;LAGEOS-1;Laser Geodynamics Satellite - 1
+LAGEOS 1 and 2
+LAGEOS 2;LAGEOS-2;Laser Geodynamics Satellite - 2
+Landsat
+Landsat 1
+Landsat 3;Landsat-3
+Landsat 4;Landsat-4
+Landsat 6;Landsat-6
+Landsat 7
+Landsat 8
+Landsat 9
+Landsat 2;Landsat-2
+Landsat 5
+Landsat 8;Landsat-8
+LARES;LAser RElativity Satellite
+LARES-1
+LARES-2;LARES 2;LAser RElativity Satellite 2
+LCROSS;LUNAR CRATER OBSERVATION AND SENSING SATELLITE;Lunar Crater Observation and Sensing Satellite
+LDCM;Landsat Data Continuity Mission
+Lemur;Low Earth Multi-Use Receiver;Low Earth Multi Use Receiver
+Lemur 2;Lemur-2
+Light-1;Light 1
+LISA Pathfinder
+LIST;Lidar Surface Topography
+LMLSTP;Lunar-Mars Life Support Test Project
+MVL-300;Lomonosov
+LOTUSat 1
+LBFD;Low-Boom Flight Demonstration;Low Boom Flight Demonstration
+LRO;LUNAR RECONNAISSANCE ORBITER;Lunar Reconnaissance Orbiter
+LSAH;Lifetime Surveillance of Astronaut Health
+LSTM;Land Surface Temperature Monitoring
+Lucy;Trojan Asteroid Mission
+Luna;Kosmos 60;Kosmos 305;Kosmos 159;Kosmos 111;Kosmos 300
+Luna 1;Soviet Space Rocket
+Luna 10
+Luna 10 & 12
+Luna 11
+Luna 12
+Luna 13
+Luna 14
+Luna 15
+Luna 16
+Luna 17 and Lunokhod 1
+Luna 18
+Luna 19
+Luna 2;Second Soviet Space Rocket
+Luna 20
+Luna 21 and Lunokhod 2
+Luna 22
+Luna 23
+Luna 24
+Luna 3;Venera 1;Automatic Interplanetary Station
+Luna 4
+Luna 5
+Luna 6
+Luna 7
+Luna 8
+Luna 9
+Luna, Ye-1 No. 2;Luna, Ye 1 No. 2
+Luna, Ye 6 No. 3;Luna, Ye-6 No. 3
+Luna, Ye 6 No. 6;Luna, Ye-6 No. 6
+Luna, Ye 8 5 No. 402;Luna, Ye-8-5 No. 402
+Luna, Ye No. 2
+Luna, Ye 1 No. 1;Luna, Ye-1 No. 1
+Luna, Ye-1 No. 3;Luna, Ye 1 No. 3
+Luna, Ye-1A No. 5;Luna, Ye 1A No. 5
+Luna, Ye 3 No. 1;Luna, Ye-3 No. 1
+Luna, Ye-6 No. 2;Luna, Ye 6 No. 2
+Luna, Ye 6 No. 5;Luna, Ye-6 No. 5
+Luna, Ye 6 No. 8;Luna, Ye-6 No. 8
+Luna, Ye 6LS No. 112;Luna, Ye-6LS No. 112
+Luna, Ye-8 No. 201;Luna, Ye 8 No. 201
+Luna, Ye 8 5 No. 405;Luna, Ye-8-5 No. 405
+Lunar Orbiter 1
+Lunar Orbiter 2
+Lunar Orbiter 3
+Lunar Orbiter 4
+Lunar Orbiter 5
+Lunar Orbiter I
+Lunar Orbiter II
+Lunar Orbiter III
+Lunar Orbiter IV
+Lunar Orbiter V
+Lunar Outpost
+Lunar Prospector;LUNAR PROSPECTOR
+Lunar Quest Program
+Magellan;MAGELLAN
+MAIA;Multi-Angle Imager for Aerosols
+MOM;Mangalyaan / Mars Orbiter Mission
+MarCO;Mars Cube One
+Mariner
+Mariner 02
+Mariner 03
+Mariner 04
+Mariner 05
+Mariner 06
+Mariner 07
+Mariner 08
+Mariner 09
+Mariner 1
+Mariner 10
+Mariner 8
+Mariner 9
+Mariner I
+Mariner II
+Mariner III
+Mariner IV
+Mariner V
+Mariner VI
+Mariner VII
+MARINER69
+MARINER71
+Mars;Kosmos 419
+Mars 1
+Mars 2
+Mars 3
+Mars 4
+Mars 4 & 5
+Mars 5
+Mars 6
+Mars 7
+Mars 8 / Mars 96
+Mars Climate Orbiter
+MARS Environmental Survey
+MARS Exploration Rover
+MARS EXPRESS;Mars Express
+Mars Express and Beagle 2
+MARS Global Surveyor
+Mars InSight Lander
+MARS Observer
+Mars Odyssey
+Mars Pathfinder;MARS PATHFINDER
+Mars Perseverance Rover
+Mars Polar Lander and Deep Space 2
+MARS Reconnaissance Orbiter
+Mars Sample Return
+Mars, 1M No. 1
+Mars, 1M No. 2
+Mars, 2MV 3 No. 1;Mars, 2MV-3 No. 1
+Mars, 2MV 4 No. 3;Mars, 2MV-4 No. 3
+Mars, M 69 No. 521;Mars, M-69 No. 521
+Mars, M-69 No. 522;Mars, M 69 No. 522
+MATS;Mesospheric Airglow/Aerosol Tomography and Spectroscopy
+MAVEN;Mars Atmospheric and Volatile EvolutioN
+MAXI
+MC-C;MC C;Mass Change Continuity;Mass Change - Continuity
+MC S;MC-S;Mass Change Sustaining;Mass Change - Sustaining
+MDASat 1a
+MDASat 1b;MDASat-1b
+MDASat 1c;MDASat-1c
+MEGHA-TROPIQUES;Megha-Tropiques;MEGHA TROPIQUES;Megha Tropiques
+Mercury;Human Spaceflight Program
+Mercury 2
+Mercury 3
+Mercury 4
+Mercury 5
+Mercury 6
+Mercury 7
+Mercury 8
+Mercury 9
+MERLIN;Methane Remote Sensing Mission;Methane Remote Sensing Lidar Mission
+MESSENGER;Mercury Surface, Space Environment, Geochemistry and Ranging
+Meteor-1 1;Meteor-1-1
+Meteor-1 10;Meteor 1 10
+Meteor-1 12;Meteor-1-12
+Meteor-1 15;Meteor 1 15
+Meteor-1 16;Meteor 1 16
+Meteor-1 17;Meteor 1 17
+Meteor-1 19;Meteor 1 19
+Meteor-1 2;Meteor-1-2
+Meteor-1 20;Meteor-1-20
+Meteor-1 23;Meteor-1-23
+Meteor-1 26;Meteor-1-26
+Meteor-1 7;Meteor-1-7
+Meteor-2 1;Meteor 2 1
+Meteor-2 11;Meteor 2 11
+Meteor-2 12;Meteor 2 12
+Meteor-2 13;Meteor-2-13
+Meteor-2 14;Meteor-2-14
+Meteor-2 17;Meteor 2 17
+Meteor-2 19;Meteor-2-19
+Meteor-2 2;Meteor 2 2
+Meteor-2 21;Meteor 2 21
+Meteor-2 3;Meteor 2 3
+Meteor-3;Meteor 3
+Meteor-3 1;Meteor-3-1
+Meteor-3 3;Meteor 3 3
+Meteor-3 4;Meteor 3 4
+Meteor-3 5;Meteor 3 5
+Meteor-3M
+Meteor-M N2-1;Meteor M N2 1
+Meteor-M N2-2;Meteor M N2 2;Meteorological Satellite Meteor-M N2-2
+Meteor-M N2-5;Meteorological Satellite Meteor-M N2-5
+Meteor-MP N2;Meteor-MP Meteorological Satellite N2
+Meteor-MP N3;Meteor-MP Meteorological Satellite N3;Meteor MP Meteorological Satellite N3
+Meteor-P5
+Meteor-1;Meteor 1
+Meteor-1 11;Meteor 1 11
+Meteor-1 13;Meteor-1-13
+Meteor-1 14;Meteor-1-14
+Meteor-1 21;Meteor 1 21
+Meteor-1 22;Meteor 1 22
+Meteor-1 24;Meteor-1-24
+Meteor-1 27;Meteor 1 27
+Meteor-1 3;Meteor 1 3
+Meteor-1 4;Meteor-1-4
+Meteor-1 5;Meteor-1-5
+Meteor-1 6;Meteor 1 6
+Meteor-1 8;Meteor 1 8
+Meteor-1 9;Meteor-1-9
+Meteor-2;Meteor 2
+Meteor-2 10;Meteor 2 10
+Meteor-2 15;Meteor-2-15
+Meteor-2 16;Meteor-2-16
+Meteor-2 18;Meteor 2 18
+Meteor-2 20;Meteor 2 20
+Meteor-2 4;Meteor-2-4
+Meteor-2 5;Meteor-2-5
+Meteor-2 6;Meteor 2 6
+Meteor-2 7;Meteor 2 7
+Meteor-2 8;Meteor-2-8
+Meteor-2 9;Meteor-2-9
+Meteor-3 2;Meteor-3-2
+Meteor-3 6;Meteor-3-6
+Meteor-M N1;Meteor M N1
+Meteor-M N2;Meteorological Satellite Meteor-M N2
+Meteor-M N2-3;Meteor M N2 3;Meteorological Satellite Meteor-M N2-3
+Meteor-M N2-4;Meteor M N2 4;Meteorological Satellite Meteor-M N2-4
+Meteor-M N2-6;Meteorological Satellite Meteor-M N2-6
+Meteor-MP N1;Meteor-MP Meteorological Satellite N1
+Meteor-P;Meteor P;Meteor Priroda;Meteor-Priroda
+Meteor-P1
+Meteor-P2;Meteor P2
+Meteor-P3;Meteor P3
+Meteor-P4
+Meteor-P6
+Meteosat-10;Meteosat 10;Meteosat Second Generation-3
+Meteosat 1st Generation;Meteosat First Generation
+Meteosat-2;Meteosat-2nd Generation;Meteosat Second Generation
+Meteosat 3rd Generation
+Meteosat-4
+Meteosat-6
+Meteosat-7
+Meteosat-8;Meteosat 8;Meteosat Second Generation-1
+Meteosat-9;Meteosat Second Generation-2
+Meteosat-1;Meteosat 1st Generation;Meteosat-1
+Meteosat-11;Meteosat 11;Meteosat Second Generation-4
+Meteosat-2;Meteosat 2
+Meteosat-3;Meteosat-3rd Generation;Meteosat-3
+Meteosat-5;Meteosat 5
+Metop-A
+Metop-B;Metop B;Meteorological Operational Polar Satellite - B
+Metop-C;Meteorological Operational Polar Satellite - C
+Metop-SG-A2
+METOP SG A1;METOP-SG A2;METOP-SG A1;METOP-SG A3;METOP SG B2;METOP-SG B3;METOP-SG B2;METOP SG B1;METOP SG A3;METOP SG B3;METOP-SG B1;METOP SG A2;EUMETSAT Polar System, Second Generation
+Metop-SG-B2
+Metop-SG-A1;Metop SG A1
+Metop-SG-A3;Metop SG A3
+Metop-SG-B1
+Metop-SG-B3;Metop SG B3
+MeznSat
+MicroCarb;Microcarb
+MicroDragon
+WMAP;Microwave Anisotropy Probe;Wilkinson Microwave Anisotropy Probe
+MSX;MIDCOURSE SPACE EXPERIMENT
+Mir 17
+Mir 18
+Mir 19
+Mir 20
+Mir 21
+Mir 22
+Mir 23
+Mir 24
+Mir 25
+Mir 97
+MISTiC Winds;Midwave Infrared Sounding of Temperature and Humidity in a Constellation for Winds
+MMS;Magnetospheric Multiscale;Magnetospheric MultiScale Mission
+MMS D;MMS-D
+MMS A;MMS-A
+MMS B;MMS-B
+MMS C
+Mohammed VI
+Mohammed VI-B;Mohammed VI B
+Mohammed VI A;Mohammed VI-A
+Monitor-E;Monitor E;Monitor - Experimental
+MOS;Marine Observatory Satellite
+MOS 1;MOS-1
+MOS 1B;MOS-1B
+MSX;Midcourse Space Experiment
+MTG I;MTG I1
+MTG I1;MTG I1 (imaging);Meteosat Third Generation Imaging Satellite 1;Meteosat Third Generation - Imaging Satellite 1
+MTG I2;MTG-I2
+MTG I;MTG I3
+MTG I3;MTG-I3 (imaging);Meteosat Third Generation Imaging Satellite 3;Meteosat Third Generation - Imaging Satellite 3
+MTG I4;MTG I4 (imaging);Meteosat Third Generation Imaging Satellite 4;Meteosat Third Generation - Imaging Satellite 4
+MTG S1;MTG-S1
+MTG I2;MTG I2 (imaging);Meteosat Third Generation Imaging Satellite 2;Meteosat Third Generation - Imaging Satellite 2
+MTG I4;MTG-I4
+MTG S1;MTG S1 (sounding);Meteosat Third Generation S1 Sounding Satellite 1
+MTG S2;MTG-S2
+MTG S2;MTG-S2 (sounding);Meteosat Third Generation S2 Sounding Satellite 2
+N1 Launch Test, 7K-LOK No. 6A;N1 Launch Test, 7K LOK No. 6A
+N1 Launch Test, 7K-L1S No. 2;N1 Launch Test, 7K L1S No. 2
+N1 Test Flight, 7K-L1S;N1 Test Flight, 7K L1S
+Nancy Grace Roman Space Telescope
+NanoDragon
+NEAR;NEAR EARTH ASTEROID RENDEZVOUS;Near Earth Asteroid Rendezvous
+NEAR Shoemaker
+NEEMO;NASA Extreme Environment Mission Operations
+NEEMO 1
+NEEMO 10
+NEEMO 11
+NEEMO 12
+NEEMO 13
+NEEMO 14
+NEEMO 15
+NEEMO 16
+NEEMO 18
+NEEMO 19
+NEEMO 2
+NEEMO 3
+NEEMO 4
+NEEMO 5
+NEEMO 6
+NEEMO 7
+NEEMO 8
+NEEMO 9
+NEMO AM;NEMO-AM;Nanosatellite for Earth Monitoring and Observation-Aerosol Monitoring
+NEO Surveyor;Near-Earth Object Surveyor
+NEOWISE;Near-Earth Object Wide-field Infrared Survey Explorer
+New Horizons;NEW HORIZONS
+NEW Horizons Kuiper Belt Extended Mission
+NG-11;NG 11
+NICER;Neutron Star Interior Composition Explorer
+NigeriaSat
+NigeriaSat 1;NigeriaSat-1
+NigeriaSat 2 Remote Sensing;NigeriaSat 2 Remote Sensing (Med and High Res)
+NigeriaSat-X;NigeriaSat X;Nigeria Earth Observation Satellite X
+NigeriaSat X Remote Sensing;NigeriaSat X Remote Sensing (Medium Resolution)
+NigeriaSat-2;NigeriaSat 2;Nigeria Earth Observation Satellite 2
+Nimbus
+Nimbus 1
+Nimbus 2;Nimbus-2
+Nimbus 4
+Nimbus 3;Nimbus-3
+Nimbus 5;Nimbus-5
+Nimbus 6;Nimbus-6
+Nimbus 7;Nimbus-7
+NMP EO 1;NMP EO-1
+NMP-EO-1;NMP EO 1;New Millennium Program - Earth Observing -1
+NOAA-1;NOAA 1
+NOAA-11;NOAA 11
+NOAA-14
+NOAA-15
+NOAA-18;National Oceanic and Atmospheric Administration - 18
+NOAA-20
+NOAA 3rd Generation / ITOS;NOAA 3rd Generation / Improved TIROS Operational System
+NOAA-4th Generation;National Oceanic and Atmospheric Administration 4th Generation;National Oceanic and Atmospheric Administration - 4th Generation
+NOAA-4th Generation / POES;NOAA 4th Generation / Polar Operational Environmental Satellites
+NOAA-5th Generation / POES;NOAA 5th Generation / Polar Operational Environmental Satellites
+NOAA-6
+NOAA-Comms;Communications Package for NOAA
+NOAA-N
+NOAA-N Prime;NOAA N Prime
+NOAA-10;NOAA 10
+NOAA-12
+NOAA-13
+NOAA-16;NOAA 16
+NOAA-17;NOAA 17
+NOAA-19;National Oceanic and Atmospheric Administration - 19
+NOAA-2;NOAA 2
+NOAA-3;NOAA 3
+NOAA-4
+NOAA-5;NOAA 5
+NOAA-7;NOAA 7
+NOAA-8
+NOAA-9;NOAA 9
+NORSAT 2;NORSAT-2;NorSat 2;NorSat-2
+NorSat-3;NorSat 3;NORSAT-3;NORSAT 3
+NORSAT-1;NORSAT 1;NorSat 1;NorSat-1
+NovaSAR S;NovaSAR-S
+NovaSAR 1;NovaSAR-1
+Nozomi
+NRD Test Mission;Navigation Radar Detector Test Mission
+NuSTAR;Nuclear Spectroscopic Telescope Array
+OA 8;Orbital ATK CRS-8
+OA 9;Orbital ATK CRS-9
+Obzor-O N3
+Obzor-R N4;Obzor R N4
+Obzor-O;Operative Monitoring Satellite Optical;Operative Monitoring Satellite - Optical
+Obzor-O N1;Obzor O N1
+Obzor-O N2
+Obzor-O N4;Obzor O N4
+Obzor-R;Obzor R;Operative Monitoring Satellite Radar;Operative Monitoring Satellite - Radar
+Obzor-R N1;Obzor R N1;SAR Operative Monitoring Satellite Obzor-R N1
+Obzor-R N2;Obzor R N2
+Obzor-R N3
+OSTM/Jason-2;Ocean Surface Topography Mission/Jason 2
+OceanSat;Satellite for the Ocean
+OceanSat-1;OceanSat 1
+OCEANSAT-3A;OCEANSAT 3A;OceanSat-3A;Ocean Satellite-3A
+OCEANSAT-2;Ocean Satellite-2
+OceanSat-3;OCEANSAT 3;OCEANSAT-3;Ocean Satellite-3
+OCO;Orbiting Carbon Observatory
+OCO-3-on-ISS;OCO 3 on ISS;ISS/Orbiting Carbon Observatory-3;ISS/Orbiting Carbon Observatory 3
+OCO-2;OCO 2;Orbiting Carbon Observatory-2
+Odin
+OFO-A;OFO A;Orbiting Frog Otolith-A
+OGO Series;Orbiting Geophysical Observatory
+Okean-O
+Okean-O-1
+Okean-O1;Okean O1;Okean Operational 1
+Okean-O1-1;Okean O1 1
+Okean-O1-7;Okean O1 7
+Okean-O1-2;Okean O1 2
+Okean-O1-3;Okean O1 3
+Okean-O1-4;Okean O1 4
+Okean-O1-5
+Okean-O1-6
+Operation IceBridge
+Opportunity
+OrbView-3;OrbView 3
+Orbview-1;OrbView-1/MicroLab;OrbView 1/MicroLab
+OrbView-2;OrbView 2/SeaStar;OrbView-2/SeaStar
+OrbView-4
+ORFEUS
+Orion;Orion Spacecraft
+ORS 3;Operationally Responsive Space-3
+ORS 4;Operationally Responsive Space-4
+Ørsted
+OSIRIS REx;OSIRIS-REx;Origins, Spectral Interpretation, Resource Identification, Security-Regolith Explorer
+OSO 1
+OSO 3
+OSO 4
+OSO 5
+OSO 6
+OSO 7
+OSO 8
+P78-1;P78 1
+PACE;Pre-ACE;Plankton, Aerosol, Cloud, Ocean Ecosystem
+Pan-STARRS;Pan STARRS;Panoramic Survey Telescope & Rapid Response System
+PARASOL;Polarisation Et Anisotropie Des RÃƒÂ©flectances Au Sommet De l'AtmosphÃƒÂ¨re, couplÃƒÂ©es Avec Un Satellite d'Observation Emportant Un Lidar
+Parker Solar Probe
+PATH;Precipitation and All-weather Temperature and Humidity
+PAZ
+PCW;Polar Communications and Weather
+PCW 2;PCW-2;Polar Communications and Weather - 2
+PCW-1;PCW 1;Polar Communications and Weather - 1
+Perseverance Rover
+Perseverance Rover / Ingenuity Helicopter
+PeruSat
+PeruSat 1;PeruSat-1
+PhiSat 1;PhiSat-1
+Phobos 1
+PHOBOS 2;Phobos 2
+PHOENIX;Phoenix
+Picard
+Pioneer 06
+Pioneer 07
+Pioneer 10;PIONEER 10
+Pioneer 11
+Pioneer 2
+Pioneer 3
+Pioneer 4
+Pioneer 5
+Pioneer 8
+Pioneer 9
+Pioneer II
+Pioneer III
+Pioneer IV
+Pioneer IX
+Pioneer P-31;Pioneer P 31
+Pioneer P-3;Pioneer P 3
+Pioneer P-30;Pioneer P 30
+Pioneer V
+Pioneer Venus;PIONEER VENUS
+Pioneer Venus 1
+Pioneer Venus 2
+Pioneer VI
+Pioneer VII
+Pioneer VIII
+Pioneer E;Pioneer-E
+Planck
+Planetscope
+PLATiNO
+Pléiades
+Pléiades-1A
+Pléiades-Neo
+Pléiades-Neo 3;Pléiades Neo 3
+Pléiades-Neo 4;Pléiades Neo 4
+Pléiades-Neo D;Pléiades Neo D
+Pléiades-1B
+Pléiades-Neo C;Pléiades Neo C
+POES;Polar Operational Environmental Satellites
+Polarlight;Polarimeter Light
+PREFIRE;Polar Radiant Energy in the Far-InfraRed Experiment;Polar Radiant Energy in the Far InfraRed Experiment
+PRISMA;PRecursore IperSpettrale Della Missione Applicativa
+PROBA;Project for On Board Autonomy;Project for On-Board Autonomy
+PROBA-V;PROBA V
+PROBA-1;PROBA 1
+PROBA-2;PROBA 2
+PROCYON;PRoximate Object Close flYby with Optical Navigation
+Prognoz 2
+Prognoz 6
+Prognoz 7
+Prognoz 9
+Proton 1
+Proton 2
+Psyche;Asteroid Mission
+PUNCH;Polarimeter to UNify the Corona and Heliosphere
+QuickBird
+QuikSCAT;Quick Scatterometer Mission
+RadarSat
+RadarSat-1;RadarSat 1
+RADARSAT 2;RADARSAT-2;RadarSat-2
+VAP;RBSP;Radiation Belt Storm Probes/Van Allen Probes
+Radsat
+Ranger
+Ranger 1;Ranger I
+Ranger 2;Ranger II
+Ranger 3;Ranger III
+Ranger 4;Ranger IV
+Ranger 5;Ranger V
+Ranger 6;Ranger VI
+Ranger 7;Ranger VII
+Ranger 8;Ranger VIII
+Ranger 9;Ranger IX
+RapidEye
+RASAT;Remote Sensing Satellite;RASAT Remote Sensing Satellite
+RCM;RadarSat Constellation Mission
+RCM-1;RCM 1;RADARSAT CONSTELLATION MISSION-1
+RCM 2;RCM-2;RADARSAT CONSTELLATION MISSION-2
+RCM 3;RCM-3;RADARSAT CONSTELLATION MISSION-3
+ResourceSat;Satellite for Earth Resources
+RESOURCESAT-2A;ResourceSat-2A;RESOURCESAT 2A;Resource Satellite-2A
+RESOURCESAT-3SA;RESOURCESAT 3SA;ResourceSat-3SA;Resourcesat Sampler-3SA
+ResourceSat-1;ResourceSat 1
+ResourceSat-2;RESOURCESAT-2;RESOURCESAT 2;Resource Satellite-2
+RESOURCESAT-3;RESOURCESAT 3;ResourceSat-3;Resource Satellite-3
+ResourceSat-3A;RESOURCESAT 3A;RESOURCESAT-3A;Resource Satellite-3A
+ResourceSat-3S;RESOURCESAT-3S;RESOURCESAT 3S;Resourcesat Sampler-3S
+Resurs-O1-1;Resurs O1 1
+Resurs-O1 2;Resurs-O1-2
+Resurs-O1-4;Resurs O1 4
+Resurs-P;Resurs P
+Resurs-P N4;Resurs P N4;Environmental Satellite Resurs P N4;Environmental Satellite Resurs-P N4
+Resurs-P1
+Resurs-P2;Resurs P2
+Resurs-P4;Resurs P4
+Resurs-PM N2;Resurs PM N2;Environmental Satellite Resurs PM N2;Environmental Satellite Resurs-PM N2
+Resurs-DK
+Resurs-O1;Resurs O1;Resurs Operational 1;Resurs Operational - 1
+Resurs-O1-3;Resurs O1 3
+Resurs-P N1;Resurs P N1;Environmental Satellite Resurs P N1;Environmental Satellite Resurs-P N1
+Resurs-P N5;Resurs P N5;Environmental Satellite Resurs-P N5;Environmental Satellite Resurs P N5
+Resurs-P3;Resurs P3
+Resurs-P5
+Resurs-PM N1;Resurs PM N1;Environmental Satellite Resurs-PM N1;Environmental Satellite Resurs PM N1
+Resurs-PM N3;Resurs PM N3;Environmental Satellite Resurs-PM N3;Environmental Satellite Resurs PM N3
+RHESSI;Reuven Ramaty High Energy Solar Spectroscope Imager;Reuven Ramaty High Energy Solar Spectroscopic Imager
+RISAT;RISAT-2;RISAT 2;RISAT-1A;RISAT-1B;Radar Imaging Satellite
+RISAT-1;RISAT 1;Radar Imaging Satellite -1
+RISAT-2B;Radar Imaging Satellite - 2B
+RISAT-2BR1;RISAT 2BR1;Radar Imaging Satellite - 2BR-1
+RO
+ROI
+Roman Space Telescope
+ROSAT;Roentgen Satellite
+ROSE L;ROSE-L;Copernicus Observation System for Europe in L-band
+duplicate
+Rosetta / Philae
+duplicate
+RXTE;Rossi X-ray Timing Explorer
+SAC;Satélite De Aplicaciones Cientificas
+SAC A;SAC-A
+SAC E/SABIA MAR A;SAC-E/SABIA-MAR A
+SAC-E/SABIA-MAR B;SAC E/SABIA MAR B
+SAC B;SAC-B
+SAC C;SAC-C
+SAC D
+SAC E/SABIA MAR 2;SAC-E/SABIA_MAR-2;SAC-E/SABIA_MAR-1;SAC E/SABIA_MAR 1;Misión Satelital Argentina Brasileña Para Información Del Ambiente Marino
+SAGE-III;SAGE III;Stratospheric Aerosol and Gas Experiment
+SAGE-III-on-ISS;SAGE III on ISS;Stratospheric Aerosol and Gas Experiment III/International Space Station;Stratospheric Aerosol and Gas Experiment -III/International Space Station
+SAKIGAKE;Sakigake
+Salyut-4;Salyut 4
+SAMPEX;Solar Anomalous and Magnetospheric Particle Explorer;Solar Anomalous and Magnetospherice Particle Explorer
+SAOCOM;SAtélite Argentino De Observación COn Microondas
+SAOCOM 1A
+SAOCOM 2B;SAOCOM-2B
+SAOCOM 1B;SAOCOM-1B
+SAOCOM 2A;SAOCOM-2A
+SARAL;Satellite with ARgos and ALtiKa
+SARE-2A;SARE 2A;SARE 2A (S4);SARE 2A (S2);SARE 2A (S1);SARE-2A (S2);SARE-2A (S3);SARE-2A (S1);SARE-2A (S4);SARE 2A (S3)
+SAS 2;Small Astronomy Satellite 2
+SAS 3;Small Astronomy Satellite 3
+Saturn Occultation of 28 Sagittarius 1989
+Saturn Ring Plane Crossing 1995
+Saturn Small Satellite Astrometry
+SBG Constellation Pathfinder;Surface Biology and Geology Constellation Pathfinder
+SBG TIR;SBG-TIR;Surface Biology and Geology Thermal Infrared Free Flyer
+SBG VSWIR;SBG-VSWIR;Surface Biology and Geology Visible and Short Wave Infrared Free Flyer;Surface Biology and Geology Visible and Short-Wave Infrared Free Flyer
+SCA
+SCATSAT-1;ScatSat-1;SCATSAT 1
+SCD;Satélite De Coleta De Dados
+SCD 1;Data Collecting Satellite 1
+SCD 2;SCD-2;Data Collecting Satellite 2
+Scientific Balloons
+SCISAT 1;SCISAT-1;SCISAT-I/ACE
+SCISAT/ACE;Science Satellite / Atmospheric Chemistry Experiment
+SCLP;Snow and Cold Land Processes
+SDO;Solar Dynamics Observatory
+SEAC4RS;Studies of Emissions and Atmospheric Composition, Clouds and Climate Coupling by Regional Surveys
+SeaSat
+SEISS;Space Environment In Situ Suite
+SEM;SEM (POES);SEM (GOES);Space Environment Monitor
+Sentinel 1
+Sentinel 1 A;Sentinel 1A
+Sentinel 1 B;Sentinel 1B
+Sentinel 1 C;Sentinel 1C
+Sentinel 1 D;Sentinel 1D
+Sentinel 2
+Sentinel 2 A;Sentinel 2A
+Sentinel 2 B;Sentinel 2B
+Sentinel 2 C;Sentinel 2C
+Sentinel 2 D;Sentinel 2D
+Sentinel 3
+Sentinel 3 A;Sentinel 3A
+Sentinel 3 B;Sentinel 3B
+Sentinel 3 C;Sentinel 3C
+Sentinel 3 D;Sentinel 3D
+Sentinel 4 A;Sentinel 4A
+Sentinel 4 B;Sentinel 4B
+Sentinel 5 A;Sentinel 5A
+Sentinel 5 B;Sentinel 5B
+Sentinel 5 C;Sentinel 5C
+Sentinel 5 P;Sentinel 5P
+Sentinel 6
+Sentinel 6 A;Sentinel 6A
+Sentinel 6 B;Sentinel 6B
+Sentinel 6 Michael Freilich
+SEOSAR/Paz;SatÃƒÂ©lite EspaÃƒÂ±ol De ObservaciÃƒÂ³n SAR
+SEOSat/Ingenio;Spanish Earth Observation Satellite
+SES;Société Européenne Des Satellites;Space Environment Suite, Improved SEM
+SES 14;SES-14
+SET;Space Environment Testbeds
+Shin’e 2
+Shin’en
+SRTM;Shuttle Radar Topography Mission
+Shuttle Mir;Shuttle-Mir
+SICH-1;SICH 1
+SICH-1M
+SICH-2;SICH 2
+SICH-2-30;SICH 2 30
+SIGNE 3;Gamma D2B and Sneg-3
+SIRIUS-17;SIRIUS 17;Scientific International Research in Unique Terrestrial Station 17
+SIRIUS-19;SIRIUS 19;Scientific International Research in Unique Terrestrial Station 19
+SIRTF / Spitzer Space Telescope;Space Infrared Telescope Facility
+SJ 9B;SJ-9B;Shijian 9B
+SJ-9;SJ 9;Shijian 9
+SJ 9A;SJ-9A;Shijian 9A
+Skylab
+Skylab 2
+Skylab 3
+Skylab 4
+SkySat;Sky Satellite
+SkySat 11;SkySat-11
+SkySat 12
+SkySat 13;SkySat-13
+SkySat 14;SkySat-14
+SkySat 16
+SkySat 17
+SkySat 19;SkySat-19
+SkySat 2
+SkySat 20
+SkySat 21;SkySat-21
+SkySat 6;SkySat-6
+SkySat 7;SkySat-7
+SkySat 8
+SkySat 9;SkySat-9
+SkySat 1
+SkySat 10
+SkySat 15;SkySat-15
+SkySat 18
+SkySat 4
+SkySat 5
+SkySat C1
+Small Satellites
+SMAP;Soil Moisture Active Passive;Soil Moisture Active-Passive
+SMART 1;SMART-1
+SMM;Solar Maximum Mission
+SMOS;Soil Moisture and Ocean Salinity
+SMS;Synchronous Meteorological Satellite
+SMS-1;SMS 1
+SMS-2
+SNPP;Suomi National Polar-orbiting Partnership
+SOFIA
+SOHO;SOLAR AND HELIOSPHERIC OBSERVATORY;Solar and Heliospheric Observatory
+Solar Orbiter;Solar Orbiter Collaboration
+Solar Orbiter Collaboration
+Solar-A;Solar A
+Solrad 10
+Solrad 11A/B
+SORCE;Solar Radiation and Climate Experiment
+Sounding Rockets
+Soyuz 5S
+Soyuz 8S
+Space Shuttle
+Space Station
+STS-9;STS-41A;Spacelab 1
+STS-51F;Spacelab 2
+SpaceX 1
+SpaceX 10
+SpaceX 11
+SpaceX 12
+SpaceX 13
+SpaceX 14
+SpaceX 15
+SpaceX 16
+SpaceX 18
+SpaceX 2
+SpaceX 21
+SpaceX 3
+SpaceX 4
+SpaceX 5
+SpaceX 6
+SpaceX 8
+SpaceX 9
+Spartan 1
+SPHEREx;Spectro-Photometer for the History of the Universe and Ices Explorer
+Spirit
+Spirit and Opportunity;Mars Exploration Rovers
+Spitzer;Spitzer Space Telescope
+Spitzer Space Telescope
+SPOT;Satellite Pour l_x0092_Observation De La Terre
+SPOT-1
+SPOT-5;SPOT 5
+SPOT-2;SPOT 2
+SPOT-3
+SPOT-4
+SPOT-6;SPOT 6
+SPOT-7
+SPOT-FO;SPOT FO;Satellite Pour lÃ‚â€™Observation De La Terre Follow on;Satellite Pour l_x0092_Observation De La Terre - Follow-on
+SRG;Spectr-Roentgen-Gamma
+SROSS;Stretched Rohini Satellite Series
+SSOT;Sistema Satellital Para Observation De La Tierra
+SSTL S1 1;SSTL-S1 1;Surrey Satellite Technology Ltd - S1 1
+SSTL S1 2;Surrey Satellite Technology Ltd - S1 2
+SSTL S1 3;SSTL-S1 3;Surrey Satellite Technology Ltd - S1 3
+SSTL S1 4;Surrey Satellite Technology Ltd - S1 4
+STARDUST;Stardust
+Stardust NExT;Stardust-NExT
+STARLETTE;Satellite De Taille Adaptée Avec Réflecteurs Laser Pour Les Etudes De La Terre
+Stella
+STEREO;Solar-TErrestrial RElations Observatory;Solar Terrestrial Relations Observatory
+STEREO A;STEREO-A
+STEREO-B;STEREO B
+STP S26;STP-S26;Space Test Program S26
+STPSat;Space Test Program Satellite
+STPSat-1;STPSat 1
+STPSat-3
+STPSat-2;STPSat 2
+STR;Star Tracker Set
+StriX
+STS-101
+STS-102;STS 102
+STS-103;STS 103
+STS-105
+STS-106;STS 106
+STS-107;STS 107
+STS-109
+STS-111;STS 111
+STS-113
+STS-115;STS 115
+STS-116;STS 116
+STS-118
+STS-119;STS 119
+STS-120
+STS-123
+STS-124
+STS-127;STS 127
+STS-131
+STS-132
+STS-135;STS 135
+STS-29;STS 29
+STS-3;STS 3
+STS-30;STS 30
+STS-31
+STS-33
+STS-34;STS 34
+STS-4;STS 4
+STS-41B
+STS-41D;STS 41D
+STS-41G
+STS-43
+STS-46
+STS-49;STS 49
+STS-50;STS 50
+STS-51;STS 51
+STS-51B;STS 51B
+STS-51D;STS 51D
+STS-51F
+STS-53;STS 53
+STS-54;STS 54
+STS-59;STS 59
+STS-60;STS 60
+STS-61;STS 61
+STS-61A;STS 61A
+STS-62
+STS-63
+STS-64;STS 64
+STS-66;STS 66
+STS-67
+STS-69
+STS-71;STS 71
+STS-74;STS 74
+STS-75;STS 75
+STS-79
+STS-8;STS 8
+STS-80;STS 80
+STS-81
+STS-83;STS 83
+STS-86;STS 86
+STS-87;STS 87
+STS-88;STS 88
+STS-89;STS 89
+STS-90
+STS-92;STS 92
+STS-94;STS 94
+STS-95;STS 95
+STS-99;STS 99
+STS-1;STS 1
+STS-100;STS 100
+STS-104;STS 104
+STS-108
+STS-110;STS 110
+STS-112;STS 112
+STS-114
+STS-117;STS 117
+STS-121
+STS-122
+STS-125;STS 125
+STS-126
+STS-128;STS 128
+STS-129;STS 129
+STS-130
+STS-133;STS 133
+STS-134;STS 134
+STS-2
+STS-27
+STS-28;STS 28
+STS-32;STS 32
+STS-35
+STS-36;STS 36
+STS-37;STS 37
+STS-38;STS 38
+STS-39;STS 39
+STS-41;STS 41
+STS-41C
+STS-44
+STS-45
+STS-48;STS 48
+STS-5
+STS-51A;STS 51A
+STS-51C;STS 51C
+STS-51G;STS 51G
+STS-51I;STS 51I
+STS-51J
+STS-56
+STS-61B
+STS-68;STS 68
+STS-7;STS 7
+STS-70
+STS-72;STS 72
+STS-73;STS 73
+STS-76
+STS-77;STS 77
+STS-78;STS 78
+STS-82
+STS-84;STS 84
+STS-85
+STS-91
+STS-96
+STS-97
+STS-98
+STSat;Science and Technology Satellite
+STSat-1;STSat 1
+STSat 2;STSat-2
+STSat 2C;STSat-2C
+STSAT 3;STSat-3;STSAT-3;Science & Technology SATellite-3
+SUISEI;Suisei
+SumbandilaSat;South African Small Satellite ZA-002
+Suomi NPP;Suomi National Polar-orbiting Partnership
+SuperView
+SuperView-1;SuperView 1
+SuperView-2;SuperView 2
+SuperView-3;SuperView 3
+SuperView-4
+Surveyor
+Surveyor 1;Surveyor i;Surveyor I
+Surveyor 2;Surveyor ii;Surveyor II
+Surveyor 3;Surveyor iii;Surveyor III
+Surveyor 4;Surveyor iv;Surveyor IV
+Surveyor 5;Surveyor v;Surveyor V
+Surveyor 6;Surveyor vi;Surveyor VI
+Surveyor 7;Surveyor vii;Surveyor VII
+Surveyor Model 1
+Surveyor Model 2
+Surveyor Model SD 1;Surveyor Model SD-1
+Suzaku;Astro-E2
+SVOM;Space Variable Objects Monitor
+Swarm;Earth's Magnetic Field and Environment Explorers;The Earth's Magnetic Field and Environment Explorers
+Swarm B;SWARM-B
+Swarm C;SWARM-C
+Swarm A;SWARM-A
+SWAS;Submillimeter Wave Astronomy Satellite
+SWFO;Space Weather Follow On;Space Weather Follow-On
+SWFO L1;SWFO-L1;Space Weather Follow-On - Lagrange 1
+Swift;Neil Gehrels Swift Observatory
+SWOT;Surface Water Ocean Topography;Surface Water and Ocean Topography
+TacSat;Tactical Satellite
+TacSat 2;TacSat-2
+TanDEM-L;TanDEM L;Tandem-L
+TanDEM-X;TanDEM X;TerraSAR-X Add-on for Digital Elevation Measurements
+TANSAT;TanSat;The Global Carbon Dioxide Observation Satellite;Scientific Exploratory Satellite for Atmospheric CO2
+TARANIS
+TD 1A;TD-1A
+TDRS;Tracking and Data Relay Satellites
+TEMPO;Tropospheric Emissions: Monitoring of Pollution
+Tenma
+Terra
+TerraSAR
+TerraSAR X;TerraSAR-X
+TESS;Transiting ExoPlanet Survey Satellite;Transiting Exoplanet Survey Satellite
+TGRS;TriG GNSS Radio Occultation System;TriG GNSS Radio-occultation System
+TH-1A
+TH-1C;TH 1C
+TH-1;TH 1;Tian Hui 1;Tian Hui - 1
+TH-1B
+THEMIS;Time History of Events and Macroscale Interactions during Substorms
+THEMIS and ARTEMIS
+THEMIS-A;THEMIS A
+THEMIS-D;THEMIS D
+THEMIS-E
+THEOS;Thailand Earth Observation System
+THEOS 2 Small;THEOS-2 Small
+THEOS 2 Small Satellite;THEOS-2 Small Satellite;Thailand Earth Observation System 2: Small Satellite
+THEOS 1;THEOS-1
+THEOS-2 Main;THEOS 2 Main
+THEOS-2 Main VHR Satellite;THEOS 2 Main VHR Satellite;Thailand Earth Observation System 2: Main VHR Satellite
+TIMED;Thermosphere, Ionosphere, Mesosphere Energetics and Dynamics;Thermosphere, Ionosphere, Mesosphere Energetics and Dynamics Mission
+TIROS;Television and Infra-Red Observation Satellite;Television and Infra Red Observation Satellite
+TIROS 10;TIROS-10
+TIROS 2;TIROS-2
+TIROS 3;TIROS-3
+TIROS 8;TIROS-8
+TIROS 9
+TIROS 1
+TIROS 4;TIROS-4
+TIROS 5;TIROS-5
+TIROS 6;TIROS-6
+TIROS 7;TIROS-7
+TIROS N;TIROS-N
+TOMS-EP;TOMS EP;TOMS Earth Probe;Total Ozone Mapping Spectrometer - Earth Probe
+TOPEX-Poseidon;TOPEX Poseidon;Topography Experiment + Poseidon
+TOPEX/Poseidon
+TopSat;Tactical Operational Satellite
+TOS;TIROS Operational System
+TRACE;Transition Region and Coronal Explorer
+TRISHA;TRISHNA;Thermal infraRed Imaging Satellite for High-resolution Natural Resource Assessment
+TRMM;Tropical Rainfall Measuring Mission
+TROPICS;Time-Resolved Observations of Precipitation Structure and Storm Intensity with a Constellation of Smallsats
+TROPICS-02;TROPICS 02
+TROPICS-03;TROPICS 03
+TROPICS 04;TROPICS-04
+TROPICS 06;TROPICS-06
+TROPICS 07;TROPICS-07
+TROPICS Pathfinder;Time Resolved Observations of Precipitation Structure and Storm Intensity with a Constellation of Smallsats Pathfinder;Time-Resolved Observations of Precipitation Structure and Storm Intensity with a Constellation of Smallsats Pathfinder
+TROPICS-01;TROPICS 01
+TROPICS 05;TROPICS-05
+TRUTHS;Traceable Radiometry Underpinning Terrestrial- and Helio- Studies
+TSIS-1-on-ISS;TSIS 1 on ISS;International Space Station/Total and Spectral Solar Irradiance Sensor
+TSIS 2;TSIS-2;Total and Spectral Solar Irradiance Sensor 2
+UARS;Upper Atmosphere Research Satellite;Upper Atmosphere Radiation Satellite
+Uhuru
+UK-DMC 1;UK-DMC;UK DMC 1
+UK DMC 2;UK-DMC-2
+UK-DMC;UK DMC;UK Contribution to the Disaster Monitoring Constellation
+Ulysses;ULYSSES
+VAP;Van Allen Probes
+VaPER
+VDES Test Mission;VHF Data Exchange System Test Mission
+Vega 1;VEGA 1
+Vega 2;VEGA 2
+Vela 5A
+Vela 5B
+Vela 6A/B
+VENµS;Vegetation and Environment Monitoring on a New Micro-Satellite
+Venera 2
+Venera 3
+Venera 4
+Venera 5
+Venera 6
+Venera 7
+Venera 8
+Venera 9
+Venera 10
+Venera 11
+Venera 12
+Venera 13
+Venera 14
+Venera 15
+Venera 16
+Venera, 2MV-1 No. 3
+Venera, 2MV-1 No. 4;Venera, 2MV 1 No. 4
+Venera, 2MV-2 No. 1
+Akatsuki;Planet-C;VENUS CLIMATE ORBITER
+VEX;VENUS EXPRESS;Venus Express
+VERITAS;Venus Emissivity, Radio Science, InSAR, Topography & Spectroscopy
+Vigil-L5;Vigil L5
+Viking;VIKING
+Viking 1
+Viking 2
+Viper;Volatiles Investigating Polar Exploration Rover
+VLA FIRST;VLA-FIRST;Faint Images of the Radio Sky at Twenty-cm;Faint Images of the Radio Sky at Twenty Cm
+VNREDSat;VNREDSat-1;Vietnam Natural Resources, Environment and Disaster-monitoring Satellite;Vietnam Natural Resources, Environment and Disaster Monitoring Satellite
+Voyager;VOYAGER
+Voyager 1
+Voyager 2
+VRSS;Venezuelan Remote Sensing Satellite
+VRSS-1;VRSS 1
+VRSS-2;VRSS 2
+WASS;Wide Area Augmentation System
+WFIRST;Wide Field Infrared Survey Telescope;Wide-Field Infrared Survey Telescope
+WFS;WildFireSat
+WIND;Wind
+WIRE;Wide-Field Infrared Explorer;Wide Field Infrared Explorer
+WISE;Wide-Field Infrared Survey Explorer
+WMAP;Wilkinson Microwave Anisotropy Probe
+WorldView
+WV-1;WorldView 1;WorldView-1
+WV-2;WorldView 3;WorldView-3
+WV-3;WorldView-2;WorldView 2
+WV-4;WorldView-4;WorldView 4
+X-Sat;X Sat
+XL-Calibur;XL Calibur;a Balloon Borne X-ray Telescope
+XMM Newton;XMM-Newton;X-ray Multi-Mirror Mission Observatory - Newton
+XMM OM;XMM-OM;X-ray Multi-Mirror;X Ray Multi Mirror
+XOVWM;Extended Ocean Vector Winds Mission
+XPNAV-1;XPNAV 1;X-ray Pulsar Navigation
+XQC;X-ray Quantum Calorimeter
+XRISM;X-Ray Imaging Spectroscopy Mission
+Yinghuo-1;Yinghuo 1
+ZACube-1;ZACube 1;TshepisoSat
+ZACube-2
+Zond;Kosmos 21
+Venera;Zond 1;Kosmos 96;Kosmos 27;Kosmos 359;Kosmos 167;Kosmos 482;Heavy Satellite
+Zond 2
+Zond 3
+Zond 4
+Zond 5
+Zond 6
+Zond 7
+Zond 8
+Zond M
+Zond 3MV 1A No. 4A;Zond, 3MV-1A No. 4A
+Zond 7K L1 No. 13L;Zond, 7K-L1 No. 13L
+Zond 7K L1 No. 4L;Zond, 7K-L1 No. 4L
+Zond 7K-L1 No. 5L;Zond, 7K L1 No. 5L
+Zond 7K L1 No. 7L;Zond, 7K-L1 No. 7L
+ZY 1 02D;ZY-1-02D;Zi Yuan 1-2D;Zi Yuan 1 Number 2 Optical Mission of China
+ZY 3;ZY-3;Zi Yuan 3;Zi Yuan - 3
+ZY 3 01;ZY-3-01;Zi Yuan - 3-01;Zi Yuan 3 Number 1
+ZY 3 03;ZY-3-03;Zi Yuan - 3-03;Zi Yuan 3 Number 3
+ZY 1 2;ZY-1-2;Zi Yuan 1-2;Zi Yuan 1 2
+ZY 1 02C;ZY-1-2C;Zi Yuan 1-2
+ZY 1 2D;Zi Yuan 1-2D
+ZY 3 02;ZY-3-02;Zi Yuan - 3-02;Zi Yuan 3 Number 2
