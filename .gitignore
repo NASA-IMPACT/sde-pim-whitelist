@@ -1,3 +1,6 @@
+# Raw upstream response cache (reproducibility snapshots, not source of truth)
+data/raw/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

@@ -1,12 +1,12 @@
 1 Micron Camera;1-MICRON CAMERA
 120 Color Circular Variable Filter Photometer;120-COLOR CIRCULAR-VARIABLE-FILTER PHOTOMETER
-1D Particles Probe
+1D Particles Probe;1DP
 2 Channel Photometer
 2 Micron Camera
-2B Technologies Nitric Oxide Monitor
-2B Technologies Nitrogen Dioxide Converter
-2B Technologies Ozone Monitor
-2D Cloud Probe
+2B Technologies Nitric Oxide Monitor;2B Technologies NO Monitor
+2B Technologies Nitrogen Dioxide Converter;2B Technologies NO2 Converter
+2B Technologies Ozone Monitor;2B Technologies
+2D Cloud Probe;2DC
 2D Stereo Particle Probe;2D-STEREO PARTICLE PROBE
 2MASS Camera North;2MASS CAMERA - NORTH;TWO MICRON ALL SKY SURVEY CAMERA - NORTH
 2MASS Camera South;2MASS CAMERA - SOUTH;TWO MICRON ALL SKY SURVEY CAMERA - SOUTH
@@ -14,17 +14,17 @@
 3-D Plasma and Energetic Particle Investigation;3 D Plasma and Energetic Particle Investigation
 3D Electron Distribution Function
 3D Ion Distribution
-3D Plasma Analyzer
+3D Plasma Analyzer;3DA
 3D Imager;3D-IMAGER
 3D Winds Lidar;3D-Winds Lidar;Lidar of 3D-Winds;Lidar of 3D Winds
 3MI;Multi Viewing Multi Channel Multi Polarisation Imager;Multi-viewing Multi-channel Multi-polarisation Imager
-NCAR NOxyO3;4 Channel Chemiluminescence Instrument for NO, NO2, NOy, and Ozone Developed by NCAR;4-channel Chemiluminescence Instrument for NO, NO2, NOy, and Ozone Developed by NCAR
+NCAR NOxyO3;4 Channel Chemiluminescence Instrument for NO, NO2, NOy, and Ozone Developed by NCAR;4-channel Chemiluminescence Instrument for NO, NO2, NOy, and Ozone Developed by NCAR;4-Channel CL;NOxyO3
 512 Channel Magnetograph;512-channel Magnetograph
 8 Color Photometric System
 A-DCS;A DCS;Advanced Data Collection System
 A2 Photonic WISe;2 Photonic WISe Snow Liquid Water Content Sensor;2 Photonic WISe - Snow Liquid Water Content Sensor
 MISR;Multi-Angle Imaging SpectroRadiometer;Multi-angle Imaging SpectroRadiometer;Multi-angle Imaging Spectro-Radiometer
-MISR Aa;Charge Coupled Device-based Pushbroom Aft Viewing Camera A;Charge Coupled Device Based Pushbroom Aft Viewing Camera A;Charge Coupled Device-based Pushbroom Fore Viewing Camera A;Charge Coupled Device Based Pushbroom Fore Viewing Camera A
+MISR Aa;Charge Coupled Device-based Pushbroom Aft Viewing Camera A;Charge Coupled Device Based Pushbroom Aft Viewing Camera A;Charge Coupled Device-based Pushbroom Fore Viewing Camera A;Charge Coupled Device Based Pushbroom Fore Viewing Camera A;AA;AF
 AAS;Atomic Absorption Spectrophotometry
 AATS14;Ames 14 Channel Airborne Tracking Sunphotometer;Ames 14-Channel Airborne Tracking Sunphotometer
 AATSR;Advanced Along-Track Scanning Radiometer;Advanced Along Track Scanning Radiometer
@@ -64,7 +64,7 @@ ADG;Acoustic Depth Gauge
 ADMIRARI;ADvanced MIcrowave RAdiometer for Rain Identification
 ADRAD;Texas Aggie Doppler Radar
 ADS;Automated DNA Sequencer
-ASAS;ADV. SOLID STATE ARRAY SPECTRORADIOMETER;ADV. SOLID-STATE ARRAY SPECTRORADIOMETER
+ASAS;ADV. SOLID STATE ARRAY SPECTRORADIOMETER;ADV. SOLID-STATE ARRAY SPECTRORADIOMETER;Advanced Solid-state Array Spectroradiometer
 AE-E/BUV;AE-E Backscatter Ultraviolet Spectrometer;AE E Backscatter Ultraviolet Spectrometer;AE-E (Atmospheric Explorer-E) Backscatter UV Spectrometer (BUV)
 AEISS HR;AEISS-HR;Advanced Electronic Image Scanning System High Resolution;Advanced Electronic Image Scanning System - High Resolution
 AEISS;Advanced Electronic Image Scanning System
@@ -120,7 +120,7 @@ AIMMS 30;AIMMS-30;Aventech AIMMS-30 Airborne Wind Sensor;Aventech AIMMS 30 Airbo
 AIMMS;Aircraft-Integrated Meteorological Measurement System;Aircraft Integrated Meteorological Measurement System
 AIMR;Airborne Imaging Microwave Radiometer
 AIP;Advanced Ionospheric Probe
-AIS;AIR ION;AIR-ION;AIR ION SPECTROMETER;AIR-ION SPECTROMETER
+AIS;AIR ION;AIR-ION;AIR ION SPECTROMETER;AIR-ION SPECTROMETER;Arizona Imager Spectrograph
 AIRGrav;Sander/LDEO Airborne Inertially Referenced Gravimeter
 AIRMISR;Airborne Multi Angle Imaging SpectroRadiometer;Airborne Multi-angle Imaging SpectroRadiometer
 AIRMSPI;Airborne Multiangle SpectroPolarimetric Imager
@@ -154,7 +154,7 @@ ALT (SEASAT 1);SEASAT 1 Radar Altimeter
 ALT (TOPEX);TOPEX Radar Altimeter
 ALTIKA Altimeter
 Altimeters
-ALTIUS;Atmospheric Limb Tracker for Investigation of the Upcoming Stratosphere
+ALTIUS;Atmospheric Limb Tracker for Investigation of the Upcoming Stratosphere;Atmospheric Limb Tracker for the Investigation of the Upcoming Stratosphere
 Amateur Photography
 Amateur Spectrographs
 AMVIS;AMATEUR VISUAL OBSERVATIONS
@@ -188,24 +188,24 @@ AMSR2;Advanced Microwave Scanning Radiometer 2;Advanced Microwave Scanning Radio
 AMSR;Advanced Microwave Scanning Radiometer
 AMSU-A;AMSU A;Advanced Microwave Sounding Unit-A;Advanced Microwave Sounding Unit - A
 AMSU-B;AMSU B;Advanced Microwave Sounding Unit-B;Advanced Microwave Sounding Unit - B
-MISR An;Charge Coupled Device-based Pushbroom Nadir Viewing Camera A;Charge Coupled Device Based Pushbroom Nadir Viewing Camera A
+MISR An;Charge Coupled Device-based Pushbroom Nadir Viewing Camera A;Charge Coupled Device Based Pushbroom Nadir Viewing Camera A;AN
 ASPERA-3;ANALYZER OF SPACE PLASMA AND ENERGETIC ATOMS;Analyzer of Space Plasma and Energetic Atoms
 Aneroid Pressure Sensor;Barometric Pressure Sensors
 AOCI;Airborne Ocean Color Imager
 AOLFL;Airborne Oceanographic Lidar Fluorosensor
 AOPOD;Atmosphere Occultation and Precision Orbit Determination
-AP;AURORAL PHOTOMETER
+AP;AURORAL PHOTOMETER;AURORAL PHOTOMETER (SNOE)
 APMS;Ames Particle Measurement System
 APOGEE AP8
 Apollo 14 Cold Cathode Ion Gauge Experiment
 Apollo 15 Cold Cathode Ion Gauge Experiment
-Second Generation Airborne Precipitation Radar
-Third Generation Airborne Precipitation Radar
-APS;APS GLORY;Air Pressure Sensor;Aerosol Polarimetry Sensor;AEROSOL Polarimetry SENSOR;Aerodynamic Particle Sizer
+Second Generation Airborne Precipitation Radar;APR-2
+Third Generation Airborne Precipitation Radar;APR-3
+APS;APS GLORY;Air Pressure Sensor;Aerosol Polarimetry Sensor;AEROSOL Polarimetry SENSOR;Aerodynamic Particle Sizer;Wing Tip Air Particulate Sampler
 APT Nimbus-1;APT Nimbus 1;Automatic Picture Transmission System on Nimbus 1;Automatic Picture Transmission System on Nimbus-1
 APT Nimbus 2;APT Nimbus-2;Automatic Picture Transmission System on Nimbus-2;Automatic Picture Transmission System on Nimbus 2
 APT;Automatic Picture Transmission
-APU;Autonomous Parsivel Unit
+APU;Autonomous Parsivel Unit;Autonomous Parsivel Unit (APU)
 Aquarius Radiometer;AQUARIUS_RADIOMETER
 Aquarius_Scatterometer;Aquarius Scatterometer
 ARECIBO 2380 MHz Radar Receiver
@@ -218,7 +218,7 @@ ARL-M Gamma Ray Spectrometer;ARL-M Gamma-ray Spectrometer
 ARMA-MP;ARMA MP;Radio Occultation Instrument for Meteor MP;Radio Occultation Instrument for Meteor-MP
 ARMAR;Airborne Rain Mapping Radar
 ARP;Acoustic Recording Package
-ASAR;Advanced Synthetic Aperture Radar
+ASAR;Advanced Synthetic Aperture Radar;Advanced Synthetic Aperature Radar
 ASAS;Advanced Solid-state Array Spectroradiometer;Advanced Solid State Array Spectroradiometer
 ASC;All-Sky Camera;All Sky Camera;Advanced Stellar Compass
 ASCAT;Advanced Scatterometer
@@ -235,14 +235,14 @@ ATHA ASI;THEMIS Ground Athabasca All Sky Imager
 ATHA GMAG;THEMIS GBO Athabasca Fluxgate Magnetometer
 ATHOS;Airborne Tropospheric Hydroxides Sensor
 ATLAS;Advanced Topographic Laser Altimeter System;Airborne Tunable Laser Absorption Spectrometer
-ATLID;Atmospheric Lidar
+ATLID;Atmospheric Lidar;ATLID (Atmospheric Lidar)
 ATM;Airborne Topographic Mapper
 ATMOS;Atmospheric Trace Molecule Spectroscopy
 ASE;ATMOSPHERIC STRUCTURE EXPERIMENT
 ASI;ATMOSPHERIC STRUCTURE INSTRUMENT
 ASI/MET;ATMOSPHERIC STRUCTURE INSTRUMENT / METEOROLOGY PACKAGE
 ATMS;Advanced Technology Microwave Sounder
-ATOVS;ADVANCED TIROS-N OPERATIONAL VERTICAL SOUNDER;ADVANCED TIROS N OPERATIONAL VERTICAL SOUNDER
+ATOVS;ADVANCED TIROS-N OPERATIONAL VERTICAL SOUNDER;ADVANCED TIROS N OPERATIONAL VERTICAL SOUNDER;ADVANCED TIROS-N OPERATIONAL VERTICAL SOUNDER (ATOVS)
 ATSR 2;ATSR-2;Along-Track Scanning Radiometer 2;Along-Track Scanning Radiometer - 2
 ATSR;Along-Track Scanning Radiometer;Along Track Scanning Radiometer and Microwave Sounder
 Auroral Spectrograph
@@ -259,7 +259,7 @@ AVIRIS-NG;Airborne Visible Infrared Imaging Spectrometer Next Generation;Airborn
 AVIRIS;Airborne Visible InfraRed Imaging Spectrometer
 AVNIR 2;AVNIR-2;Advanced Visible and Near-Infrared Radiometer - 2;Advanced Visible and Near-Infrared Radiometer Type 2
 AVNIR;Advanced Visible and Near-Infrared Radiometer;Advanced Visible and Near Infrared Radiometer
-AVOCET;Atmospheric Vertical Observations of CO2 in the Earth's Troposphere
+AVOCET;Atmospheric Vertical Observations of CO2 in the Earth's Troposphere;LI-6252 Differential Mid-Infrared Absorption of CO2 Sensor Manufactured by LI-COR Biosciences
 AVS;Amplitude Time Spectrum Analyser;Amplitude-time Spectrum Analyser
 AWAS;Advanced Whole Air Sampler
 AWFI-2;AWFI 2;Advanced Wide Field Imager 2;Advanced Wide Field Imager - 2
@@ -276,7 +276,7 @@ PRAM;Adaptive Processing of Wave Information
 Addis Ababa Ground Magnetic Field Instrument
 IAGA:AAE Magnetometer
 Aerodyne CAPS;Aerodyne Cavity Attenuated Phase Shift Spectrometers;Aerodyne Cavity Attenuated Phase-Shift Spectrometers
-Aerodyne Mini TILDAS;Aerodyne Mini-TILDAS;Aerodyne Mini Tunable Infrared Laser Direct Absorption Spectroscopy;Aerodyne Mini-Tunable Infrared Laser Direct Absorption Spectroscopy
+Aerodyne Mini TILDAS;Aerodyne Mini-TILDAS;Aerodyne Mini Tunable Infrared Laser Direct Absorption Spectroscopy;Aerodyne Mini-Tunable Infrared Laser Direct Absorption Spectroscopy;Aerodyne Mini-Tunable Infrared Laser Direct Absorption Spectroscopy (TILDAS)
 Aerolaser AL5002;Aerolaser AL5002 CO Monitor
 Aeroqual Portable Air Quality Monitor;Aeroqual Series 500 Portable Air Quality Monitor
 Agincourt Ground Magnetic Field Instrument
@@ -320,7 +320,7 @@ Attu Magnetometer
 AKR;Auroral Kilometric Radiation
 Auroral UV Emission Line Measurements
 AutoGNI;Automatic Giant Nuclei Impactor
-MISR Ba;Charge Coupled Device Based Pushbroom Aft Viewing Camera B;Charge Coupled Device-based Pushbroom Aft Viewing Camera B
+MISR Ba;Charge Coupled Device Based Pushbroom Aft Viewing Camera B;Charge Coupled Device-based Pushbroom Aft Viewing Camera B;BA
 BARREL 1A Optical Photometer
 BARREL 1B Optical Photometer
 BARREL 1C Optical Photometer
@@ -474,7 +474,7 @@ BBR;Broad Band Radiometer;Broad-Band Radiometer
 BBSS;Balloon-Borne Sounding System;Balloon Borne Sounding System
 BCS;Bragg Crystal Spectrometer
 BECKMAN DK2A Ratio Recording Spectroreflectometer
-MISR Bf;Charge Coupled Device Based Pushbroom Fore Viewing Camera B;Charge Coupled Device-based Pushbroom Fore Viewing Camera B
+MISR Bf;Charge Coupled Device Based Pushbroom Fore Viewing Camera B;Charge Coupled Device-based Pushbroom Fore Viewing Camera B;BF
 BGIS-2000;Ball Global Imaging System 2000
 BGM-3;Bell BGM-3 Gravimeter;Bell BGM 3 Gravimeter
 BGO;Bismuth Germanate Scintillator
@@ -540,7 +540,7 @@ C-SAR;C Band Synthetic Aperture Radar;C-Band Synthetic Aperture Radar
 C-SCAT;C SCAT;C-Band Scatterometer;C Band Scatterometer
 C-STAR;C STAR;Conically-Scanning Two-look Airborne Radiometer;Conically Scanning Two Look Airborne Radiometer
 C-TAG;C TAG;Comprehensive Thermal Desorption Aerosol Gas Chromatograph
-MISR Ca;Charge Coupled Device Based Pushbroom Aft Viewing Camera C;Charge Coupled Device-based Pushbroom Aft Viewing Camera C
+MISR Ca;Charge Coupled Device Based Pushbroom Aft Viewing Camera C;Charge Coupled Device-based Pushbroom Aft Viewing Camera C;CA
 CAFE;NASA Compact Airborne Formaldehyde Experiment
 CAFS;CCD-based Actinic Flux Spectroradiometer;CCD Based Actinic Flux Spectroradiometer
 CALIOP;Cloud-Aerosol Lidar with Orthogonal Polarization;Cloud-Aerosol Lidar with Orthogonal Polarisation
@@ -560,7 +560,7 @@ CANOPUS BARS;CANOPUS Baristatic Auroral Radar System
 CANOPUS MARI;CANOPUS Magnetometer and Riometer Array
 CANOPUS MPA;CANOPUS Meridian Photometer Array;CANOPUS Meridian Scanning Photometer Array
 CAPAC;Cloud and Aerosol Particle Characterization
-CAPI;Cloud and Aerosol Polarization Imager
+CAPI;Cloud and Aerosol Polarization Imager;Multiple-band Cloud and Aerosol Polarization Imager
 CAPS NO2 Analyzer;Cavity Attenuated Phase Shift Nitrogen Dioxide Analyzer
 CAPS PMex Monitor;Cavity Attenuated Phase Shift Spectroscopy PMex Monitor
 CAPS;Cloud, Aerosol, Precipitation Spectrometer
@@ -594,7 +594,7 @@ CC Glory;Cloud Camera on GLORY
 CC;Cloud Camera
 CCD Imager
 CCD Linear Array
-CCD;Charge Coupled Device Camera
+CCD;Charge Coupled Device Camera;Charge-Coupled Device
 CCN;CCN Counter;Cloud Condensation Nuclei Counter
 CCNV GMAG;THEMIS Ground EPO Carson City Fluxgate Magnetometer
 CCOR;Compact CORonagraph
@@ -621,18 +621,18 @@ CERES;Clouds and the Earth's Radiant Energy System
 Ceria;CERIA Camera
 CERTO/TBB;Coherent Electromagnetic Radio Tomography / Triband Beacon Transmitter
 CERTO;Coherent Electromagnetic Radio Tomography
-MISR Cf;Charge Coupled Device Based Pushbroom Fore Viewing Camera C;Charge Coupled Device-based Pushbroom Fore Viewing Camera C
+MISR Cf;Charge Coupled Device Based Pushbroom Fore Viewing Camera C;Charge Coupled Device-based Pushbroom Fore Viewing Camera C;CF
 CFA;COLOR FILTER ARRAY
 CFDC;Continuous Flow Diffusion Chamber
 CFDT1;Cartesian Full-Disk Telescope Number 1;CFDT1 Cartesian Full Disk Telescope Number 1;CFDT1 Cartesian Full-Disk Telescope Number 1
 CFDT2 Cartesian Full-Disk Telescope Number 2;CFDT2 Cartesian Full Disk Telescope Number 2
 CFIM+F3KB
 CFIM+T2KA
-CG4;CG-4 PYRGEOMETER;CG 4 PYRGEOMETER
+CG4;CG-4 PYRGEOMETER;CG 4 PYRGEOMETER;CG-4 PYRGEOMETER (CG4)
 CHAMP Positions;CHAMP Ephemeris
 CHAMP Fluxgate Magnetometer
 CHAMP-BLACKJACK;CHAMP BLACKJACK
-CPI;Charged Particle Instrument;CHARGED PARTICLE INSTRUMENT
+CPI;Charged Particle Instrument;CHARGED PARTICLE INSTRUMENT;Cloud Particle Imager
 CHBG ASI;THEMIS Ground Chibougamau All Sky Imager
 CHBG GMAG;THEMIS GBO Chibougamau Fluxgate Magnetometer
 CL;CHEMILUMINESCENCE
@@ -721,7 +721,7 @@ COSPIN/HET;High Energy Telescope
 COSPIN/HFT;High Flux Telescope
 COSPIN/KEL;Kiel Electron Telescope
 COSPIN/LET;Low Energy Telescope
-COSPIN;Cosmic and Solar Particle Investigation
+COSPIN;Cosmic and Solar Particle Investigation;Cosmic and Solar Particle Investigation (Ulysses)
 COSSIR;Conical Scanning Sub Mm Wave Imaging Radiometer;Conical Scanning Sub-mm Wave Imaging Radiometer
 COSTEP;Suprathermal & Energetic Particle Analyzer;Comprehensive Suprathermal and Energetic Particle Analyzer;Comprehensive Suprathermal and Energetic Particle Instrument
 Coulometers
@@ -736,14 +736,14 @@ CPI G;CPI-G;Comprehensive Plasma Investigation Geotail;Comprehensive Plasma Inve
 CPI;Cloud Particle Imager;Comprehensive Plasma Investigation
 CPL;Cloud Physics Lidar
 CPLEE;Charged Particle Lunar Environment Experiment
-CPME;Charged Particle Measurement Experiment;Charged Particle Measurements Experiment
+CPME;Charged Particle Measurement Experiment;Charged Particle Measurements Experiment;Charged Particle Measurement Experiment (IMP-8)
 CPR;Continuous Plankton Recorder;Cloud Profiling Radar for CloudSat;Cloud Profiling Radar for Earth-CARE;Cloud Profiling Radar for Earth CARE
 CPSPD;Cloud Particle Spectrometer with Polarized Detection
 CRAO Five Channel Photopolarimeter;CRAO FIVE-CHANNEL PHOTOPOLARIMETER;Crimean Astrophysical Observatory (CrAO)
 CRDS;Cavity Ring Down Spectroscopy;Cavity Ring-Down Spectroscopy
 CRIMSS;Cross Track Infrared and Advanced Technology Microwave Sounders;Cross-track Infrared and Advanced Technology Microwave Sounders
 CRIS;CrIS;Cross-track Infrared Sounder;Cosmic Ray Isotope Spectrometer
-CRNC;Cosmic Ray Nuclear Composition Experiment
+CRNC;Cosmic Ray Nuclear Composition Experiment;Cosmic Ray Nuclear Composition Experiment (IMP-8)
 Cross Dispersed Echelle Spectrometer;CROSS-DISPERSED ECHELLE SPECTROMETER
 CRRES Ephemeris;CRRES Spacecraft Position
 CRS;Cloud Radar System
@@ -832,9 +832,9 @@ Composition Analyzer
 Conductivity Sensors
 Coral Harbour Magnetometer
 Corers
-Correlation Spectrometer at 2.3 um
-Correlation Spectrometer at 2.4 um
-Correlation Spectrometer at 4.7 um
+Correlation Spectrometer at 2.3 um;2.3um Radiometer
+Correlation Spectrometer at 2.4 um;2.4um Radiometer
+Correlation Spectrometer at 4.7 um;4.7um Radiometer
 Cosmic Ray Environment Dosimetery and Charging Experiment
 Cosmic Ray Nuclear Composition
 Cosmic Ray Particles
@@ -843,8 +843,8 @@ Curiosity Ephemeris;Mars Science Laboratory, MSL, Positions
 Current/Wind Meters
 D Charged Particle Traps;D- Charged Particle Traps
 D Solar Plasma Detector;D- Solar Plasma Detector
-D3R;Dual Polarized Doppler Radar;Dual-frequency Dual-polarized Doppler Radar
-MISR Da;Charge Coupled Device Based Pushbroom Aft Viewing Camera D;Charge Coupled Device-based Pushbroom Aft Viewing Camera D
+D3R;Dual Polarized Doppler Radar;Dual-frequency Dual-polarized Doppler Radar;Dual-polarized Doppler Radar (D3R)
+MISR Da;Charge Coupled Device Based Pushbroom Aft Viewing Camera D;Charge Coupled Device-based Pushbroom Aft Viewing Camera D;DA
 DACOM;Differential Absorption CO, CH4, N2O Measurements
 DADS;DC-8 DATA ACQUISITION AND DISTRIBUTION SYSTEM;DC 8 DATA ACQUISITION AND DISTRIBUTION SYSTEM
 Daedalus Spectrometer
@@ -874,11 +874,11 @@ Descent Camera
 DISR;DESCENT IMAGER SPECTRAL RADIOMETER
 DESIS;DLR Earth Sensing Imaging Spectrometer
 Dewpoint Hydrometers
-MISR Df;Charge Coupled Device-based Pushbroom Fore Viewing Camera D;Charge Coupled Device Based Pushbroom Fore Viewing Camera D
+MISR Df;Charge Coupled Device-based Pushbroom Fore Viewing Camera D;Charge Coupled Device Based Pushbroom Fore Viewing Camera D;DF
 DFG;Digital Fluxgate Magnetometer
 DFGAS;Difference Frequency Generation Absorption Spectrometer Developed by University of Colorado, Boulder
 DIAL;Differential Absorption Lidar
-PLP;Planar Langmuir Probe;C/NOFS Planar Langmuir Probe
+PLP;Planar Langmuir Probe;C/NOFS Planar Langmuir Probe;DIDM
 DIDM;Digital Ion Drift Meter
 Dielectric Probe
 DMA;DIFFERENTIAL MOBILITY ANALYZERS
@@ -900,16 +900,16 @@ OLS;Operational Linescan System (OLS);DMSP/F15, Operational Linescan System, OLS
 SEM/SSI/ES-2;DMSP/F15, SEM Special Sensor Ionospheric Plasma Drift/Scintillation Monitor-2, SEM/SSI/ES-2;DMSP/F15, SEM Special Sensor Ionospheric Plasma Drift/Scintillation Monitor 2, SEM/SSI/ES 2
 SEM/SSJ4;DMSP/F15, SEM Special Sensor Precipitating Electron and Ion Spectrometer 4, SEM/SSJ4
 SESS/SSM-Boom;DMSP/F15, SESS Special Sensor Magnetometer-Boom, SESS/SSM-Boom;DMSP/F15, SESS Special Sensor Magnetometer Boom, SESS/SSM Boom
-SSM/I;Special Sensor Microwave Imager (SSM/I);DMSP/F15, Special Sensor Microwave Imager, SSM/I
-SSM/T;Special Sensor Microwave Temperature (SSM/T);DMSP/F15, Special Sensor Microwave Temperature Sounder, SSM/T
-SSM/T-2;Special Sensor Microwave Water Vapor Profiler (SSM/T-2);DMSP/F15, Special Sensor Microwave Water Vapor Profiler, SSM/T 2;DMSP/F15, Special Sensor Microwave Water Vapor Profiler, SSM/T-2
+SSM/I;Special Sensor Microwave Imager (SSM/I);DMSP/F15, Special Sensor Microwave Imager, SSM/I;Special Sensor Microwave/Imager
+SSM/T;Special Sensor Microwave Temperature (SSM/T);DMSP/F15, Special Sensor Microwave Temperature Sounder, SSM/T;Special Sensor Microwave/Temperature
+SSM/T-2;Special Sensor Microwave Water Vapor Profiler (SSM/T-2);DMSP/F15, Special Sensor Microwave Water Vapor Profiler, SSM/T 2;DMSP/F15, Special Sensor Microwave Water Vapor Profiler, SSM/T-2;Special Sensor Microwave/Temperature Profiler
 OLS;DMSP/F16, Operational Linescan System, OLS
 SESS/SSI/ES-3;DMSP/F16, SESS Special Sensor Ionospheric Plasma Drift/Scintillation Monitor 3, SESS/SSI/ES 3;DMSP/F16, SESS Special Sensor Ionospheric Plasma Drift/Scintillation Monitor-3, SESS/SSI/ES-3
 SESS/SSM-Boom;DMSP/F16, SESS Special Sensor Magnetometer-Boom, SESS/SSM-Boom;DMSP/F16, SESS Special Sensor Magnetometer Boom, SESS/SSM Boom
 SESS/SSJ5;DMSP/F16, SESS Special Sensor Precipitating Electron and Ion Spectrometer 5, SESS/SSJ5
 SESS/SSUSI;DMSP/F16, SESS Special Sensor Ultraviolet Limb Imager, SESS/SSUSI
 SESS/SSULI;DMSP/F16, SESS Special Sensor Ultraviolet Spectrographic Imager, SESS/SSULI
-SSMIS;DMSP/F16, Special Sensor Microwave Imager/Sounder, SSMIS
+SSMIS;DMSP/F16, Special Sensor Microwave Imager/Sounder, SSMIS;Special Sensor Microwave Imager/Sounder
 DMSP/F17, Operational Linescan System, OLS
 SESS/SSI/ES-3;DMSP/F17, SESS Special Sensor Ionospheric Plasma Drift/Scintillation Monitor 3, SESS/SSI/ES 3;DMSP/F17, SESS Special Sensor Ionospheric Plasma Drift/Scintillation Monitor-3, SESS/SSI/ES-3
 SESS/SSJ5;DMSP/F17, SESS Special Sensor Precipitating Electron and Ion Spectrometer 5, SESS/SSJ5
@@ -990,7 +990,7 @@ Dust Impact Mass Analyzer
 Dust Impact Plasma Detector
 Dust Particle Counter and Mass Analyzer
 Dust Particle Detector
-GRU/DUST;Cosmic Dust;Ulysses Cosmic Dust Experiment;Ulysses Dust Detector (GRU)/Dust Experiment (DUST)
+GRU/DUST;Cosmic Dust;Ulysses Cosmic Dust Experiment;Ulysses Dust Detector (GRU)/Dust Experiment (DUST);DUST
 DWP;Digital Wave Processor;Digital Wave Processing Experiment
 Dynamic Albedo of Neutrons
 Dynamic Science Experiment;DYNAMIC SCIENCE EXPERIMENT
@@ -1031,19 +1031,19 @@ ECT/MagEIS;ECT Magnetic Electron and Ion Spectrometer
 ECT/REPT;ECT Relativistic Electron Proton Telescope
 EDAX;Energy-Dispersive Analysis of X-Ray;Energy Dispersive Analysis of X Ray
 ECOR;EDDY CORRELATION DEVICES
-EDI;EDI-E;EDI E;MMS EDI;Electron Drift Instrument
+EDI;EDI-E;EDI E;MMS EDI;Electron Drift Instrument;Electron Drift Instrument (CLUSTER-II);Electron Drift Instrument (EQUATOR-S)
 EDOP;ER2-Doppler Radar;ER2 Doppler Radar
 EDXA;Energy Dispersive X-Ray Analyzer;Energy Dispersive X Ray Analyzer
-EECA;Electrostatic Energy Charge Analyzer;Electrostatic Energy-Charge Analyzer
-EFD;Electric Fields Detector
-EFI;Electric Field Instrument
+EECA;Electrostatic Energy Charge Analyzer;Electrostatic Energy-Charge Analyzer;Electrostatic Energy-Charge Analyzer (IMP-8)
+EFD;Electric Fields Detector;Electric Fields Detector (Geotail)
+EFI;Electric Field Instrument;Electrical Field Instrument
 EFLP;Electric Field and Langmuir Probe Experiment
-EFW;Electric Field and Waves
+EFW;Electric Field and Waves;Electric Field and Wave Experiment
 EGC;Electron Gas Chromatograph
 EGG;Electrostatic Gravity Gradiometer
 EGS;EUV Grating Spectrograph
 EHAD;ER 2 High Altitude Dropsonde;ER-2 High Altitude Dropsonde
-EIS;MMS EIS;EUV Imaging Spectrometer;Energetic Ion Spectrometer
+EIS;MMS EIS;EUV Imaging Spectrometer;Energetic Ion Spectrometer;EUV IMAGING SPRECTROMETER (HINODE)
 EIT;Extreme Ultraviolet Imaging Telescope
 EKAT ASI;THEMIS Ground Ekati All Sky Imager
 EKAT GMAG;THEMIS GBO Lac De Gras Fluxgate Magnetometer
@@ -1065,13 +1065,13 @@ Elfin;Electron Losses and Fields Investigation
 EMFISIS;Electric and Magnetic Field Instrument Suite and Integrated Science
 EMI;Environment Monitoring Instrument
 EMIS;ELECTROMAGNETIC INDUCTION SENSORS
-EMIT Imaging Spectrometer;Earth Surface Mineral Dust Source Investigation Imaging Spectrometer
+EMIT Imaging Spectrometer;Earth Surface Mineral Dust Source Investigation Imaging Spectrometer;Earth Surface Mineral Dust Source Investigation (EMIT) Imaging Spectrometer
 EMIT;Earth Surface Mineral Dust Source Investigation
 EMU;Environmental Monitor Unit
 EPPS;Energetic Particle and Plasma Spectrometer;ENERGETIC PARTICLE AND PLASMA SPECTROMETER
 EPAS;ENERGETIC PARTICLE ANISOTROPY SPECTROMETER;Energetic Particle Anisotropy Spectrometer
-EPAC;ENERGETIC PARTICLE COMPOSITION INSTRUMENT
-EPE;Energetic Particle Experiment;ENERGETIC PARTICLE EXPERIMENT
+EPAC;ENERGETIC PARTICLE COMPOSITION INSTRUMENT;Energetic Particles Composition Instrument (Ulysses)
+EPE;Energetic Particle Experiment;ENERGETIC PARTICLE EXPERIMENT;Energetic Particle Experiment (IMP-8)
 EPD;ENERGETIC PARTICLES DETECTOR
 EPI;ENERGETIC PARTICLES INVESTIGATION
 ENLS;Earth Network Lightning Sensor
@@ -1079,12 +1079,12 @@ EOC;Electro-Optical Camera;Electro Optical Camera
 EOS-C;EOS C;Earth Observation Satellite Camera;Earth Observation Satellite - Camera
 GAS;Greenhouse Gases Absorption Spectrometer;Greenhouse-gases Absorption Spectrometer;Ulysses Interstellar Neutral-Gas Experiment (GAS)
 EPAC;Energetic Particles Composition Instrument;Ulysses Interstellar Neutral-Gas Experiment
-EPACT;Energetic Particles Acceleration, Composition, Transport;Energetic Particles: Acceleration, Composition and Transport
+EPACT;Energetic Particles Acceleration, Composition, Transport;Energetic Particles: Acceleration, Composition and Transport;Energetic Particles: Acceleration, Composition and Transport (WIND)
 EPAM;Electron, Proton, and Alpha Monitor;Electron, Proton, and Alpha-particle Monitor;Electron, Proton, and Alpha-particle Monitor;Electron, Proton, and Alpha Particle Monitor
 EPD;Energetic Particle Detector
 EPT;Energetic Particle Telescope
 EPI;Energy Particle Analyzer;Energy Particle Instrument
-EPIC;European Photon Imaging Camera;Earth Polychromatic Imaging Camera;Energetic Particle and Ion Composition;Energetic Particle and Ion Composition Experiment
+EPIC;European Photon Imaging Camera;Earth Polychromatic Imaging Camera;Energetic Particle and Ion Composition;Energetic Particle and Ion Composition Experiment;Energetic Particle and Ion Composition (Geotail)
 EPM;Energetic Particle Monitor
 EPSONDE
 Equilibrators
@@ -1166,13 +1166,13 @@ EvM;Event Monitoring Camera
 Evans Solar Facility Spectroheliograph
 Extreme Solar Ultraviolet Monitor
 Eyrewell Ground Magnetic Field Instrument
-FAI;Fast Auroral Imager
+FAI;Fast Auroral Imager;FAI (Fast Auroral Imager) images the auroral emission in the near infrared (NIR) and visible (VIS) spectral range.
 Fan-Aspirated Radiation Shield;FAN ASPIRATED RADIATION SHIELD
 FAST Position;FAST Ephemeris
 FC;Faraday Cup;Faraday Cup
 FCAS II;Focused Cavity Aerosol Spectrometer II
 FCAS;Focused Cavity Aerosol Spectrometer
-FCDP;FAST CLOUD DROPLET PROBE
+FCDP;FAST CLOUD DROPLET PROBE;FAST CLOUD DROPLET PROBE (FCDP)
 FCI;Flexible Combined Imager
 FD12P Weather Sensor;Vaisala FD12P Weather Sensor
 FEEPS;MMS FEEPS;Fly's Eye Energetic Particle Sensor
@@ -1203,7 +1203,7 @@ Fluorescence Microscopy
 Fluorescence Spectroscopy
 Fluorometers
 Fluxgate Magnetometers
-MAG;Magnetometer;Magnetic Field Monitor;Measurement of Magnetic Fields;Triaxial Fluxgate Magnetometer;TRIAXIAL FLUXGATE MAGNETOMETER
+MAG;Magnetometer;Magnetic Field Monitor;Measurement of Magnetic Fields;Triaxial Fluxgate Magnetometer;TRIAXIAL FLUXGATE MAGNETOMETER;MGM;Magnetic Field Experiment
 FMCWR;Frequency Modulated Continuous Wave Radar
 FMPL-2;FMPL 2;Flexible Microwave Payload Version2
 Focal Plane Array
@@ -1231,7 +1231,7 @@ FSSP;Forward Scattering Spectrometer Probe
 FTIR Spectrometer;Fourier Transform Infrared Spectrometer
 FUV/SI;Far Ultraviolet Imager / Spectrographic Imager
 FUV/WIC;Far Ultraviolet Imager / Wideband Imaging Camera
-FUV;Far Ultraviolet Imager;The Far Ultra Violet Imaging Spectrograph
+FUV;Far Ultraviolet Imager;The Far Ultra Violet Imaging Spectrograph;Far Ultraviolet Imager (IMAGE)
 FVM;Fluxgate Vector Magnetometer
 FWS;Filter Wedge Spectrometer
 FYKN GMAG;THEMIS GBO Fort Yukon Fluxgate Magnetometer
@@ -1277,7 +1277,7 @@ GRS;GAMMA RAY SPECTROMETER / HIGH ENERGY NEUTRON DETECTOR
 GRS;GAMMA RAY/NEUTRON SPECTROMETER/HIGH ENERGY NEUTRON DETECTOR
 GAP;GPS Attitude and Positioning Experiment
 GARI;The GAGG Radiation Instruments
-GC-MS;GAS CHROMATOGRAPH MASS SPECTROMETER
+GC-MS;GAS CHROMATOGRAPH MASS SPECTROMETER;Gas Chromatograph/Mass Spectrometry
 GC;GAS CHROMATOGRAPHS
 Gas Correlation Filters
 Gas Instrument
@@ -1291,7 +1291,7 @@ GC EI TOF MS;GC-EI-TOF-MS;Gas Chromatography Electron Impact Time-of-flight Mass
 GC FID;GC-FID;Gas Chromatography Flame Ionization Detector;Gas Chromatography - Flame Ionization Detector
 GC MS;GC-MS;Gas Chromatograph/Mass Spectrometry
 GC TCD;GC-TCD;Gas Chromatography Thermal Conductivity Detector;Gas Chromatography - Thermal Conductivity Detector
-GCAS;Geostationary Coastal and Air Pollution Event Airborne Simulator
+GCAS;Geostationary Coastal and Air Pollution Event Airborne Simulator;Geostationary Coastal and Air Pollution Event (GEO-CAPE) Airborne Simulator
 GEDI LIDAR;Global Ecosystem Dynamics Investigation Lidar
 GEDI;Global Ecosystem Dynamics Investigation
 Geiger Tube Telescope
@@ -1306,7 +1306,7 @@ GERB;Geostationary Earth Radiation Budget
 Gerdien Conductivity Probe
 GF-4 Imager;GF 4 Imager;Imager of GaoFen-4;Imager of GaoFen 4
 GFC Radiometer;Gas Filter Correlated Radiometer
-GFE-3R Dosimeter;GFE 3R DOSIMETER;Radiation Dosimeter
+GFE-3R Dosimeter;GFE 3R DOSIMETER;Radiation Dosimeter;Radiation Dosimeter (SSJ*)
 GFO-RA;GFO RA;GEOSat Follow-On Radar Altimeter;GEOSat Follow On Radar Altimeter
 GGAK-E/DIR-E;GGAK E/DIR E;Solar X-ray Radiation Flux Sensor;Solar X Ray Radiation Flux Sensor
 GGAK E/FM E;GGAK-E/FM-E;GGAK E / Magnetometer Instrument;GGAK-E / Magnetometer Instrument
@@ -1338,13 +1338,13 @@ GLONASS Receivers
 GLORIA;Geological Long Range Inclined ASDIC;Geological Long-Range Inclined ASDIC
 GLS;Geolocating Light Logger System
 GM Tubes and a PN Junction Semiconductor / Energetic Particle Experiment;GM Tubes and a PN Junction Semicon Ductor / Energetic Particle Experiment
-GME;Goddard Medium Energy Experiment
+GME;Goddard Medium Energy Experiment;Goddard Medium Energy Experiment (IMP-8)
 GMI;GPM Microwave Imager;Greenhouse-gases Monitoring Instrument;Greenhouse Gases Monitoring Instrument;Global Precipitation Measurement Microwave Imager
 GNI;Giant Nuclei Impactor
 GNOS-2;GNOS 2;GNSS Radio Occultation Sounder 2;GNSS Radio Occultation Sounder - 2
 GNOS;GNSS Radio Occultation Sounder
 GNSS Receiver
-GNSS RO Receiver;GNSS-RO RECEIVER;Global Navigation Satellite System Radio Occultation
+GNSS RO Receiver;GNSS-RO RECEIVER;Global Navigation Satellite System Radio Occultation;Global Navigation Satellite System Radio Occultation (CLARREO)
 GNSS RO;GNSS-RO;Global Navigation Satellite System Radio Occultation;Global Navigation Satellite System - Radio Occultation
 GNSS;GNSS RECEIVERS;Global Navigation Satellite System
 GO Flo Bottles;GO-FLO BOTTLES
@@ -1377,14 +1377,14 @@ GOES 9 Position;GOES 9 Ephemeris
 GOES 9 Triaxial Fluxgate Magnetometer
 GOES I-M Imager;GOES I M IMAGER;GOES I M Imager
 GOES I-M Sounder;GOES I M SOUNDER
-GOES N P Imager;GOES N-P Imager
+GOES N P Imager;GOES N-P Imager;Geostationary Operational Environmental Satellite N-P Imager
 GOES N P Sounder;GOES N-P SOUNDER
 GOES S Ephemeris;GOES 17 Ephemeris;GOES 17 Positions
 GOES 10 Imager;GOES-10 Imager;Geostationary Operational Environmental Satellite 10-Imager;Geostationary Operational Environmental Satellite 10 Imager
 GOES 11 Imager;Geostationary Operational Environmental Satellite 11-Imager;Geostationary Operational Environmental Satellite 11 Imager
 GOES 12 Imager;GOES-12 Imager;Geostationary Operational Environmental Satellite 12-Imager;Geostationary Operational Environmental Satellite 12 Imager
 GOES 13 Imager
-GOES 14 Imager;GOES-14 Imager
+GOES 14 Imager;GOES-14 Imager;Geostationary Operational Environmental Satellite 14 Imager
 GOES 15 Imager;GOES-15 Imager;Geostationary Operational Environmental Satellite 15 Imager;Geostationary Operational Environmental Satellite 15-Imager
 GOES 16 Imager;GOES-16 Imager;Geostationary Operational Environmental Satellite 16-Imager;Geostationary Operational Environmental Satellite 16 Imager
 GOES 8 Imager;GOES-8 Imager
@@ -1411,7 +1411,7 @@ GPS Receivers
 GPS SONDE
 GPS/IMU;Global Positioning System/Inertial Measurement Unit
 GPS/MET;Global Positioning System / Meteorology
-GPS;GPS Receiver
+GPS;GPS Receiver;Global Positioning System
 GPSDR;GPS Demonstration Receiver
 GPSP;Global Positioning System Payload
 GR Penetrometer;GR- Penetrometer
@@ -1435,7 +1435,7 @@ Gravity Science Instrument
 GRB;HUS;Solar X Rays and Cosmic Gamma Ray Bursts;Solar X-Rays and Cosmic Gamma-Ray Bursts;Solar X-Ray/Cosmic Gamma-Ray Burst Experiment;Solar X Ray/Cosmic Gamma Ray Burst Experiment
 Green Coronagraph
 Grille;Grille Spectrometer
-Ground Water Level Gauges
+Ground Water Level Gauges;GWLG
 GRS;ST/1;Gamma-ray Spectrometer;Gamma-Ray Spectrometer;Gamma Ray Spectrometer;Gamma-ray Spectrometer
 GSA;Hyperspectral Imaging Equipment
 GSD;Germanium Semiconductor Detector
@@ -1475,7 +1475,7 @@ Geotail MGF;Geotail Magnetic Field Experiment
 Geotail PWI;Geotail Plasma Wave Investigation
 Geotail Position;Geotail Spacecraft Position
 Geoton 1;Geoton-1;Panchromatic and Multispectral Radiometer 1
-Geoton L1;Geoton-L1;Geoton-L1 (1);Panchromatic and Multispectral Radiometer - L1
+Geoton L1;Geoton-L1;Geoton-L1 (1);Panchromatic and Multispectral Radiometer - L1;Geoton-L1 (2)
 Giotto Positions
 Gjoa Haven Magnetometer
 Glenlea Ground Magnetic Field Instrument
@@ -1524,13 +1524,13 @@ HEEF;High-Energy Electron Fluxmeter;High Energy Electron Fluxmeter
 HEL1OS;High Energy L1 Orbiting X-ray Spectrometer;High Energy L1 Orbiting X Ray Spectrometer
 HELICON;Solar X-ray and Gamma-ray Scintillation Spectrometer;Solar X Ray and Gamma Ray Scintillation Spectrometer
 Heliographs
-HI-SCALE;HELIOSPHERIC INST-SPECTRA,COMPOSITION,ANISOTROPY AT LOW ENER;HELIOSPHERIC INST SPECTRA,COMPOSITION,ANISOTROPY AT LOW ENER;Heliosphere Instrument for Spectra, Composition and Anisotropy at Low Energies
+HI-SCALE;HELIOSPHERIC INST-SPECTRA,COMPOSITION,ANISOTROPY AT LOW ENER;HELIOSPHERIC INST SPECTRA,COMPOSITION,ANISOTROPY AT LOW ENER;Heliosphere Instrument for Spectra, Composition and Anisotropy at Low Energies;Heliosphere Instrument for Spectra, Composition, and Anisotropy and Low Energies
 HAD;HELIUM ABUNDANCE DETECTOR
 HAD;HELIUM ABUNDANCE INTERFEROMETER
-VHM;Helium Vector Magnetometer;HELIUM VECTOR MAGNETOMETER
-HENA;High-Energy Neutral Atom Imager;High-Energy Neutral-Atom Imager
+VHM;Helium Vector Magnetometer;HELIUM VECTOR MAGNETOMETER;Vector Helium Magnetometer (Ulysses)
+HENA;High-Energy Neutral Atom Imager;High-Energy Neutral-Atom Imager;High-Energy Neutral Atom Imager (IMAGE)
 HEP-e;HEP e;High Energy Electron Experiments;High-energy Electron Experiments
-HEP;High Energy Particles;High Energy Particles Experiment
+HEP;High Energy Particles;High Energy Particles Experiment;High Energy Particles (Geotail)
 HEPAD;High Energy Proton and Alpha Detector
 HEPD;High-Energy Proton Detector
 HESSI Imager
@@ -1579,13 +1579,13 @@ HRCC 2;HRCC-2;High Resolution CCD Camera 2;High-Resolution CCD Camera -2
 HRCC;High Resolution CCD Camera;High-Resolution CCD Camera
 HRCCD;High Resolution CCD Imager
 HRDI;High Resolution Doppler Imager;High-Resolution Doppler Imager
-HRG-1;HRG 1;High Resolution Geometrical Instrument
+HRG-1;HRG 1;High Resolution Geometrical Instrument;HRG-2
 HRG;Haute Résolution Géométrique
 HRIR Nimbus 1;High-Resolution Infrared Radiometer on Nimbus-1;High Resolution Infrared Radiometer on Nimbus 1
 HRIR Nimbus 2;HRIR Nimbus-2;High-Resolution Infrared Radiometer on Nimbus-2;High Resolution Infrared Radiometer on Nimbus 2
 HRIR Nimbus 3;High-Resolution Infrared Radiometer on Nimbus-3;High Resolution Infrared Radiometer on Nimbus 3
 HRIR;High-Resolution Infrared Radiometer;High Resolution Infrared Radiometer
-HRMX;High-Resolution Multi-Spectral;High Resolution Multi Spectral
+HRMX;High-Resolution Multi-Spectral;High Resolution Multi Spectral;High-Resolution Multispectral Radiometer
 HRPC-2;HRPC 2;High Resolution Panchromatic Camera 2;High-Resolution Panchromatic Camera - 2
 HRPC;High Resolution Panchromatic Camera;High-Resolution Panchromatic Camera
 HRR;High Resolution Radiometer
@@ -1598,7 +1598,7 @@ HRVIR;High Resolution Visible and Infrared;Haute RÃƒÂ©solution Dans Le Visib
 HRWS SAR;HRWS-SAR;High Resolution Wide Swath X-Band Digital Beamforming SAR;High Resolution Wide Swath X Band Digital Beamforming SAR
 HSB;Humidity Sounder for Brazil
 HSC;High Sensitivity Camera
-HSI;HSI 2;HSI-2;Hyper-Spectral Imager;Hyper Spectral Imager
+HSI;HSI 2;HSI-2;Hyper-Spectral Imager;Hyper Spectral Imager;Hyerspectral Imager;HYPERION;HYSI-T
 HSRL-2;HSRL 2
 HSRL;High Spectral Resolution Lidar
 HSRS;Hot Spot Recognition Sensor
@@ -1607,7 +1607,7 @@ HTDMA;Humidified Tandem Differential Mobility Analyzer
 Hubble Space Telescope
 Humidity Sensors
 Humidity Transducers
-HUPCRS;Harvard University Picarro Cavity Ring Down Spectrometer
+HUPCRS;Harvard University Picarro Cavity Ring Down Spectrometer;Harvard University Picarro Cavity Ring Down Spectrometer (HUPCRS)
 HASI;HUYGENS ATMOSPHERIC STRUCTURE INSTRUMENT
 HK;HUYGENS PROBE HOUSEKEEPING
 HVAS;High Volume Air Sampler
@@ -2275,7 +2275,7 @@ ICORDS;Improved Coherent Radar Depth Sounder
 ICP-AES;ICP AES;Inductively Coupled Plasma Atomic Emission Spectrometer
 ICP ES;ICP-ES;INDUCTIVELY COUPLED PLASMA EMISSION SPECTROSCOPY
 ICP-MS;ICP MS;Inductively Coupled Plasma Mass Spectrometer
-IDCS Nimbus 3;IDCS Nimbus-3;Image Dissector Camera System on Nimbus-3;Image Dissector Camera System on Nimbus 3
+IDCS Nimbus 3;IDCS Nimbus-3;Image Dissector Camera System on Nimbus-3;Image Dissector Camera System on Nimbus 3;IDCS Nimbus-4
 IDCS;Image Dissector Camera System
 IDM;Ion Drift Meter
 IES;Inverted Echo Sounders
@@ -2339,7 +2339,7 @@ IMU;INERTIAL MEASUREMENT UNIT
 Inclinometers
 ISR;INCOHERENT SCATTER RADAR
 Incubator
-IRIS;INFRARED INTERFEROMETER SPECTROMETER AND RADIOMETER
+IRIS;INFRARED INTERFEROMETER SPECTROMETER AND RADIOMETER;Infrared Interferometer Spectrometer;InfraRed Integrating Sphere
 Infrared Laser Spectroscopy
 Infrared Radiometers
 Infrared Spectrometer;INFRARED SPECTROMETER
@@ -2386,7 +2386,7 @@ IRMSS;Infrared Multispectral Scanner
 IRNSS;India's Regional Navigation Satellite System
 IRNSS P;India's Regional Navigation Satellite System Payload
 IRNSS Receivers
-CBERS/IRS;IRS (CBERS);Infrared System
+CBERS/IRS;IRS (CBERS);Infrared System;Infrared System (CBERS 3 and 4)
 IRS;Infrared Scanner;Infra Red Sounder;Infrared Radiometer/Spectrometer
 ISAMS;Improved Stratospheric and Mesospheric Sounder;Improved Stratospheric And Mesospheric Sounder
 ISEE;International Sun-Earth Explorer
@@ -2485,7 +2485,7 @@ KIAN ASI;THEMIS Ground Kiana All Sky Imager
 KIAN Gmag;THEMIS GBO Kiana Fluxgate Magnetometer
 KITT Peak Mosiac Camera
 KM Cosmic Ray Detector
-KMSS;Multispectral Imager System;High-resolution VIS/IR Radiometer
+KMSS;Multispectral Imager System;High-resolution VIS/IR Radiometer;Multispectral Imager (VIS) system
 Knollenburg Probe
 OGBD;KONUS;Gamma Ray Burst Detector;Gamma Ray Burst Investigation
 KOPRI Unit
@@ -2547,7 +2547,7 @@ L SAR;L-SAR;L-band Synthetic Aperture Radar;L Band Synthetic Aperture Radar
 La Ruca Site 1K Imager
 LA Atomic Hydrogen Detector;LA- Atomic Hydrogen Detector
 LA ICP MS;LA-ICP-MS;Laser Ablation Inductively Coupled Plasma Mass Spectrometer
-LAC;LAC Atmospheric Corrector;LEISA (Linear Etalon Imaging Spectral Array) Atmospheric Corrector (LAC);LEISA Atmospheric Corrector LEISA Atmospheric Corrector LEISA Atmospheric Corrector LEISA Atmospheric Corrector (LEISA = Linear Etalon Imaging Spectrometer Array
+LAC;LAC Atmospheric Corrector;LEISA (Linear Etalon Imaging Spectral Array) Atmospheric Corrector (LAC);LEISA Atmospheric Corrector LEISA Atmospheric Corrector LEISA Atmospheric Corrector LEISA Atmospheric Corrector (LEISA = Linear Etalon Imaging Spectrometer Array;LAC (Linear Etalon Imaging Spectrometer Array (LEISA) Atmospheric Corrector
 LACE;Lightweight Airborne Chromatograph Experiment
 LAD;Lyman Alpha Detector
 LADCP;Lowered Acoustic Doppler Current Profiler
@@ -2584,7 +2584,7 @@ LANL2002 Magnetospheric Plasma Analyzer
 LANL97A Energetic Spectrometer for Particles
 LAP-3000;LAP 3000;Vaisala LAP 3000
 LAPI;Low Altitude Plasma Instrument
-LASCO;LARGE ANGLE SPECTROMETRIC CORONAGRAPH
+LASCO;LARGE ANGLE SPECTROMETRIC CORONAGRAPH;Large Angle and Spectrometric COronagraph
 LCS;LARGE CASSEGRAIN SPECTROGRAPH
 LCS;LARGE CASSEGRAIN SPECTROMETER
 Fourier Transform Spectrometer (FTS);LARSON FOURIER TRANSFORM SPECTROMETER
@@ -2592,7 +2592,7 @@ Larson IHW Spectrograph
 LASCO;Large Angle Spectroscopic Coronagraph;Large Angle and Spectrometric Coronagraph;Large Angle and Spectrometric COronagraph
 LASE;Lidar Atmospheric Sensing Experiment
 Laser Hygrometers
-Laser Rangefinder
+Laser Rangefinder;Laser_RF
 Laser Reflector
 Laser Spectrometer
 Laser Tracking Reflector
@@ -2606,11 +2606,11 @@ LECP;Low Energy Charged Particles;Low-Energy Charged Particles
 LEE;Low-Energy Electrons;Low Energy Electrons
 LICA;LEICA;Low-Energy Ion Composition Analyzer;Low Energy Ion Composition Analyzer
 LEID;Low-Energy Ion Detector;Low Energy Ion Detector
-LENA;Low-Energy Neutral-Atom Imager;Low-Energy Neutral Atom Imager
+LENA;Low-Energy Neutral-Atom Imager;Low-Energy Neutral Atom Imager;Low-Energy Neutral Atom Imager (IMAGE)
 LEP-e;LEP e;Low Energy Particle Experiments Electron Analyzer;Low-energy Particle Experiments - Electron Analyzer
 LEP-i;LEP i;Low Energy Particle Experiments Ion Mass Analyzer;Low-energy Particle Experiments - Ion Mass Analyzer
-LEP;Low Energy Particles;Low Energy Particles Experiment
-LEPEDEA;Low Energy Proton and Electron Differential Energy Analyzer;Low-Energy Proton and Electron Differential Energy Analyzer
+LEP;Low Energy Particles;Low Energy Particles Experiment;Low Energy Particles (Geotail)
+LEPEDEA;Low Energy Proton and Electron Differential Energy Analyzer;Low-Energy Proton and Electron Differential Energy Analyzer;Low-Energy Proton and Electron Differential Energy Analyzer (IMP-8)
 LETITsIYA Camera;LETITsIYA-Camera;Multispectral System for UV, VIS and IR Ranges
 LFC;Large Format Camera
 LFEW;Low Frequency Electromagnetic Wave Detector;Low-Frequency Electromagnetic Wave Detector
@@ -2675,7 +2675,7 @@ LR;Laser Reflectors
 LRA;Laser Retroreflector Array
 LRGM;Lacoste Romberg Gravity Meter;Lacoste-Romberg Gravity Meter
 LRIR;Limb Radiance Inversion Radiometer
-LRR;GRACE LRR;Laser Retro-Reflector;Laser Retro Reflector
+LRR;GRACE LRR;Laser Retro-Reflector;Laser Retro Reflector;LRR CryoSat;LRR ERS
 LSTM;Land Surface Temperature Monitoring
 LT (SEASAT 1);SEASAT 1 Laser Tracking
 LEND;LUNAR EXPLORATION NEUTRON DETECTOR
@@ -2822,7 +2822,7 @@ MECA OM;MECA OPTICAL MICROSCOPE
 MECA TECP;MECA THERMAL AND ELECTRICAL CONDUCTIVITY PROBE
 MECA WCL;MECA WET CHEMISTRY LABORATORY
 MEIS;Multispectral Electro Optical Imaging Sensor;Multispectral Electro-optical Imaging Sensor
-MENA;Medium-Energy Neutral Atom Imager;Medium-Energy Neutral-Atom Imager
+MENA;Medium-Energy Neutral Atom Imager;Medium-Energy Neutral-Atom Imager;Medium-Energy Neutral Atom Imager (IMAGE)
 MEOSS;Monocular Electro-Optical Stereo Scanner;Monocular Electro Optical Stereo Scanner
 MEP-e;MEP e;Medium Energy Particle Experiments Electron Analyzer;Medium-energy Particle Experiments - Electron Analyzer
 MEP-i;Medium Energy Particle Experiments Ion Mass Analyzer;Medium-energy Particle Experiments - Ion Mass Analyzer
@@ -2845,12 +2845,12 @@ Meteor Counts Radar;METEOR COUNTS - RADAR
 Meteor Counts Visual;METEOR COUNTS - VISUAL
 METIS;Multi Element Telescope for Imaging and Spectroscopy
 MI;METimage;Meteorological Imager
-MFE-P;MFE P;Magnetic Fields Experiment
-MGF;MFE;MAG;Magnetic Field Experiment;Magnetic Field Instrument;Magnetic Field Experiment;Magnetic Field Measurement
+MFE-P;MFE P;Magnetic Fields Experiment;Magnetic Fields Experiment (Polar)
+MGF;MFE;MAG;Magnetic Field Experiment;Magnetic Field Instrument;Magnetic Field Experiment;Magnetic Field Measurement;MAM;Magnetic Field Experiment (Geotail)
 MFE;POLAR Magnetic Fields Experiment
-MFI;Magnetic Field Investigation;Interball 1 Tri Axial Fluxgate Magnetometer FGM I;Interball-1 Tri-axial Fluxgate Magnetometer FGM-I
+MFI;Magnetic Field Investigation;Interball 1 Tri Axial Fluxgate Magnetometer FGM I;Interball-1 Tri-axial Fluxgate Magnetometer FGM-I;Magnetic Field Investigation (WIND)
 MFR-7;MFR 7;Multifilter Rotating Shadowband Radiometer
-MFR/SSH;MULTICHANNEL FILTER RADIOMETERS/SPECIAL SENSOR H
+MFR/SSH;MULTICHANNEL FILTER RADIOMETERS/SPECIAL SENSOR H;MULTICHANNEL FILTER RADIOMETERS/SPECIAL SENSOR H (SSH)
 MFR;Multichannel Flux Radiometer
 MFRSR;Multifilter Rotating Shadowband Radiometer and Broadband Pyranometer
 MGS MAG/ER;Mars Global Surveyor Magnetometer
@@ -2966,7 +2966,7 @@ MOTH;MOTH Magneto Optical Filters at Two Heights
 MP 900B;MP-900B;TV Camera
 MPL;Micropulse Lidar
 TV;MR 900B;MR-900B;MR-2000M;MR 2000M;MR-2000M1;MR 2000M1;Television Camera
-MR;MWR;MWR (AWS);MW Radiometer;MICROWAVE RADIOMETER;Microwave Radiometer;Microwave Radiometer
+MR;MWR;MWR (AWS);MW Radiometer;MICROWAVE RADIOMETER;Microwave Radiometer;Microwave Radiometer;Microwave Water Radiometer
 MRI;Medium Resolution Imager
 MRIR NIMBUS-2;MRIR NIMBUS 2;Medium-Resolution Infrared Radiometer on NIMBUS-2;Medium Resolution Infrared Radiometer on NIMBUS 2
 MRIR NIMBUS-3;MRIR NIMBUS 3;Medium-Resolution Infrared Radiometer on NIMBUS-3;Medium Resolution Infrared Radiometer on NIMBUS 3
@@ -2976,7 +2976,7 @@ MRR;Micro Rain Radar
 MS;MSI;Multispectral Imager;Multispectral Radiometer
 MSBS;Multibeam Swath Bathymetry System
 MSBSP;Multi Spectral Band Sun Photometer;Multi-Spectral Band Sun Photometer
-MSC;Multi Spectral Camera;Multi-Spectral Camera;FireBIRD Multi-Spectral Camera;FireBIRD Multi Spectral Camera
+MSC;Multi Spectral Camera;Multi-Spectral Camera;FireBIRD Multi-Spectral Camera;FireBIRD Multi Spectral Camera;MS-THEOS;MULTI-SPECTRAL
 MSI;MULTI-SPECTRAL IMAGER;Multi-Spectral Imager;Multi-spectral Imager;Multi Spectral Imager;Multi Spectral Imager for Earth CARE;Multi-Spectral Imager for Earth-CARE;Multi-Spectral Imager for Sentinel-2;Multi Spectral Imager for Sentinel 2
 MSIR;Multispectral Imaging Radiometer
 MSIS;MSS_RS;Multispectral Imaging System;Multispectral Imaging System
@@ -2989,7 +2989,7 @@ MSSCC;Multi-color Spin Scan Cloud Camera;Multi Color Spin Scan Cloud Camera
 MST;MST RADAR;Mesosphere, Stratosphere and Troposphere Radar
 MSU 200;MSU-200;Multispectral High Resolution Electronic Scanner
 MSU-M;Multispectral VNIR Radiometer
-MSU-E;High-resolution Multi-spectral Pushbroom Imager
+MSU-E;High-resolution Multi-spectral Pushbroom Imager;Multichannel High Resolution Electronic Scanner
 MSU-EU;Multispectral VNIR Radiometer
 MSU GS/A;MSU-GS/A;Electro L Imager for Arctica;Electro-L Imager for Arctica
 MSU-GS;MSU GS;Electro-L Imager;Multispectral Scanning Imager-radiometer
@@ -3219,7 +3219,7 @@ Nicolet Nexus 670 FTIR Spectrometer
 NIRST;New Infra Red Scanner Technology
 Niskin Bottles
 NISTAR;NIST Advanced Radiometer;National Institute of Standards and Technology Advanced Radiometer
-NM Bare;Bare Neutron Monitor
+NM Bare;Bare Neutron Monitor;Bare neutron monitor (lead-free)
 NMASS II;Nuclei-Mode Aerosol Size Spectrometer II;Nuclei Mode Aerosol Size Spectrometer II
 NMLR;Nebraska Multiband Leaf Radiometer
 NMS;Neutral Mass and Velocity Spectrometer
@@ -3273,7 +3273,7 @@ IAGA:NAL Magnetometer
 IAGA:NYI Magnetometer
 Newport Ground Magnetic Field Instrument
 Niemegk Ground Magnetic Field Instrument
-Nimbus 4 Temperature Humidity Infrared Radiometer 11.5 um;Nimbus 4 Temperature-Humidity Infrared Radiometer - 11.5 Um
+Nimbus 4 Temperature Humidity Infrared Radiometer 11.5 um;Nimbus 4 Temperature-Humidity Infrared Radiometer - 11.5 Um;11.5um Radiometer
 Nordkapp Magnetometer
 IAGA:NOW Magnetometer
 IAGA:NPL Magnetometer
@@ -3323,7 +3323,7 @@ OM;Optical Monitor
 OMEGASONDE
 OMI;Ozone Monitoring Instrument
 OMNI Instrument
-OMPS Nadir;OMPS-Nadir;Ozone Mapping and Profiler Suite Nadir;Ozone Mapping and Profiler Suite - Nadir
+OMPS Nadir;OMPS-Nadir;Ozone Mapping and Profiler Suite Nadir;Ozone Mapping and Profiler Suite - Nadir;OMPS-N
 OMPS Limb;Ozone Mapping and Profiler Suite-limb
 OMS Limb;OMS-limb;Ozone Monitoring Suite Limb Scanning Unit;Ozone Monitoring Suite - Limb Scanning Unit
 OMS Nadir;OMS-nadir;Ozone Monitoring Suite Nadir Scanning Unit;Ozone Monitoring Suite - Nadir Scanning Unit
@@ -3354,7 +3354,7 @@ Osmometers
 OSS;Open Source Neutral Mass Spectrometer;Open-Source Neutral Mass Spectrometer
 OTD;Optical Transient Detector
 Otter Trawl
-UVS;Ultraviolet Spectrometer;ULTRAVIOLET SPECTROMETER
+UVS;Ultraviolet Spectrometer;ULTRAVIOLET SPECTROMETER;ULTRAVIOLET SPECTROMETER (SNOE)
 OVM;Overhauser Magnetometer;Overhauser Scalar Magnetometer
 Owen Tube
 OWI 430 DSP WIVIS;OWI-430 DSP-WIVIS;OWI-430 DSP-WIVIS Present Weather and Visibility Sensor;OWI 430 DSP WIVIS Present Weather and Visibility Sensor
@@ -3376,7 +3376,7 @@ Overhauser Effect Scalar Magnetometer
 Ozonometer-3;Ozonometer 3;Scanning Ozonometer
 Ozonometer;Ozonometer TM;Ozonometer-TM
 P&F Particle and Fields Package
-P-SAR;P SAR;P-band Synthetic Aperture Radar;P Band Synthetic Aperture Radar
+P-SAR;P SAR;P-band Synthetic Aperture Radar;P Band Synthetic Aperture Radar;P-band Synthetic Aperture Radar (P-SAR)
 Palmer Divide 0.5M CCD
 PALMS-NG;PALMS NG;Particle Analysis By Laser Mass Spectrometry Next Generation
 PALMS;Particle Analysis by Laser Mass Spectrometry
@@ -3387,7 +3387,7 @@ PALSAR;Phased-Array L-band Synthetic Aperture Radar;Phased Array Type L-band Syn
 PAMELA;Payload for AntiMatter Exploration and Light Nuclei Astrophysics;Payload for AntiMatter Exploration and Light-nuclei Astrophysics
 PAN Analyzer;PEROXYACETYL NITRATE ANALYZER
 PAN (IRS);Panchromatic Camera
-PAN;PanCam;Panchromatic Camera;Panchromatic Camera;Panchromatic Imager;Panchromatic Imager;Panchromatic Radiometer
+PAN;PanCam;Panchromatic Camera;Panchromatic Camera;Panchromatic Imager;Panchromatic Imager;Panchromatic Radiometer;IRS Panchromatic Camera
 PANMUX;PanMux Camera;Panchromatic and Multispectral Imager
 Panoramic Camera
 PAPA;Plasma Analyzer Package for Aditya
@@ -3399,9 +3399,9 @@ Particle Spectrometers
 Particulate Impact Analyzer
 PAS;Photoelectric Aerosol Sensor
 PASS;Payload Autonomous Star Sensor
-Passive Ionospheric Monitor
+Passive Ionospheric Monitor;Passive Ionospheric Monitor (SSI/P)
 PASTEC;Technology Demonstration Passenger
-PAZ-SAR;PAZ SAR;PAZ Synthetic Aperture Radar;PAZ - Synthetic Aperture Radar
+PAZ-SAR;PAZ SAR;PAZ Synthetic Aperture Radar;PAZ - Synthetic Aperture Radar;PAZ - Synthetic Aperture Radar (X-band)
 PCASP;Passive-Cavity Aerosol Spectrometer Probe;Passive Cavity Aerosol Spectrometer Probe
 PCD;Potential Control Device
 PEACE;Plasma Electron and Current Analyzer;Plasma Electron and Current Experiment
@@ -3452,7 +3452,7 @@ PIP;Precipitation Imaging Probe
 Pipe Strain Meter
 Piston Samplers
 Pitot-Static System;PITOT STATIC SYSTEM
-PIV;Partical Image Velocimetry
+PIV;Partical Image Velocimetry;Particle Image Velocimetry
 PIXIE;Polar Ionospheric X-ray Imaging Experiment;Polar Ionospheric X-Ray Imaging Experiment
 PLA;Panchromatic Linear Array
 Planetary Fourier Spectrometer
@@ -3462,13 +3462,13 @@ PEPE;PLASMA EXPERIMENT FOR PLANETARY EXPLORATION
 PLS;PLASMA SCIENCE EXPERIMENT
 Plasma Wave Analyzer
 PWE;PLASMA WAVE EXPERIMENT;Plasma Wave Experiment
-PWI;PWI P;PWI-P;Plasma Wave Instrument;PLASMA WAVE INSTRUMENT;Plasma Waves Investigation
+PWI;PWI P;PWI-P;Plasma Wave Instrument;PLASMA WAVE INSTRUMENT;Plasma Waves Investigation;Plasma Waves Investigation (Geotail);Plasma Waves Investigation (Polar)
 Plasma Wave Receiver
 Plastic;PLAsma and SupraThermal Ion and Composition;Plasma and Supra-Thermal Ion Composition Investigation
 PLM Solar Plasma Spectrometer
 PLS;Plasma Spectrometer
 PEPSSI;PLUTO ENERGETIC PARTICLE SPECTROMETER SCIENCE INVESTIGATION
-PMC;HRC;High Resolution Camera
+PMC;HRC;High Resolution Camera;HRC-CBERS-2B
 PMI;Photospheric Magnetic Field Imager
 PMR;Pressure Modulator Radiometer;Pressure Modulated Radiometer
 PMS 2D C Probe;PMS 2D-C PROBE;Particle Measuring Systems 2D C Probe;Particle Measuring Systems 2D-C Probe
@@ -3510,7 +3510,7 @@ PREMOS;Precision Monitoring of Solar Variability
 Pressure Jump Detector
 Pressure Transducers
 PRIMO I Photometer
-PRISM;Panchromatic Remote Sensing Instrument for Stereo Mapping;Panchromatic Remote-sensing Instrument for Stereo Mapping
+PRISM;Panchromatic Remote Sensing Instrument for Stereo Mapping;Panchromatic Remote-sensing Instrument for Stereo Mapping;Portable Remote Imaging Spectrometer
 PRM;Precipitation Measurement Radar
 PROBA CHRIS;PROBA.CHRIS;Project for On-Board Autonomy (PROBA) Compact High Resolution Imaging Spectrometer (CHRIS)
 Probes
@@ -3530,7 +3530,7 @@ PSP SWEAP;PSP Solar Wind Electrons Alphas and Protons, SWEAP, Instrument
 PSP Spacecraft Position;PSP Spacecraft Ephemeris Instrument
 PSP WISPR;PSP Wide Field Imager for Solar Probe, WISPR, Instrument;PSP Wide-field Imager for Solar Probe, WISPR, Instrument
 PSR;Polarimetric Scanning Radiometer
-PSS RS;Panchromatic Imaging System
+PSS RS;Panchromatic Imaging System;PSS
 Psychrometers
 PTGA;Propeller Type Generating Anemovane
 PTI;Photothermal Interferometer
@@ -3695,7 +3695,7 @@ Rear Hazard Avoidance Camera Left String B
 Rear Hazard Avoidance Camera Right String A
 Rear Hazard Avoidance Camera Right String B
 Red Coronagraph
-Reflected Solar Suite;Reflected Solar Instrument Suite
+Reflected Solar Suite;Reflected Solar Instrument Suite;Reflected Solar Instrument Suite (CLARREO)
 REIS;RapidEye Earth Imaging System
 RENU2;Rocket Experiment for Neutral Upwelling 2
 RENU2, Anelva Ion Gauge, IG2, Instrument
@@ -3771,7 +3771,7 @@ ROWS;Radar Ocean Wave Spectrometer
 ROZE;Rapid Ozone Experiment
 RP Plotnomer;RP Radiation Densitometer
 RPA;ORPA;Retarding Potential Analyzer
-RPI;Radio Plasma Imager;Radio Plasma Imaging
+RPI;Radio Plasma Imager;Radio Plasma Imaging;Radio Plasma Imager (IMAGE)
 RPS-1;RPS 1;X Ray Semi Conductor Spectrometer;X-ray Semi-conductor Spectrometer
 RPS;Relativistic Proton Spectrometer
 RPW;Radio and Plasma Waves
@@ -3790,7 +3790,7 @@ RT-2;Roentgen Telescope-2;Roentgen Telescope 2
 RT;Reversing Thermometer
 RTD;Resistance Temperature Detectors
 RTMM;Real Time Mission Monitor
-RTOVS;REVISED TIROS N OPERATIONAL VERTICAL SOUNDER;REVISED TIROS-N OPERATIONAL VERTICAL SOUNDER
+RTOVS;REVISED TIROS N OPERATIONAL VERTICAL SOUNDER;REVISED TIROS-N OPERATIONAL VERTICAL SOUNDER;REVISED TIROS-N OPERATIONAL VERTICAL SOUNDER (RTOVS)
 RV N Radiation Detector;RV-N Radiation Detector
 RV N Radiation Detector;RV-N- Radiation Detector
 RV NLS Radiation Detector;RV-NLS Radiation Detector
@@ -3863,7 +3863,7 @@ SAPHIR;Sondeur Atmospherique Du Profil dÃ‚â€™Humidite Intertropicale Par
 SAR-RCM;Synthetic Aperture Radar for RadarSat Constellation
 SAR-10;Synthetic Aperture Radar 10;Synthetic Aperture Radar -10
 SAR-2000;SAR 2000;Synthetic Aperture Radar 2000
-SAR;SAR S;SAR L;SAR-X;SAR-C;TDX-1;SAR C;SAR-L;SAR X;TDX 1;SAR-S;Synthetic Aperture Radar;Synthetic Aperture Radar, C-band;Synthetic Aperture Radar, C Band
+SAR;SAR S;SAR L;SAR-X;SAR-C;TDX-1;SAR C;SAR-L;SAR X;TDX 1;SAR-S;Synthetic Aperture Radar;Synthetic Aperture Radar, C-band;Synthetic Aperture Radar, C Band;Synthetic Aperture Radar (SAR)
 SAR-L (NISAR);SAR L for the NASA ISRO Synthetic Aperture Radar;SAR-L for the NASA-ISRO Synthetic Aperture Radar
 SAR-P;Synthetic Aperture Radar P Band;Synthetic Aperture Radar - P-band
 SAR-S (NISAR);SAR S (NISAR);SAR-S for the NASA-ISRO Synthetic Aperture Radar;SAR S for the NASA ISRO Synthetic Aperture Radar
@@ -3895,8 +3895,8 @@ SC2;SC1;SCATHA Engineering and Wave Experiment
 SC3;SCATHA High Energy Particle Spectrometer
 SC4;SCATHA Electron and Ion Beam Emission
 SCA;SCAT;GRACE SCA;Scatterometer;Star Camera Assembly;CFOSAT Scatterometer;Spatial Coordinate Apparatus
-SCAMS;Scanning Microwave Spectrometer
-SEM;SCANNING ELECTRON MICROSCOPES
+SCAMS;Scanning Microwave Spectrometer;NUCLEAR PRECESSION MAGNETOMETER
+SEM;SCANNING ELECTRON MICROSCOPES;Space Environment Monitor
 SCARAB;ScaRaB;Scanner for Radiation Budget;The Scanner for Radiation Budget
 SCATHA Ephemeris;SCATHA Positions
 Scatterometers;SCATTEROMETERS
@@ -3916,7 +3916,7 @@ SDSS Photometric Camera
 SDTA;Satellite Drag Tracking Apparatus
 SEA POL;SEA-POL;SEA Going POLarimetric Doppler Radar;SEA-going POLarimetric Doppler Radar
 SeaWinds;SEAWINDS;SeaWinds Scatterometer
-SEC;Solar Corona Experiment;SOLAR CORONA EXPERIMENT
+SEC;Solar Corona Experiment;SOLAR CORONA EXPERIMENT;Solar Corona Experiment (Ulysses)
 Secchi Disks
 SECCHI/COR-1;SECCHI / Coronagraph Imager 1
 SECCHI/COR-2;SECCHI / Coronagraph Imager 2
@@ -4001,14 +4001,14 @@ SIM RMCh Meteoroid Detector;SIM-RMCh Meteoroid Detector
 SIM;Spectral Irradiance Monitor
 SIMS;Secondary Ion Mass Spectrometers
 SQIID;SIMULTANEOUS QUAD INFRARED IMAGING DEVICE
-SIRIS;SINGLE BEAM VIS/IR INTEL SPECTRORADIOMTR
+SIRIS;SINGLE BEAM VIS/IR INTEL SPECTRORADIOMTR;Stratospheric Infrared Interferometer Spectrometer
 SIPS;Smart Instrument Points
 SIR-A;Shuttle Imaging Radar-A;Shuttle Imaging Radar A
 SIR-B;Shuttle Imaging Radar-B;Shuttle Imaging Radar B
 SIR-C;SIR C;Spaceborne Imaging Radar C;Spaceborne Imaging Radar-C
 SIRAL;SAR Interferometer Radar Altimeter;Synthetic Aperture Interferometric Radar Altimeter
 SIRIS;Stratospheric Infrared Interferometer Spectrometer
-SIRS-A;SIRS A;Satellite Infra-Red Spectrometer;Satellite Infra Red Spectrometer
+SIRS-A;SIRS A;Satellite Infra-Red Spectrometer;Satellite Infra Red Spectrometer;SIRS
 SIRS-B;SIRS B;Satellite Infra Red Spectrometer B;Satellite Infra-Red Spectrometer - B
 SIRS;Satellite Infrared Spectrometer
 SIS;Solar Isotope Spectrometer
@@ -4067,8 +4067,8 @@ Solar Simulators
 Solar Telescopes
 Solar UV Spectrometers
 SWAP;SOLAR WIND AROUND PLUTO
-GLG;SWICS;SWICS-U;SOLAR WIND ION COMPOSITION SPECTROMETER;Solar Wind Ion Composition Spectrometer
-SWOOPS;SOLAR WIND OBSERVATIONS OVER THE POLES OF THE SUN
+GLG;SWICS;SWICS-U;SOLAR WIND ION COMPOSITION SPECTROMETER;Solar Wind Ion Composition Spectrometer;Solar Wind Ion Composition Spectrometer (Ulysses)
+SWOOPS;SOLAR WIND OBSERVATIONS OVER THE POLES OF THE SUN;Solar Wind Plasma Experiment (Ulysses)
 Solar Wind Plasma;Solar Wind Plasma Experiment;SOLAR WIND PLASMA EXPERIMENT
 SWS;SOLAR WIND SPECTROMETER;Solar Wind Spectrometer
 Solar Wind Experiment;SOLAR-WIND EXPERIMENT
@@ -4086,13 +4086,13 @@ Soon Solar Telescopes
 SOPA;Synchronous Orbit Particle Analyzer
 SORS;Solar Radiospectrometer
 SOSUS;Sound Surveillance System
-SOT;SOLAR OPTICAL TELESCOPE;Solar Optical Telescope
+SOT;SOLAR OPTICAL TELESCOPE;Solar Optical Telescope;SOLAR OPTICAL TELESCOPE (HINODE)
 Sounder;GOES Sounder;INSAT Sounder
 SOUP;Solar Optical Universal Polarimeter
 SOVAP;Solar Constant Variability, Picard
 Space Radiation Dosimeter
 Spatial Infrared Imaging Telescope
-SPEA;Solar Plasma Electrostatic Analyzer
+SPEA;Solar Plasma Electrostatic Analyzer;Solar Plasma Electrostatic Analyzer (IMP-8)
 SPEC HVPS;SPEC High Volume Precipitation Spectrometer
 Specific Ion Meters
 Spectral Hygrometer
@@ -4103,7 +4103,7 @@ Spectrophotometers
 Spectroradiometers
 SPER/1;Plasma and Energy Radiation Spectrometer
 SpEx;SPEX;Spectral Aerosol Extinction
-SPFC;Solar Plasma Faraday Cup
+SPFC;Solar Plasma Faraday Cup;Solar Plasma Faraday Cup (IMP-8)
 SPICAM;Spectroscopy for Investigation of Characteristics of the Atmosphere of Mars
 SPICE;Spectral Imaging of the Coronal Environment
 SAI;SPIN-SCAN AURORAL IMAGER;SPIN SCAN AURORAL IMAGER
@@ -4124,23 +4124,23 @@ SRF;X-ray Photometer for Monitoring Soft Solar X-radiation;X Ray Photometer for 
 SRTM C-BAND RADAR;SRTM C BAND RADAR;Shuttle Radar Topography Mission C-Band Radar;Shuttle Radar Topography Mission C Band Radar
 SRTM;Shuttle Radar Topography Mission
 SSALT;POSEIDON Solid State Radar Altimeter;Single-frequency Solid-state Altimeter
-SSB/O;Remote X Ray Sensor Precipitating Electrons;Remote X-Ray Sensor - Precipitating Electrons
-SSB/S;X-Ray Detector;X Ray Detector
-SSB/X;SSB/X2;Advanced X-Ray Detector;Advanced X Ray Detector
-SSBUV;Shuttle Solar Backscatter Ultraviolet Spectrometer
+SSB/O;Remote X Ray Sensor Precipitating Electrons;Remote X-Ray Sensor - Precipitating Electrons;Remote X-Ray Sensor - Precipitating Electrons (SSB/O)
+SSB/S;X-Ray Detector;X Ray Detector;X-Ray Detector (SSB/S)
+SSB/X;SSB/X2;Advanced X-Ray Detector;Advanced X Ray Detector;Advanced X-Ray Detector (SSB/X);Advanced X-Ray Detector (SSB/X2)
+SSBUV;Shuttle Solar Backscatter Ultraviolet Spectrometer;Shuttle Solar Backscatter Ultraviolet
 SSC;Snow/Cloud Discriminator Special Sensor C
 SSCC;Spin Scan Cloud Camera
 SSD;Atmospheric Density Sensor
 SSFR;Solar Spectral Flux Radiometers
 SSH-2;SSH 2;Infrared Temperature and Moisture Sounder
-SSI/E;Ionospheric Plasma Monitor
+SSI/E;Ionospheric Plasma Monitor;Ionospheric Plasma Monitor (SSI/E)
 SSI/ES2;Special Sensor Ionospheric Plasma Monitor 2
-SSI/ES;Special Sensor Ionospheric Plasma Monitor
+SSI/ES;Special Sensor Ionospheric Plasma Monitor;Ion Scintallation Monitor
 SSIES;Topside Ionospheric Plasma Monitor;SSIES Special Sensor Topside Thermal Plasma Monitor
 SSIM;Solar Spectral Irradiance Monitor
-SSJ4;SSJ/4 Special Sensor for Precipitating Particles, Version 4
+SSJ4;SSJ/4 Special Sensor for Precipitating Particles, Version 4;Precipitating Electron/Ion Spectrometer
 SSJ/4;Precipitating Electron/Ion Spectrometer
-SSJ;Electron Spectrometer Special Sensor J
+SSJ;Electron Spectrometer Special Sensor J;Electron Spectrometer Special Sensor J (SSJ)
 SSM/I;Special Sensor Microwave/Imager;Special Sensor Microwave - Imager
 SSM/T-2;SSM/T 2;Special Sensor Microwave - Humidity;Special Sensor Microwave/Temperature Profiler
 SSM/T;Special Sensor Microwave/Temperature;Special Sensor Microwave - Temperature
@@ -4192,7 +4192,7 @@ STEREO-B IMPACT;STEREO B IMPACT;STEREO B In Situ Measurements of Particles and C
 STEREO B SECCHI Cor2 Coronagraph;STEREO-B SECCHI Cor2 Coronagraph
 STICS;SupraThermal Ion Composition Spectrometer
 STIX;X-ray Spectrometer/Telescope;X Ray Spectrometer/Telescope
-STO;URAP;Unified Radio and Plasma Waves;UNIFIED RADIO AND PLASMA WAVE EXPERIMENT;Unified Radio and Plasma Wave Experiment
+STO;URAP;Unified Radio and Plasma Waves;UNIFIED RADIO AND PLASMA WAVE EXPERIMENT;Unified Radio and Plasma Wave Experiment;Unified Radio and Plasma Wave Experiment (Ulysses)
 Stokes Polarimeter
 Stover CCD Spectrograph Camera
 Shimmer;STPSat-1Spatial Heterodyne Imager for Mesospheric Radicals;STPSat 1 Spatial Heterodyne Imager for Mesospheric Radicals;Spatial Heterodyne Imager for Mesospheric Radicals (SHIMMER)
@@ -4232,7 +4232,7 @@ SWARM STR;SWARM-STR;Swarm Star Tracker
 SWATS;Small Wind and Temperature Spectrometer
 SWAVES;STEREO WAVES;STEREO-B Waves;STEREO-A Waves
 SWE Sampler
-SWE;Solar Wind Experiment
+SWE;Solar Wind Experiment;Solar Wind Experiment (WIND)
 SWEAPI;Solar Wind Electrons Alphas and Protons Investigation
 SWEPAM;Solar Wind Electron, Proton, and Alpha Monitor
 SWESARR;Snow Water Equivalent Synthetic Aperture Radar and Radiometer
@@ -4356,7 +4356,7 @@ South Pole Photometer Instrument
 South Pole Riometer Instrument
 South Pole SearchCoil Instrument
 IAGA:SGE Magnetometer
-SpaceView 24;SpaceView 24 Imaging Telescope
+SpaceView 24;SpaceView 24 Imaging Telescope;SV-24
 SpaceView 110;SpaceView-110;SpaceView 110 Imaging System;SpaceView-110 Imaging System
 Spacecraft Potential Control, Ion Beam Emitter
 Spectromagnetograph
@@ -4379,7 +4379,7 @@ Swider Ground Magnetic Field Instrument
 IAGA:SYO Magnetometer
 Table Mountain Observatory 24-INCH CCD Camera;TABLE MOUNTAIN OBSERVATORY 24 INCH CCD CAMERA
 TAC;Three Line Array Camera;Three-line Array Camera
-TAMMS;Turbulent Air Motion Measurement System
+TAMMS;Turbulent Air Motion Measurement System;Turbulent Air Motion Measurement System (TAMMS)
 TANSO-3;TANSO 3;Thermal And Near Infrared Sensor for Carbon Observations
 TANSO-CAI;TANSO CAI;Thermal And Near Infrared Sensor for Carbon Observations - Cloud and Aerosol Imager
 TANSO-CAI-2;TANSO CAI 2;Thermal And Near Infrared Sensor for Carbon Observation Cloud and Aerosol Imager 2;Thermal And Near Infrared Sensor for Carbon Observation-Cloud and Aerosol Imager-2
@@ -4387,13 +4387,13 @@ TANSO CAI-2;TANSO-CAI2;Thermal And Near Infrared Sensor for Carbon Observations 
 TANSO FTS-2;TANSO-FTS-2;Thermal And Near Infrared Sensor for Carbon Observation-Fourier Transform Spectrometer-2;Thermal And Near Infrared Sensor for Carbon Observation Fourier Transform Spectrometer 2
 TANSO-FTS2;TANSO FTS2;Thermal And Near Infrared Sensor for Carbon Observations Fourier Transform Spectrometer / 2;Thermal And Near Infrared Sensor for Carbon Observations - Fourier Transform Spectrometer / 2
 TANSO-FTS;TANSO FTS;Thermal And Near Infrared Sensor for Carbon Observations - Fourier Transform Spectrometer
-TANSO;Thermal And Near Infrared Sensor For Carbon Observation
+TANSO;Thermal And Near Infrared Sensor For Carbon Observation;TANSO-FTS
 TAP;Tricolor Absorption Photometer
 TBB;Tri Band Beacon;Tri-Band Beacon
 TCISS;TOGA COARE Integrated Sounding System
-TCTE;Total Solar Irradiance Calibration Transfer Experiment
+TCTE;Total Solar Irradiance Calibration Transfer Experiment;Total Solar Irradiance (TSI) Calibration Transfer Experiment
 TD-GC-MS;TD GC MS;Thermal Desoprtion Gas Chromatograph Mass Spectrometer
-TD-LIF;TD LIF;Thermal Dissociation Laser Induced Fluorescents
+TD-LIF;TD LIF;Thermal Dissociation Laser Induced Fluorescents;Thermal Dissociation Laser Induced Fluorescents developed by University of California, Berkley
 TDDR;Total Direct Diffuse Multichannel Radiometer;Total-Direct-Diffuse Multichannel Radiometer
 TDMA;Tandem Differential Mobility Analyzer
 TDR;Time Domain Reflectometry Probe
@@ -4468,10 +4468,10 @@ THEMIS-ESA;THEMIS ESA;THEMIS Electrostatic Analyzers
 THEMIS-FGM;THEMIS FGM;Themis Fluxgate Magnetometer
 THEMIS-SST;THEMIS SST;THEMIS Solid State Telescope
 Theodolite
-THEOS MSI;THEOS Multi Spectral Imager
+THEOS MSI;THEOS Multi Spectral Imager;THEOS MS
 THEOS PAN;THEOS Panchromatic Imager
 THEMIS;Thermal Emission Imaging System;THERMAL EMISSION IMAGING SYSTEM
-TES;THERMAL EMISSION SPECTROMETER;Thermal Emission Spectrometer
+TES;THERMAL EMISSION SPECTROMETER;Thermal Emission Spectrometer;Tropospheric Emission Spectrometer
 TEGA;THERMAL EVOLVED GAS ANALYZER
 TIMMI2;THERMAL INFRARED MULTI-MODE INSTRUMENT 2;THERMAL INFRARED MULTI MODE INSTRUMENT 2
 TIMS;Thermal Infrared Multispectral Scanner;THERMAL INFRARED MULTISPECTRAL SCANNER
@@ -4486,15 +4486,15 @@ Tide Gauges
 TIDE/PSI;Thermal Ion Dynamics Experiment / Plasma Source Investigation
 TIDE;Thermal Ion Dynamics Experiment
 TIDI;TIMED Doppler Interferometer
-TIM;Total Irradiance Monitoring
+TIM;Total Irradiance Monitoring;Total Irradiance Monitor
 TIMAS;Toroidal Imaging Mass Angle Spectrograph;Toroidal Imaging Mass-Angle Spectrograph
 TIMAX;X-Ray Imaging Telescope;X Ray Imaging Telescope
 TIMED Ephemeris;TIMED Positions
 Tinsley Photometer
-TIP;Tiny Ionosphere Photometer
+TIP;Tiny Ionosphere Photometer;Tiny Atmospheric Photometer
 TIR;Thermal Infrared Radiometer
 TIROS-N;Television and Infra-Red Observation Satellite - N
-TOVS;TIROS-N OPERATIONAL VERTICAL SOUNDER;TIROS N OPERATIONAL VERTICAL SOUNDER
+TOVS;TIROS-N OPERATIONAL VERTICAL SOUNDER;TIROS N OPERATIONAL VERTICAL SOUNDER;TIROS-N;TIROS Operational Vertical Sounder
 TIRS;Thermal Infrared Sensor;Thermal Infra-Red Sensor
 TL Laser Reflector;TL- Laser Reflector
 TLPCS;Thermoluminescence Photon Counting System
@@ -4512,7 +4512,7 @@ TOC;Total Organic Carbon Analyzer
 TOGA RADAR
 TOGA;Trace Organic Gas Analyzer
 TOMS;Total Ozone Mapping Spectrometer
-TOPAZ;Tunable Optical Profiler for Aerosol and oZone Lidar
+TOPAZ;Tunable Optical Profiler for Aerosol and oZone Lidar;Tunable Optical Profiler for Aerosol and oZone (TOPAZ) lidar
 TOR;Tracking, Occultation and Ranging
 Torino Photopolarimeter
 TLP;TOTAL LUMINANCE PHOTOMETER
@@ -4533,7 +4533,7 @@ Traverse Gravimeter
 Tretyakov Gauge;Tretyakov Precipitation Gauge
 Trishna
 TROPOMI;Tropospheric Monitoring Instrument;TROPOspheric Monitoring Instrument
-TRSR;TurboRogue Space Receiver;Turbo Rogue Space Receiver
+TRSR;TurboRogue Space Receiver;Turbo Rogue Space Receiver;Turbo Rouge Space Receiver
 TSI APS-3321;TSI APS 3321;TSI Aerodynamic Particle Sizer Model 3321
 TSI CPC 3010;TSI CPC-3010;TSI Condensation Particle Counter 3010 Manufactured by TSI Inc
 TSI CPC-3025;TSI CPC 3025;TSI Condensation Particle Counter 3025 Manufactured by TSI Inc
@@ -4671,7 +4671,7 @@ UASO3;NOAA UAS O3 Photometer
 UAVSAR;Uninhabited Aerial Vehicle Synthetic Aperture Radar
 UC Davis CRD PAS;UC Davis CRD-PAS;UC Davis Cavity Ringdown-Photoacoustic Spectrometer;UC Davis Cavity Ringdown Photoacoustic Spectrometer
 UC Davis RDI;UC Davis Rotating Drum Impactor
-UCATS-GC;UCATS GC;Unmanned Chromatograph Airborne System for Atmospheric Trace Species Gas Chromatography;Unmanned Chromatograph Airborne System for Atmospheric Trace Species - Gas Chromatography
+UCATS-GC;UCATS GC;Unmanned Chromatograph Airborne System for Atmospheric Trace Species Gas Chromatography;Unmanned Chromatograph Airborne System for Atmospheric Trace Species - Gas Chromatography;Unmanned Chromatograph Airborne System for Atmospheric Trace Species - Gas Chromatography (UCATS-GC)
 UCLA Global MHD Model
 UCLA MHD and iPic3D Model
 UCN;Ultrafine Condensation Nucleus Counter
@@ -4683,7 +4683,7 @@ UKIA Gmag;THEMIS Ground EPO Ukiah Fluxgate Magnetometer
 ULEIS;Ultra-low Energy Isotope Spectrometer;Ultra Low Energy Isotope Spectrometer;Ultra-Low Energy Isotope Spectrometer
 ULH;Unmanned Aerial System Laser Hygrometer
 Ultra Low Energy Charge Analyzer
-UVI;ULTRA VIOLET IMAGER
+UVI;ULTRA VIOLET IMAGER;UltraViolet Imager (Polar)
 Ultrasonic Depth Gauge
 Ultrasonic Depth Sensor;Judd Communications Ultrasonic Depth Sensor
 Ultraviolet and Visible Imaging Camera
@@ -4701,7 +4701,7 @@ University of Rochester Array Camera
 ULS;UPWARD LOOKING SONAR
 URG-9000D AIM;URG 9000D AIM;URG 9000D Ambient Ion Monitor;URG-9000D Ambient Ion Monitor
 US Spectro Photometer;US- Spectro-photometer
-USB4000 Hemi;USB4000 Tele;OceanOptics USB4000 Spectrometer
+USB4000 Hemi;USB4000 Tele;OceanOptics USB4000 Spectrometer;OceanOptics USB4000 Spectrometer (Hemispherical);OceanOptics USB4000 Spectrometer (2o Telescope optics)
 USIM;Underwater Spectral Irradiance Meter
 USO;Ultra-Stable Oscillator;Ultra-stable Oscillator;Ultra Stable Oscillator
 USZ Ultraviolet Spectrometer
@@ -4743,8 +4743,8 @@ VEFI;Vector Electric Field Instrument;C/NOFS Vector Electric Field Instrument
 Vega 1 Balloon
 Vega 2 Balloon
 VEGA2 Lander METEO
-VEGETATION 1;VEGETATION-1;VEGETATION INSTRUMENT 1
-VEGETATION 2;VEGETATION-2;VEGETATION INSTRUMENT 2
+VEGETATION 1;VEGETATION-1;VEGETATION INSTRUMENT 1;VEGETATION INSTRUMENT 1 (SPOT 4)
+VEGETATION 2;VEGETATION-2;VEGETATION INSTRUMENT 2;VEGETATION INSTRUMENT 2 (SPOT 5)
 VELC;Visible Emission Line Coronagraph
 Vertical Pointing Radar
 VFM;Vector Field Magnetometer
@@ -4766,14 +4766,14 @@ VIRIS;Visible and Infrared Intelligent Spectrometer
 VIRL;Visible and Near IR Lidar
 VIRR;Visible and Infrared Radiometer;Visible and Infra Red Radiometer;Visible and Infra-Red Radiometer
 VIRS;Visible and Infra Red Scanner;TRMM Visible Infrared Scanner
-VIS;Visible Imaging System
+VIS;Visible Imaging System;Visible Imaging System (Polar)
 Visible and Infrared Spectrometer
 VIRTIS;VISIBLE AND INFRARED THERMAL IMAGING SPECTROMETER
 Visible Camera
 Visible Spectrometer;VISIBLE SPECTROMETER
 VISSR;Visible-Infrared Spin Scan Radiometer;Visible and Infrared Spin Scan Radiometer
-VISSR-METEOSAT
-VISSR-GMS;VISSR Geostationary Meteorological Satellites
+VISSR-METEOSAT;Visible and Infrared Spin Scan Radiometer (METEOSAT Series)
+VISSR-GMS;VISSR Geostationary Meteorological Satellites;Visible and Infrared Spin Scan Radiometer (GMS Series)
 Visual Imaging Subsystem
 Visual Imaging Subsystem Camera A;VISUAL IMAGING SUBSYSTEM - CAMERA A
 Visual Imaging Subsystem Camera B;VISUAL IMAGING SUBSYSTEM - CAMERA B
@@ -4848,7 +4848,7 @@ Wet Deposition Collectors
 Wet/Dry Precipitation Samplers
 WFC;Wide Field Camera;Wide-Field Camera
 WFI-2;Wide Field Imager 2;Wide Field Imager - 2
-WFI;WFI (CBERS 1,2);Wide Field Imager;Wide Field Heliospheric Imager
+WFI;WFI (CBERS 1,2);Wide Field Imager;Wide Field Heliospheric Imager;WFI (Amazonia-1);WFI (CBERS 3,4)
 WHISPER;Waves of HF and Sounder for Probing Electron Density by Relaxation;Waves of High Frequency and Sounder for Probing of Density by Relaxation;Waves of High Frequency and Sounder for Probing Electron Density by Relaxation
 WHIT ASI;THEMIS Ground White Horse All Sky Imager
 WHIT GMAG;THEMIS GBO White Horse Fluxgate Magnetometer
@@ -4913,7 +4913,7 @@ XRD;X Ray Diffractometer;X-ray Diffractometer
 XRP;X-Ray Polychromator;X Ray Polychromator;Soft X-Ray Polychromator;Soft X Ray Polychromator
 XRPD;X-Ray Powder Diffractometer;X Ray Powder Diffractometer
 XRS;X Ray Sensor;X-Ray Sensor
-XRT;X-RAY TELESCOPE;X-Ray Telescope;X-ray Telescope;X RAY TELESCOPE
+XRT;X-RAY TELESCOPE;X-Ray Telescope;X-ray Telescope;X RAY TELESCOPE;X-RAY TELESCOPE (HINODE)
 XSV;Expendable Sound Velocity Profilers
 Y Cassegrain Focus Direct Image CCD Camera
 YKNF GMAG;THEMIS GBO Yellowknife Fluxgate Magnetometer
@@ -5208,3 +5208,245 @@ X Rays and Gamma Ray Bursts Experiment;X-rays and Gamma-ray Bursts Experiment
 Zodiacal Light Photometer
 IRIS;Infrared Interferometer Spectrometer;INFRARED INTERFEROMETER SPECTROMETER;Interface Region Imaging Spectrograph;Interferometric Radar Altimeter for Ice and Snow
 Giro Ionospheric Sounder
+NOT APPLICABLE
+AIRBORNE LASER SCANNER
+CASALS;Concurrent Artificially-intelligent Spectrometry and Adaptive Lidar System (CASALS)
+Capella X-SAR;Capella X-band Synthetic Aperature Radar (X-SAR)
+GridRad;Gridded NEXRAD WSR-88D Radar
+pRES
+SAOCOM-SAR;SAOCOM-Synthetic Aperture Radar
+TSX-1;Synthetic Aperture Radar (SAR)
+Umbra X-SAR;Umbra X-band Synthetic Aperature Radar (X-SAR)
+pyxis;PlanetIQ Pyxis GNSS Radio Occultation (GNSS-RO) Instrument
+Riegl LD90-3100VHS-FLP;Riegl LD90-3100VHS-FLP First & Last Pulse Distance Meter
+SR50A;Campbell SR50A Sonic Distance Sensor
+AMOLITE;Autonomous Mobile Ozone LIDAR Instrument for Tropospheric Experiments
+JPL DIAL;Jet Propulsion Laboratory Differential Absorption Lidar
+Leica CityMapper-2
+RO3QET;Rocket-city O3 Quality Evaluation in the Troposphere
+Roscoe;Roscoe Aerosol and Cloud Lidar
+Accumulation Radar
+KPR;Ka-Band Probe Radar-Radiometer
+SCAT-3;Scatterometer-3
+AROTAL;Airborne Raman Ozone, Temperature, and Aerosol Lidar
+BACKSCATTER LIDAR
+BACKSCATTER LIDAR;LITE
+CO2LAS;Carbon Dioxide Laser Absorption Spectrometer
+KNOLLENBERG PROBE
+LaRC Aerosol Lidar;LaRC Dual-Polarization Aerosol Lidar
+NOAA-H2O;Closed Cell Tunable Laser Spectrometer (NOAA-H2O)
+NOT APPLICABLE
+Zhangheng EFD;Electric Field Detector
+Libera Wide Field of View Camera
+LIF-NO;Laser Induced Fluorescence - Nitrogen Oxide
+SHIROP;Small and High Resolution Optical Sensor (SHIROP)
+SPEX Airborne;Spectro-Polarimeter for Exploration Airborne
+TP-LIF
+TP-LIF;Two Photon - Laser Induced Fluorescence
+CCD (CBERS 1)
+CCD (CBERS 2)
+CCD (CBERS 2B)
+CCD Ultra Violet;CCD_UV_bandwidth
+CCD Visible;CCD_VIS_bandwidth
+CCD1 (HuanJing 1A)
+CCD1 (HuanJing 1B)
+CCD2 (HuanJing 1A)
+CCD2 (HuanJing 1B)
+IRS (HuanJing 1B)
+OCM-3;Ocean Color Monitor-3
+WPM;Multispectral and Panchromatic Wide-Scan Camera
+LI Neph;Laser Imaging Nephelometer
+AIRBORNE TRACKING SUNPHOTOMETER
+NOAA O3 Classic;Dual-Beam UV-Absorption Ozone Photometer
+HARP2;Hyper-Angular Rainbow Polarimeter 2
+ACS;Advanced Stellar Compass 2 (Boom)
+AIRCRAFT MOTION SENSOR
+COMPASSES
+GRITSS;Geodetic Reference Instrument Transponder for Small Satellites
+IPU;Instrument Processing Unit
+NAV420 Navigation Data;NAV420 Crossbow IMU Navigation Data
+PASSIVE OPTICAL TRACKING
+RF ANTENNA
+VLBI Station
+VLF RECEIVERS
+GPS Vector V103;Hemisphere Vector V103/113 GPS Compass
+Hemisphere VS1000;Hemisphere VS1000 GPS System
+DIGISONDES
+SOUNDERS
+WSF-M1;MicroWave Imager on WSF-M
+CPF-HySICS;Climate Absolute Radiance and Refractivity Observatory Pathfinder- HyperSpectral Imager for Climate Science
+CSIMBA;Compact Smartspectral Imager for Monitoring Bio-agricultural Areas
+PRISMA;PRecursore IperSpettrale della Missione Applicativa
+SPEXone;Spectro-polarimeter for Planetary Exploration one
+AVIRIS-3;Airborne Visible/Infrared Imaging Spectrometer – 3rd Generation
+AVIRIS-5;Airborne Visible/Infrared Imaging Spectrometer – 5th Generation
+AWE
+eMAS;Enhanced MODIS Airborne Simulator
+GOES-17 Imager;Geostationary Operational Environmental Satellite 17-Imager
+GVHRR;Geosynchronous Very High Resolution Radiometer
+HyTES;Hyperspectral Thermal Emission Spectrometer
+Mako;Mako Airborne Thermal Infrared Imaging Spectrometer
+MWIR;Mid Wave InfraRed Imaging Sensor
+OLI-2;Operational Land Imager 2
+PICARD;Pushbroom Imager for Cloud and Aerosol Research and Development
+PNEO
+SMOS L-BAND RADIOMETER
+SSTL S1-4;S1-4 Imager
+TIRS-2;Thermal Infrared Sensor 2
+Cloud Absorption Radiometer (CAR)
+IKAR;Multichannel Microwave Radiometric System
+MULTICHANNEL FILTER RADIOMETERS
+ROSR;Remote Ocean Surface Radiometer
+TEMPEST;Temporal Experiment for Storms and Tropical Systems
+DIAS;Direct Irradiance Airborne Spectrometer
+FTS;Pointing FTS with 4 co-aligned detector arrays, 16 pixels each
+GAMS/LAABS;Gas and Aerosol Measurement Sensor/Langley Airborne A-Band Spectrometer
+INFRARED INSTRUMENT SUITE;Infrared Instrument Suite (CLARREO)
+NOAA-O3;Dual Channel UV Absorption Spectrometer (NOAA-O3)
+OMPS;Ozone Mapping and Profiler Suite
+TIRS-PREFIRE;Thermal InfraRed Spectrometer
+ACTINOMETER;Radiation Thermocouple Actinometer
+BOLOMETERS
+CNR4;Kipp and Zonen CNR4 Net Radiometer
+Eppley PIR;Eppley Laboratory Precision Infrared Radiometer
+Longwave Detector
+Shortwave Detector
+Total Detector
+Window Detector
+NOT APPLICABLE
+2D-Gray;2D-Gray Particle Probe
+2DS;2D-STEREO PARTICLE PROBE (2DS)
+ACIR;Aerosol/Cloud Particle Impactor/Replicator
+ACOS;Airborne Carbon Oxide Sulfide Spectrometer
+AEROSOL MONITOR
+AEROSOL/CLOUD PARTICLE SIZER
+AETHALOMETER
+AIR PERMEAMETERS
+AOP;Aerosol Optical Properties
+ARI MINI CO, N2O, H2O;CO, N2O, H2O DIRECT ABSORBANCE SPECTROMETER
+AUTOANALYZER
+ClO/BrO;Multiple Axis Resonance Fluorescence Chemical Conversion Detector for ClO and BrO
+CLONO2;Chlorine Nitrate Instrument
+CNC/EAS;Condensation Nucleus Counters (CNCs) and Electrical Aerosol Sampler (EAS)
+COLD 2;Carbon Oxide Laser Detector 2
+COMA;Carbon monOxide Measurement from Ames
+GPR-2500 S;GPR-2500 S Oxygen Analyzer
+Harvard CO2;High-Altitude Fast-Response CO2 Analyzer
+HOx;Harvard Hydroxyl Experiment
+INSTEP;Inexpensive Network Sensor Technology Exploring Pollution
+ISAF;In Situ Airborne Formaldehyde
+LI-7000;LI-7000 Closed Path CO2/H2O Gas Analyzer
+LI-850;LI-850 Gas Analyzer
+MIRO MGA;MIRO Multi-compound Gas Analyzer
+OPALS;Open-Path Ammonia Laser Spectrometer
+P-SYSTEM;High Pressure Gas Sampling System
+PAM;PORTABLE FLUORESCENCE ANALYZERS
+PAM Reactor;Potential Aerosol Mass Oxidation Flow Reactor
+PANAK;PeroxyAcetylNitrate, Aldehydes and Ketones
+PANTHER;PAN and Trace Hydrohalocarbon ExpeRiment
+SAGA;Soluble Acidic Gases and Aerosols
+TSI CNC-3760;TSI Model 3760 Condensation Nuclei Counter
+TSI CPC-3772;SI Condensation Particle Counter 3772 Manufactured by TSI Inc.
+URI Instrument;University of Rhode Island Peroxides and Formaldehyde Instrument
+Xylem Cond 1970i;Xylem Cond 1970i Portable conductivity measuring instrument
+CONDUCTIVITY METERS
+Airmar Weather Station
+ANEMOMETERS
+CURRENT METERS
+Gill WindMaster Pro;Gill Instruments WindMaster 3-Axis Ultrasonic Anemometer
+RM Young 8600;RM young Model 86000 Ultrasonic Anemometer
+Computer
+Line intercept sampling
+VOLTAGE METERS
+BALANCE
+ORG-815-DA;ORG-815-DA Optical Rain Gauge
+SPRING BALANCE
+ACCELEROMETERS
+BIG EYE BINOCULARS
+BINOCULAR
+COBALD;Compact Optical Backscatter Aerosol Detector
+InfraSnow;InfraSnow SSA Sensor
+MICROSCOPES
+VISUAL CENSUS TRANSECTS
+VISUAL OBSERVATIONS
+CAMERA
+BAROMETERS
+PRESSURE CHAMBERS
+PRESSURE GAUGES
+PRESSURE PROBE
+PRESSURE SENSORS
+SURVEYING TOOLS
+Vaisala PTB330;Vaisala PTB330 Digital Barometer
+DBH Tape;Diameter Measurement Tape
+HC2S3;Campbell HC2S3 Temperature and Relative Humidity Probe
+HydraProbe;Stevens Water HydraProbe
+SNOW TUBE
+STEEL MEASURING TAPE
+AIRGUN ARRAYS
+CHAM;Chameleon Microstructure Profiler
+LONG STREAMERS
+PROFILERS
+SBE-21;SBE-21 SeaCAT Thermosalinograph
+SCANFISH;SHIP-TOWED UNDULATING VEHICLE
+SO;SurfOtter Platform
+SOLO-II;Sounding Oceanographic Lagrangian Observer-II
+2DVD;Two-dimensional Video Disdrometer (2DVD)
+ALTUS DATA COLLECTION SYSTEM
+DIGITIZER
+HKTLM;Housekeeping Telemetry Data used to monitor ENVISAT functions
+PDS;NASA P3-B Aircraft Data System developed by NASA LaRC
+STILLING WELL
+Tally Counter
+TEMPERATURE LOGGERS
+UNS-1Fw;UNS-1Fw Flight Management System
+BEDLOAD SENSORS
+Event
+Line Transect Sampling
+SM Network
+AEROSOL COLLECTORS
+TRAPS
+BENTHIC GRABS
+BENTHOPELAGIC NET
+BENTHOPELAGIC TRAWL
+BONGO NETS
+NETS
+PLANKTON NETS
+TRAWL
+Aerodyne Vocus PTR-TOF;Aerodyne Vocus Proton Transfer Reaction, Time-of-Flight, Mass Spectrometer
+BIOMETER
+ChiWIS;Chicago Water Isotope Spectrometer
+FASTOZ;Langley In Situ Fast-Response Ozone Measurements
+FIRS-2;Far Infrared Fourier Transform Spectrometer
+FPCAS;FSSP-300 Aerosol Spectrometer
+GC-EI-TOF;Gas Chromatography Electron Impact Mass Spectrometer
+GVR;G-Band Vapor Radiometer
+MARLi;Multi-function Airborne Raman Lidar
+NO/NOy;NO and NOy Chemiluminescence Instrument (NO/NOy)
+NOAA NOy;NOAA NOy Instrument
+POPS;Printed Optical Portable Spectrometer
+PUTLS;Particles in the Upper Troposphere/Lower Stratosphere
+NOAA PSL Sea Snake;NOAA Physical Sciences Laboratory Sea Snake Thermometer
+TEMPERATURE SENSORS
+Total Precipitation Sensor (Hotplate)
+Vaisala HMT330;Vaisala HMT330 Temperature and Humidity Sensor
+Vaisala HMT337;Vaisala HMT337 Temperature and Humidity Sensor
+CFH;Cryogenic Frost Point Hygrometer
+FP;NOAA Frost Point
+NOAA TW;NOAA Lyman-Alpha Total Water Hygrometer
+CRYO;Cryogenic Hygrometer
+LYMAN-ALPHA HYGROMETER
+NOT APPLICABLE
+NOT APPLICABLE
+MAG-SWFO
+3DP;3-D Plasma and Energetic Particle Investigation (WIND)
+AA-Particle;Atomic Absorption Spectrometer
+STIS-SWFO
+SWIPS-SWFO
+AIRGLOW SENSOR
+AIRGLOW/AURORA IMAGER
+CCOR1-SWFO
+CCOR2-SWFO
+TELESCOPES
+Air-LUSI;Airborne Lunar Spectral Irradiance
+GAMMA RAY DETECTOR (SSB)
+GAMMA RAY SPECTROMETERS

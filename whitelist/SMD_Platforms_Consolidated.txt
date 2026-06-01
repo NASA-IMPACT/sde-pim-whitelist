@@ -5,26 +5,26 @@ AAA;Alma Ata Ground Observatory
 Abinger Ground Observatory
 Abisko Ground Observatory
 AC 680E;AC-680E;Rockwell Aero Commander AC-680E;Rockwell Aero Commander AC 680E
-AC 690A;AC-690A;Rockwell Aero Commander AC-690A;Rockwell Aero Commander AC 690A
+AC 690A;AC-690A;Rockwell Aero Commander AC-690A;Rockwell Aero Commander AC 690A;Aerocommander aircraft
 AC-500S;AC 500S;Rockwell Aero Commander AC 500S;Rockwell Aero Commander AC-500S
 AC843 Atomic City, Idaho, USA
-ACARS;Aircraft Communications, Addressing and Reporting System Ground Receiving Station
-ACE;Explorer 71;Aerosol Cloud Ecosystems;Aerosol - Cloud - Ecosystems;Advanced Composition Explorer
+ACARS;Aircraft Communications, Addressing and Reporting System Ground Receiving Station;ACARS Ground Receiving Station
+ACE;Explorer 71;Aerosol Cloud Ecosystems;Aerosol - Cloud - Ecosystems;Advanced Composition Explorer;ACE (DECADAL SURVEY);Advanced Composition Explorer (ACE)
 ACRIMSAT;Active Cavity Radiometer Irradiance Monitor Satellite
-AD B;AD-B;Atmosphere Dynamics B;Atmosphere Dynamics-B
-AD-A;AD A;Atmosphere Dynamics A;Atmosphere Dynamics-A
-AD C;AD-C;Atmosphere Dynamics-C;Atmosphere Dynamics C
+AD B;AD-B;Atmosphere Dynamics B;Atmosphere Dynamics-B;Atmosphere Dynamics B (Explorer 24)
+AD-A;AD A;Atmosphere Dynamics A;Atmosphere Dynamics-A;Atmosphere Dynamics A (Explorer 19)
+AD C;AD-C;Atmosphere Dynamics-C;Atmosphere Dynamics C;Atmosphere Dynamics C (Explorer 39)
 Addis Ababa Ground Observatory
 ADEOS;Advanced Earth Observing Satellite
 ADEOS-II;ADEOS II;Advanced Earth Observing Satellite II;Advanced Earth Observing Satellite-II
 ADEOS I;ADEOS-I;Advanced Earth Observing Satellite I;Advanced Earth Observing Satellite-I
 ADM-Aeolus;Atmospheric Dynamics Mission Aeolus
-AE A;AE-A;Atmosphere Explorer A
-AE-E;AE 5;AE E;Explorer 55;Atmosphere Explorer E;Atmosphere Explorer-E
+AE A;AE-A;Atmosphere Explorer A;Atmosphere Explorer A (Explorer 17)
+AE-E;AE 5;AE E;Explorer 55;Atmosphere Explorer E;Atmosphere Explorer-E;Atmosphere Explorer E (Explorer 55)
 AE Spacecraft;Atmosphere Explorer Spacecraft
-AE B;AE-B;Explorer 32;Atmosphere Explorer B;Atmosphere Explorer-B
-AE-C;AE C;Explorer 51;Atmosphere Explorer C;Atmosphere Explorer-C
-AE-D;AE D;Explorer 54;Atmosphere Explorer-D;Atmosphere Explorer D
+AE B;AE-B;Explorer 32;Atmosphere Explorer B;Atmosphere Explorer-B;Atmosphere Explorer B (Explorer 32)
+AE-C;AE C;Explorer 51;Atmosphere Explorer C;Atmosphere Explorer-C;Atmosphere Explorer C (Explorer 51)
+AE-D;AE D;Explorer 54;Atmosphere Explorer-D;Atmosphere Explorer D;Atmosphere Explorer D (Explorer 54)
 AEM;Applications Explorer Mission
 AEM-2;AEM 2;Applications Explorer Mission-2;Applications Explorer Mission 2
 AEM-3;AEM 3;Applications Explorer Mission 3;Applications Explorer Mission-3
@@ -41,7 +41,7 @@ Air Force Maui Optical and Supercomputing Site Maui Space Surveillance
 Air Based Platforms;Air-based Platforms
 Airboat
 AJ4CO;AJ4CO Radio Observatory
-AJISAI;Experimental Geodetic Satellite
+AJISAI;Experimental Geodetic Satellite;Experimental Geodetic Satellite (Japanese EGS)
 Akatsuki;Planet C;Planet-C;Venus Climate Orbiter
 Alibag Ground Observatory
 Almeria Ground Observatory
@@ -104,13 +104,13 @@ ARTEMIS
 Arti Ground Observatory
 ARWS;Automatic Remote Weather Station
 AS00Q Ascension Island, UK
-Helicopter AS350-B3;Helicopter AS350 B3
-Helicopter AS350-B2
-Helicopter AS355-F2;Helicopter AS355 F2
+Helicopter AS350-B3;Helicopter AS350 B3;AS350-B3
+Helicopter AS350-B2;AS350-B2
+Helicopter AS355-F2;Helicopter AS355 F2;AS355-F2
 ASCENDS;Active Sensing of CO2 Emissions over Nights, Days, and Seasons
 Ascension Ground Observatory
 Asiago Astrophysical Observatory Copernico 1.82 m Telescope
-ASIM;Atmosphere Space Interactions Monitor;Atmosphere-Space Interactions Monitor
+ASIM;Atmosphere Space Interactions Monitor;Atmosphere-Space Interactions Monitor;Atmosphere-Space Interactions Monitor on the ISS
 Aso Ground Observatory
 ASOS;Automated Surface Observing System
 ASTR;IHW Astronomy Network
@@ -121,10 +121,10 @@ ATLAS;Atmospheric Laboratory for Applications and Science
 ATLAS Moorings;Autonomous Temperature Line Acquisition System
 Atmosphere Dynamics Mission Aeolus;Atmosphere Dynamics Mission-Aeolus
 Atmosphere Explorer
-ATS 1;ATS-1;Advanced Technology Satellite-1;Advanced Technology Satellite 1
-ATS-2;ATS 2;Advanced Technology Satellite-2;Advanced Technology Satellite 2
-ATS 3;ATS-3;Advanced Technology Satellite 3;Advanced Technology Satellite-3
-ATS-4;ATS 4;Advanced Technology Satellite-4;Advanced Technology Satellite 4
+ATS 1;ATS-1;Advanced Technology Satellite-1;Advanced Technology Satellite 1;Applications Technology Satellite-1
+ATS-2;ATS 2;Advanced Technology Satellite-2;Advanced Technology Satellite 2;Applications Technology Satellite-2
+ATS 3;ATS-3;Advanced Technology Satellite 3;Advanced Technology Satellite-3;Applications Technology Satellite-3
+ATS-4;ATS 4;Advanced Technology Satellite-4;Advanced Technology Satellite 4;Applications Technology Satellite-4
 Attu Geophysical Observatory
 AUGO;Athabasca University Geophysical Observatory
 Augsburg Searchcoil Observatory Group;Augsburg College Search Coil Ground Observatory Group
@@ -239,7 +239,7 @@ C 23 Sherpa;C-23 Sherpa;Short Brothers C 23 Sherpa;Short Brothers C-23 Sherpa
 C MAN;C-MAN;Coastal Marine Network
 C/NOFS;Communication/Navigation Outage Forecasting System;Communication and Navigation Outage Forecast System
 CAJ2M Cachoeira Paulista, Brazil
-CALET;CALorimetric Electron Telescope
+CALET;CALorimetric Electron Telescope;CALorimetric Electron Telescope (CALET)
 CALIPSO;Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observations;Cloud Aerosol Lidar and Infrared Pathfinder Satellite Observations
 Cambridge Bay Geophysical Observatory
 Cambridge Bay Ground Observatory
@@ -315,7 +315,7 @@ Colville National Forest Geophysical Observatory
 COMS;Communication, Ocean and Meteorological Satellite
 CONTOUR;Comet Nucleus Tour
 Convair CV 580;Convair CV-580
-Convair 580
+Convair 580;Aircraft operated by University of Washington
 Convair 990;Convair-990;CONVAIR-990 CORONADO;CONVAIR 990 CORONADO
 Observatory Station Code: CHBR;Coral Harbour Geophysical Observatory
 Coriolis
@@ -374,25 +374,25 @@ DMC-1G;Disaster Monitoring Constellation 1st Generation;Disaster Monitoring Cons
 DMC-2G;Disaster Monitoring Constellation 2nd Generation;Disaster Monitoring Constellation- 2nd Generation
 DME-A;DME A;Explorer 31
 DMSP;Defense Meteorological Satellite Program
-DMSP 5B/F3;Defense Meteorological Satellite Program Block 5B-F3
-DMSP 5D-1/F1;Defense Meteorological Satellite Program Block 5D1-F1
-DMSP 5D-1/F2;Defense Meteorological Satellite Program Block 5D1-F2
-DMSP 5D-1/F4;Defense Meteorological Satellite Program Block 5D1-F4
-DMSP 5D-1/F5;Defense Meteorological Satellite Program Block 5D1-F5
-DMSP 5D-2/F10;Defense Meteorological Satellite Program Block 5D2-F10
-DMSP 5D-2/F11;Defense Meteorological Satellite Program Block 5D2-F11
-DMSP 5D-2/F12;Defense Meteorological Satellite Program Block 5D2-F12
-DMSP 5D-2/F13;Defense Meteorological Satellite Program Block 5D2-F13
-DMSP 5D-2/F14;Defense Meteorological Satellite Program Block 5D2-F14
-DMSP 5D-2/F15;Defense Meteorological Satellite Program Block 5D2-F15
-DMSP 5D-2/F6;Defense Meteorological Satellite Program Block 5D2-F6
-DMSP 5D-2/F7;Defense Meteorological Satellite Program Block 5D2-F7
-DMSP 5D-2/F8;Defense Meteorological Satellite Program Block 5D2-F8
-DMSP 5D-2/F9;Defense Meteorological Satellite Program Block 5D2-F9
-DMSP 5D-3/F16;Defense Meteorological Satellite Program Block 5D3-F16
-DMSP 5D-3/F17;Defense Meteorological Satellite Program Block 5D3-F17
-DMSP 5D-3/F18;Defense Meteorological Satellite Program Block 5D3-F18
-DMSP 5D-3/F19;Defense Meteorological Satellite Program Block 5D3-F19
+DMSP 5B/F3;Defense Meteorological Satellite Program Block 5B-F3;Defense Meteorological Satellite Program-F3
+DMSP 5D-1/F1;Defense Meteorological Satellite Program Block 5D1-F1;Defense Meteorological Satellite Program-F1
+DMSP 5D-1/F2;Defense Meteorological Satellite Program Block 5D1-F2;Defense Meteorological Satellite Program-F2
+DMSP 5D-1/F4;Defense Meteorological Satellite Program Block 5D1-F4;Defense Meteorological Satellite Program-F4
+DMSP 5D-1/F5;Defense Meteorological Satellite Program Block 5D1-F5;Defense Meteorological Satellite Program-F5
+DMSP 5D-2/F10;Defense Meteorological Satellite Program Block 5D2-F10;Defense Meteorological Satellite Program-F10
+DMSP 5D-2/F11;Defense Meteorological Satellite Program Block 5D2-F11;Defense Meteorological Satellite Program-F11
+DMSP 5D-2/F12;Defense Meteorological Satellite Program Block 5D2-F12;Defense Meteorological Satellite Program-F12
+DMSP 5D-2/F13;Defense Meteorological Satellite Program Block 5D2-F13;Defense Meteorological Satellite Program-F13
+DMSP 5D-2/F14;Defense Meteorological Satellite Program Block 5D2-F14;Defense Meteorological Satellite Program-F14
+DMSP 5D-2/F15;Defense Meteorological Satellite Program Block 5D2-F15;Defense Meteorological Satellite Program-F15
+DMSP 5D-2/F6;Defense Meteorological Satellite Program Block 5D2-F6;Defense Meteorological Satellite Program-F6
+DMSP 5D-2/F7;Defense Meteorological Satellite Program Block 5D2-F7;Defense Meteorological Satellite Program-F7
+DMSP 5D-2/F8;Defense Meteorological Satellite Program Block 5D2-F8;Defense Meteorological Satellite Program-F8
+DMSP 5D-2/F9;Defense Meteorological Satellite Program Block 5D2-F9;Defense Meteorological Satellite Program-F9
+DMSP 5D-3/F16;Defense Meteorological Satellite Program Block 5D3-F16;Defense Meteorological Satellite Program-F16
+DMSP 5D-3/F17;Defense Meteorological Satellite Program Block 5D3-F17;Defense Meteorological Satellite Program-F17
+DMSP 5D-3/F18;Defense Meteorological Satellite Program Block 5D3-F18;Defense Meteorological Satellite Program-F18
+DMSP 5D-3/F19;Defense Meteorological Satellite Program Block 5D3-F19;Defense Meteorological Satellite Program-F19
 DMSP 5D-3/F20;Defense Meteorological Satellite Program Block 5D3-F20
 Dombas Geophysical Observatory
 Dombas Ground Observatory
@@ -429,10 +429,10 @@ Ekati Geophysical Observatory;Observatory Station Code: EKAT
 EL Leoncito Astronomical Complex 2.15-M Boller & CHIVENS Reflector;EL LEONCITO ASTRONOMICAL COMPLEX 2.15 M BOLLER & CHIVENS REFLECTOR
 Elektro L N3;Elektro-L N3
 Elektro-L;Elektro L
-Elektro L N1;Elektro-L N1
+Elektro L N1;Elektro-L N1;Geostationary Operational Meteorological Satellite
 ELFIN A;Electron Losses and Fields Investigation-A
 ELFIN B;Electron Losses and Fields Investigation-B
-ENTLN;Earth Networks Total Lightning Network
+ENTLN;Earth Networks Total Lightning Network;Earth Networks Total Lightning Network (ENTLN)
 Envihab
 ENVISAT;Environmental Satellite
 EO-1;EO 1;Earth Observing 1
@@ -470,7 +470,7 @@ EXOS B;EXOS-B;Jikiken;Exospheric Satellite-B
 EXOS C;Ohzora;EXOS-C;Exospheric Satellite-C
 EXOS D;Akebono;Exospheric Satellite-D
 Explorer
-EXPLORER 35;EXPLORER-35
+EXPLORER 35;EXPLORER-35;Interplanetary Monitoring Platform D (IMP-E)
 Eyrewell Ground Observatory
 F/V Great Pacific
 Fanning;Observatory Station Code: FAN
@@ -488,7 +488,7 @@ FERMI;Fermi Gamma Ray Space Telescope;Fermi Gamma-ray Space Telescope
 FF051 Fairford, UK
 Fiby;Uppsala;Observatory Station Code: UPS;Uummannaq Geophysical Observatory
 FireBIRD
-FLEX;Fluorescence Explorer
+FLEX;Fluorescence Explorer;Fluorescence Explorer (FLEX)
 Observatory Station Code: TPAS;Flin Flon Geophysical Observatory
 FLYBY
 FM5;Rumba;Cluster 1;Cluster-1;Cluster FM5;Cluster 2/FM5 (Rumba)
@@ -529,7 +529,7 @@ FY 3B;FY-3B;FengYun 3B;FengYun-3B
 FYTS;NASA THEMIS EPO Fort Yates Station
 FZA0M Fortaleza, Brazil
 G I;G-I;GULFSTREAM I
-G-LiHT;G LiHT;Goddard's LiDAR, Hyperspectral and Thermal Imager
+G-LiHT;G LiHT;Goddard's LiDAR, Hyperspectral and Thermal Imager;Goddard's LiDAR, Hyperspectral and Thermal (G-LiHT) airborne imaging system
 G-1 Aircraft;G 1 AIRCRAFT;G 1 Aircraft
 G II;Gulfstream II
 G III;G-III;Gulfstream III
@@ -538,11 +538,11 @@ G V;G-V;Gulfstream V
 GA-EMS OTB-2;GA EMS OTB 2;General Atomics Electromagnetic Systems Orbital Test Bed 2
 GA762 Gakona, Alaska, USA
 Gakona Geophysical Observatory;Observatory Station Code: GAKO
-Galileo
-GAW;Global Atmosphere Watch Programme
+Galileo;Galileo Satellites
+GAW;Global Atmosphere Watch Programme;Global Atmospheric Stations
 GBAY;NASA THEMIS GBO Goose Bay Station
-GCOM-C;GCOM C;Global Change Observation Mission - Carbon Cycle
-GCOM-W1;GCOM W1;Global Change Observation Mission - Water Satellite 1
+GCOM-C;GCOM C;Global Change Observation Mission - Carbon Cycle;Global Change Observation Mission – Climate
+GCOM-W1;GCOM W1;Global Change Observation Mission - Water Satellite 1;Global Change Observation Mission 1st-Water
 GCRAS;Geomagnetic Data Center Russia Ukraine
 GEM Ground-Based Observatories: Calar Alto and Eso
 Gemini
@@ -567,8 +567,8 @@ Geomagnetic Stations
 GEOS 1;GEOS-1;Geodetic Earth Orbiting Satellite-1;Geodetic Earth Orbiting Satellite 1
 GEOS 2;Geodetic Earth Orbiting Satellite-2;Geodetic Earth Orbiting Satellite 2
 GEOS 3;Geodetic Earth Orbiting Satellite 3;Geodetic Earth Orbiting Satellite-3
-GEOS 4;Geodetic Earth Orbiting Satellite-4;Geodetic Earth Orbiting Satellite 4
-GEOS 5;GEOS-5;Geodetic Earth Orbiting Satellite-5;Geodetic Earth Orbiting Satellite 5
+GEOS 4;Geodetic Earth Orbiting Satellite-4;Geodetic Earth Orbiting Satellite 4;Goddard EOS Data Assimilation System-4
+GEOS 5;GEOS-5;Geodetic Earth Orbiting Satellite-5;Geodetic Earth Orbiting Satellite 5;Goddard EOS Data Assimilation System-5
 GEOSAT;Geodetic Satellite
 GEOSTAR;Geophysical and Oceanographic Station for Abyssal Research
 Geostationary Satellites
@@ -601,7 +601,7 @@ GMS 2;Geostationary Meteorological Satellite 2;Geostationary Meteorological Sate
 GMS 4;GMS-4;Geostationary Meteorological Satellite-4;Geostationary Meteorological Satellite 4
 GMS 5;GMS-5;Geostationary Meteorological Satellite-5;Geostationary Meteorological Satellite 5
 Gnangara Ground Observatory
-GNSS;Global Navigation Satellite System
+GNSS;Global Navigation Satellite System;GLONASS
 GOCE;Gravity Field and Steady State Ocean Circulation Explorer;Gravity Field and Steady-State Ocean Circulation Explorer
 Observatory Station Code: GDH;Godhavn Geophysical Observatory
 Godhavn Ground Observatory
@@ -633,9 +633,9 @@ Observatory Station Code: GBAY;Goose Bay Geophysical Observatory
 Gornotayezhnaya;Observatory Station Code: VLA
 Gornotayezhnaya Ground Observatory
 GOSAT;Greenhouse Gases Observing Satellite
-Ibuki-2;GOSAT 2;GOSAT-2;Greenhouse Gases Observing Satellite-2
+Ibuki-2;GOSAT 2;GOSAT-2;Greenhouse Gases Observing Satellite-2;Green-house gas Observing Satellite - 2
 GPM;Global Precipitation Measurement
-GPS;Global Positioning System
+GPS;Global Positioning System;Global Positioning System Satellites
 GPS 35;GPS-35;Global Positioning System Satellites 35;Global Positioning System Satellites-35
 GPS 36;Global Positioning System Satellites-36;Global Positioning System Satellites 36
 GR13L Grahamstown, South Africa
@@ -685,7 +685,7 @@ HEXAGON KH 9;HEXAGON KH-9;HEXAGON KH 9 Reconnaissance Satellite;HEXAGON KH-9 Rec
 Himawari
 Himawari 8
 Himawari 9;Himawari-9
-Hinode;Solar-B
+Hinode;Solar-B;Hinode (Solar-B)
 HJ1;HJ-1
 HJ1A;HJ-1A
 HJ1B;HJ-1B
@@ -720,7 +720,7 @@ ICEYE
 ICON;Ionospheric Connection Explorer
 Observatory Station Code: IGLO;Igloolik Geophysical Observatory
 IGPP LANL Observatory Group;IGPP-LANL Magnetometer Chain
-Ikhana;Predator B
+Ikhana;Predator B;Ikhana Unmanned Science and Research Aircraft System
 IKONOS
 IL008 Ilorin, Nigeria
 IMAGE;MIDEX/IMAGE;Explorer 78;Imager for Magnetopause-to-Aurora Global Exploration;International Monitor for Auroral Geomagnetic Effects
@@ -729,20 +729,20 @@ IMP;Interplanetary Monitoring Platform
 IMP-1;IMP-A;Explorer 18;Interplanetary Monitoring Platform-A
 IMP-B;IMP-2;Explorer 21;Interplanetary Monitoring Platform-B
 IMP-C;IMP-3;Explorer 28;Interplanetary Monitoring Platform-C
-IMP-D;AIMP-D;AIMP-1;Explorer 33;Interplanetary Monitoring Platform-D
+IMP-D;AIMP-D;AIMP-1;Explorer 33;Interplanetary Monitoring Platform-D;Interplanetary Monitoring Platform D (IMP-D)
 IMP-E;AIMP-E;AIMP-2;Explorer 35;Interplanetary Monitoring Platform-E
 IMP-4;IMP-F;Explorer 34;Interplanetary Monitoring Platform-F
 IMP-G;IMP-5;Explorer 41;Interplanetary Monitoring Platform-G
 IMP-H;IMP-7;Explorer 43;Interplanetary Monitoring Platform-H
 IMP-I;IMP-6;Explorer 47;Interplanetary Monitoring Platform-I
 MP-8;IMP-J;Explorer 50;Interplanetary Monitoring Platform-J
-IMPROVE;Interagency Monitoring of Protected Visual Environments
+IMPROVE;Interagency Monitoring of Protected Visual Environments;IMPROVE ambient monitoring network
 IMS;Indian Mini Satellite
 IMS 1;IMS-1;Indian Mini Satellite-1;Indian Mini Satellite 1
 IMS 2;IMS-2;Indian Mini Satellite 2;Indian Mini Satellite-2
 IE-C;IE C;Injun 5;Injun-5;Explorer 40;Ionospheric Explorer C;Ionospheric Explorer-C
 Injun F;Injun-6;Injun-F;Hawkeye-1;Hawkeye 1;Explorer 52;Neutral Point Explorer
-INSAT;Indian National Satellite System
+INSAT;Indian National Satellite System;Indian National Satellite
 INSAT-1A;INSAT 1A;Indian National Satellite-1A;Indian National Satellite 1A
 INSAT-1B;INSAT 1B;Indian National Satellite 1B;Indian National Satellite-1B
 INSAT-3D;INSAT 3D;Indian National Satellite 3D;Indian National Satellite-3D
@@ -757,12 +757,12 @@ Observatory Station Code: INUV;Inuvik Geophysical Observatory
 Observatory Station Code: IQA;Iqaluit Geophysical Observatory
 Iqaluit Ground Observatory
 IR352 Irkutsk, Russia
-IRAS;Infrared Astronomical Satellite
+IRAS;Infrared Astronomical Satellite;Infrared Astronomy Satellite
 Iridium
 IRIS;SMEX-12;SMEX 12;Explorer 94;Interface Region Imaging Spectrograph
 GSN;IRIS GSN;IRIS-GSN;Incorporated Research Institutions for Seismology Network Global Seismographic Network;Incorporated Research Institutions for Seismology Network - Global Seismographic Network
 IRM;AMPTE/IRM;Ion Release Module;AMPTE/Ion Release Module
-IRNSS;Indian Regional Navigation Satellite System
+IRNSS;Indian Regional Navigation Satellite System;India's Regional Navigation Satellite System Satellites;IRNSS-1C
 IRS;Indian Remote Sensing Satellite
 IRS 1A;Indian Remote Sensing Satellite-1A;Indian Remote Sensing Satellite 1A
 IRS 1B;IRS-1B;Indian Remote Sensing Satellite-1B;Indian Remote Sensing Satellite 1B
@@ -770,9 +770,9 @@ IRS 1C;IRS-1C;Indian Remote Sensing Satellite 1C;Indian Remote Sensing Satellite
 IRS 1D;Indian Remote Sensing Satellite 1D;Indian Remote Sensing Satellite-1D
 IRS O2;Oceansat 2;Oceansat-2;Indian Remote Sensing Satellite-O2;Indian Remote Sensing Satellite O2
 IRS P2;IRS-P2;Indian Remote Sensing Satellite-P2;Indian Remote Sensing Satellite P2
-IRS P3;IRS-P3;Indian Remote Sensing Satellite P3;Indian Remote Sensing Satellite-P3
-IRS P4;IRS-P4;Oceansat 1;Oceansat-1;Indian Remote Sensing Satellite P4;Indian Remote Sensing Satellite-P4
-IRS P5;IRS-P5;Cartosat 1;Cartosat-1;Indian Remote Sensing Satellite P5;Indian Remote Sensing Satellite-P5
+IRS P3;IRS-P3;Indian Remote Sensing Satellite P3;Indian Remote Sensing Satellite-P3;Indian ISRO IRS-P3 Spacecraft
+IRS P4;IRS-P4;Oceansat 1;Oceansat-1;Indian Remote Sensing Satellite P4;Indian Remote Sensing Satellite-P4;Indian Remote Sensing Satellite-P4 (OCEANSAT-1)
+IRS P5;IRS-P5;Cartosat 1;Cartosat-1;Indian Remote Sensing Satellite P5;Indian Remote Sensing Satellite-P5;Indian Remote Sensing Satellite-P5 (CARTOSAT-1)
 IRS P6;IRS-P6;Resourcesat 1;Resourcesat-1;Indian Remote Sensing Satellite P6;Indian Remote Sensing Satellite-P6
 IRS P7;IRS-P7;Cartosat-2;Cartosat 2;Indian Remote Sensing Satellite-P7;Indian Remote Sensing Satellite P7
 IRS R2;IRS-R2;Resourcesat 2;Resourcesat-2;Indian Remote Sensing Satellite-R2;Indian Remote Sensing Satellite R2
@@ -808,8 +808,8 @@ JJ433 Jeju Island, South Korea
 Johnson Sea Link I;Johnson-Sea-Link I
 Johnson Sea Link II;Johnson-Sea-Link II
 JPSS;Joint Polar Satellite System
-JPSS-1;JPSS 1;Joint Polar Satellite System-1;Joint Polar Satellite System 1
-JPSS-2;JPSS 2;Joint Polar Satellite System-2;Joint Polar Satellite System 2
+JPSS-1;JPSS 1;Joint Polar Satellite System-1;Joint Polar Satellite System 1;NOAA-20
+JPSS-2;JPSS 2;Joint Polar Satellite System-2;Joint Polar Satellite System 2;NOAA-21
 JPSS-3;JPSS 3;Joint Polar Satellite System-3;Joint Polar Satellite System 3
 JPSS-4;Joint Polar Satellite System-4;Joint Polar Satellite System 4
 JR055 Juliusruh, Germany
@@ -818,9 +818,9 @@ Juno
 JWST;James Webb Space Telescope
 Kakadu Ground Observatory
 Observatory Station Code: KAKO;Kaktovik Geophysical Observatory
-Metsat-1;Metsat 1;Kalpana-1;Kalpana 1
+Metsat-1;Metsat 1;Kalpana-1;Kalpana 1;K1
 Observatory Station Code: STF;Kangerlussuaq Geophysical Observatory
-Kanopus V;Kanopus-V;Kanopus Vulkan;Kanopus-Vulkan
+Kanopus V;Kanopus-V;Kanopus Vulkan;Kanopus-Vulkan;Environmental Satellite Kanopus-V
 Kanoya Ground Observatory
 Kanozan Ground Observatory
 KAPU;NASA THEMIS GBO Kapuskasing Station
@@ -937,8 +937,8 @@ Luanda Capelo Ground Observatory
 Observatory Station Code: LCL;Lucky Lake Geophysical Observatory
 Lunar Crater Observation and Sensing Satellite
 Lunar Prospector
-Lunar Reconnaissance Orbiter
-Lunokhod
+Lunar Reconnaissance Orbiter;LRO
+Lunokhod;Lunar Retroreflector Array
 Lunping Ground Observatory
 LV12P Louisvale, South Africa
 Lviv Ground Observatory
@@ -991,7 +991,7 @@ McGraw-Hill Observatory 2.4 m Hiltner Ritchey-Chretien Equatorial Reflector;McGr
 Observatory Station Code: MEA;Meanook Geophysical Observatory
 Meanook Ground Observatory
 MEDES Space Clinic
-Megha-Tropiques;Megha Tropiques
+Megha-Tropiques;Megha Tropiques;MT1
 Observatory Station Code: MEK;Mekrijarvi Geophysical Observatory
 Memambetsu Ground Observatory
 MER-1;MER 1;Mars Exploration Rover 1
@@ -1003,7 +1003,7 @@ Meteor
 Meteor-2;Meteor 2
 Meteor-3;Meteor 3
 Meteor 3M;Meteor-3M
-Meteor-M;Meteor M
+Meteor-M;Meteor M;Meteor-M-1 Mission
 Meteor M N2;Meteor-M N2;Meteorological Satellite Meteor M N2;Meteorological Satellite Meteor-M N2
 Meteorological Stations
 Meteosat;Meteosat Operational Programme
@@ -1012,9 +1012,9 @@ MSG-3;Meteosat-10;Meteosat 10;Meteosat Operational Programme-10;Meteosat Operati
 MSG-4;Meteosat-11;Meteosat 11;Meteosat Operational Programme-11;Meteosat Operational Programme 11
 Meteosat 2;Meteosat Operational Programme-2;Meteosat Operational Programme 2
 Meteosat 3;Meteosat-3;Meteosat-P2;Meteosat Operational Programme-3;Meteosat Operational Programme 3
-MOP-1;Meteosat-4;Meteosat 4;Meteosat Operational Programme-4;Meteosat Operational Programme 4
-MOP-2;Meteosat 5;Meteosat-5;Meteosat Operational Programme 5;Meteosat Operational Programme-5
-MOP-3;Meteosat 6;Meteosat-6;Meteosat Operational Programme 6;Meteosat Operational Programme-6
+MOP-1;Meteosat-4;Meteosat 4;Meteosat Operational Programme-4;Meteosat Operational Programme 4;Meteosat Operational Programme 1 (MOP-1)
+MOP-2;Meteosat 5;Meteosat-5;Meteosat Operational Programme 5;Meteosat Operational Programme-5;Meteosat Operational Programme 2 (MOP-2)
+MOP-3;Meteosat 6;Meteosat-6;Meteosat Operational Programme 6;Meteosat Operational Programme-6;Meteosat Operational Programme 3 (MOP-3)
 MOP-4;Meteosat 7;Meteosat-7;Meteosat Operational Programme 7;Meteosat Operational Programme-7
 MSG-1;Meteosat 8;Meteosat-8;Meteosat Operational Programme-8;Meteosat Operational Programme 8
 MSG-2;Meteosat-9;Meteosat 9;Meteosat Operational Programme-9;Meteosat Operational Programme 9
@@ -1087,7 +1087,7 @@ MSX;Midcourse Space Experiment
 MT. Singleton C14 Portable Telescope
 MTSAT;Multi-functional Transport Satellite;Multi Functional Transport Satellite
 MTSAT-1R;MTSAT 1R;Multi Functional Transport Satellite 1 Replacement;Multi-functional Transport Satellite 1 Replacement
-MTSAT-2;Multi Functional Transport Satellite 2;Multi-functional Transport Satellite 2
+MTSAT-2;Multi Functional Transport Satellite 2;Multi-functional Transport Satellite 2;The Multi-functional Transport Satellite 2
 MU12K Madimbo, South Africa
 MU230 Multan, Pakistan
 Munin
@@ -1137,7 +1137,7 @@ Nimbus 5;Nimbus-5
 Nimbus 6;Nimbus-6
 Nimbus 7;Nimbus-7
 Nimbus B
-NISAR;NASA-ISRO Synthetic Aperture Radar;NASA ISRO Synthetic Aperture Radar
+NISAR;NASA-ISRO Synthetic Aperture Radar;NASA ISRO Synthetic Aperture Radar;NASA-ISRO SAR Mission
 NLDN;National Lightning Detection Network
 NNSN;IHW Near-Nucleus Studies Network;IHW Near Nucleus Studies Network
 NO369 Norilsk, Russian Federation
@@ -1175,7 +1175,7 @@ NPN;NOAA Profiler Network
 NPOESS;National Polar-orbiting Operational Environmental Satellite System
 NQJ61 Narsarsuaq, Greenland
 NRAO;National Radio Astronomy Observatory
-NRL P-3;NRL P 3
+NRL P-3;NRL P 3;Aircraft operated by Naval Research Lab
 NRSQ;NASA THEMIS GBO Narsarsuaq Station
 NSF/NCAR C-130;NSF/NCAR Hercules C-130 Aircraft
 NSF/NCAR GV HIAPER;NSF/NCAR Gulfstream GV Aircraft
@@ -1348,7 +1348,7 @@ QuickBird;DigitalGlobe's QuickBird
 QuickBird 2;QuickBird-2;DigitalGlobe's QuickBird-2;DigitalGlobe's QuickBird 2
 QuikSCAT;Quick Scatterometer
 QZSS;Quasi Zenith Satellite System Satellites;Quasi-Zenith Satellite System Satellites
-R 352;NOAA Ship Nancy Foster
+R 352;NOAA Ship Nancy Foster;Nancy Foster
 R/V AA;R/V Aurora Australis
 R/V Akademik M.A. Lavrentyev
 R/V Alpha Helix
@@ -1363,7 +1363,7 @@ R/V Heritage
 R/V Italia
 R/V Italica
 R/V Ivan Petrov
-R/V JangMok
+R/V JangMok;Research Vessel JangMok
 R/V L'ASTRO;R/V L'ASTROLABE
 R/V LL;R/V Lady Lisa
 R/V LMG;R/V Laurence M. Gould
@@ -1392,7 +1392,7 @@ RadarSAT 1
 RADARSAT 2;RADARSAT-2
 Radisson Geophysical Observatory
 RAE-A;RAE A;Explorer 38;Radio Astronomy Explorer A;Radio Astronomy Explorer-A
-RAE-B;RAE B;Explorer 49;Radio Astronomy Explorer-B;Radio Astronomy Explorer B
+RAE-B;RAE B;Explorer 49;Radio Astronomy Explorer-B;Radio Astronomy Explorer B;Radio Astronomy Explorer-B (Explorer 49)
 RAM;Russian Arctic and Antarctic Magnetometer Network
 RANK;NASA THEMIS GBO Rankin Station
 Observatory Station Code: RANK;Rankin Inlet Geophysical Observatory
@@ -1469,13 +1469,13 @@ SCATHA;STP P78 2;STP P78-2;Spacecraft Charging at High Altitudes
 ScatSat 1;ScatSat-1;Scatterometer Satellite-1;Scatterometer Satellite 1
 SCD;Satellites De Coleta De Dados
 Observatory Station Code: SCHF;Schefferville Geophysical Observatory
-SCISAT-1/ACE;SCISAT 1/ACE;Science Satellite/Atmospheric Chemistry Experiment
+SCISAT-1/ACE;SCISAT 1/ACE;Science Satellite/Atmospheric Chemistry Experiment;Atmospheric Chemistry Experiment
 Scott Base Ground Observatory
 Scout Satellite;Solid Controlled Orbital Utility Test
 SDO;Solar Dynamics Observatory
 Sea Ice Mass Balance Station
 SeaHawk;SeaHawk Cubesat
-Seasat-1;Seasat 1
+Seasat-1;Seasat 1;Ocean Dynamics Satellite
 SeaSoar;SEASOAR
 SEIRIOS
 Seismological Stations
@@ -1506,13 +1506,13 @@ Silchar Ground Observatory
 Simosato Ground Observatory
 Siple Experiment
 Sitka Ground Observatory;Sitka Geophysical Observatory;Observatory Station Code: SIT
-SLATS;Super Low Altitude Test Satellite
+SLATS;Super Low Altitude Test Satellite;Super Low Altitude Test Satellite (SLATS)
 SMAP;Soil Moisture Active and Passive Observatory
 SMART-R;SMART R;Shared Mobile Atmospheric Research and Teaching Radar
 SME;Solar Mesospheric Explorer
 SMJ67 Sondrestrom AB, Greenland
 SMM;Solar Maximum Mission
-SMOS;Soil Moisture and Ocean Salinity
+SMOS;Soil Moisture and Ocean Salinity;Soil Moisture and Ocean Salinity (Earth Explorer Opportunity Mission)
 SMS;Synchronous Meteorological Satellites
 SMS-1;SMS 1;Synchronous Meteorological Satellite 1;Synchronous Meteorological Satellite-1
 SMS-2;Synchronous Meteorological Satellite-2;Synchronous Meteorological Satellite 2
@@ -1544,11 +1544,11 @@ Southern Auroral Electrojet Index
 Soyuz
 Space Shuttles
 Space-based Platforms;Space Based Platforms
-STS-51B;Spacelab-1;Spacelab 1
-STS-51F;Spacelab-3;Spacelab 3
+STS-51B;Spacelab-1;Spacelab 1;Space Transport System STS-51B
+STS-51F;Spacelab-3;Spacelab 3;Space Transport System STS-51F
 SPAS II;SPAS-II;Shuttle Pallet Satellite II;Shuttle Pallet Satellite-II
 SPEC;IHW Spectroscopy and Spectrophotometry Network
-Spire;Spire Global's Constellation
+Spire;Spire Global's Constellation;Spire constellation
 SPOT 1;SPOT-1;Systeme Probatoire Pour l'Observation De La Terre 1;Systeme Probatoire Pour l'Observation De La Terre-1
 SPOT 2;Systeme Probatoire Pour l'Observation De La Terre-2;Systeme Probatoire Pour l'Observation De La Terre 2
 SPOT 3;SPOT-3;Systeme Probatoire Pour l'Observation De La Terre 3;Systeme Probatoire Pour l'Observation De La Terre-3
@@ -1575,8 +1575,8 @@ STEREO A;STEREO East;STEREO Ahead;Solar Terrestrial Relations Observatory-A;Sola
 STEREO B;STEREO-B;STEREO West;STEREO Behind;Solar Terrestrial Relations Observatory B;Solar Terrestrial Relations Observatory-B
 Stereographic Photographs
 Stonyhurst Ground Observatory
-STPSat 1;Space Test Program Satellite 1
-STPSat 3;STPSat-3;Space Test Program Satellite 3
+STPSat 1;Space Test Program Satellite 1;U.S. Air Force Space Test Program Satellite 1
+STPSat 3;STPSat-3;Space Test Program Satellite 3;U.S. Air Force Space Test Program Satellite 3
 STS-11;STS-41-B;Space Transport System STS-11;Space Transport System STS 11
 STS-2;Space Transport System STS 2;Space Transport System STS-2
 STS-34;STS 34;Space Transport System STS 34;Space Transport System STS-34
@@ -1637,7 +1637,7 @@ Technical University of Denmark Magnetic Ground Stations
 Tehran Ground Observatory;Observatory Station Code: TEH
 TEIDE Observatory
 Teoloyucan Ground Observatory
-Terra;Earth Observing System, Terra
+Terra;Earth Observing System, Terra;Earth Observing System, Terra (AM-1)
 TSX;TerraSAR-X
 Terrestrial Laboratory
 TET-1;TET 1;Technology Experiment Carrier 1;Technology Experiment Carrier-1
@@ -1682,7 +1682,7 @@ Tondano Ground Observatory
 Tonghai Ground Observatory
 Toolangi Ground Observatory
 Toolik Lake Geophysical Observatory
-T/P;TOPEX/Poseidon;Topography Experiment/Poseidon
+T/P;TOPEX/Poseidon;Topography Experiment/Poseidon;Ocean Topography Experiment
 TopSat;Tactical Operational Satellite
 TPAS;NASA THEMIS GBO The Pas Station
 TR169 Tromso, Norway
@@ -1819,3 +1819,376 @@ Zhangheng 1
 Zo-Se Ground Observatory;Zo Se Ground Observatory
 Zond 3
 ZS36R Zhongshan, Antarctica
+Eole Balloons
+RADIOSONDES
+Airplane
+Long EZ;Long EZ Aircraft
+AIRCRAFT
+CESSNA T206H
+GULFSTREAM 1000 (695A);Gulfstream Jet Prop Commander 1000 (695a)
+PIPER AZTEC
+SeaRey;Progressive Aerodyne SeaRey
+SKYVAN
+TWIN OTTER CIRPAS NPS
+HELICOPTER
+BlueHalo E900;BlueHalo E900 UAV
+GLOBAL HAWK
+CONTROL SURVEYS
+Data Collections
+FIELD SURVEYS
+Ice Shelf
+Transmitter Station
+TRIPOD
+AirGradient
+AirQino;AirQino Sensor Network
+BEACO2N;Berkeley Environmental Air-quality & CO2 Network
+CairClip;CairClip Sensor Network
+CAIRSENSE;Community Air Sensor Network
+City of Madison Air Quality;City of Madison Air Quality Sensor Network
+COASTAL STATIONS
+EPA Low Cost Sensors;Environmental Protection Agency Low Cost Sensor Network
+FIXED OBSERVATION STATIONS
+GEOMET;USGS Desert Winds Geological/Meteorological Ground Station
+GRAVITY STATIONS
+GREAT WALL STATION;CHINESE GREAT WALL STATION
+GROUND STATIONS
+HAQ Pods;Hannigan Air Quality Pods
+INSTEP;Inexpensive Network Sensor Technology for Exploring Pollution
+Love My Air Denver;Love My Air Denver Sensor Network
+Love My Air Wisconsin;Love My Air Wisconsin Sensor Network
+MINTS;Multi-Scale Integrated Intelligent Interactive Sensing Consortium
+MKE Fresh Air;MKE Fresh Air Collective
+OBSERVATORIES
+PakAirQuality;Pakistan Air Quality Initiative
+PurpleAir;PurpleAir Sensor Network
+RAMP;Real-Time Multi-Pollutant Sensors
+Ribbit;Ribbit Network
+STAIR;Smart and Trustworthy Air quality Network
+STREAMFLOW STATION
+SURFACE WATER WEIR
+UPC;Universitat Politècnica of Catalunya, Spain CAPTOR Sensor Network
+VOLCANO OBSERVATORY
+WEATHER STATIONS
+AML;Aerodyne Mobile Laboratory
+CARB MMP;California Air Resources Board Mobile Measurement Platform
+EPA GMAP;Environmental Protection Agency Geospatial Measurement of Air Pollution
+NASA MACH-2;NASA Mobile Aerosol Characterization laboratory
+TRAVERSE;Logistic tractor traverse
+UWEC Auto;UWEC Automobile Platform
+NOT APPLICABLE
+Auxiliary Data
+FIELD INVESTIGATION
+Multi-sensor Analysis
+Charts
+MAPS
+BLING;Biology Light Iron Nutrient and Gas model
+CAM-chem;Community Atmosphere Model with Chemistry
+CASA-GFED3-V2;Carnegie-Ames-Stanford-Approach Global Fire Emissions Database 3 V2
+CASA-GFED3-V3;Carnegie-Ames-Stanford-Approach Global Fire Emissions Database 3 V3
+Catchment-LSM;Catchment Land Surface Model
+CESM;NCAR Community Earth System Model
+CLIMATE MODELS
+CLM-LSM;Common Land Model (CLM) Land Surface Model
+CMAQ;Community Multiscale Air Quality Modeling System
+CMORPH
+CMS-Flux;Carbon Monitoring System Flux
+COMPUTERS
+CRM;Cloud Resolving Model
+Data Analysis
+DEM;Digital Elevation Model
+ECCO2_Darwin-V3;Estimating the Circulation and Climate of the Ocean, Phase II; Darwin-V3
+ECMWF;European Centre for Medium-Range Weather Forecasts Model
+ECMWF ERA5;ECMWF ERA5 Atmospheric Reanalysis
+ECMWFIFS;ECMWF Integrated Forecast System
+ERA15DAS;ERA15 Data Assimilation System
+ERA40DAS;ERA40 Data Assimilation System
+FFDAS-V2;Fossil Fuel Data Assimilation System V2
+FLEXPART;FLEXible PARTicle dispersion model
+Forcing-LSM;Forcing data for Land Surface Model
+FSL-MAPS;FSL Mesoscale Analysis and Prediction System
+GCM;General Circulation Model
+GDAS;Global Data Assimilation System
+GLPPM;Great Lake Primary Productivity Model
+GOCART;Goddard Chemistry Aerosol Radiation and Transport Model
+HAQES;Hazardous Air Quality Ensemble System
+L4_C;SMAP Level 4 Carbon Flux Model
+LNOM;Lightning Nitrogen Oxides Model
+LPJ-EOSIM;LPJ-EOSIM Model
+LPJ-PROSAIL;LPJ-PROSAIL Model
+LSM;Land Surface Model
+MERRA;Modern-Era Retrospective Analysis for Research and Applications
+MERRA-2;The second Modern-Era Retrospective analysis for Research and Applications
+MICOM;Miami Isopycnic Coordinate Ocean Model
+ModelE;GISS GCM ModelE
+MODELS
+Mosaic-LSM;Mosaic Land Surface Model
+MOZART-4;Model for Ozone and Related chemical Tracers, version 4
+NASA-GISS-3D-Tracer-Transport
+NASA-GISS-Dust-Transport
+NCEP-CFSR;NCEP Climate Forecast System Reanalysis
+NCEP-CFSV2;NCEP Climate Forecast System Version 2
+NCEP-ETA;NCEP Eta Model
+NCEP-FNL;NCEP Final Global Data Assimilation System
+NCEP-GFS;NCEP Global Forecast System
+NCEP-GODAS;NCEP Global Ocean Data Assimilation System
+NCEP-MRF;NCEP Medium Range Forecast Model
+NCEP-NAM;NCEP North American Model
+NCEP-RUC;NCEP Rapid Update Cycle Model
+NCEP/DOE-R2M;NCEP/DOE Reanalysis 2 Model
+NCEP/NCAR-RM;NCEP/NCAR Reanalysis Model
+Noah-LSM;Noah Land Surface Model
+Noah-MP-LSM;Noah-MP Land Surface Model
+NOBM;NASA Ocean Biogeochemical Model
+OBSERVATION BASED;OBSERVATION BASED ANALYSES
+OCEAN STATE ESTIMATION
+OPERATIONAL MODELS
+Penman-Monteith;Penman-Monteith Model with Enhanced Surface Resistance Parameterization
+POM;Princeton Ocean Model
+RAQMS;Regional Air Quality Modeling System
+RASI
+REANALYSIS MODELS
+SMERGE;NLDAS-Noah and ESA-CCI Merged Soil Moisture
+SPEAR;Seamless System for Prediction and EArth System Research
+STILT;Stochastic Time-Inverted Lagrangian Transport Model
+TRAJ3D;Three-Dimensional Trajectory Model
+Unified Model UM;United Kingdom Met Office (UKMO) Unified Model
+VIC-LSM;Variable Infiltration Capacity (VIC) Land Surface Model
+WRF;Weather Research and Forecasting (WRF) Model
+WRF-Chem;Weather Research and Forecasting Model Coupled to Chemistry
+GEOS;Goddard Earth Observing System
+GEOS-Chem;Global 3-D chemical transport model (CTM) for atmospheric composition driven by meteorological input from the Goddard > Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office
+LANDMET;CCNY NOAA-CREST Land Surface Atmospheric Boundary Processing Method
+Merged IR;NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR
+RM-OBS/PU;Hybrid of NCEP/NCAR Reanalysis Model and Observations by Princeton University
+TMPA;TRMM Multi-Satellite Precipitation Analysis
+LABORATORY
+PHOTOSYNTHESIS CHAMBER
+MISSION REPORTS
+Publications
+Aeolus;Earth Explorer Atmospheric Dynamics Mission Aeolus
+ALTIUS;Atmospheric Limb Tracker for the Investigation of the Upcoming Stratosphere
+Amazonia-1
+ANDE CASTOR;Atmospheric Neutral Density Experiment Castor
+ANDE POLLUX;Atmospheric Neutral Density Experiment Pollux
+ANDE-RR ACTIVE;Atmospheric Neutral Density Experiment Risk Reduction Active Satellite
+BlackSky Global Constellation
+BLITS
+CORONA
+COSMIC-2/FORMOSAT-7;Constellation Observing System for Meteorology, Ionosphere, and Climate - 2
+EnMAP;Environmental Monitoring and Analysis Program
+ETS-8;Engineering Test Satellite-8
+FengYun-4;FY-4
+FORUM;Far-infrared Outgoing Radiation Understanding and Monitoring
+GeoOptics CICERO;GeoOptics Community Initiative for Cellular Earth Remote Observation
+GOMS;Geostationary Operational Meteorological Satellite
+GOSAT-GW;Global Observing SATellite for Greenhouse gases and Water cycle
+GP-B;Gravity Probe-B
+GPS/MET;Global Positioning System/Meteorology
+GRACE-B;Gravity Recovery and Climate Experiment-B
+HARMONY
+HotSat-1
+HY2-C;Haiyang-2C
+HY2-D;Haiyang-2D
+IS-40e;Intelsat 40e
+LARETS
+Lemur-2;Low Earth Multi-Use Receiver - 2
+MetOp-SG;MetOp-Second Generation Program
+MicroCarb;Carbon Dioxide Monitoring Mission
+MTG;Meteosat Third Generation
+MuSat2
+NAHLA
+NCEP GTS;National Centers for Environmental Prediction Global Telecommunications Systems
+NPOESS (National Polar-orbiting Operational Environmental Satellite System )
+PlanetiQ GNOMES;PlanetiQ GNSS Navigation and Occultation Measurement
+Pleiades Neo
+PLT-2;PLATiNO-2
+PRISMA;PRecursore IperSpettrale della Missione Applicativa
+Project for On-Board Autonomy (PROBA)
+SATELLITES
+SkySat;SkySat constellation
+SOHLA-1;Space Oriented Higashiosaka Leading Association-1
+STSAT-2A;Science and Technology SATellite-2A
+STSAT-2B;Science and Technology SATellite-2B
+Tanager-1
+TanSat;Chinese Carbon Dioxide Observation Satellite
+Umbra SAR Constellation;Umbra Space’s SAR constellation
+VANGUARD
+Vision-1;SSTL S1-4
+ATS-6;Applications Technology Satellite-6
+Acadia Sub-Constellation;Capella Acadia Sub-Constellation
+Whitney Sub-Constellation;Capella Whitney Sub-Constellation
+CBERS-4A;China-Brazil Earth Resources Satellite-4A
+COSMOS 1500
+COSMOS 49
+DMSP 5D-1/F3;Defense Meteorological Satellite Program-F3
+DMSP 5D-3/F15;Defense Meteorological Satellite Program-F15
+EXPLORER-9;Air Density Sphere
+FY-1A;FengYun-1A
+GOES-18;Geostationary Operational Environmental Satellite 18
+GOES-19;Geostationary Operational Environmental Satellite 19
+IRS C03;Cartosat-03
+IRS C2E;Cartosat-2E
+IRS E04;Earth Observation Satellite - 04
+IRS E06;Earth Observation Satellite - 06
+IRS-R2A;Indian Remote Sensing Satellite-R2A
+IRS-RS2;Indian Remote Sensing Satellite-RS2
+Meteor 2-21
+Meteor-M N1;Meteorological Satellite Meteor-M N1
+METEOSAT-12
+PREFIRE-SAT1;Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Satellite-1
+PREFIRE-SAT2;Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Satellite-2
+RCM-1
+RCM-2
+RCM-3
+SeaHawk-1;SeaHawk-1 Cubesat
+Sentinel-1C
+Sentinel-1D
+Sentinel-2C
+Sentinel-6B
+WSFM-M1;MicroWave Imager on WSF-M
+PIONEER VENUS
+Beidou;Beidou Satellites
+BeiDou-1A;BeiDou Satellite 1a
+BeiDou-1B;BeiDou Satellite 1b
+BeiDou-1C;BeiDou Satellite 1c
+BeiDou-1D;BeiDou Satellite 1d
+BeiDou-3 G1;BeiDou Satellite 3 G1
+BeiDou-3 G2;BeiDou Satellite 3 G2
+BeiDou-3 G3;BeiDou Satellite 3 G3
+BeiDou-3 G4;BeiDou Satellite 3 G4
+BeiDou-3 I1;BeiDou Satellite 3 I1
+BeiDou-3 I1-S;BeiDou Satellite 3 I1-S
+BeiDou-3 I2;BeiDou Satellite 3 I2
+BeiDou-3 I2-S;BeiDou Satellite 3 I2-S
+BeiDou-3 I3;BeiDou Satellite 3 I3
+BeiDou-3 M1;BeiDou Satellite 3 M1
+BeiDou-3 M1-S;BeiDou Satellite 3 M1-S
+BeiDou-3 M10;BeiDou Satellite 3 M10
+BeiDou-3 M11;BeiDou Satellite 3 M11
+BeiDou-3 M12;BeiDou Satellite 3 M12
+BeiDou-3 M13;BeiDou Satellite 3 M13
+BeiDou-3 M14;BeiDou Satellite 3 M14
+BeiDou-3 M15;BeiDou Satellite 3 M15
+BeiDou-3 M16;BeiDou Satellite 3 M16
+BeiDou-3 M17;BeiDou Satellite 3 M17
+BeiDou-3 M18;BeiDou Satellite 3 M18
+BeiDou-3 M19;BeiDou Satellite 3 M19
+BeiDou-3 M2;BeiDou Satellite 3 M2
+BeiDou-3 M2-S;BeiDou Satellite 3 M2-S
+BeiDou-3 M20;BeiDou Satellite 3 M20
+BeiDou-3 M21;BeiDou Satellite 3 M21
+BeiDou-3 M22;BeiDou Satellite 3 M22
+BeiDou-3 M23;BeiDou Satellite 3 M23
+BeiDou-3 M24;BeiDou Satellite 3 M24
+BeiDou-3 M25;BeiDou Satellite 3 M25
+BeiDou-3 M26;BeiDou Satellite 3 M26
+BeiDou-3 M3;BeiDou Satellite 3 M3
+BeiDou-3 M3-S;BeiDou Satellite 3 M3-S
+BeiDou-3 M4;BeiDou Satellite 3 M4
+BeiDou-3 M5;BeiDou Satellite 3 M5
+BeiDou-3 M6;BeiDou Satellite 3 M6
+BeiDou-3 M7;BeiDou Satellite 3 M7
+BeiDou-3 M8;BeiDou Satellite 3 M8
+BeiDou-3 M9;BeiDou Satellite 3 M9
+Compass-G1;Compass Satellite G1
+Compass-G2;Compass Satellite G2
+Compass-G3;Compass Satellite G3
+Compass-G4;Compass Satellite G4
+Compass-G5;Compass Satellite G5
+Compass-G6;Compass Satellite G6
+Compass-G7;Compass Satellite G7
+Compass-G8;Compass Satellite G8
+Compass-IGS01;Compass Satellite IGS01
+Compass-IGS02;Compass Satellite IGS02
+Compass-IGS03;Compass Satellite IGS03
+Compass-IGS04;Compass Satellite IGS04
+Compass-IGS05;Compass Satellite IGS05
+Compass-IGS06;Compass Satellite IGS06
+Compass-IGS07;Compass Satellite IGS07
+Compass-M1;Compass Satellite M1
+Compass-M3;Compass Satellite M3
+Compass-M4;Compass Satellite M4
+Compass-M5;Compass Satellite M5
+Compass-M6;Compass Satellite M6
+GIOVE-A;Galileo In-Orbit Validation Element-A
+GIOVE-B;Galileo In-Orbit Validation Element-B
+GSAT0101;Galileo Satellite (GSAT)101
+GSAT0102;Galileo Satellite (GSAT)102
+GSAT0103;Galileo Satellite (GSAT)103
+GSAT0203;Galileo Satellite (GSAT)203
+GSAT0205;Galileo Satellite (GSAT)205
+GSAT0206;Galileo Satellite (GSAT)206
+GSAT0207;Galileo Satellite (GSAT)207
+GSAT0208;Galileo Satellite (GSAT)208
+GSAT0210;Galileo Satellite (GSAT)210
+GSAT0211;Galileo Satellite (GSAT)211
+GSAT0212;Galileo Satellite (GSAT)212
+GSAT0213;Galileo Satellite (GSAT)213
+GSAT0214;Galileo Satellite (GSAT)214
+GSAT0215;Galileo Satellite (GSAT)215
+GSAT0216;Galileo Satellite (GSAT)216
+GSAT0217;Galileo Satellite (GSAT)217
+GSAT0218;Galileo Satellite (GSAT)328
+GSAT0219;Galileo Satellite (GSAT)219
+GSAT0220;Galileo Satellite (GSAT)220
+GSAT0221;Galileo Satellite (GSAT)221
+GSAT0222;Galileo Satellite (GSAT)222
+GSAT0223;Galileo Satellite (GSAT)223
+GSAT0224;Galileo Satellite (GSAT)224
+GLONASS 40-143;Global Navigation Satellite System 40-143
+GLONASS K;Global Navigation Satellite System-K
+GLONASS K2;Global Navigation Satellite System-K2
+GLONASS M;Global Navigation Satellite System-M
+Block IIF GPS A-F;Block IIF Global Positioning System Satellites A through F
+Block III/IIIF GPS A-F;Block III/IIIF Global Positioning System Satellites A through F
+Block IIR GPS B-F;Block IIR Global Positioning System Satellites B through F
+Block IIR-M GPS A-F;Block IIR-M Global Positioning System Satellites A through F
+IRNSS-1B;Indian Regional Navigation Satellite System 1B
+IRNSS-1D;Indian Regional Navigation Satellite System ID
+IRNSS-1F;Indian Regional Navigation Satellite System 1F
+IRNSS-1I;Indian Regional Navigation Satellite System 1I
+QZS-1R;Michibiki-1R
+QZS-2;Michibiki-2
+QZS-3;Michibiki-3
+QZS-4;Michibiki-4
+OICETS;Optical Inter-orbit Communications Engineering Test Satellite
+RADIOASTRON
+TIPS-NORTON;Tether Physics and Survivability-Norton
+TIPS-RALPH;Tether Physics and Survivability-Ralph
+EXPLORER-31 (DME-A)
+Explorer-7
+IMP-8;Interplanetary Monitoring Platform-8
+SOL-1
+ATLAS-1;Atmospheric Laboratory for Applications and Science-1
+ATLAS-2;Atmospheric Laboratory for Applications and Science-2
+ATLAS-3;Atmospheric Laboratory for Applications and Science-3
+MUSES;Multiple-User System for Earth Sensing
+SKYLAB
+MOORINGS
+Argo-Float
+PROTEUS;Profile Telemetry of Upper Ocean Currents
+SN-2;Submarine Network 2
+SN-4;Submarine Network 4
+DRILLING PLATFORMS
+OCEAN PLATFORMS
+OCEAN WEATHER STATIONS
+Water-based Platforms
+Argus
+Guru
+Jason II
+ROVS;Remotely Operated Vehicle
+SEAGLIDER
+Sonsub Innovator
+Yogi
+Saildrone
+Wave Glider
+Alvin
+Clelia
+SUBMARINE
+R/V Mirai;Research Vessel Mirai
+R/V Nuyina
+R/V ONNURI
+R/V SERC;Research Vessel Smithsonian Environmental Research Center
+R/V Shearwater;Research Vessel Shearwater
+Ships
+ZODIACS
