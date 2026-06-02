@@ -9,7 +9,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-from ..config import USER_AGENT, DatasetConfig
+from ..config import RAW_CACHE_DIR, USER_AGENT, DatasetConfig
 from ..normalize import clean, match_key
 
 
@@ -62,7 +62,9 @@ def _session() -> requests.Session:
         total=5,
         backoff_factor=1.0,
         status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=frozenset({"GET"}),
+        # POST is included for the SDE search API; the search query is
+        # idempotent so retrying it on a 5xx/429 is safe.
+        allowed_methods=frozenset({"GET", "POST"}),
     )
     adapter = HTTPAdapter(max_retries=retry)
     session.mount("https://", adapter)
@@ -75,8 +77,12 @@ class Source:
     """Base class for a dataset source.
 
     Subclasses implement :meth:`fetch_raw` (returns bytes) and :meth:`parse`
-    (raw bytes -> list[SourceConcept]). The base orchestrates caching.
+    (raw bytes -> list[SourceConcept]). The base orchestrates caching. Each
+    source owns its own ``cache_filename`` (under ``data/raw/``) so a single
+    dataset may combine several sources without their caches colliding.
     """
+
+    cache_filename: str = ""
 
     def __init__(self, dataset: DatasetConfig):
         self.dataset = dataset
@@ -91,7 +97,7 @@ class Source:
     # -- orchestration ----------------------------------------------------
     def load(self, *, from_cache: bool = False) -> list[SourceConcept]:
         """Return parsed concepts, fetching from network unless ``from_cache``."""
-        cache_path = self.dataset.cache_path
+        cache_path = RAW_CACHE_DIR / self.cache_filename
         if from_cache:
             raw = cache_path.read_bytes()
         else:

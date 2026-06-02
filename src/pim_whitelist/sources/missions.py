@@ -25,6 +25,8 @@ _RETRY_SLEEP_SECONDS = 1.0
 
 
 class MissionsSource(Source):
+    cache_filename = "missions.json"
+
     def fetch_raw(self, session: requests.Session) -> bytes:
         posts: dict[int, dict] = {}
         page = 1
@@ -65,6 +67,7 @@ class MissionsSource(Source):
         for post in posts:
             title = (post.get("title") or {}).get("rendered", "")
             provenance = {
+                "origins": ["missions"],
                 "id": post.get("id"),
                 "slug": post.get("slug"),
                 "mission_type": post.get("mission-type"),

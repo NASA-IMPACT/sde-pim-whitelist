@@ -8,6 +8,11 @@ from .diff import Delta
 ORPHAN_PREVIEW = 50
 
 
+def _origin_tag(provenance: dict) -> str:
+    origins = provenance.get("origins", [])
+    return f"  [{', '.join(origins)}]" if origins else ""
+
+
 def render(delta: Delta, *, date: str) -> str:
     lines: list[str] = []
     lines.append(f"### {delta.dataset.capitalize()} delta ({date})")
@@ -22,14 +27,16 @@ def render(delta: Delta, *, date: str) -> str:
     if delta.new_concepts:
         lines.append(f"#### Added ({len(delta.new_concepts)} new concepts)")
         for sc in delta.new_concepts:
-            lines.append(f"  + {';'.join(sc.aliases)}")
+            lines.append(f"  + {';'.join(sc.aliases)}{_origin_tag(sc.provenance)}")
         lines.append("")
 
     if delta.new_aliases:
         lines.append(f"#### New aliases on existing concepts ({delta.added_alias_count})")
         for na in delta.new_aliases:
             added = ", ".join(f'"{a}"' for a in na.aliases)
-            lines.append(f"  ~ {na.concept.canonical}  +{added}")
+            lines.append(
+                f"  ~ {na.concept.canonical}  +{added}{_origin_tag(na.source.provenance)}"
+            )
         lines.append("")
 
     if delta.orphans:

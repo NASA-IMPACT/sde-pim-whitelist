@@ -10,9 +10,9 @@ from dataclasses import dataclass
 import click
 
 from . import config, report
-from .diff import Delta, compute_delta
+from .diff import Delta, compute_delta, merge_source_concepts
 from .merge import apply_delta
-from .sources import get_source
+from .sources import get_sources
 from .whitelist import Whitelist
 
 
@@ -30,10 +30,12 @@ def _today() -> str:
 def process_dataset(
     dataset: config.DatasetConfig, *, from_cache: bool
 ) -> DatasetResult:
-    """Load whitelist + source, compute delta, and build the merged whitelist."""
+    """Load whitelist + sources, compute delta, and build the merged whitelist."""
     whitelist = Whitelist.load(dataset.whitelist_path)
-    source = get_source(dataset)
-    source_concepts = source.load(from_cache=from_cache)
+    raw_concepts = []
+    for source in get_sources(dataset):
+        raw_concepts.extend(source.load(from_cache=from_cache))
+    source_concepts = merge_source_concepts(raw_concepts)
     delta = compute_delta(dataset.name, whitelist, source_concepts)
     merged = apply_delta(whitelist, delta)
     return DatasetResult(dataset=dataset, delta=delta, merged=merged)

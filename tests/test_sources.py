@@ -26,6 +26,7 @@ def test_parse_platforms_csv_skips_hierarchy_nodes():
     misr = concepts[1]
     assert misr.aliases == ["MISR", "Multi-Angle Imaging SpectroRadiometer"]
     assert misr.provenance["uuid"] == "u-misr"
+    assert misr.provenance["origins"] == ["gcmd"]
 
 
 def test_parse_instruments_csv():

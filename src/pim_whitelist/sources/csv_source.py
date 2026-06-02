@@ -48,7 +48,7 @@ def parse_gcmd_csv(raw: bytes) -> list[SourceConcept]:
             # Hierarchy node (category/class/etc.), not a real concept.
             continue
         long_name = row[long_i].strip() if len(row) > long_i else ""
-        provenance = {}
+        provenance: dict = {"origins": ["gcmd"]}
         if uuid_i is not None and len(row) > uuid_i:
             uuid = row[uuid_i].strip()
             if uuid:

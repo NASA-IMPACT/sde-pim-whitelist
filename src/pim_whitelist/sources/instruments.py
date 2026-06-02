@@ -8,3 +8,4 @@ from .csv_source import CsvSource
 
 class InstrumentsSource(CsvSource):
     url = INSTRUMENTS_URL
+    cache_filename = "gcmd_instruments.csv"

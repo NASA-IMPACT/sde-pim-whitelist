@@ -43,6 +43,72 @@ class Delta:
         return sum(len(na.aliases) for na in self.new_aliases)
 
 
+def _copy_provenance(prov: dict) -> dict:
+    out = dict(prov)
+    out["origins"] = list(prov.get("origins", []))
+    if "collection_keys" in prov:
+        out["collection_keys"] = list(prov["collection_keys"])
+    return out
+
+
+def _merge_provenance(target: dict, src: dict) -> None:
+    origins = target.setdefault("origins", [])
+    for origin in src.get("origins", []):
+        if origin not in origins:
+            origins.append(origin)
+    src_keys = src.get("collection_keys")
+    if src_keys:
+        keys = target.setdefault("collection_keys", [])
+        for key in src_keys:
+            if key not in keys:
+                keys.append(key)
+    if "uuid" not in target and "uuid" in src:
+        target["uuid"] = src["uuid"]
+
+
+def merge_source_concepts(concepts: list[SourceConcept]) -> list[SourceConcept]:
+    """Combine concepts from several sources into one de-duplicated list.
+
+    Concepts sharing any match key are folded together: aliases are unioned
+    (canonical/first-seen order preserved) and provenance ``origins`` /
+    ``collection_keys`` are merged. This must run before :func:`compute_delta`,
+    which only matches against the *existing whitelist* and would otherwise
+    append the same name once per source. Inputs are not mutated.
+
+    A concept that bridges two previously-separate groups is folded into the
+    first group it matches (good enough for an append-only delta).
+    """
+    merged: list[SourceConcept] = []
+    index: dict[str, SourceConcept] = {}
+    for sc in concepts:
+        target: SourceConcept | None = None
+        # Iterate aliases in order (canonical first) so matching is
+        # deterministic across processes — ``keys()`` is an unordered set and
+        # str hashing is randomized per run.
+        for alias in sc.aliases:
+            key = match_key(alias)
+            if key and key in index:
+                target = index[key]
+                break
+        if target is None:
+            target = SourceConcept(
+                aliases=list(sc.aliases),
+                provenance=_copy_provenance(sc.provenance),
+            )
+            merged.append(target)
+        else:
+            existing_keys = target.keys()
+            for alias in sc.aliases:
+                key = match_key(alias)
+                if key and key not in existing_keys:
+                    target.aliases.append(alias)
+                    existing_keys.add(key)
+            _merge_provenance(target.provenance, sc.provenance)
+        for key in target.keys():
+            index.setdefault(key, target)
+    return merged
+
+
 def compute_delta(
     dataset: str, whitelist: Whitelist, source_concepts: list[SourceConcept]
 ) -> Delta:
@@ -52,9 +118,12 @@ def compute_delta(
 
     for source in source_concepts:
         # Find the existing concept matched by any of this source's keys.
+        # Iterate aliases in order (canonical first) for deterministic matching;
+        # ``keys()`` is an unordered set and str hashing is randomized per run.
         existing: Concept | None = None
-        for key in source.keys():
-            if key in index:
+        for alias in source.aliases:
+            key = match_key(alias)
+            if key and key in index:
                 existing = index[key]
                 break
 

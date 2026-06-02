@@ -26,16 +26,26 @@ uv run pim-whitelist update --dataset all
 
 ## Sources
 
-| Dataset      | Source                                                                                   | Format            |
+| Dataset      | Source(s)                                                                                | Format            |
 | ------------ | ---------------------------------------------------------------------------------------- | ----------------- |
-| Platforms    | `cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms?format=csv`                | CSV               |
-| Instruments  | `cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments?format=csv`              | CSV               |
+| Platforms    | GCMD `cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms?format=csv` + SDE     | CSV + JSON        |
+| Instruments  | GCMD `cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments?format=csv` + SDE   | CSV + JSON        |
 | Missions     | `www.nasa.gov/wp-json/wp/v2/mission/`                                                     | paginated JSON    |
 
 Concepts come from the CSV `Short_Name` (canonical) + `Long_Name` (alias); CSV
 hierarchy rows (empty `Short_Name`) are skipped. Missions use `title.rendered`
 (HTML-unescaped, Unicode-normalized); the endpoint is paginated with
 `orderby=id&order=asc` for stable results and empty pages are retried.
+
+Platforms and instruments draw from **two** sources: the GCMD keyword CSVs and
+the NASA Science Discovery Engine (SDE) search API
+(`science.data.nasa.gov/science-discovery-engine/api/search`). The SDE is
+crawled once per run across all collection keys (Earth, Helio, Planetary, BPS,
+Astro) and its `platform`/`instrument` values are combined with GCMD's —
+de-duplicated by match key — before diffing, so a name in both sources is added
+only once. Each added concept/alias is tagged in the report by origin (`gcmd`,
+`sde`, or both). This integrated crawl supersedes the standalone
+`sdeAPI_pimsList.py` script, which is kept in the repo for reference.
 
 ## Repository layout
 
@@ -59,15 +69,16 @@ sde-pim-whitelist/
 │   ├── config.py                  # Static config: URLs, file paths, and the dataset registry
 │   ├── normalize.py               # Text core: clean() (stored form) and match_key() (comparison key)
 │   ├── whitelist.py               # Concept / Whitelist models + parse/serialize (round-trip safe)
-│   ├── diff.py                    # compute_delta(): source vs whitelist → new concepts / aliases / orphans
+│   ├── diff.py                    # compute_delta() + merge_source_concepts() (combine sources before diffing)
 │   ├── merge.py                   # apply_delta(): append-only merge of a delta into a whitelist
-│   ├── report.py                  # Render a Delta as a Markdown report
+│   ├── report.py                  # Render a Delta as a Markdown report (additions tagged by origin)
 │   └── sources/                   # Upstream fetchers + parsers (raw bytes → SourceConcept list)
-│       ├── __init__.py            # Source registry + get_source()
+│       ├── __init__.py            # Source registry (per-dataset list) + get_sources()
 │       ├── base.py                # Source base class, SourceConcept, make_concept(), HTTP session w/ retries
 │       ├── csv_source.py          # Shared GCMD CSV parsing (platforms + instruments)
-│       ├── platforms.py           # PlatformsSource (CSV URL only)
-│       ├── instruments.py         # InstrumentsSource (CSV URL only)
+│       ├── platforms.py           # PlatformsSource (GCMD CSV)
+│       ├── instruments.py         # InstrumentsSource (GCMD CSV)
+│       ├── sde.py                 # SDE search-API crawler: SdePlatformsSource / SdeInstrumentsSource
 │       └── missions.py            # MissionsSource: paginated WordPress REST API w/ empty-page retries
 └── tests/
     ├── test_normalize.py          # clean() / match_key() behavior
