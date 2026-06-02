@@ -3,13 +3,14 @@
 from __future__ import annotations
 
 from .diff import Delta
+from .sources.base import Provenance
 
 # Cap how many orphans we enumerate inline; the count is always reported.
 ORPHAN_PREVIEW = 50
 
 
-def _origin_tag(provenance: dict) -> str:
-    origins = provenance.get("origins", [])
+def _origin_tag(provenance: Provenance) -> str:
+    origins = provenance.origins
     return f"  [{', '.join(origins)}]" if origins else ""
 
 

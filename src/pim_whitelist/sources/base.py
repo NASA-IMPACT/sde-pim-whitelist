@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from pathlib import Path
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -11,6 +10,48 @@ from urllib3.util.retry import Retry
 
 from ..config import RAW_CACHE_DIR, USER_AGENT, DatasetConfig
 from ..normalize import clean, match_key
+
+
+@dataclass
+class Provenance:
+    """Where a concept came from, and any source-specific identifiers.
+
+    The cross-cutting fields (``origins``, ``collection_keys``, ``uuid``) form a
+    contract shared by every source and understood by the diff/report layers;
+    :meth:`merge` and :meth:`copy` are the single place that contract is
+    maintained. ``extra`` carries source-specific data that is merely carried
+    along (e.g. a mission's id/slug) and is not combined across sources.
+    """
+
+    origins: list[str] = field(default_factory=list)
+    collection_keys: list[str] = field(default_factory=list)
+    uuid: str | None = None
+    extra: dict = field(default_factory=dict)
+
+    def copy(self) -> Provenance:
+        """Return a deep-ish copy: lists and ``extra`` are fresh containers."""
+        return Provenance(
+            origins=list(self.origins),
+            collection_keys=list(self.collection_keys),
+            uuid=self.uuid,
+            extra=dict(self.extra),
+        )
+
+    def merge(self, other: Provenance) -> None:
+        """Fold ``other`` into this one (order-preserving union).
+
+        ``origins`` and ``collection_keys`` are unioned; ``uuid`` is filled only
+        if currently unset. ``extra`` is left untouched — concepts that carry
+        per-source ``extra`` (missions) are single-source and never merged.
+        """
+        for origin in other.origins:
+            if origin not in self.origins:
+                self.origins.append(origin)
+        for key in other.collection_keys:
+            if key not in self.collection_keys:
+                self.collection_keys.append(key)
+        if self.uuid is None and other.uuid is not None:
+            self.uuid = other.uuid
 
 
 @dataclass
@@ -23,7 +64,7 @@ class SourceConcept:
     """
 
     aliases: list[str]
-    provenance: dict = field(default_factory=dict)
+    provenance: Provenance = field(default_factory=Provenance)
 
     @property
     def canonical(self) -> str:
@@ -34,7 +75,7 @@ class SourceConcept:
 
 
 def make_concept(
-    values: list[str], provenance: dict | None = None
+    values: list[str], provenance: Provenance | None = None
 ) -> SourceConcept | None:
     """Build a SourceConcept from raw strings (canonical first).
 
@@ -55,7 +96,7 @@ def make_concept(
         aliases.append(cleaned)
     if not aliases:
         return None
-    return SourceConcept(aliases=aliases, provenance=provenance or {})
+    return SourceConcept(aliases=aliases, provenance=provenance or Provenance())
 
 
 def _session() -> requests.Session:
@@ -108,7 +149,3 @@ class Source:
             cache_path.parent.mkdir(parents=True, exist_ok=True)
             cache_path.write_bytes(raw)
         return self.parse(raw)
-
-    @staticmethod
-    def read_cache(path: Path) -> bytes:
-        return Path(path).read_bytes()

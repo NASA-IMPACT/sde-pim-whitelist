@@ -12,12 +12,14 @@ the shared crawl.
 from __future__ import annotations
 
 import json
+import logging
 
-import click
 import requests
 
 from ..config import SDE_API_SOURCES, SDE_PAGE_SIZE, SDE_URL
-from .base import Source, SourceConcept, make_concept
+from .base import Provenance, Source, SourceConcept, make_concept
+
+logger = logging.getLogger(__name__)
 
 FIELDS = ("platform", "instrument")
 
@@ -74,7 +76,7 @@ def crawl(session: requests.Session) -> dict[str, list[dict]]:
             pagination = data.get("pagination", {})
             if page == 1:
                 total_pages = int(pagination.get("total_pages", 1) or 1)
-                click.echo(f"  SDE {collection_key}: {total_pages} page(s)", err=True)
+                logger.info("  SDE %s: %d page(s)", collection_key, total_pages)
             for doc in data.get("documents", []):
                 for field in FIELDS:
                     for value in _clean_values(doc.get(field)):
@@ -116,7 +118,7 @@ class SdeSource(Source):
         for row in rows:
             concept = make_concept(
                 [row["value"]],
-                {"origins": ["sde"], "collection_keys": [row["collection_key"]]},
+                Provenance(origins=["sde"], collection_keys=[row["collection_key"]]),
             )
             if concept is not None:
                 concepts.append(concept)

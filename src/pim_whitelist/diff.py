@@ -43,29 +43,6 @@ class Delta:
         return sum(len(na.aliases) for na in self.new_aliases)
 
 
-def _copy_provenance(prov: dict) -> dict:
-    out = dict(prov)
-    out["origins"] = list(prov.get("origins", []))
-    if "collection_keys" in prov:
-        out["collection_keys"] = list(prov["collection_keys"])
-    return out
-
-
-def _merge_provenance(target: dict, src: dict) -> None:
-    origins = target.setdefault("origins", [])
-    for origin in src.get("origins", []):
-        if origin not in origins:
-            origins.append(origin)
-    src_keys = src.get("collection_keys")
-    if src_keys:
-        keys = target.setdefault("collection_keys", [])
-        for key in src_keys:
-            if key not in keys:
-                keys.append(key)
-    if "uuid" not in target and "uuid" in src:
-        target["uuid"] = src["uuid"]
-
-
 def merge_source_concepts(concepts: list[SourceConcept]) -> list[SourceConcept]:
     """Combine concepts from several sources into one de-duplicated list.
 
@@ -93,7 +70,7 @@ def merge_source_concepts(concepts: list[SourceConcept]) -> list[SourceConcept]:
         if target is None:
             target = SourceConcept(
                 aliases=list(sc.aliases),
-                provenance=_copy_provenance(sc.provenance),
+                provenance=sc.provenance.copy(),
             )
             merged.append(target)
         else:
@@ -103,7 +80,7 @@ def merge_source_concepts(concepts: list[SourceConcept]) -> list[SourceConcept]:
                 if key and key not in existing_keys:
                     target.aliases.append(alias)
                     existing_keys.add(key)
-            _merge_provenance(target.provenance, sc.provenance)
+            target.provenance.merge(sc.provenance)
         for key in target.keys():
             index.setdefault(key, target)
     return merged

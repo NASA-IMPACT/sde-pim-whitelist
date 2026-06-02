@@ -25,8 +25,8 @@ def test_parse_platforms_csv_skips_hierarchy_nodes():
     assert canon == ["BALLOONS", "MISR"]
     misr = concepts[1]
     assert misr.aliases == ["MISR", "Multi-Angle Imaging SpectroRadiometer"]
-    assert misr.provenance["uuid"] == "u-misr"
-    assert misr.provenance["origins"] == ["gcmd"]
+    assert misr.provenance.uuid == "u-misr"
+    assert misr.provenance.origins == ["gcmd"]
 
 
 def test_parse_instruments_csv():
@@ -60,5 +60,5 @@ def test_missions_parse_decodes_entities_and_provenance():
     raw = json.dumps(posts).encode("utf-8")
     concepts = MissionsSource.__new__(MissionsSource).parse(raw)
     assert [c.canonical for c in concepts] == ["NASA’s SpaceX Crew-13", "Artemis IV"]
-    assert concepts[0].provenance["id"] == 1
-    assert concepts[0].provenance["mission_type"] == [10994]
+    assert concepts[0].provenance.extra["id"] == 1
+    assert concepts[0].provenance.extra["mission_type"] == [10994]

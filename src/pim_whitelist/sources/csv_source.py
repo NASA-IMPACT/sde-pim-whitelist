@@ -13,7 +13,7 @@ import io
 
 import requests
 
-from .base import Source, SourceConcept, make_concept
+from .base import Provenance, Source, SourceConcept, make_concept
 
 SHORT_NAME = "Short_Name"
 LONG_NAME = "Long_Name"
@@ -48,11 +48,11 @@ def parse_gcmd_csv(raw: bytes) -> list[SourceConcept]:
             # Hierarchy node (category/class/etc.), not a real concept.
             continue
         long_name = row[long_i].strip() if len(row) > long_i else ""
-        provenance: dict = {"origins": ["gcmd"]}
+        provenance = Provenance(origins=["gcmd"])
         if uuid_i is not None and len(row) > uuid_i:
             uuid = row[uuid_i].strip()
             if uuid:
-                provenance["uuid"] = uuid
+                provenance.uuid = uuid
         concept = make_concept([short_name, long_name], provenance)
         if concept is not None:
             concepts.append(concept)

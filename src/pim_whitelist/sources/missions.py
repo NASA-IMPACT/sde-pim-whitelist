@@ -14,7 +14,7 @@ import time
 import requests
 
 from ..config import MISSIONS_PER_PAGE, MISSIONS_URL
-from .base import Source, SourceConcept, make_concept
+from .base import Provenance, Source, SourceConcept, make_concept
 
 # Empty-page retries. The nasa.gov CDN occasionally serves an empty 200 for a
 # page that has content; a couple of retries smooths that over. Some pages are
@@ -66,14 +66,16 @@ class MissionsSource(Source):
         concepts: list[SourceConcept] = []
         for post in posts:
             title = (post.get("title") or {}).get("rendered", "")
-            provenance = {
-                "origins": ["missions"],
-                "id": post.get("id"),
-                "slug": post.get("slug"),
-                "mission_type": post.get("mission-type"),
-                "mission_status": post.get("mission-status"),
-                "link": post.get("link"),
-            }
+            provenance = Provenance(
+                origins=["missions"],
+                extra={
+                    "id": post.get("id"),
+                    "slug": post.get("slug"),
+                    "mission_type": post.get("mission-type"),
+                    "mission_status": post.get("mission-status"),
+                    "link": post.get("link"),
+                },
+            )
             concept = make_concept([title], provenance)
             if concept is not None:
                 concepts.append(concept)

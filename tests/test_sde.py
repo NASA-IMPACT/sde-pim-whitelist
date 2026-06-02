@@ -75,6 +75,6 @@ def test_sources_share_one_crawl_and_tag_origin():
     iconcepts = SdeInstrumentsSource(INSTRUMENTS).parse(iraw)
     assert [c.canonical for c in pconcepts] == ["Terra"]
     assert [c.canonical for c in iconcepts] == ["MODIS"]
-    assert pconcepts[0].provenance["origins"] == ["sde"]
-    assert pconcepts[0].provenance["collection_keys"] == ["CMR_API"]
+    assert pconcepts[0].provenance.origins == ["sde"]
+    assert pconcepts[0].provenance.collection_keys == ["CMR_API"]
     _reset_crawl_cache()

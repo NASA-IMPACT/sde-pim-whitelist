@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime
+import logging
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -74,6 +75,10 @@ def main() -> None:
 )
 def update(dataset: str, dry_run: bool, from_cache: bool, open_pr: bool) -> None:
     """Fetch sources, compute deltas, and (unless --dry-run) write merged files."""
+    # Surface source-layer progress (e.g. the SDE crawl) on stderr. Kept to bare
+    # text to match the CLI's existing echo style.
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+
     datasets = _selected_datasets(dataset)
     date = _today()
 
@@ -82,7 +87,9 @@ def update(dataset: str, dry_run: bool, from_cache: bool, open_pr: bool) -> None
         click.echo(f"Processing {ds.name}…")
         try:
             results.append(process_dataset(ds, from_cache=from_cache))
-        except Exception as exc:  # surface, continue with others
+        except Exception as exc:
+            # Fail fast: abort the whole run on the first dataset error (after
+            # naming the culprit) rather than writing a partial report.
             click.echo(f"  ERROR: {exc}", err=True)
             raise
 

@@ -1,6 +1,6 @@
 from pim_whitelist.diff import compute_delta, merge_source_concepts
 from pim_whitelist.merge import apply_delta
-from pim_whitelist.sources.base import make_concept
+from pim_whitelist.sources.base import Provenance, make_concept
 from pim_whitelist.whitelist import Whitelist
 
 
@@ -57,20 +57,23 @@ def test_apply_delta_appends_and_preserves_order_without_loss():
 
 def test_merge_source_concepts_dedupes_across_sources():
     gcmd = make_concept(
-        ["GPS", "Global Positioning System"], {"origins": ["gcmd"], "uuid": "u1"}
+        ["GPS", "Global Positioning System"],
+        Provenance(origins=["gcmd"], uuid="u1"),
     )
-    sde = make_concept(["gps"], {"origins": ["sde"], "collection_keys": ["CMR_API"]})
+    sde = make_concept(
+        ["gps"], Provenance(origins=["sde"], collection_keys=["CMR_API"])
+    )
     merged = merge_source_concepts([gcmd, sde])
 
     assert len(merged) == 1
     m = merged[0]
     assert m.canonical == "GPS"  # GCMD seen first -> canonical
     assert m.aliases == ["GPS", "Global Positioning System"]  # "gps" folds by key
-    assert m.provenance["origins"] == ["gcmd", "sde"]
-    assert m.provenance["collection_keys"] == ["CMR_API"]
-    assert m.provenance["uuid"] == "u1"
+    assert m.provenance.origins == ["gcmd", "sde"]
+    assert m.provenance.collection_keys == ["CMR_API"]
+    assert m.provenance.uuid == "u1"
     # Inputs untouched.
-    assert gcmd.provenance["origins"] == ["gcmd"]
+    assert gcmd.provenance.origins == ["gcmd"]
 
 
 def test_combined_sources_yield_single_new_concept():
@@ -78,14 +81,17 @@ def test_combined_sources_yield_single_new_concept():
     # SWOT is absent from the whitelist but present in both sources.
     concepts = [
         make_concept(
-            ["SWOT", "Surface Water and Ocean Topography"], {"origins": ["gcmd"]}
+            ["SWOT", "Surface Water and Ocean Topography"],
+            Provenance(origins=["gcmd"]),
         ),
-        make_concept(["SWOT"], {"origins": ["sde"], "collection_keys": ["CMR_API"]}),
+        make_concept(
+            ["SWOT"], Provenance(origins=["sde"], collection_keys=["CMR_API"])
+        ),
     ]
     delta = compute_delta("platforms", wl, merge_source_concepts(concepts))
 
     assert [c.canonical for c in delta.new_concepts] == ["SWOT"]  # not duplicated
-    assert delta.new_concepts[0].provenance["origins"] == ["gcmd", "sde"]
+    assert delta.new_concepts[0].provenance.origins == ["gcmd", "sde"]
 
 
 def test_empty_delta_is_noop():
