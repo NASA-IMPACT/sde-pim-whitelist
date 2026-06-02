@@ -90,7 +90,11 @@ def test_combined_sources_yield_single_new_concept():
 
 def test_empty_delta_is_noop():
     wl = _wl()
-    source = [make_concept(["MISR"]), make_concept(["ABI"]), make_concept(["RetiredThing"])]
+    source = [
+        make_concept(["MISR"]),
+        make_concept(["ABI"]),
+        make_concept(["RetiredThing"]),
+    ]
     delta = compute_delta("platforms", wl, source)
     assert delta.is_empty
     merged = apply_delta(wl, delta)

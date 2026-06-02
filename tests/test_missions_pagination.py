@@ -29,8 +29,12 @@ class _FakeSession:
             1: [[{"id": 1, "title": {"rendered": "Alpha"}}]],
             2: [[], [{"id": 2, "title": {"rendered": "Beta"}}]],  # empty, then fills
             3: [[], [], []],  # genuinely empty across all retries
-            4: [[{"id": 1, "title": {"rendered": "Alpha"}},  # dup id -> deduped
-                 {"id": 4, "title": {"rendered": "Delta"}}]],
+            4: [
+                [
+                    {"id": 1, "title": {"rendered": "Alpha"}},  # dup id -> deduped
+                    {"id": 4, "title": {"rendered": "Delta"}},
+                ]
+            ],
         }
         self._attempt = {}
 
@@ -68,8 +72,12 @@ def test_pagination_requests_orderby_id():
 
     class _OnePage(_FakeSession):
         def get(self, url, params=None, timeout=None):
-            self.calls.append((params["page"], params.get("orderby"), params.get("order")))
-            return _FakeResp([{"id": 1, "title": {"rendered": "A"}}], {"X-WP-TotalPages": "1"})
+            self.calls.append(
+                (params["page"], params.get("orderby"), params.get("order"))
+            )
+            return _FakeResp(
+                [{"id": 1, "title": {"rendered": "A"}}], {"X-WP-TotalPages": "1"}
+            )
 
     s = _OnePage()
     src.fetch_raw(s)

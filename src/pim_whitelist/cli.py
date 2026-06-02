@@ -61,8 +61,12 @@ def main() -> None:
     show_default=True,
     help="Which dataset(s) to process.",
 )
-@click.option("--dry-run", is_flag=True, help="Report only; do not write whitelist files.")
-@click.option("--from-cache", is_flag=True, help="Reuse cached raw responses in data/raw/.")
+@click.option(
+    "--dry-run", is_flag=True, help="Report only; do not write whitelist files."
+)
+@click.option(
+    "--from-cache", is_flag=True, help="Reuse cached raw responses in data/raw/."
+)
 @click.option(
     "--open-pr",
     is_flag=True,

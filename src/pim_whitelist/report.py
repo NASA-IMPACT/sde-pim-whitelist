@@ -31,7 +31,9 @@ def render(delta: Delta, *, date: str) -> str:
         lines.append("")
 
     if delta.new_aliases:
-        lines.append(f"#### New aliases on existing concepts ({delta.added_alias_count})")
+        lines.append(
+            f"#### New aliases on existing concepts ({delta.added_alias_count})"
+        )
         for na in delta.new_aliases:
             added = ", ".join(f'"{a}"' for a in na.aliases)
             lines.append(

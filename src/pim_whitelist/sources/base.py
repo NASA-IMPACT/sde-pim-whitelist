@@ -33,7 +33,9 @@ class SourceConcept:
         return {k for k in (match_key(a) for a in self.aliases) if k}
 
 
-def make_concept(values: list[str], provenance: dict | None = None) -> SourceConcept | None:
+def make_concept(
+    values: list[str], provenance: dict | None = None
+) -> SourceConcept | None:
     """Build a SourceConcept from raw strings (canonical first).
 
     Each value is cleaned; empties are dropped; later values whose match key

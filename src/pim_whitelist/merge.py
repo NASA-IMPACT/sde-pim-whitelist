@@ -19,7 +19,9 @@ def apply_delta(whitelist: Whitelist, delta: Delta) -> Whitelist:
 
     # Map identity of original concepts to their copies so new aliases land on
     # the right (copied) concept.
-    by_original = {id(orig): clone for orig, clone in zip(whitelist.concepts, merged.concepts)}
+    by_original = {
+        id(orig): clone for orig, clone in zip(whitelist.concepts, merged.concepts)
+    }
 
     for new_alias in delta.new_aliases:
         target = by_original.get(id(new_alias.concept))

@@ -13,7 +13,9 @@ def test_roundtrip_byte_identical(dataset):
 
 
 def test_parse_canonical_and_aliases():
-    wl = Whitelist.parse("MISR;Multi-Angle Imaging SpectroRadiometer\nABI;Advanced Baseline Imager")
+    wl = Whitelist.parse(
+        "MISR;Multi-Angle Imaging SpectroRadiometer\nABI;Advanced Baseline Imager"
+    )
     assert len(wl.concepts) == 2
     assert wl.concepts[0].canonical == "MISR"
     assert wl.concepts[0].aliases == ["MISR", "Multi-Angle Imaging SpectroRadiometer"]

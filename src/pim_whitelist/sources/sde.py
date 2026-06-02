@@ -7,9 +7,6 @@ GCMD keyword lists. Because one crawl yields *both* fields, the result is
 memoized for the process so ``update --dataset all`` hits the API only once;
 the platforms and instruments sources then each slice their own field out of
 the shared crawl.
-
-This supersedes the standalone ``sdeAPI_pimsList.py`` script (kept in-repo for
-reference).
 """
 
 from __future__ import annotations
@@ -77,9 +74,7 @@ def crawl(session: requests.Session) -> dict[str, list[dict]]:
             pagination = data.get("pagination", {})
             if page == 1:
                 total_pages = int(pagination.get("total_pages", 1) or 1)
-                click.echo(
-                    f"  SDE {collection_key}: {total_pages} page(s)", err=True
-                )
+                click.echo(f"  SDE {collection_key}: {total_pages} page(s)", err=True)
             for doc in data.get("documents", []):
                 for field in FIELDS:
                     for value in _clean_values(doc.get(field)):

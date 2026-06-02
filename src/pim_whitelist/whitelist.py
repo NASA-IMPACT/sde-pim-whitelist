@@ -61,7 +61,7 @@ class Whitelist:
     path: Path | None = None
 
     @classmethod
-    def parse(cls, text: str, path: Path | None = None) -> "Whitelist":
+    def parse(cls, text: str, path: Path | None = None) -> Whitelist:
         trailing_newline = text.endswith("\n")
         body = text[:-1] if trailing_newline else text
         # An empty file has no concepts; "".split("\n") would yield [""].
@@ -70,7 +70,7 @@ class Whitelist:
         return cls(concepts=concepts, trailing_newline=trailing_newline, path=path)
 
     @classmethod
-    def load(cls, path: str | Path) -> "Whitelist":
+    def load(cls, path: str | Path) -> Whitelist:
         path = Path(path)
         return cls.parse(path.read_text(encoding="utf-8"), path=path)
 

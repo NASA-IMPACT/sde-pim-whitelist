@@ -15,6 +15,7 @@ pim-whitelist = "pim_whitelist.cli:main"
 [dependency-groups]
 dev = [
     "pytest>=8.0",
+    "pre-commit>=3.8",
 ]
 
 [build-system]

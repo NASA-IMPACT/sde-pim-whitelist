@@ -44,8 +44,7 @@ crawled once per run across all collection keys (Earth, Helio, Planetary, BPS,
 Astro) and its `platform`/`instrument` values are combined with GCMD's —
 de-duplicated by match key — before diffing, so a name in both sources is added
 only once. Each added concept/alias is tagged in the report by origin (`gcmd`,
-`sde`, or both). This integrated crawl supersedes the standalone
-`sdeAPI_pimsList.py` script, which is kept in the repo for reference.
+`sde`, or both).
 
 ## Repository layout
 
