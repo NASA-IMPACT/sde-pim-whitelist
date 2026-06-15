@@ -9,6 +9,7 @@ import sys
 from dataclasses import dataclass
 
 import click
+from dotenv import load_dotenv
 
 from . import config, report
 from .consolidate import ConsolidationReport, consolidate
@@ -73,6 +74,9 @@ def _selected_datasets(name: str) -> list[config.DatasetConfig]:
 @click.version_option()
 def main() -> None:
     """Reconcile PIM whitelist files with upstream NASA sources."""
+    # Load secrets (e.g. OPENAI_API_KEY for `classify`) from the repo-root .env.
+    # Real environment variables already set take precedence (override=False).
+    load_dotenv(config.REPO_ROOT / ".env", override=False)
 
 
 @main.command()
@@ -191,6 +195,120 @@ def consolidate_cmd(dataset: str, dry_run: bool) -> None:
             click.echo(f"Updated {ds.whitelist_filename}")
         else:
             click.echo(f"{ds.whitelist_filename} already consolidated.")
+
+
+@main.command("classify")
+@click.option(
+    "--dataset",
+    type=click.Choice(["all", *config.DATASETS.keys()]),
+    default="all",
+    show_default=True,
+    help="Which dataset(s) to classify.",
+)
+@click.option(
+    "--model",
+    default=None,
+    help="OpenAI model. Defaults to $OPENAI_MODEL, then config.DEFAULT_OPENAI_MODEL.",
+)
+@click.option(
+    "--reclassify",
+    is_flag=True,
+    help="Ignore the cache and re-resolve every concept (clean slate / first run). "
+    "Default reuses already-resolved records and only classifies empty + new ones.",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Send at most N concepts to OpenAI (cheap test run).",
+)
+@click.option(
+    "--batch-size",
+    type=int,
+    default=config.OPENAI_BATCH_SIZE,
+    show_default=True,
+    help="Concepts per OpenAI request.",
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    help="Report only; do not call OpenAI or write files (no API key needed).",
+)
+@click.option(
+    "-v",
+    "--verbose",
+    is_flag=True,
+    help="Log each batch request/response (and retries) on stderr to see progress.",
+)
+def classify_cmd(
+    dataset: str,
+    model: str | None,
+    reclassify: bool,
+    limit: int | None,
+    batch_size: int,
+    dry_run: bool,
+    verbose: bool,
+) -> None:
+    """Tag each concept with its NASA SMD science division(s).
+
+    Resolves each concept provenance-first (free SDE-crawl lookup), sending only
+    the remainder to OpenAI, and writes one JSON file per dataset to
+    whitelist/classified/. The JSON is a persistent cache: already-resolved
+    records are reused and only empty + new concepts are (re)classified. OpenAI
+    work requires OPENAI_API_KEY (from the environment or a repo-root .env).
+    """
+    from . import classify
+
+    # Surface classifier progress on stderr. Timestamps + level make a stalled
+    # request obvious (watch the seconds tick between lines). -v drops to DEBUG
+    # (per-request timing); otherwise INFO shows per-batch lines, WARNING retries.
+    logging.basicConfig(
+        level=logging.DEBUG if verbose else logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s",
+    )
+    # Quiet the HTTP client libraries so -v shows our batch logs, not header dumps.
+    for noisy in ("httpx", "httpcore", "openai"):
+        logging.getLogger(noisy).setLevel(logging.WARNING)
+
+    resolved_model = classify.resolve_model(model)
+    datasets = _selected_datasets(dataset)
+    if not dry_run:
+        config.CLASSIFIED_DIR.mkdir(parents=True, exist_ok=True)
+
+    for ds in datasets:
+        click.echo(f"Classifying {ds.name} with {resolved_model}…")
+
+        def _progress(done: int, total: int, _ds=ds) -> None:
+            click.echo(f"  {_ds.name}: classified {done}/{total}", err=True)
+
+        try:
+            stats = classify.classify_dataset(
+                ds,
+                model=resolved_model,
+                reclassify=reclassify,
+                limit=limit,
+                dry_run=dry_run,
+                batch_size=batch_size,
+                on_progress=_progress,
+            )
+        except classify.ClassifierError as exc:
+            raise click.ClickException(str(exc))
+
+        out = config.CLASSIFIED_DIR / f"{ds.name}.json"
+        if dry_run:
+            click.echo(
+                f"  {stats['records']} records — reused {stats['reused']}, "
+                f"provenance {stats['provenance']}, would classify "
+                f"{stats['to_classify']} via OpenAI ({stats['empty']} empty)"
+            )
+            click.echo(f"  Dry run: {out.relative_to(config.REPO_ROOT)} not written.")
+        else:
+            click.echo(
+                f"  {stats['records']} records — reused {stats['reused']}, "
+                f"provenance {stats['provenance']}, classified {stats['classified']} "
+                f"({stats['empty']} empty)"
+            )
+            click.echo(f"  wrote {out.relative_to(config.REPO_ROOT)}")
 
 
 def _run_git(*args: str) -> None:

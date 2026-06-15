@@ -71,7 +71,8 @@ sde-pim-whitelist/
 ├── reports/                       # Generated Markdown reports: <dataset>-delta-<date>.md + <dataset>-consolidation-<date>.md
 ├── src/pim_whitelist/             # The package
 │   ├── __init__.py                # Package version
-│   ├── cli.py                     # Click CLI: the `update` and `consolidate` commands and --open-pr / PR plumbing
+│   ├── cli.py                     # Click CLI: the `update`, `consolidate`, and `classify` commands and --open-pr / PR plumbing
+│   ├── classify.py                # classify_dataset(): tag concepts with NASA SMD divisions via the OpenAI API
 │   ├── config.py                  # Static config: URLs, file paths, and the dataset registry
 │   ├── normalize.py               # Text core: clean() (stored form) and match_key() (comparison key)
 │   ├── whitelist.py               # Concept / Whitelist models + parse/serialize (round-trip safe)
@@ -218,6 +219,88 @@ uv run pim-whitelist consolidate --dataset instruments --dry-run
 | `--dry-run`    | Report only; do not write whitelist files (both commands).             |
 | `--from-cache` | `update` only — reuse cached raw responses in `data/raw/` instead of hitting the network. |
 | `--open-pr`    | `update` only — create a branch, commit the updated files + report, and open a PR via `gh`. |
+
+## Classifying concepts by science division
+
+`classify` tags each concept with its NASA SMD science division(s) —
+`earth`, `heliophysics`, `planetary`, `astrophysics`, `bps` — and writes one JSON
+file per dataset to `whitelist/classified/`. A concept may have several divisions
+or none (opaque identifiers come back empty). This is a separate step from
+`update`/`consolidate`: edit the whitelist `.txt` files first, then classify.
+
+Two signals are combined, **provenance first**:
+
+1. **SDE provenance** (authoritative, free) — the cached SDE crawl in `data/raw/`
+   surfaced each instrument/platform under a collection key that maps 1:1 to a
+   division. Any concept it covers is tagged from there (`division_source:
+   "provenance"`), no API call. Roughly half the instruments and ~70% of
+   platforms are covered this way; missions have no SDE provenance.
+2. **OpenAI** (fallback) — only concepts with *empty* provenance are sent to an
+   OpenAI model, which assigns divisions from the same taxonomy
+   (`division_source: "openai"`).
+
+**The classified JSON is a persistent cache.** Once a concept is *resolved* (a
+non-empty division list, from provenance or OpenAI) it is reused verbatim on every
+later run and never re-classified. Only **empty** records (the model/provenance
+found nothing) and **brand-new** concepts are (re)resolved; concepts removed from
+the `.txt` are pruned from the JSON. So the steady-state run is cheap — it touches
+only what changed. Use `--reclassify` to ignore the cache and re-resolve everything
+(the clean-slate **first run**, which also discards any stale tags from earlier
+experiments).
+
+Each record matches the existing schema:
+
+```json
+{
+  "match_key": "modis",
+  "canonical": "MODIS",
+  "aliases": ["MODIS", "Moderate Resolution Imaging Spectroradiometer"],
+  "divisions": ["earth"],
+  "division_source": "provenance"
+}
+```
+
+The OpenAI key is read from the environment, or from a `.env` file at the repo
+root (see `.env.example`). It is only needed when concepts fall through to the
+OpenAI fallback (which is almost always — e.g. every mission):
+
+```bash
+# Either export it, or put it in .env:
+export OPENAI_API_KEY=sk-...
+
+# See the split without spending anything (no key needed):
+uv run pim-whitelist classify --dataset instruments --reclassify --dry-run
+
+# Cheap smoke test — only the first 20 non-provenance instruments hit OpenAI:
+uv run pim-whitelist classify --dataset instruments --reclassify --limit 20
+
+# First run (clean slate): resolve every concept, provenance + OpenAI:
+uv run pim-whitelist classify --dataset all --reclassify
+
+# Every run after that: reuse resolved records, classify only empty + new ones:
+uv run pim-whitelist classify --dataset all
+
+# Long run? -v logs each batch (with timestamps + timing) and any retries to stderr:
+uv run pim-whitelist classify --dataset all --verbose
+```
+
+A real OpenAI run sends thousands of concepts in batches across a thread pool, so
+it can take a while with no output. Pass `-v`/`--verbose` to log the plan and a
+timestamped line per batch (and a WARNING with the backoff delay on each retry) —
+the timestamps make a stalled or rate-limited request easy to spot.
+
+The model resolves in order: `--model` flag → `$OPENAI_MODEL` → the
+`DEFAULT_OPENAI_MODEL` constant in `config.py` (currently `gpt-4o-mini`).
+
+| Flag           | Effect                                                                 |
+| -------------- | ---------------------------------------------------------------------- |
+| `--dataset`    | Which dataset(s) to classify (`platforms`/`instruments`/`missions`/`all`). |
+| `--model`      | OpenAI model override; otherwise `$OPENAI_MODEL` then the config default. |
+| `--reclassify` | Ignore the cache and re-resolve every concept (clean slate / first run). |
+| `--limit`      | Send at most N concepts to OpenAI — a cheap test run (provenance is always resolved). |
+| `--batch-size` | Concepts per OpenAI request (default 50).                              |
+| `--dry-run`    | Report only; no OpenAI calls, no files written (no API key required).   |
+| `-v`, `--verbose` | Log each batch request/response (with timing) and any retries on stderr — use to watch progress on a long run. |
 
 ## Development
 

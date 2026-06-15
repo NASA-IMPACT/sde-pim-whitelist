@@ -14,13 +14,21 @@ messy string, return the canonical concept and its aliases.* The matching primit
 
 This document is a design report. It covers:
 - The read model and why serving is cheap (no network, ~570 KB of data, pure-Python deps).
+- The **FastAPI application architecture** at a glance (§1.5).
 - A full endpoint catalog tuned for **both** batch resolution *and* interactive search/autocomplete.
 - AWS Lambda architecture, with a packaging recommendation.
 - What each of the **three API-scope scenarios** (read-only, read + admin sync, full read/write) requires.
 - Auth via **API Gateway + API key / usage plan**, plus performance, observability, and an implementation plan.
+- **Scheduling** the out-of-band sync (§12), **CI/CD** for build + deploy (§13), and
+  **division-based separation** across the SMD science divisions (§14).
 
 Decisions captured: consumers are batch pipelines **and** interactive UI (co-equal);
 auth is API Gateway + API key; packaging recommended here; all three scope scenarios covered.
+
+> **Open decisions for the reviewer.** Scheduling (§12), CI/CD (§13), and division separation
+> (§14) each present their choices as labeled options with a `> DECISION:` line. They are
+> deliberately *not* down-selected — check a box per fork during review and the implementation
+> follows from your picks.
 
 ---
 
@@ -41,6 +49,9 @@ Reused as-is from the existing code:
 read-only API can return canonical + aliases + match keys, but **cannot** return origins / UUID /
 mission id unless we either (a) re-derive provenance by running sources at sync time and persist a
 sidecar, or (b) accept that provenance is sync-time-only. This is called out per-scenario below.
+**Division metadata is the concrete instance of this gap** — division = the SDE `collection_keys`
+that live only on sync-time provenance — so §14 (division-based separation) depends directly on
+resolving it.
 
 ### In-memory index built once per cold start
 For each dataset we build, at module import:
@@ -55,10 +66,69 @@ everything lives in memory. Build cost is dominated by `match_key` over ~14k ali
 
 ---
 
+## 1.5 FastAPI application architecture at a glance (answering "what is the architecture?")
+
+The architecture is **stateless, read-only, and single-process**: a FastAPI app whose only state
+is an in-memory index built once at import and reused across warm Lambda invocations. The pieces
+below are detailed in their own sections; this is the one-screen synthesis.
+
+```
+                       request (x-api-key)
+                              │
+   ┌──────────────────────────▼──────────────────────────┐
+   │ API Gateway (REST) — API keys + usage plan (§6)      │
+   └──────────────────────────┬──────────────────────────┘
+                              │ proxied event
+   ┌──────────────────────────▼──────────────────────────┐
+   │ Lambda — handler = Mangum(app)  (§4)                 │
+   │  FastAPI app (app.py)                                │
+   │   ├─ routes/  resolve · search · browse  (§2)        │
+   │   ├─ models.py  Pydantic request/response (§8)       │
+   │   └─ index.py  WhitelistIndex ──────────────┐        │
+   └──────────────────────────────────────────────┼──────┘
+                                                   │ built once at
+                                                   │ module import
+   ┌───────────────────────────────────────────────▼──────┐
+   │ in-memory index over 3 whitelist .txt files           │
+   │  reuses Whitelist.load / build_index / match_key      │
+   │  (whitelist.py, normalize.py) — no network, no DB      │
+   └───────────────────────────────────────────────────────┘
+```
+
+**Layering** (request → response): `routes/` (thin FastAPI glue, validation) → `WhitelistIndex`
+(`index.py`, the only substantial new logic — resolve/search over `Concept`/`match_key`, optional
+`rapidfuzz`) → reused core (`whitelist.py`, `normalize.py`). The handler (`handler.py`) is just
+`Mangum(app)`; the same `app` object runs locally under `uvicorn`.
+
+Where each architectural concern is specified:
+
+| Concern | Section |
+|---|---|
+| Read model / what is served | §1 |
+| Endpoints (the public contract) | §2 |
+| Fuzzy matching strategy | §3 |
+| Lambda runtime, cold start, concurrency | §4 |
+| Packaging (container vs zip) | §5 |
+| Auth | §6 |
+| Read/admin/write scope scenarios | §7 |
+| Response models | §8 |
+| Code layout / IaC sketch | §9 |
+| Observability | §10 |
+| **Scheduling the sync** | **§12** |
+| **CI/CD** | **§13** |
+| **Division-based separation** | **§14** |
+
+---
+
 ## 2. Endpoint catalog
 
 Base path `/v1`. `{dataset}` ∈ `platforms | instruments | missions`. All responses JSON.
 Designed so **batch resolution** and **interactive search** are both first-class.
+
+> **Division note.** This catalog is division-agnostic. If §14 Option A (facet at root) is
+> chosen, every resolve/search/browse endpoint gains an optional `&division=<name>` filter and
+> concepts carry a `divisions` field — no new routes. Options B/C in §14 change the path/dataset
+> shape instead. See §14 for the full design.
 
 ### Resolution (the core use case)
 
@@ -246,6 +316,8 @@ in what write/sync surface is added and the operational cost that comes with it.
   `pim-whitelist update --open-pr`** on a cadence (e.g. weekly). That job does the network fetch +
   delta + PR; a human reviews/merges; merging triggers the read-service image rebuild/redeploy (Option
   A) or an S3 upload (Option B). The serve path never touches upstream NASA APIs.
+  **Runner choice and cadence are designed in detail in §12 (Scheduling); the merge→deploy half of
+  the loop is §13 (CI/CD).**
   - Note: the existing sync writes files in the repo and shells out to `gh` for PRs — that fits a
     build-runner (CodeBuild/Fargate with a checkout + git creds) far better than a bare Lambda.
 
@@ -401,3 +473,283 @@ End-to-end verification for the **read service (Scenario 1)** once implemented:
 
 (Scenarios 2/3 add: worker job lifecycle tests, sync against `--from-cache` fixtures, datastore
 read/write + concurrency tests, and audit-log verification.)
+
+---
+
+## 12. Scheduling (the out-of-band sync)
+
+The **serve path** is never scheduled — it is a request/response read service. What needs a
+schedule is the **sync**: periodically refresh the whitelists against upstream NASA sources so the
+served data does not drift. Today that is `pim-whitelist update` run by hand; this section designs
+its automation.
+
+**The loop is the same regardless of runner:**
+
+```
+EventBridge schedule (cron)
+      │
+      ▼
+run  pim-whitelist update --open-pr      # fetch GCMD CSV + SDE + missions, delta, consolidate, open PR
+      │
+      ▼
+human reviews the auto-opened PR         # delta + consolidation reports are the review surface
+      │
+      ▼
+merge to main  ──► triggers CI/CD (§13) ──► rebuild/redeploy image (or S3 refresh)
+```
+
+The serve path never touches upstream NASA APIs; only this job does. The key design fact: the
+sync **writes files in the repo and shells out to `git` + `gh`** (`cli.py` `update --open-pr`), so
+the runner needs a git checkout, git credentials, and the `gh` CLI — which steers the runner choice.
+
+### Runner options
+
+**Option S1 — EventBridge → CodeBuild  *(recommended rationale below)***
+- **What it is:** a scheduled CodeBuild project checks out the repo, `pip install`s the package,
+  runs `pim-whitelist update --open-pr`. Git + `gh` + credentials are first-class in CodeBuild.
+- **Pipeline impact:** smallest — CodeBuild already exists in most AWS setups; one buildspec.
+- **Pros:** native fit for a job whose *output is a git PR*; easy secrets (CodeBuild env / Secrets
+  Manager for the `gh` token); per-run logs in CloudWatch; cheap (pay per build minute).
+- **Cons:** another build project to own; cold-ish start (tens of seconds) — irrelevant for a
+  weekly batch job.
+- **Effort:** low.
+
+**Option S2 — EventBridge → Fargate task**
+- **What it is:** the scheduled task runs a container (could reuse the API image plus git/`gh`)
+  executing the same command.
+- **Pipeline impact:** medium — needs a task definition, an ECS cluster/launch config, networking.
+- **Pros:** full container control; reuses container tooling; no per-build-minute model if you
+  already run ECS.
+- **Cons:** more moving parts (cluster, task role, subnet/SG) for what is a periodic batch job;
+  the API image would need git/`gh` added (or a separate sync image).
+- **Effort:** medium.
+
+**Option S3 — EventBridge → Lambda**
+- **What it is:** a worker Lambda runs the sync directly.
+- **Pipeline impact:** low to write, but **only viable if the sync stops opening PRs** and instead
+  writes results to S3/DynamoDB — a bare Lambda is a poor host for `git`/`gh`, and the 15-min cap
+  is tight for the missions crawl.
+- **Pros:** simplest infra; no build runner.
+- **Cons:** **loses the git/PR review gate** that is the project's current safety mechanism;
+  mismatched with today's `gh`-based flow; timeout risk on large crawls.
+- **Effort:** low to wire, high in hidden cost (gives up review).
+
+> **DECISION (runner):** ☐ S1 (CodeBuild)  ☐ S2 (Fargate)  ☐ S3 (Lambda)
+
+### Cadence
+
+A falling **resolution hit-rate** (§10) is the product signal that the whitelists are stale and a
+sync is overdue — wire that metric to the cadence choice.
+
+- **Weekly** — matches the existing doc's example; low churn upstream, low review burden.
+- **Daily** — fresher, but more PRs to review for little delta most days.
+- **On-demand only** — a manually triggered EventBridge/CodeBuild run; no cron. Good while the
+  consumer base is small.
+
+> **DECISION (cadence):** ☐ weekly  ☐ daily  ☐ on-demand
+
+---
+
+## 13. CI/CD
+
+Today the repo has **no `.github/workflows/`** — only `.pre-commit-config.yaml`
+(black/isort/flake8/pyupgrade) and `pytest`. This section designs the pipeline that lints/tests on
+PRs and builds/deploys the read service on merge. It is the merge→deploy half of the loop in §12.
+
+### Pipeline stages (shared across all options)
+
+1. **On PR** — run `pre-commit` (the existing hooks) + `pytest`. Pure quality gate; no AWS access.
+2. **On merge to `main`** — build the deploy artifact, then deploy it.
+3. **Data refresh coupling** — when `whitelist/*.txt` changes (the output of a merged sync PR from
+   §12), rebuild + redeploy so that **the reviewed files are exactly what ships** (this is the
+   invariant §5 Option A is built around).
+
+The forks below are independent — pick one from each.
+
+### Fork CI-1 — Deploy artifact (mirrors §5 packaging)
+
+**Option A — Container image → ECR → Lambda**  *(consistent with §5's recommendation)*
+- Build the image (data bundled), push to ECR, update the Lambda to the new image tag.
+- **Pros:** atomic, reproducible; image is the single source of truth for code **and** data; local
+  parity via `docker run`.
+- **Cons:** data refresh = full rebuild + redeploy (acceptable — data changes already go through PR).
+
+**Option B — Zip + Lambda layer, data in S3**
+- Package code as a zip, deps in a layer; upload `.txt` files to S3; refresh data by re-uploading.
+- **Pros:** refresh data without redeploying code; decouples data cadence from code cadence.
+- **Cons:** "what data is live" no longer pinned to a deploy artifact; adds S3 read IAM + cache
+  invalidation signaling.
+
+> **DECISION (artifact):** ☐ A (container/ECR)  ☐ B (zip+layer/S3)
+
+### Fork CI-2 — IaC tool (mirrors §9)
+
+| Option | Pros | Cons |
+|---|---|---|
+| **SAM** | Tightest Lambda+API-Gateway ergonomics; minimal YAML; `sam local` parity | AWS-only; less general than CDK |
+| **CDK** | Real language (TS/Python); good for growing infra into Scenarios 2/3 | More moving parts; bootstrap step |
+| **Terraform** | Cloud-agnostic; if the org already standardizes on it | More verbose for Lambda+Gateway glue |
+
+> **DECISION (IaC):** ☐ SAM  ☐ CDK  ☐ Terraform
+
+### Fork CI-3 — Cloud auth from CI
+
+**Option OIDC — GitHub Actions OIDC → short-lived AWS role**  *(recommended)*
+- No stored AWS keys; the workflow assumes a scoped role per run.
+- **Pros:** no long-lived secrets; least-privilege per workflow.
+- **Cons:** one-time IAM OIDC-provider + role trust-policy setup.
+
+**Option Keys — long-lived IAM access keys in GitHub secrets**
+- **Pros:** trivial to set up.
+- **Cons:** standing credentials to rotate and guard; weaker posture.
+
+> **DECISION (auth):** ☐ OIDC  ☐ long-lived keys
+
+### Workflow sketches *(illustrative — not production-ready)*
+
+```yaml
+# .github/workflows/pr-checks.yml  (Fork-independent)
+name: pr-checks
+on: { pull_request: { branches: [main] } }
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pre-commit pytest -e .
+      - run: pre-commit run --all-files
+      - run: pytest -q
+```
+
+```yaml
+# .github/workflows/deploy.yml  (sketch for CI-1=A, CI-3=OIDC)
+name: deploy
+on:
+  push:
+    branches: [main]
+    paths: ["src/**", "whitelist/*.txt", "Dockerfile", "pyproject.toml"]
+permissions: { id-token: write, contents: read }   # OIDC
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with: { role-to-assume: ${{ secrets.DEPLOY_ROLE_ARN }}, aws-region: us-east-1 }
+      - run: |              # build + push image, then point Lambda at the new tag
+          docker build -t "$ECR_REPO:$GITHUB_SHA" .
+          # aws ecr get-login-password | docker login ...; docker push ...
+          # sam deploy / cdk deploy / aws lambda update-function-code --image-uri ...
+```
+
+---
+
+## 14. Division-based separation (NASA SMD divisions)
+
+**The core question:** should divisions be **new endpoints**, or a **facet at the root** per
+division? Answering it well requires two stacked decisions — the API shape (14A) and the data
+prerequisite that gates it (14B).
+
+**Grounding facts (must survive any design):**
+- "Division" = the **NASA SMD science divisions**. The mapping already exists as comments in
+  `src/pim_whitelist/config.py:57-64`: `CMR_API`→Earth, `SPASE_JSON`→Heliophysics,
+  `PDS_API_Legacy_All`/`PDS4_API`→Planetary, `GENELAB_METADATA_OSDR`→BPS, `NAVO_HEASARC`→Astrophysics.
+- A division is recorded **only at sync time** as `Provenance.collection_keys`
+  (`src/pim_whitelist/sources/base.py:27`) and is **discarded on write** — the `;`-delimited
+  whitelist files carry no division tags today (this is the §1 provenance gap, scoped to divisions).
+- `Provenance.merge()` (`base.py:50`) **unions** collection_keys across sources, so **one concept
+  can belong to multiple divisions** (e.g. an instrument flown for both Earth and Planetary). A
+  design that forces one-concept-one-division would misrepresent the data.
+
+### Decision 14A — API shape
+
+**Option A — Facet at root (query param)**
+- **What it is:** keep one index per dataset; `division` is an optional *filter*. Concepts
+  advertise their divisions.
+- **Endpoint shape:** `GET /v1/{dataset}/resolve?q=…&division=heliophysics` (and the same optional
+  `&division=` on `search`, `suggest`, `concepts`, `validate`). Response concept gains
+  `"divisions": ["earth", "planetary"]`. `GET /v1/datasets?division=…` filters counts.
+- **Data-model impact:** each concept needs a division list (see 14B). No new routes.
+- **Pipeline impact:** none to file layout; sync must persist divisions (14B).
+- **Pros:** represents multi-division concepts **once and honestly**; backward-compatible (omit the
+  param → today's behavior); cheapest to build on the existing single-index design; adding/removing
+  a division is a tag change, not a route change.
+- **Cons:** "only heliophysics" is a query convention, not a structural guarantee; filter logic
+  lives in the handler.
+- **Effort:** low.
+
+**Option B — Separate paths per division**
+- **What it is:** division becomes a path segment.
+- **Endpoint shape:** `GET /v1/{division}/{dataset}/resolve?q=…`, e.g.
+  `/v1/heliophysics/instruments/resolve`. A cross-division route (e.g. `/v1/all/...`) is still needed.
+- **Data-model impact:** still needs division tags (14B); plus a routing layer keyed on division.
+- **Pipeline impact:** none to files; more routes to version/maintain.
+- **Pros:** explicit per-division base URL to hand a consumer; per-division metrics/throttling fall
+  out of distinct paths naturally.
+- **Cons:** a multi-division concept appears under **every** division path → duplication in
+  responses, and you must decide whether the duplicates are identical or diverge; cross-division
+  search needs its own route anyway.
+- **Effort:** medium.
+
+**Option C — Separate datasets per division**
+- **What it is:** each (division × dataset) becomes its own dataset/file with its own index.
+- **Endpoint shape:** `GET /v1/heliophysics-instruments/resolve?q=…`; files like
+  `whitelist/SMD_Instruments_Heliophysics.txt`.
+- **Data-model impact:** forks the file layout, the sync/consolidation pipeline, and the `DATASETS`
+  registry (`config.py:40`); 3 datasets → ~15.
+- **Pipeline impact:** large — consolidation, reports, and the CLI all multiply by division.
+- **Pros:** maximum isolation; each division's file can be owned/reviewed independently; no runtime
+  filtering.
+- **Cons:** multi-division concepts are **physically duplicated** across files → a consistency
+  problem (edit a concept in N files); biggest departure from today's "one consolidated file per
+  dataset" model.
+- **Effort:** high.
+
+> **DECISION (API shape):** ☐ A (facet at root)  ☐ B (paths per division)  ☐ C (datasets per division)
+
+### Decision 14B — Persisting division metadata (prerequisite that gates 14A)
+
+**None of the 14A options work until divisions are persisted** — today the serve path has nothing
+to filter on, because `collection_keys` is sync-time-only and dropped on write. So 14B must be
+settled alongside 14A.
+
+**Option X — Persist division tags now.** The sync stops discarding `collection_keys` and maps them
+→ division names (mapping already at `config.py:57-64`). Two storage sub-options:
+
+- **X-format — trailing tag on the `.txt` line.**
+  e.g. `MISR;Multi-Angle Imaging SpectroRadiometer\tdiv=earth,planetary`.
+  - **Pros:** one artifact; division travels with the concept.
+  - **Cons:** **changes the file format** every downstream consumer of the `.txt` files parses.
+- **X-sidecar — parallel `divisions.json` keyed by `match_key`.**  *(lower blast radius)*
+  - **Pros:** leaves the `.txt` files byte-for-byte unchanged (no consumer breakage); the API loads
+    it alongside the index.
+  - **Cons:** a second artifact to keep in sync with the whitelist files.
+
+**Option Y — Frame as a future-phase prerequisite.** Fully design division separation (pick a 14A
+shape on paper) but ship Scenario 1 **division-agnostic** now; persisting `collection_keys` is
+called out as the dependency that unblocks it later.
+- **Pros:** keeps the current read-only service simple; no data-model change yet; honest sequencing.
+- **Cons:** division filtering does not actually function until the persistence work is done.
+
+> **DECISION (persistence):** ☐ X-format  ☐ X-sidecar  ☐ Y (defer)
+
+### How the two decisions combine
+
+| 14A \ 14B | X-format / X-sidecar (persisted) | Y (deferred) |
+|---|---|---|
+| **A — facet at root** | ✅ ships division filtering; smallest change | Design only; param inert until X |
+| **B — paths per division** | ✅ works; duplicated concepts across paths | Design only; routes inert until X |
+| **C — datasets per division** | ✅ works; file/pipeline fork + duplication | Not meaningful without the file split (X is implied) |
+
+The chosen combination then flows into the rest of the system: the **sync** (§12) is where
+division tags get written (X), and **CI/CD** (§13) ships them — for Option A/B via the bundled
+index or sidecar, for Option C via the multiplied file set. Division also surfaces in
+observability (§10): hit-rate can be reported per division to spot a stale division.
+
+### Verification for §14 (once a combination is chosen)
+- Unit: a concept sourced from two collection_keys resolves with both divisions present; a
+  `division` filter (Option A) includes/excludes correctly; multi-division concept is not dropped.
+- Data: the persisted tags (X) round-trip — sync writes them, the index reads them, counts in
+  `/v1/datasets?division=…` match the source collection_keys.
