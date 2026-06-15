@@ -11,8 +11,8 @@ from dataclasses import dataclass
 import click
 
 from . import config, report
+from .consolidate import ConsolidationReport, consolidate
 from .diff import Delta, compute_delta, merge_source_concepts
-from .merge import apply_delta
 from .sources import get_sources
 from .whitelist import Whitelist
 
@@ -22,6 +22,7 @@ class DatasetResult:
     dataset: config.DatasetConfig
     delta: Delta
     merged: Whitelist
+    consolidation: ConsolidationReport
 
 
 def _today() -> str:
@@ -31,15 +32,35 @@ def _today() -> str:
 def process_dataset(
     dataset: config.DatasetConfig, *, from_cache: bool
 ) -> DatasetResult:
-    """Load whitelist + sources, compute delta, and build the merged whitelist."""
+    """Load whitelist + sources, compute delta, and rebuild the merged whitelist.
+
+    The delta is kept for the "what's new" report; the written file is produced by
+    :func:`consolidate`, which reprocesses the whole list (fold duplicates, merge
+    safe acronyms, sort) rather than merely appending.
+    """
     whitelist = Whitelist.load(dataset.whitelist_path)
     raw_concepts = []
     for source in get_sources(dataset):
         raw_concepts.extend(source.load(from_cache=from_cache))
     source_concepts = merge_source_concepts(raw_concepts)
     delta = compute_delta(dataset.name, whitelist, source_concepts)
-    merged = apply_delta(whitelist, delta)
-    return DatasetResult(dataset=dataset, delta=delta, merged=merged)
+    merged, consolidation = consolidate(whitelist, source_concepts, dataset.name)
+    return DatasetResult(
+        dataset=dataset, delta=delta, merged=merged, consolidation=consolidation
+    )
+
+
+def _changed(result: DatasetResult) -> bool:
+    """True if the rebuilt whitelist differs from what is on disk."""
+    original = Whitelist.load(result.dataset.whitelist_path).serialize()
+    return result.merged.serialize() != original
+
+
+def _write_consolidation_report(result: DatasetResult, date: str) -> None:
+    """Write the per-dataset consolidation audit/review report."""
+    text = report.render_consolidation(result.consolidation, date=date)
+    path = config.REPORTS_DIR / f"{result.dataset.name}-consolidation-{date}.md"
+    path.write_text(text, encoding="utf-8")
 
 
 def _selected_datasets(name: str) -> list[config.DatasetConfig]:
@@ -105,13 +126,16 @@ def update(dataset: str, dry_run: bool, from_cache: bool, open_pr: bool) -> None
     report_path.write_text(report_text, encoding="utf-8")
     click.echo(f"Report written to {report_path.relative_to(config.REPO_ROOT)}")
 
+    for result in results:
+        _write_consolidation_report(result, date)
+
     if dry_run:
         click.echo("Dry run: no whitelist files modified.")
         return
 
     changed: list[DatasetResult] = []
     for result in results:
-        if result.delta.is_empty:
+        if not _changed(result):
             continue
         result.merged.save(result.dataset.whitelist_path)
         changed.append(result)
@@ -123,6 +147,50 @@ def update(dataset: str, dry_run: bool, from_cache: bool, open_pr: bool) -> None
 
     if open_pr:
         _open_pr(changed, report_path, date)
+
+
+@main.command("consolidate")
+@click.option(
+    "--dataset",
+    type=click.Choice(["all", *config.DATASETS.keys()]),
+    default="all",
+    show_default=True,
+    help="Which dataset(s) to process.",
+)
+@click.option(
+    "--dry-run", is_flag=True, help="Report only; do not write whitelist files."
+)
+def consolidate_cmd(dataset: str, dry_run: bool) -> None:
+    """Re-fold, merge safe acronyms, and alphabetize the whitelist file(s).
+
+    Pure local pass — no network. Reprocesses each whitelist against itself and
+    writes a consolidation report under reports/.
+    """
+    datasets = _selected_datasets(dataset)
+    date = _today()
+    config.REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    for ds in datasets:
+        click.echo(f"Consolidating {ds.name}…")
+        whitelist = Whitelist.load(ds.whitelist_path)
+        merged, consolidation = consolidate(whitelist, [], ds.name)
+        result = DatasetResult(
+            dataset=ds,
+            delta=Delta(dataset=ds.name),
+            merged=merged,
+            consolidation=consolidation,
+        )
+        report_text = report.render_consolidation(consolidation, date=date)
+        click.echo(report_text)
+        _write_consolidation_report(result, date)
+
+        if dry_run:
+            continue
+        if _changed(result):
+            merged.save(ds.whitelist_path)
+            click.echo(f"Updated {ds.whitelist_filename}")
+        else:
+            click.echo(f"{ds.whitelist_filename} already consolidated.")
 
 
 def _run_git(*args: str) -> None:

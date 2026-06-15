@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from .consolidate import ConsolidationReport
 from .diff import Delta
 from .sources.base import Provenance
 
@@ -54,6 +55,49 @@ def render(delta: Delta, *, date: str) -> str:
 
     if delta.is_empty:
         lines.append("_No additions; whitelist already covers the source._")
+        lines.append("")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_consolidation(report: ConsolidationReport, *, date: str) -> str:
+    """Render a :class:`ConsolidationReport` as a Markdown audit + review doc."""
+    lines: list[str] = []
+    lines.append(f"### {report.dataset.capitalize()} consolidation ({date})")
+    lines.append("")
+    lines.append(
+        f"- **{report.concepts_before} → {report.concepts_after}** concepts"
+        f" · **{report.exact_merges}** collapsed by exact key"
+        f" · **{len(report.acronym_merges)}** acronym merges"
+    )
+    lines.append("")
+
+    if report.acronym_merges:
+        lines.append(f"#### Acronym merges applied ({len(report.acronym_merges)})")
+        for pair in report.acronym_merges:
+            lines.append(f"  {pair.primary}  ⇐  {pair.other}")
+        lines.append("")
+
+    if report.ambiguous_acronyms:
+        lines.append(
+            "#### Ambiguous acronyms — NOT merged, review "
+            f"({len(report.ambiguous_acronyms)})"
+        )
+        for pair in report.ambiguous_acronyms:
+            lines.append(f"  ?({pair.primary})  in  {pair.other}")
+        lines.append("")
+
+    if report.fuzzy_candidates:
+        lines.append(
+            "#### Possible near-duplicates — NOT merged, review "
+            f"({len(report.fuzzy_candidates)})"
+        )
+        for pair in report.fuzzy_candidates:
+            lines.append(f"  {pair.primary}  ≈  {pair.other}")
+        lines.append("")
+
+    if not (report.acronym_merges or report.exact_merges):
+        lines.append("_No merges applied; list was already consolidated._")
         lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"

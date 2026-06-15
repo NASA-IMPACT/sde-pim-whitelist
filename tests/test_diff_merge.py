@@ -1,5 +1,4 @@
 from pim_whitelist.diff import compute_delta, merge_source_concepts
-from pim_whitelist.merge import apply_delta
 from pim_whitelist.sources.base import Provenance, make_concept
 from pim_whitelist.whitelist import Whitelist
 
@@ -29,30 +28,6 @@ def test_delta_classifies_new_concept_alias_and_orphan():
     assert delta.new_aliases[0].concept.canonical == "MISR"
     assert delta.new_aliases[0].aliases == ["Terra MISR Camera"]
     assert [c.canonical for c in delta.orphans] == ["RetiredThing"]
-
-
-def test_apply_delta_appends_and_preserves_order_without_loss():
-    wl = _wl()
-    source = [
-        make_concept(["MISR", "Terra MISR Camera"]),
-        make_concept(["SWOT", "Surface Water and Ocean Topography"]),
-    ]
-    delta = compute_delta("platforms", wl, source)
-    merged = apply_delta(wl, delta)
-
-    canon = [c.canonical for c in merged.concepts]
-    # Original order preserved, new concept appended at the end.
-    assert canon == ["MISR", "ABI", "RetiredThing", "SWOT"]
-    # Existing aliases preserved, new alias appended.
-    assert merged.concepts[0].aliases == [
-        "MISR",
-        "Multi-Angle Imaging SpectroRadiometer",
-        "Terra MISR Camera",
-    ]
-    # Orphan retained.
-    assert "RetiredThing" in canon
-    # Original whitelist object untouched.
-    assert [c.canonical for c in wl.concepts] == ["MISR", "ABI", "RetiredThing"]
 
 
 def test_merge_source_concepts_dedupes_across_sources():
@@ -94,7 +69,7 @@ def test_combined_sources_yield_single_new_concept():
     assert delta.new_concepts[0].provenance.origins == ["gcmd", "sde"]
 
 
-def test_empty_delta_is_noop():
+def test_empty_delta_when_source_adds_nothing():
     wl = _wl()
     source = [
         make_concept(["MISR"]),
@@ -103,5 +78,3 @@ def test_empty_delta_is_noop():
     ]
     delta = compute_delta("platforms", wl, source)
     assert delta.is_empty
-    merged = apply_delta(wl, delta)
-    assert merged.serialize() == wl.serialize()

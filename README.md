@@ -10,18 +10,23 @@ separated by `;`, canonical name first:
 MISR;Multi-Angle Imaging SpectroRadiometer;Multi-angle Imaging Spectro-Radiometer
 ```
 
-This tool fetches the upstream sources, computes a **delta** against the current
-whitelist, and **merges in additions without ever dropping** hand-curated aliases.
-A human reviews the delta before it is committed.
+This tool fetches the upstream sources and **rebuilds** each whitelist: it folds
+duplicate entries together, attaches new upstream names as aliases of the concept
+they match, merges safe acronym variants, and alphabetizes the result — without ever
+dropping a hand-curated alias. Every run produces two Markdown reports (a delta of
+what's new and a consolidation audit) for a human to review before committing.
 
 ## Quick start
 
 ```bash
 uv sync
 
-# The headline command — fetch every source and merge additions into all three
-# whitelist files (review the git diff before committing):
+# The headline command — fetch every source and rebuild all three whitelist files
+# (review the git diff and the reports/ before committing):
 uv run pim-whitelist update --dataset all
+
+# No network: just re-fold, de-duplicate, and alphabetize the existing files.
+uv run pim-whitelist consolidate --dataset all
 ```
 
 ## Sources
@@ -58,19 +63,21 @@ sde-pim-whitelist/
 │   ├── SMD_Instruments_Consolidated.txt
 │   └── SMD_Missions_Consolidated.txt
 ├── data/raw/                      # Cached raw upstream responses (written on fetch; replayed with --from-cache)
-│   ├── platforms.csv
-│   ├── instruments.csv
-│   └── missions.json
-├── reports/                       # Generated Markdown delta reports, one per run (<dataset>-delta-<date>.md)
+│   ├── gcmd_platforms.csv          # GCMD platforms CSV
+│   ├── gcmd_instruments.csv        # GCMD instruments CSV
+│   ├── sde_platforms.json          # SDE platform crawl
+│   ├── sde_instruments.json        # SDE instrument crawl
+│   └── missions.json               # NASA missions API
+├── reports/                       # Generated Markdown reports: <dataset>-delta-<date>.md + <dataset>-consolidation-<date>.md
 ├── src/pim_whitelist/             # The package
 │   ├── __init__.py                # Package version
-│   ├── cli.py                     # Click CLI: the `update` command and --open-pr / PR plumbing
+│   ├── cli.py                     # Click CLI: the `update` and `consolidate` commands and --open-pr / PR plumbing
 │   ├── config.py                  # Static config: URLs, file paths, and the dataset registry
 │   ├── normalize.py               # Text core: clean() (stored form) and match_key() (comparison key)
 │   ├── whitelist.py               # Concept / Whitelist models + parse/serialize (round-trip safe)
 │   ├── diff.py                    # compute_delta() + merge_source_concepts() (combine sources before diffing)
-│   ├── merge.py                   # apply_delta(): append-only merge of a delta into a whitelist
-│   ├── report.py                  # Render a Delta as a Markdown report (additions tagged by origin)
+│   ├── consolidate.py             # consolidate(): fold duplicates, safe acronym merge, alphabetize the whole list
+│   ├── report.py                  # Render a Delta / ConsolidationReport as Markdown
 │   └── sources/                   # Upstream fetchers + parsers (raw bytes → SourceConcept list)
 │       ├── __init__.py            # Source registry (per-dataset list) + get_sources()
 │       ├── base.py                # Source base class, SourceConcept, make_concept(), HTTP session w/ retries
@@ -82,7 +89,8 @@ sde-pim-whitelist/
 └── tests/
     ├── test_normalize.py          # clean() / match_key() behavior
     ├── test_whitelist_roundtrip.py# Byte-identical parse→serialize on the real whitelist files
-    ├── test_diff_merge.py         # Delta computation + append-only merge semantics
+    ├── test_diff_merge.py         # Delta computation + cross-source dedup semantics
+    ├── test_consolidate.py        # Whole-list consolidation: fold, acronym merge, sort, idempotency, near-dup filtering
     ├── test_sources.py            # GCMD CSV parsing
     └── test_missions_pagination.py# Mission pagination / dedupe-by-id
 ```
@@ -110,26 +118,37 @@ sde-pim-whitelist/
   whitelist via the match-key index and classifies the result into **new concepts**,
   **new aliases** on existing concepts, and **orphans** (in whitelist, absent
   upstream).
-- **`merge.py`** — `apply_delta()` applies a delta to a *copy* of the whitelist,
-  **only ever adding**: new aliases append to their concept's line, new concepts
-  append to the end of the file. Nothing is reordered or removed.
-- **`report.py`** — Renders one or many deltas into the Markdown report that is
-  written to `reports/` and used as the PR body.
-- **`cli.py`** — Wires it together: for each selected dataset it loads the whitelist,
-  fetches the source, computes the delta, builds the merged whitelist, prints/writes
-  the report, and (unless `--dry-run`) saves the files — optionally opening a PR.
+- **`consolidate.py`** — `consolidate()` rebuilds the *whole* list each run: it folds
+  the existing whitelist and any new source concepts together by match key (existing
+  canonical wins), applies a conservative **acronym merge** (a descriptive entry like
+  `Science in Microgravity Box (SIMBOX)` folds into a bare `Simbox`, but distinct
+  bare-acronym entries such as `JADE`/`JEDI` are never merged), and sorts the result
+  case-insensitively by canonical. The loop runs to a fixed point so a re-run is a
+  no-op. Lower-confidence candidates (short acronyms, near-duplicate spellings) are
+  surfaced in a `ConsolidationReport` for manual review, never auto-applied. The
+  near-duplicate scan deliberately ignores **enumerated series** — entries that differ
+  only by a serial/generation token (`BARREL 1A`/`1B`, `ACRIM I`/`II`) or by one slot
+  of a large templated family (`CPMN … at <code>`, `Magnetometers at <place>`) — so the
+  review list holds genuine typos and variants rather than thousands of distinct siblings.
+- **`report.py`** — Renders deltas (`render`/`render_many`) and consolidation reports
+  (`render_consolidation`) into the Markdown written to `reports/`.
+- **`cli.py`** — Wires it together. `update` fetches sources, computes the delta (for
+  the "what's new" report), then rebuilds each file via `consolidate`. `consolidate`
+  is a network-free command that re-folds/sorts the existing files in place. Both
+  write reports and, unless `--dry-run`, save changed files — optionally opening a PR.
 
 ## Processing workflow
 
 For each selected dataset, `update` runs this pipeline (`cli.py:process_dataset`):
 
 ```
-  whitelist/<file>.txt ──► Whitelist.load ──┐
-                                            ├─► compute_delta ──► apply_delta ──► merged Whitelist
-  upstream source ──► fetch_raw ──► parse ──┘         │                                  │
-       (cached to data/raw/)   (→ SourceConcepts)     ▼                                  ▼
-                                              report.render_many                   save to whitelist/
-                                              (→ reports/<...>.md)                  (unless --dry-run)
+  whitelist/<file>.txt ──► Whitelist.load ──┬─► compute_delta ──► reports/<ds>-delta-<date>.md
+                                            │
+  upstream source ──► fetch_raw ──► parse ──┴─► consolidate ──► sorted/deduped Whitelist
+       (cached to data/raw/)   (→ SourceConcepts)      │                     │
+                                                       ▼                     ▼
+                                       reports/<ds>-consolidation-...   save to whitelist/
+                                                                        (unless --dry-run)
 ```
 
 1. **Load** the existing whitelist file into a `Whitelist` of `Concept`s.
@@ -137,10 +156,14 @@ For each selected dataset, `update` runs this pipeline (`cli.py:process_dataset`
    the raw bytes, and **parse** it into `SourceConcept`s (aliases cleaned + deduped).
 3. **Diff** — build a match-key index of the whitelist and classify each source
    concept as a new concept, a contributor of new aliases, or a match; whitelist
-   concepts the source never touches are flagged as orphans.
-4. **Merge** — apply the delta to a copy of the whitelist, appending only.
-5. **Report** — render the combined delta to `reports/<dataset>-delta-<date>.md`
-   and echo it to the terminal.
+   concepts the source never touches are flagged as orphans. This drives the *delta
+   report* only.
+4. **Consolidate** — rebuild the whole list: fold the existing whitelist + new
+   sources by match key, apply the safe acronym merge, and alphabetize. Earlier
+   entries (the curated whitelist) keep their canonical spelling.
+5. **Report** — write the delta report *and* a consolidation report
+   (`reports/<dataset>-consolidation-<date>.md`) listing applied merges plus
+   fuzzy/ambiguous candidates to review.
 6. **Write** — unless `--dry-run`, save changed whitelist files; with `--open-pr`,
    branch, commit the files + report, push, and open a PR via `gh`.
 
@@ -148,12 +171,22 @@ Matching throughout is case/whitespace/punctuation-insensitive (via
 `normalize.match_key`), while stored aliases keep their original casing and
 punctuation.
 
-### How merging classifies changes
+### How consolidation treats entries
 
-- **New concept** — appended to the end of the file (so the diff is additive).
-- **New alias** on an existing concept — appended to that concept's line.
-- **Orphan** (in whitelist, absent upstream) — kept untouched, listed in the report
-  for review.
+- **Duplicate concepts** (same match key) — folded into one line; the first/curated
+  canonical is kept, other spellings become aliases.
+- **`Acronym (FULL NAME)` entries** — a descriptive line whose parenthetical names a
+  bare acronym entry folds into it (e.g. `… (SIMBOX)` → `Simbox`). Two distinct
+  bare-acronym entries are never auto-merged.
+- **Orphan** (in whitelist, absent upstream) — kept; listed in the delta report.
+- **Low-confidence candidates** — short (≤3-char) acronyms and near-duplicate
+  spellings are reported for manual review, never auto-merged.
+- **Enumerated series** — entries that differ only by a serial/generation token
+  (digits, single letters, roman numerals: `BARREL 1A`/`1B`, `ACRIM I`/`II`) or by one
+  slot of a large templated family (`bathythermograph - BT`/`MBT`, `CPMN … at <code>`)
+  are recognized as distinct siblings, not typos, and kept out of the near-duplicate
+  review list. Isolated pairs are judged on token similarity, so genuine variants
+  (`Gage`/`Gauge`, `anemometer`/`anemometers`) still surface.
 
 ## Usage
 
@@ -171,16 +204,20 @@ uv run pim-whitelist update --dataset all --open-pr
 
 # Re-run against the cached raw responses in data/raw/ (offline / reproducible):
 uv run pim-whitelist update --dataset platforms --from-cache --dry-run
+
+# Re-fold, de-duplicate, and alphabetize the existing files (no network):
+uv run pim-whitelist consolidate --dataset all
+uv run pim-whitelist consolidate --dataset instruments --dry-run
 ```
 
 `--dataset` accepts `platforms`, `instruments`, `missions`, or `all` (default).
 
 | Flag           | Effect                                                                 |
 | -------------- | ---------------------------------------------------------------------- |
-| `--dataset`    | Which dataset(s) to process: `platforms`/`instruments`/`missions`/`all`. |
-| `--dry-run`    | Report only; do not write whitelist files.                             |
-| `--from-cache` | Reuse cached raw responses in `data/raw/` instead of hitting the network. |
-| `--open-pr`    | Create a branch, commit the updated files + report, and open a PR via `gh`. |
+| `--dataset`    | Which dataset(s) to process: `platforms`/`instruments`/`missions`/`all` (both commands). |
+| `--dry-run`    | Report only; do not write whitelist files (both commands).             |
+| `--from-cache` | `update` only — reuse cached raw responses in `data/raw/` instead of hitting the network. |
+| `--open-pr`    | `update` only — create a branch, commit the updated files + report, and open a PR via `gh`. |
 
 ## Development
 
