@@ -1,5 +1,9 @@
 # Raw upstream response cache (reproducibility snapshots, not source of truth)
-data/raw/
+data/raw/*
+# …except the SDE provenance crawl, which the classifier reads at runtime and
+# must therefore be present in cloud deployments (see classify._provenance_divisions).
+!data/raw/sde_instruments.json
+!data/raw/sde_platforms.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
