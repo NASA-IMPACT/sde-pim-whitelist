@@ -18,6 +18,10 @@ what's new and a consolidation audit) for a human to review before committing.
 
 ## Quick start
 
+Requires [uv](https://docs.astral.sh/uv/) (it provisions Python 3.12+ and all
+dependencies from `uv.lock`). The `--open-pr` flow additionally needs the GitHub
+CLI (`gh`); `classify` needs an `OPENAI_API_KEY` (see below).
+
 ```bash
 uv sync
 
@@ -61,7 +65,8 @@ sde-pim-whitelist/
 ├── whitelist/                     # The hand-curated alias lists this tool maintains (the source of truth)
 │   ├── SMD_Platforms_Consolidated.txt
 │   ├── SMD_Instruments_Consolidated.txt
-│   └── SMD_Missions_Consolidated.txt
+│   ├── SMD_Missions_Consolidated.txt
+│   └── classified/                # Generated <dataset>.json division tags (written by `classify`)
 ├── data/raw/                      # Cached raw upstream responses (written on fetch; replayed with --from-cache)
 │   ├── gcmd_platforms.csv          # GCMD platforms CSV
 │   ├── gcmd_instruments.csv        # GCMD instruments CSV
@@ -72,7 +77,7 @@ sde-pim-whitelist/
 ├── src/pim_whitelist/             # The package
 │   ├── __init__.py                # Package version
 │   ├── cli.py                     # Click CLI: the `update`, `consolidate`, and `classify` commands and --open-pr / PR plumbing
-│   ├── classify.py                # classify_dataset(): tag concepts with NASA SMD divisions via the OpenAI API
+│   ├── classify.py                # classify_dataset(): tag concepts with NASA SMD divisions (SDE provenance + OpenAI); ClassifiedRecord schema/validation
 │   ├── config.py                  # Static config: URLs, file paths, and the dataset registry
 │   ├── normalize.py               # Text core: clean() (stored form) and match_key() (comparison key)
 │   ├── whitelist.py               # Concept / Whitelist models + parse/serialize (round-trip safe)
@@ -93,7 +98,9 @@ sde-pim-whitelist/
     ├── test_diff_merge.py         # Delta computation + cross-source dedup semantics
     ├── test_consolidate.py        # Whole-list consolidation: fold, acronym merge, sort, idempotency, near-dup filtering
     ├── test_sources.py            # GCMD CSV parsing
-    └── test_missions_pagination.py# Mission pagination / dedupe-by-id
+    ├── test_sde.py                # SDE crawl: pagination, filtering, shared-crawl origin tagging
+    ├── test_missions_pagination.py# Mission pagination / dedupe-by-id
+    └── test_classify.py           # Division classification: provenance + cache reuse, OpenAI batch retries, ClassifiedRecord schema
 ```
 
 ### What each module does
@@ -259,6 +266,11 @@ Each record matches the existing schema:
   "division_source": "provenance"
 }
 ```
+
+Records are validated against a Pydantic model (`ClassifiedRecord`) on load and
+re-serialized via `model_dump()`, so a corrupt or out-of-spec cache entry fails
+loudly instead of silently propagating, and the written JSON stays byte-identical
+to prior runs.
 
 The OpenAI key is read from the environment, or from a `.env` file at the repo
 root (see `.env.example`). It is only needed when concepts fall through to the

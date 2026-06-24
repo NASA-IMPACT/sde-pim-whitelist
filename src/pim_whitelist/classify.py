@@ -30,6 +30,9 @@ import os
 import time
 from collections.abc import Callable, Iterable
 from concurrent.futures import ThreadPoolExecutor
+from typing import Literal
+
+from pydantic import BaseModel
 
 from . import config
 from .normalize import match_key
@@ -40,6 +43,22 @@ logger = logging.getLogger(__name__)
 # division_source values written into each record.
 SOURCE_PROVENANCE = "provenance"
 SOURCE_OPENAI = "openai"
+
+
+class ClassifiedRecord(BaseModel):
+    """One persisted classification record — the project's on-disk data contract.
+
+    Validated on load (corrupt or out-of-spec cache entries are rejected) and
+    serialized back via :meth:`model_dump`. Field declaration order is preserved
+    in the dump, so the written JSON stays byte-identical to prior runs.
+    """
+
+    match_key: str
+    canonical: str
+    aliases: list[str]
+    divisions: list[str]
+    division_source: Literal["provenance", "openai"]
+
 
 # Retry budget for transient OpenAI failures (rate limits, 5xx, timeouts).
 _MAX_RETRIES = 5
@@ -202,21 +221,15 @@ def _rejects_temperature(exc: Exception) -> bool:
     )
 
 
-def classify_batch(
-    client, model: str, batch: list[Concept], *, label: str = "batch"
-) -> dict[int, list[str]]:
-    """Classify one batch; return ``{batch_index: [divisions]}``.
+def _build_request(model: str, batch: list[Concept]) -> dict:
+    """Build the chat-completions request payload for one batch.
 
-    Retries transient errors with exponential backoff and fails fast on permanent
-    ones. ``temperature=0`` is sent for determinism but dropped automatically if
-    the model rejects it (reasoning models). Any index the model omits defaults to
-    an empty list (handled by the caller via ``.get``). ``label`` identifies the
-    batch in log lines so a stuck/retrying request is visible.
+    ``temperature=0`` is requested for determinism; :func:`_request_with_retries`
+    drops it if the model rejects it.
     """
-    messages = build_messages(batch)
-    request = {
+    return {
         "model": model,
-        "messages": messages,
+        "messages": build_messages(batch),
         "response_format": {
             "type": "json_schema",
             "json_schema": {
@@ -228,13 +241,26 @@ def classify_batch(
         "temperature": 0,
     }
 
+
+def _request_with_retries(
+    client, request: dict, *, label: str, n_concepts: int
+) -> dict:
+    """Send ``request`` with retry/backoff and return the parsed JSON payload.
+
+    Transient errors (rate limits, 5xx, connection/timeout) are retried with
+    exponential backoff; permanent ones fail fast. ``temperature`` is dropped and
+    the request re-sent immediately if the model rejects it (reasoning models),
+    without spending the backoff budget. Raises :class:`ClassifierError` on a
+    permanent failure or once the retry budget is exhausted. ``label`` identifies
+    the batch in log lines so a stuck/retrying request is visible.
+    """
     last_exc: Exception | None = None
     for attempt in range(_MAX_RETRIES):
         try:
             logger.debug(
                 "%s: requesting %d concepts (attempt %d/%d)",
                 label,
-                len(batch),
+                n_concepts,
                 attempt + 1,
                 _MAX_RETRIES,
             )
@@ -244,7 +270,7 @@ def classify_batch(
             logger.debug(
                 "%s: response received in %.1fs", label, time.monotonic() - started
             )
-            break
+            return payload
         except Exception as exc:  # noqa: BLE001 - classified below
             last_exc = exc
             # This model only allows the default temperature: drop it and retry
@@ -271,15 +297,34 @@ def classify_batch(
                 delay,
             )
             time.sleep(delay)
-    else:  # pragma: no cover - loop always breaks or raises
-        raise ClassifierError(str(last_exc))
+    raise ClassifierError(str(last_exc))  # pragma: no cover - loop returns or raises
 
+
+def _parse_batch_response(payload: dict, batch_len: int) -> dict[int, list[str]]:
+    """Map the model's results array to ``{batch_index: [divisions]}``.
+
+    Out-of-range or non-integer indices are silently skipped; any index the model
+    omits is left for the caller to default to an empty list (handled via ``.get``).
+    """
     out: dict[int, list[str]] = {}
     for result in payload.get("results", []):
         idx = result.get("index")
-        if isinstance(idx, int) and 0 <= idx < len(batch):
+        if isinstance(idx, int) and 0 <= idx < batch_len:
             out[idx] = _valid_divisions(result.get("divisions", []))
     return out
+
+
+def classify_batch(
+    client, model: str, batch: list[Concept], *, label: str = "batch"
+) -> dict[int, list[str]]:
+    """Classify one batch; return ``{batch_index: [divisions]}``.
+
+    Builds the request, sends it with retry/backoff (:func:`_request_with_retries`),
+    and maps the response back by index (:func:`_parse_batch_response`).
+    """
+    request = _build_request(model, batch)
+    payload = _request_with_retries(client, request, label=label, n_concepts=len(batch))
+    return _parse_batch_response(payload, len(batch))
 
 
 def _chunk(seq: list[Concept], size: int) -> list[list[Concept]]:
@@ -338,24 +383,27 @@ def classify_concepts(
     return result
 
 
-def _record(concept: Concept, divisions: list[str], source: str) -> dict:
-    return {
-        "match_key": match_key(concept.canonical),
-        "canonical": concept.canonical,
-        "aliases": list(concept.aliases),
-        "divisions": divisions,
-        "division_source": source,
-    }
+def _record(concept: Concept, divisions: list[str], source: str) -> ClassifiedRecord:
+    return ClassifiedRecord(
+        match_key=match_key(concept.canonical),
+        canonical=concept.canonical,
+        aliases=list(concept.aliases),
+        divisions=divisions,
+        division_source=source,
+    )
 
 
-def _load_existing(dataset: config.DatasetConfig) -> list[dict]:
+def _load_existing(dataset: config.DatasetConfig) -> list[ClassifiedRecord]:
     path = config.CLASSIFIED_DIR / f"{dataset.name}.json"
     if not path.exists():
         return []
-    return json.loads(path.read_text(encoding="utf-8"))
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    return [ClassifiedRecord.model_validate(item) for item in raw]
 
 
-def _resolved_cache(records: list[dict]) -> dict[str, tuple[list[str], str]]:
+def _resolved_cache(
+    records: list[ClassifiedRecord],
+) -> dict[str, tuple[list[str], str]]:
     """Map every alias ``match_key`` -> ``(divisions, division_source)`` for
     *resolved* records — those with a non-empty division list, regardless of
     source.
@@ -366,15 +414,13 @@ def _resolved_cache(records: list[dict]) -> dict[str, tuple[list[str], str]]:
     """
     cache: dict[str, tuple[list[str], str]] = {}
     for record in records:
-        divisions = _valid_divisions(record.get("divisions", []))
+        divisions = _valid_divisions(record.divisions)
         if not divisions:
             continue
-        source = record.get("division_source", SOURCE_OPENAI)
-        value = (divisions, source)
-        keys = [match_key(a) for a in record.get("aliases", [])]
-        mk = record.get("match_key")
-        if mk:
-            keys.append(mk)
+        value = (divisions, record.division_source)
+        keys = [match_key(a) for a in record.aliases]
+        if record.match_key:
+            keys.append(record.match_key)
         for key in keys:
             if key:
                 cache.setdefault(key, value)
@@ -398,12 +444,56 @@ def _cache_lookup(
     return None
 
 
-def _write(dataset: config.DatasetConfig, records: list[dict]) -> None:
+def _write(dataset: config.DatasetConfig, records: list[ClassifiedRecord]) -> None:
     config.CLASSIFIED_DIR.mkdir(parents=True, exist_ok=True)
     out_path = config.CLASSIFIED_DIR / f"{dataset.name}.json"
     out_path.write_text(
-        json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        json.dumps([r.model_dump() for r in records], ensure_ascii=False, indent=2)
+        + "\n",
+        encoding="utf-8",
     )
+
+
+def _partition_by_cache(
+    whitelist: Whitelist, cache: dict[str, tuple[list[str], str]]
+) -> tuple[list[ClassifiedRecord], list[Concept]]:
+    """Split whitelist concepts into cache-reused records and the unresolved rest.
+
+    Blank/placeholder lines (no match key) are skipped entirely.
+    """
+    reused_records: list[ClassifiedRecord] = []
+    unresolved: list[Concept] = []
+    for concept in whitelist.concepts:
+        if not match_key(concept.canonical):
+            continue  # blank/placeholder line
+        hit = _cache_lookup(concept, cache)
+        if hit is not None:
+            divisions, source = hit
+            reused_records.append(_record(concept, divisions, source))
+        else:
+            unresolved.append(concept)
+    return reused_records, unresolved
+
+
+def _resolve_provenance(
+    unresolved: list[Concept], dataset_name: str
+) -> tuple[list[ClassifiedRecord], list[Concept]]:
+    """Resolve what provenance can place; return ``(records, needs_openai)``.
+
+    The (cached) SDE crawl is loaded only when there is something to resolve.
+    """
+    if not unresolved:
+        return [], []
+    prov_map = load_provenance_divisions(dataset_name)
+    prov_records: list[ClassifiedRecord] = []
+    needs_openai: list[Concept] = []
+    for concept in unresolved:
+        prov = _provenance_for(concept, prov_map)
+        if prov:
+            prov_records.append(_record(concept, prov, SOURCE_PROVENANCE))
+        else:
+            needs_openai.append(concept)
+    return prov_records, needs_openai
 
 
 def classify_dataset(
@@ -445,29 +535,9 @@ def classify_dataset(
     )
 
     # Pass 1: reuse resolved concepts from the cache; collect the rest.
-    reused_records: list[dict] = []
-    unresolved: list[Concept] = []
-    for concept in whitelist.concepts:
-        if not match_key(concept.canonical):
-            continue  # blank/placeholder line
-        hit = _cache_lookup(concept, cache)
-        if hit is not None:
-            divisions, source = hit
-            reused_records.append(_record(concept, divisions, source))
-        else:
-            unresolved.append(concept)
-
+    reused_records, unresolved = _partition_by_cache(whitelist, cache)
     # Pass 2: resolve the rest — provenance first, OpenAI for the remainder.
-    prov_records: list[dict] = []
-    needs_openai: list[Concept] = []
-    if unresolved:
-        prov_map = load_provenance_divisions(dataset.name)
-        for concept in unresolved:
-            prov = _provenance_for(concept, prov_map)
-            if prov:
-                prov_records.append(_record(concept, prov, SOURCE_PROVENANCE))
-            else:
-                needs_openai.append(concept)
+    prov_records, needs_openai = _resolve_provenance(unresolved, dataset.name)
 
     if limit is not None:
         needs_openai = needs_openai[:limit]
@@ -499,7 +569,7 @@ def classify_dataset(
         ]
 
     records = reused_records + prov_records + openai_records
-    records.sort(key=lambda r: r["match_key"])
+    records.sort(key=lambda r: r.match_key)
 
     if not dry_run:
         _write(dataset, records)
@@ -510,5 +580,5 @@ def classify_dataset(
         "provenance": len(prov_records),
         "classified": 0 if dry_run else len(openai_records),
         "to_classify": len(needs_openai),
-        "empty": sum(1 for r in records if not r["divisions"]),
+        "empty": sum(1 for r in records if not r.divisions),
     }

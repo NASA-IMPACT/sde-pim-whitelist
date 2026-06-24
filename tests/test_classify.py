@@ -6,8 +6,10 @@ import json
 from types import SimpleNamespace
 
 import pytest
+from pydantic import ValidationError
 
 from pim_whitelist import classify, config
+from pim_whitelist.classify import ClassifiedRecord
 from pim_whitelist.whitelist import Concept
 
 
@@ -67,7 +69,9 @@ def test_classify_batch_drops_temperature_when_model_rejects_it():
         message = SimpleNamespace(content=content)
         return SimpleNamespace(choices=[SimpleNamespace(message=message)])
 
-    client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+    client = SimpleNamespace(
+        chat=SimpleNamespace(completions=SimpleNamespace(create=create))
+    )
     out = classify.classify_batch(client, "gpt-5-mini", batch)
     assert out == {0: ["earth"]}
     assert seen_temperatures == [True, False]  # first with, then dropped
@@ -83,7 +87,9 @@ def test_classify_batch_fails_fast_on_permanent_400():
         calls += 1
         raise _ApiError("Invalid 'response_format'", 400)
 
-    client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+    client = SimpleNamespace(
+        chat=SimpleNamespace(completions=SimpleNamespace(create=create))
+    )
     with pytest.raises(classify.ClassifierError):
         classify.classify_batch(client, "fake", batch)
     assert calls == 1  # no backoff retries on a permanent error
@@ -340,3 +346,25 @@ def test_require_api_key_raises_when_missing(monkeypatch):
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     with pytest.raises(classify.ClassifierError):
         classify.require_api_key()
+
+
+def test_classified_record_round_trips_to_same_fields():
+    data = {
+        "match_key": "modis",
+        "canonical": "MODIS",
+        "aliases": ["MODIS"],
+        "divisions": ["earth"],
+        "division_source": "provenance",
+    }
+    assert ClassifiedRecord.model_validate(data).model_dump() == data
+
+
+def test_classified_record_rejects_invalid_division_source():
+    with pytest.raises(ValidationError):
+        ClassifiedRecord(
+            match_key="modis",
+            canonical="MODIS",
+            aliases=["MODIS"],
+            divisions=["earth"],
+            division_source="guessed",  # not provenance/openai
+        )

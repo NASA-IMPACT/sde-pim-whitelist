@@ -575,6 +575,7 @@ source = { editable = "." }
 dependencies = [
     { name = "click" },
     { name = "openai" },
+    { name = "pydantic" },
     { name = "python-dotenv" },
     { name = "requests" },
 ]
@@ -589,6 +590,7 @@ dev = [
 requires-dist = [
     { name = "click", specifier = ">=8.1" },
     { name = "openai", specifier = ">=1.0" },
+    { name = "pydantic", specifier = ">=2" },
     { name = "python-dotenv", specifier = ">=1.0" },
     { name = "requests", specifier = ">=2.31" },
 ]
