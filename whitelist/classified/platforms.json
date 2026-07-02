@@ -1757,7 +1757,9 @@
       "Airbus A340-600",
       "Airbus A340 600"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1858,7 +1860,9 @@
       "Rockwell Aero Commander AC 500S",
       "Rockwell Aero Commander AC-500S"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1870,7 +1874,9 @@
       "Rockwell Aero Commander AC-680E",
       "Rockwell Aero Commander AC 680E"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1883,7 +1889,9 @@
       "Rockwell Aero Commander AC 690A",
       "Aerocommander aircraft"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1892,7 +1900,9 @@
     "aliases": [
       "AC843 Atomic City, Idaho, USA"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -2577,7 +2587,9 @@
     "aliases": [
       "Air Force Maui Optical and Supercomputing Site Maui Space Surveillance"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -2994,7 +3006,6 @@
       "Alouette"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -3034,7 +3045,9 @@
       "Alpha",
       "H211 Alpha Jet"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -3089,7 +3102,9 @@
     "aliases": [
       "Alvin"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -3232,7 +3247,9 @@
     "aliases": [
       "AMOS Ground Based Electro Optical Deep Space Surveillance 1.0 m"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -3275,7 +3292,9 @@
     "aliases": [
       "AN438 Anyang, South Korea"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -4089,7 +4108,7 @@
       "Argus"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -4414,7 +4433,7 @@
       "NASA THEMIS GBO Athabasca Station"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -4647,7 +4666,7 @@
       "Athabasca University Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -4659,7 +4678,7 @@
       "Augsburg College Search Coil Ground Observatory Group"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -4774,7 +4793,6 @@
       "Athabasca University THEMIS UCLA Magnetometer Network"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -4797,13 +4815,7 @@
     "aliases": [
       "Auxiliary Data"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -5063,7 +5075,7 @@
       "Barentsburg Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -5096,7 +5108,7 @@
       "Bar Gyora Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -5573,7 +5585,7 @@
       "Barrow Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -5584,7 +5596,7 @@
       "Barrow Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -5672,7 +5684,7 @@
       "Bay St. Louis Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -5695,7 +5707,7 @@
       "BC840 Boulder, Colorado, USA"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -5708,7 +5720,6 @@
       "Bureau Central De Magnetisme Terrestre France"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -5720,7 +5731,9 @@
       "BDS",
       "BeiDou Navigation Satellite System"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5778,7 +5791,7 @@
       "Bear Island Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -5840,7 +5853,9 @@
       "BeiDou-1A",
       "BeiDou Satellite 1a"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5850,7 +5865,9 @@
       "BeiDou-1B",
       "BeiDou Satellite 1b"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5860,7 +5877,9 @@
       "BeiDou-1C",
       "BeiDou Satellite 1c"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5870,7 +5889,9 @@
       "BeiDou-1D",
       "BeiDou Satellite 1d"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5880,7 +5901,9 @@
       "BeiDou-3 G1",
       "BeiDou Satellite 3 G1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5890,7 +5913,9 @@
       "BeiDou-3 G2",
       "BeiDou Satellite 3 G2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5900,7 +5925,9 @@
       "BeiDou-3 G3",
       "BeiDou Satellite 3 G3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5910,7 +5937,9 @@
       "BeiDou-3 G4",
       "BeiDou Satellite 3 G4"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5920,7 +5949,9 @@
       "BeiDou-3 I1",
       "BeiDou Satellite 3 I1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5930,7 +5961,9 @@
       "BeiDou-3 I1-S",
       "BeiDou Satellite 3 I1-S"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5940,7 +5973,9 @@
       "BeiDou-3 I2",
       "BeiDou Satellite 3 I2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5950,7 +5985,9 @@
       "BeiDou-3 I2-S",
       "BeiDou Satellite 3 I2-S"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5960,7 +5997,9 @@
       "BeiDou-3 I3",
       "BeiDou Satellite 3 I3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5970,7 +6009,9 @@
       "BeiDou-3 M1",
       "BeiDou Satellite 3 M1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5980,7 +6021,9 @@
       "BeiDou-3 M10",
       "BeiDou Satellite 3 M10"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5990,7 +6033,9 @@
       "BeiDou-3 M11",
       "BeiDou Satellite 3 M11"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6000,7 +6045,9 @@
       "BeiDou-3 M12",
       "BeiDou Satellite 3 M12"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6010,7 +6057,9 @@
       "BeiDou-3 M13",
       "BeiDou Satellite 3 M13"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6020,7 +6069,9 @@
       "BeiDou-3 M14",
       "BeiDou Satellite 3 M14"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6030,7 +6081,9 @@
       "BeiDou-3 M15",
       "BeiDou Satellite 3 M15"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6040,7 +6093,9 @@
       "BeiDou-3 M16",
       "BeiDou Satellite 3 M16"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6050,7 +6105,9 @@
       "BeiDou-3 M17",
       "BeiDou Satellite 3 M17"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6060,7 +6117,9 @@
       "BeiDou-3 M18",
       "BeiDou Satellite 3 M18"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6070,7 +6129,9 @@
       "BeiDou-3 M19",
       "BeiDou Satellite 3 M19"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6080,7 +6141,9 @@
       "BeiDou-3 M1-S",
       "BeiDou Satellite 3 M1-S"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6090,7 +6153,9 @@
       "BeiDou-3 M2",
       "BeiDou Satellite 3 M2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6100,7 +6165,9 @@
       "BeiDou-3 M20",
       "BeiDou Satellite 3 M20"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6110,7 +6177,9 @@
       "BeiDou-3 M21",
       "BeiDou Satellite 3 M21"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6120,7 +6189,9 @@
       "BeiDou-3 M22",
       "BeiDou Satellite 3 M22"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6130,7 +6201,9 @@
       "BeiDou-3 M23",
       "BeiDou Satellite 3 M23"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6140,7 +6213,9 @@
       "BeiDou-3 M24",
       "BeiDou Satellite 3 M24"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6150,7 +6225,9 @@
       "BeiDou-3 M25",
       "BeiDou Satellite 3 M25"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6160,7 +6237,9 @@
       "BeiDou-3 M26",
       "BeiDou Satellite 3 M26"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6170,7 +6249,9 @@
       "BeiDou-3 M2-S",
       "BeiDou Satellite 3 M2-S"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6180,7 +6261,9 @@
       "BeiDou-3 M3",
       "BeiDou Satellite 3 M3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6190,7 +6273,9 @@
       "BeiDou-3 M3-S",
       "BeiDou Satellite 3 M3-S"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6200,7 +6285,9 @@
       "BeiDou-3 M4",
       "BeiDou Satellite 3 M4"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6210,10 +6297,7 @@
       "BeiDou-3 M5",
       "BeiDou Satellite 3 M5"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -6223,10 +6307,7 @@
       "BeiDou-3 M6",
       "BeiDou Satellite 3 M6"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -6236,10 +6317,7 @@
       "BeiDou-3 M7",
       "BeiDou Satellite 3 M7"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -6249,10 +6327,7 @@
       "BeiDou-3 M8",
       "BeiDou Satellite 3 M8"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -6262,10 +6337,7 @@
       "BeiDou-3 M9",
       "BeiDou Satellite 3 M9"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -6331,7 +6403,9 @@
     "aliases": [
       "Beijing Ming Tombs Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6373,7 +6447,9 @@
     "aliases": [
       "Beloit Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6404,7 +6480,9 @@
     "aliases": [
       "Belsk Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6535,7 +6613,9 @@
     "aliases": [
       "Big Delta Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6615,7 +6695,9 @@
       "BJI",
       "Beijing Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6624,7 +6706,9 @@
     "aliases": [
       "BJJ32 Bermuda, UK"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6668,7 +6752,9 @@
     "aliases": [
       "Bjornoya Geophysical Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6745,7 +6831,6 @@
       "Biology Light Iron Nutrient and Gas model"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -6757,7 +6842,7 @@
       "BLITS"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -6769,8 +6854,7 @@
       "Block IIF Global Positioning System Satellites A through F"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -6782,8 +6866,7 @@
       "Block III/IIIF Global Positioning System Satellites A through F"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -6795,8 +6878,7 @@
       "Block IIR Global Positioning System Satellites B through F"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -6808,8 +6890,7 @@
       "Block IIR-M Global Positioning System Satellites A through F"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -6876,7 +6957,9 @@
     "aliases": [
       "Borok Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6930,7 +7013,9 @@
     "aliases": [
       "Boulder Geophysical Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6939,7 +7024,9 @@
     "aliases": [
       "Boulder Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -6948,7 +7035,9 @@
     "aliases": [
       "BP440 Beijing, China"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7012,7 +7101,9 @@
     "aliases": [
       "Brorfelde Geophysical Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7021,7 +7112,9 @@
     "aliases": [
       "Brorfelde Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7066,7 +7159,9 @@
     "aliases": [
       "Budkov Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7131,7 +7226,9 @@
     "aliases": [
       "Burlington Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7140,7 +7237,9 @@
     "aliases": [
       "BV53Q Bundoora, Australia"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7149,7 +7248,9 @@
     "aliases": [
       "BVJ03 Boa Vista, Brazil"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7198,7 +7299,9 @@
       "Convair C 131 Samaritan",
       "Convair C-131 Samaritan"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7223,7 +7326,9 @@
       "Short Brothers C 23 Sherpa",
       "Short Brothers C-23 Sherpa"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7256,7 +7361,9 @@
     "aliases": [
       "CAJ2M Cachoeira Paulista, Brazil"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7279,7 +7386,7 @@
       "CALorimetric Electron Telescope (CALET)"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -7292,8 +7399,7 @@
       "Cloud Aerosol Lidar and Infrared Pathfinder Satellite Observations"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -7325,7 +7431,9 @@
     "aliases": [
       "Cambridge Bay Geophysical Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7334,7 +7442,9 @@
     "aliases": [
       "Cambridge Bay Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7433,7 +7543,9 @@
     "aliases": [
       "Canberra Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7503,7 +7615,9 @@
     "aliases": [
       "Cape Chelyuskin Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7589,7 +7703,9 @@
     "aliases": [
       "Cape Town Ground Observatory"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7621,7 +7737,7 @@
       "Cape Wellen Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -7721,7 +7837,7 @@
       "Carrollton Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -7825,7 +7941,7 @@
       "Casey Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -7884,7 +8000,7 @@
       "Castellaccio Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8296,7 +8412,8 @@
       "Chinese French Oceanography Satellite"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8343,7 +8460,7 @@
       "Chambon La Foret Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8423,7 +8540,7 @@
       "Changchun Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8478,7 +8595,7 @@
       "Characato Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8511,7 +8628,7 @@
       "Charcot Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8555,7 +8672,7 @@
       "Charters Towers Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8565,9 +8682,7 @@
     "aliases": [
       "Charts"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -8611,7 +8726,7 @@
       "Cheltenham Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8644,7 +8759,7 @@
       "Chengdu Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8700,7 +8815,7 @@
       "Chichijima Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -9114,7 +9229,7 @@
       "CO764 College, Alaska, USA"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -9180,7 +9295,7 @@
       "Coimbra Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -9213,7 +9328,7 @@
       "College Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -9224,7 +9339,7 @@
       "College Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -9258,8 +9373,7 @@
       "Compass Satellite G1"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9271,8 +9385,7 @@
       "Compass Satellite G2"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9284,8 +9397,7 @@
       "Compass Satellite G3"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9297,8 +9409,7 @@
       "Compass Satellite G4"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9310,8 +9421,7 @@
       "Compass Satellite G5"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9323,8 +9433,7 @@
       "Compass Satellite G6"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9336,8 +9445,7 @@
       "Compass Satellite G7"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9349,8 +9457,7 @@
       "Compass Satellite G8"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9362,8 +9469,7 @@
       "Compass Satellite IGS01"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9375,8 +9481,7 @@
       "Compass Satellite IGS02"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9388,8 +9493,7 @@
       "Compass Satellite IGS03"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9401,8 +9505,7 @@
       "Compass Satellite IGS04"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9414,8 +9517,7 @@
       "Compass Satellite IGS05"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9427,8 +9529,7 @@
       "Compass Satellite IGS06"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9440,8 +9541,7 @@
       "Compass Satellite IGS07"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9453,8 +9553,7 @@
       "Compass Satellite M1"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9466,8 +9565,7 @@
       "Compass Satellite M3"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9479,8 +9577,7 @@
       "Compass Satellite M4"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9492,8 +9589,7 @@
       "Compass Satellite M5"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9505,8 +9601,7 @@
       "Compass Satellite M6"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9606,8 +9701,7 @@
       "Aircraft operated by University of Washington"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9621,8 +9715,7 @@
       "CONVAIR 990 CORONADO"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9634,8 +9727,7 @@
       "Convair CV-580"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9706,8 +9798,7 @@
       "Corsair 131A"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9763,7 +9854,9 @@
     "aliases": [
       "COSMOS 1500"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -9772,7 +9865,9 @@
     "aliases": [
       "COSMOS 49"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -10630,7 +10725,7 @@
       "CXM9B Cachimbo, Brazil"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -10652,7 +10747,9 @@
     "aliases": [
       "Cygnus"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -10695,7 +10792,7 @@
       "Dallas Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -10786,7 +10883,7 @@
       "DASH-2"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -10839,7 +10936,7 @@
       "Davao Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -10883,7 +10980,7 @@
       "Davis Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -10918,7 +11015,7 @@
       "DB049 Dourbes, Belgium"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -11033,7 +11130,7 @@
       "De Bilt Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -11054,7 +11151,9 @@
     "aliases": [
       "Deep Discoverer"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -11074,7 +11173,9 @@
     "aliases": [
       "DeepWorker 2000"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -11322,7 +11423,9 @@
       "Thor Delta",
       "Delta DM-19"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -12079,7 +12182,9 @@
     "aliases": [
       "Dragon"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -12215,6 +12320,7 @@
       "Dst Index Observatory Group"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -12238,7 +12344,7 @@
       "Demonstrations and Science Experiment"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -12570,7 +12676,7 @@
       "Observatory Station Code: EGS"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -12805,7 +12911,7 @@
       "Elektro L"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -13431,7 +13537,7 @@
       "Envihab"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -13724,7 +13830,7 @@
       "Esashi Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -13781,7 +13887,7 @@
       "Eskdalemuir Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -13903,7 +14009,7 @@
       "Etaiyapuram Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -14198,7 +14304,7 @@
       "Eyrewell Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -14277,7 +14383,7 @@
       "FAN"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -14301,7 +14407,7 @@
       "Faraday Islands Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -14434,7 +14540,7 @@
       "FF051 Fairford, UK"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -14594,7 +14700,7 @@
       "Fluorescence Explorer (FLEX)"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -14606,8 +14712,7 @@
       "FLEXible PARTicle dispersion model"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -14840,7 +14945,7 @@
       "Far-infrared Outgoing Radiation Understanding and Monitoring"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -14874,7 +14979,7 @@
       "Foton-M2"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -14886,7 +14991,7 @@
       "Foton-M3"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -14930,7 +15035,7 @@
       "Fredericksburg Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -14988,7 +15093,7 @@
       "Freetown Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -15281,7 +15386,6 @@
       "NASA THEMIS EPO Fort Yates Station"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -15317,7 +15421,7 @@
       "GA762 Gakona, Alaska, USA"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -15330,8 +15434,7 @@
       "General Atomics Electromagnetic Systems Orbital Test Bed 2"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15469,7 +15572,6 @@
       "NASA THEMIS GBO Goose Bay Station"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -15533,7 +15635,6 @@
       "Geomagnetic Data Center Russia Ukraine"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -15695,7 +15796,7 @@
       "Gravity and Extreme Magnetism Small Explorer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -16243,7 +16344,7 @@
       "Observatory Station Code: GILL"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -16255,7 +16356,6 @@
       "Geophysical Institute Magnetometer Array"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -16280,8 +16380,7 @@
       "Galileo In-Orbit Validation Element-A"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16293,8 +16392,7 @@
       "Galileo In-Orbit Validation Element-B"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16431,7 +16529,9 @@
       "GLONASS 40-143",
       "Global Navigation Satellite System 40-143"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -16443,7 +16543,9 @@
       "Global Navigation Satellite System 40 82",
       "Global Navigation Satellite System 40-82"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -16453,7 +16555,9 @@
       "GLONASS K",
       "Global Navigation Satellite System-K"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -16463,7 +16567,9 @@
       "GLONASS K2",
       "Global Navigation Satellite System-K2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -16473,7 +16579,9 @@
       "GLONASS M",
       "Global Navigation Satellite System-M"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -16493,7 +16601,9 @@
     "aliases": [
       "Glory"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -16514,7 +16624,9 @@
     "aliases": [
       "GM037 Gibilmanna, Italy"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17154,7 +17266,7 @@
       "Global Oscillation Network Group"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -17308,7 +17420,9 @@
       "Global Positioning System Satellites-36",
       "Global Positioning System Satellites 36"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17340,7 +17454,9 @@
     "aliases": [
       "GR13L Grahamstown, South Africa"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17433,7 +17549,6 @@
       "Gravity Recovery and Interior Laboratory"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -17490,7 +17605,9 @@
       "GREAT WALL STATION",
       "CHINESE GREAT WALL STATION"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17613,7 +17730,9 @@
       "GSAT0101",
       "Galileo Satellite (GSAT)101"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17623,7 +17742,9 @@
       "GSAT0102",
       "Galileo Satellite (GSAT)102"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17633,7 +17754,9 @@
       "GSAT0103",
       "Galileo Satellite (GSAT)103"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17643,7 +17766,9 @@
       "GSAT0203",
       "Galileo Satellite (GSAT)203"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17653,7 +17778,9 @@
       "GSAT0205",
       "Galileo Satellite (GSAT)205"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17663,7 +17790,9 @@
       "GSAT0206",
       "Galileo Satellite (GSAT)206"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17673,7 +17802,9 @@
       "GSAT0207",
       "Galileo Satellite (GSAT)207"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17683,7 +17814,9 @@
       "GSAT0208",
       "Galileo Satellite (GSAT)208"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17693,7 +17826,9 @@
       "GSAT0210",
       "Galileo Satellite (GSAT)210"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17703,7 +17838,9 @@
       "GSAT0211",
       "Galileo Satellite (GSAT)211"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17713,7 +17850,9 @@
       "GSAT0212",
       "Galileo Satellite (GSAT)212"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17723,7 +17862,9 @@
       "GSAT0213",
       "Galileo Satellite (GSAT)213"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17733,7 +17874,9 @@
       "GSAT0214",
       "Galileo Satellite (GSAT)214"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17743,7 +17886,9 @@
       "GSAT0215",
       "Galileo Satellite (GSAT)215"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17753,7 +17898,9 @@
       "GSAT0216",
       "Galileo Satellite (GSAT)216"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17763,7 +17910,9 @@
       "GSAT0217",
       "Galileo Satellite (GSAT)217"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17773,7 +17922,9 @@
       "GSAT0218",
       "Galileo Satellite (GSAT)328"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17783,7 +17934,9 @@
       "GSAT0219",
       "Galileo Satellite (GSAT)219"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17793,7 +17946,9 @@
       "GSAT0220",
       "Galileo Satellite (GSAT)220"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17803,7 +17958,9 @@
       "GSAT0221",
       "Galileo Satellite (GSAT)221"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -17814,7 +17971,7 @@
       "Galileo Satellite (GSAT)222"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17826,7 +17983,7 @@
       "Galileo Satellite (GSAT)223"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17838,7 +17995,7 @@
       "Galileo Satellite (GSAT)224"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17849,7 +18006,7 @@
       "GSJ53 Goose Bay, Canada"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -17907,7 +18064,7 @@
       "Guam Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -17940,7 +18097,7 @@
       "Guangzhou Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -17973,7 +18130,7 @@
       "Guimar Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18096,7 +18253,7 @@
       "HA419 Hainan Island, China"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18197,7 +18354,6 @@
       "Haleakala High Altitude Observatory Site"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -18231,7 +18387,7 @@
       "Halley Bay Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18276,7 +18432,7 @@
       "Hankasalmi Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18356,7 +18512,7 @@
       "Hartebeesthoek Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18389,7 +18545,7 @@
       "Hartland Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18422,7 +18578,7 @@
       "Hatizyo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18444,7 +18600,7 @@
       "Havana Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18523,7 +18679,7 @@
       "HE13N Hermanus, South Africa"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18556,7 +18712,7 @@
       "Heiss Island Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18589,7 +18745,7 @@
       "Hel Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18728,7 +18884,7 @@
       "Helwan Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -18750,7 +18906,7 @@
       "HEO-1"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -18762,7 +18918,7 @@
       "HEO 2"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -18774,7 +18930,7 @@
       "HEO 3"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -19207,7 +19363,7 @@
       "Hollandia Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -19296,7 +19452,7 @@
       "Hornsund Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -19415,7 +19571,7 @@
       "Huancayo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -19493,7 +19649,7 @@
       "Hurbanovo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -19599,7 +19755,7 @@
       "Hyderabad Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -22823,7 +22979,7 @@
       "Ibadan Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -22862,7 +23018,7 @@
       "IC437 I-Cheon, South Korea"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23363,7 +23519,7 @@
       "Indian Mini Satellite"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -23377,7 +23533,7 @@
       "Indian Mini Satellite 1"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -23391,7 +23547,7 @@
       "Indian Mini Satellite-2"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -23843,7 +23999,10 @@
     "aliases": [
       "Iridium"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -23919,7 +24078,9 @@
       "IRNSS-1B",
       "Indian Regional Navigation Satellite System 1B"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -23929,7 +24090,9 @@
       "IRNSS-1D",
       "Indian Regional Navigation Satellite System ID"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -23939,7 +24102,9 @@
       "IRNSS-1F",
       "Indian Regional Navigation Satellite System 1F"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -23949,7 +24114,9 @@
       "IRNSS-1I",
       "Indian Regional Navigation Satellite System 1I"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -24266,7 +24433,9 @@
       "IS-40e",
       "Intelsat 40e"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -24776,8 +24945,7 @@
       "J 31 Aircraft"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -24910,8 +25078,7 @@
       "Jason"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -24977,8 +25144,7 @@
       "Jason II"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -25456,7 +25622,7 @@
       "Kanoya Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -25500,7 +25666,7 @@
       "Kanozan Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -25556,7 +25722,7 @@
       "Karachi Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -25622,7 +25788,7 @@
       "Kashi Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -25758,7 +25924,7 @@
       "Kiev Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -25802,9 +25968,7 @@
     "aliases": [
       "Kingfisher"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -25847,7 +26011,7 @@
       "Kiruna Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -25946,7 +26110,7 @@
       "KJ609 Kwajalein Island, RMI"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -25979,7 +26143,7 @@
       "Kodaikanal Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26026,9 +26190,7 @@
       "Korea Multi-Purpose Satellite"
     ],
     "divisions": [
-      "earth",
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -26043,9 +26205,7 @@
       "Korea Multi-Purpose Satellite-1"
     ],
     "divisions": [
-      "earth",
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -26060,9 +26220,7 @@
       "Korea Multi Purpose Satellite 3"
     ],
     "divisions": [
-      "earth",
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -26109,7 +26267,7 @@
       "Koror Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26142,7 +26300,7 @@
       "Kourou Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26164,7 +26322,7 @@
       "Kr. Pakhra Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26175,7 +26333,7 @@
       "KS759 King Salmon, Alaska, USA"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26366,9 +26524,7 @@
       "Land Based Platforms",
       "Land-based Platforms"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -26600,9 +26756,7 @@
       "LANL Spacecraft Series"
     ],
     "divisions": [
-      "earth",
-      "planetary",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26646,7 +26800,7 @@
       "Lanzhou Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26669,9 +26823,7 @@
       "LAPAN TUBSAT"
     ],
     "divisions": [
-      "earth",
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -26737,7 +26889,7 @@
       "La Quiaca Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26770,7 +26922,7 @@
       "L'Aquila Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26905,7 +27057,8 @@
       "Lightning Detection and Ranging"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26938,7 +27091,7 @@
       "Leadville Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -26982,7 +27135,7 @@
       "Learmonth Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27015,7 +27168,7 @@
       "Leirvogur Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27026,7 +27179,7 @@
       "Leirvogur Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27093,7 +27246,7 @@
       "Lerwick Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27215,7 +27368,7 @@
       "Little America Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27226,7 +27379,7 @@
       "Little Hercules"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -27282,7 +27435,7 @@
       "Livingston Island Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27311,7 +27464,7 @@
       "LM42B Learmonth, Australia"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27357,7 +27510,8 @@
       "Lightning Nitrogen Oxides Model"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27470,7 +27624,7 @@
       "Observatory Station Code: MMK"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27503,7 +27657,7 @@
       "Loparskoe Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27582,7 +27736,7 @@
       "Lovo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27650,6 +27804,7 @@
       "Lightning Positioning and Tracking System Network"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -27722,7 +27877,7 @@
       "Luanda Capelo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27845,7 +28000,7 @@
       "Lunping Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27856,7 +28011,7 @@
       "LV12P Louisvale, South Africa"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27867,7 +28022,7 @@
       "Lviv Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -27922,7 +28077,7 @@
       "Lwiro Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -28026,7 +28181,7 @@
       "Mercury Atlas 9"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -28038,7 +28193,7 @@
       "Magnetometer Array for Cusp and Cleft Studies"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -28071,7 +28226,7 @@
       "Macquarie Island Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -28115,7 +28270,7 @@
       "Magadan Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -28952,7 +29107,7 @@
       "Manhay Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -28996,7 +29151,7 @@
       "Manzhouli Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -29030,7 +29185,7 @@
       "Observatory Station Code: LMM"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -29086,6 +29241,7 @@
       "Mariner 2"
     ],
     "divisions": [
+      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -29319,7 +29475,7 @@
       "Martin De Vivies Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -29502,7 +29658,7 @@
       "Mawson Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -29548,7 +29704,7 @@
       "MBour Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -29730,7 +29886,7 @@
       "Meanook Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -29787,7 +29943,7 @@
       "Memambetsu Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -30666,7 +30822,9 @@
       "MINTS",
       "Multi-Scale Integrated Intelligent Interactive Sensing Consortium"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -30690,8 +30848,7 @@
       "Mobile Integrated Profiling System"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -30703,7 +30860,8 @@
       "Mir II"
     ],
     "divisions": [
-      "planetary"
+      "earth",
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -30726,7 +30884,8 @@
       "Mir 1"
     ],
     "divisions": [
-      "planetary"
+      "earth",
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -30759,7 +30918,8 @@
       "Mirny Ground Observatory"
     ],
     "divisions": [
-      "planetary"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -30772,7 +30932,7 @@
       "PRIRODA Module of MIR Space Station"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -30783,7 +30943,8 @@
       "Mir Space Station"
     ],
     "divisions": [
-      "planetary"
+      "earth",
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -31040,7 +31201,10 @@
     "aliases": [
       "MO155 Moscow, Russian Federation"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -31164,8 +31328,7 @@
       "Monitor E"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -31523,7 +31686,9 @@
       "Mercury-Redstone 2",
       "Mercury Redstone 2"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -31535,7 +31700,7 @@
       "Mercury Redstone 3"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -31548,7 +31713,7 @@
       "Mercury Redstone 4"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -31573,7 +31738,7 @@
       "Magdalena Ridge Observatory 2.4-M Telescope"
     ],
     "divisions": [
-      "planetary"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -31813,9 +31978,7 @@
     "aliases": [
       "MU12K Madimbo, South Africa"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -31824,9 +31987,7 @@
     "aliases": [
       "MU230 Multan, Pakistan"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -31923,9 +32084,7 @@
     "aliases": [
       "Muntinlupa Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -31990,9 +32149,7 @@
     "aliases": [
       "Murchison Bay Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32012,9 +32169,7 @@
     "aliases": [
       "MuSat2"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32158,9 +32313,7 @@
     "aliases": [
       "Nagpur Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32191,9 +32344,7 @@
     "aliases": [
       "Nagycenk Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32202,9 +32353,7 @@
     "aliases": [
       "NAHLA"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32269,9 +32418,7 @@
     "aliases": [
       "Nairobi Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32302,9 +32449,7 @@
     "aliases": [
       "Nampula Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32314,8 +32459,7 @@
       "Nançay Decameter Array"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -32358,9 +32502,7 @@
     "aliases": [
       "Narsarsuaq Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32402,13 +32544,7 @@
     "aliases": [
       "NASA Ames Research Center"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -32458,8 +32594,7 @@
       "NASA ELECTRA"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -32568,7 +32703,7 @@
       "NASA S-3B VIKING"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -32769,8 +32904,7 @@
       "NCAR ELECTRA"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -33038,8 +33172,7 @@
       "NenuFAR"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -33060,9 +33193,7 @@
     "aliases": [
       "Neumayer Station Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -33172,9 +33303,7 @@
     "aliases": [
       "Newport Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -33183,9 +33312,7 @@
     "aliases": [
       "NI135 Nicosia, Cyprus"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -33216,9 +33343,7 @@
     "aliases": [
       "Niemegk Ground Observatory"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -33405,9 +33530,7 @@
     "aliases": [
       "NO369 Norilsk, Russian Federation"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -34101,7 +34224,7 @@
       "Observatory Station Code: NRD"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34190,7 +34313,7 @@
       "Norway Station Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34232,7 +34355,7 @@
       "Novokazalinsk Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34265,7 +34388,7 @@
       "Novolazarevskaya Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34298,7 +34421,7 @@
       "Novosibirsk, Klyuch Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34312,8 +34435,7 @@
       "Naval Research Lab P 3C Orion"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -34325,8 +34447,7 @@
       "NOAA Profiler Network"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -34360,7 +34481,7 @@
       "NQJ61 Narsarsuaq, Greenland"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34385,8 +34506,7 @@
       "Aircraft operated by Naval Research Lab"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -34444,8 +34564,7 @@
       "NSO Observatory Group"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34523,7 +34642,7 @@
       "Nurmijarvi Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34549,9 +34668,7 @@
       "NigeriaSat X"
     ],
     "divisions": [
-      "earth",
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -34609,7 +34726,7 @@
       "Oasis Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34777,7 +34894,7 @@
       "Arctic Village Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34789,7 +34906,7 @@
       "Arkhangelsk Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34824,7 +34941,7 @@
       "Byrd Station Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34848,7 +34965,7 @@
       "Port Alfred Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34860,7 +34977,7 @@
       "Dumont d'Urville Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34896,7 +35013,7 @@
       "Fredericksburg Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34908,7 +35025,7 @@
       "Fresno Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34920,7 +35037,7 @@
       "Fort Simpson Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34944,7 +35061,7 @@
       "Fort Smith Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -34956,7 +35073,7 @@
       "Fort Yukon Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35100,7 +35217,7 @@
       "Inuvik Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35112,7 +35229,7 @@
       "Iqaluit Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35124,7 +35241,7 @@
       "Jan Mayen Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35172,7 +35289,7 @@
       "Bereznyaki Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35232,7 +35349,7 @@
       "Lucky Lake Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35244,7 +35361,7 @@
       "Leningradskaya Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35280,7 +35397,7 @@
       "Lovozero Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35328,7 +35445,7 @@
       "Learmonth Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35364,7 +35481,7 @@
       "Monte Capellino Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -35376,7 +35493,7 @@
       "Meanook Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35446,7 +35563,7 @@
       "Nurmijarvi Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35458,7 +35575,7 @@
       "Ottawa Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35470,7 +35587,7 @@
       "Oulujarvi Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35518,7 +35635,7 @@
       "Pelly Bay Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35650,7 +35767,7 @@
       "Podkamennaya Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35662,7 +35779,7 @@
       "Poker Flat Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35709,7 +35826,7 @@
       "Rankin Inlet Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35841,7 +35958,7 @@
       "Shumagin Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35865,7 +35982,7 @@
       "Sao Miguel Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35926,7 +36043,7 @@
       "San Pablo Toledo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -35985,7 +36102,7 @@
       "Saint Johns Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -36093,7 +36210,7 @@
       "Trivandrum Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -36105,7 +36222,7 @@
       "Tucson Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -36117,7 +36234,7 @@
       "Victoria Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -36153,7 +36270,7 @@
       "Wien Kobenzl Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -36189,7 +36306,7 @@
       "Yellowknife Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -36202,7 +36319,7 @@
       "Observatoire De Paris"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -36362,7 +36479,7 @@
       "Odin"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -36521,7 +36638,7 @@
       "O'Higgins Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -36532,7 +36649,9 @@
       "OICETS",
       "Optical Inter-orbit Communications Engineering Test Satellite"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -36542,7 +36661,7 @@
       "OK426 Okinawa, Japan"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -36842,7 +36961,9 @@
     "aliases": [
       "OrbView"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -37127,7 +37248,7 @@
       "Ottawa Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37288,7 +37409,9 @@
       "Piper PA 12 Super Cruiser",
       "Piper PA-12 Super Cruiser"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -37298,7 +37421,7 @@
       "PA836 Point Arguello, California, USA"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37459,7 +37582,7 @@
       "Pamatai Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37528,7 +37651,7 @@
       "Panagyurishte Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37616,7 +37739,7 @@
       "Paramaribo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37662,7 +37785,7 @@
       "Paratunka Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37731,7 +37854,7 @@
       "Observatory Station Code: IRT"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37833,7 +37956,6 @@
       "Polar Experimental Network for Geospace Upper-Atmosphere Investigations"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -37868,7 +37990,7 @@
       "Penteli Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37946,7 +38068,6 @@
       "NASA THEMIS GBO Prince George Station"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -37957,9 +38078,7 @@
     "aliases": [
       "Phantom DHD2+2"
     ],
-    "divisions": [
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -38037,7 +38156,7 @@
       "Observatory Station Code: PHU"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38137,7 +38256,7 @@
       "Pilar Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38161,7 +38280,6 @@
       "NASA THEMIS EPO Pine Ridge Station"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -38188,8 +38306,7 @@
       "Pioneer B"
     ],
     "divisions": [
-      "heliophysics",
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38201,8 +38318,7 @@
       "Pioneer 6"
     ],
     "divisions": [
-      "heliophysics",
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38351,7 +38467,7 @@
       "Pionerskaya Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38361,9 +38477,7 @@
     "aliases": [
       "PIPER AZTEC"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -38373,9 +38487,7 @@
       "Piper PA-31 Navajo",
       "Piper Navajo Chieftain"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -38395,9 +38507,7 @@
     "aliases": [
       "Pisces V"
     ],
-    "divisions": [
-      "planetary"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -38453,7 +38563,7 @@
     ],
     "divisions": [
       "earth",
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38508,7 +38618,7 @@
       "Plateau Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38530,7 +38640,7 @@
       "Pleiades"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -38541,7 +38651,7 @@
       "Pleiades 1A"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -38553,7 +38663,7 @@
       "Pleiades-1B"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -38564,7 +38674,7 @@
       "Pleiades Neo"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -38791,7 +38901,7 @@
       "Pondicherry Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38846,7 +38956,7 @@
       "Port Aux Francais Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38879,7 +38989,7 @@
       "Port Moresby Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38912,7 +39022,7 @@
       "Port Stanley Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -38967,7 +39077,7 @@
       "Poste De La Baleine Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39012,7 +39122,7 @@
       "PQ052 Pruhonice, Czech Republic"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39024,8 +39134,7 @@
       "Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Satellite-1"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -39037,8 +39146,7 @@
       "Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Satellite-2"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -39071,7 +39179,7 @@
       "Price Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39094,7 +39202,7 @@
       "PRecursore IperSpettrale della Missione Applicativa"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -39104,9 +39212,7 @@
     "aliases": [
       "PRJ18 Ramey AFB, Puerto Rico"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -39119,8 +39225,7 @@
       "Project for On-Board Autonomy (PROBA)"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -39134,8 +39239,7 @@
       "Project for On Board Autonomy, PROBA 1"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -39163,8 +39267,7 @@
       "Project for On-Board Autonomy, PROBA-3"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -39281,7 +39384,7 @@
       "Prognoz Spacecraft Series"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39348,7 +39451,7 @@
       "Pruhonice Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39359,7 +39462,7 @@
       "PSJ5J Port Stanley, UK"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39396,7 +39499,6 @@
       "NASA THEMIS EPO Petersburg Station"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -39587,7 +39689,7 @@
       "Qianling Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39620,7 +39722,7 @@
       "Qiongzhong Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39653,7 +39755,7 @@
       "Qsaybeh Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -39975,7 +40077,6 @@
       "RADIOASTRON"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -40132,9 +40233,7 @@
     "aliases": [
       "RASI"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -40144,7 +40243,7 @@
       "RCM-1"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -40155,7 +40254,7 @@
       "RCM-2"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -40166,7 +40265,7 @@
       "RCM-3"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -40177,9 +40276,7 @@
       "RCV-150",
       "RCV 150"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -40479,7 +40576,7 @@
       "RL052 Chilton, UK"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -40514,7 +40611,7 @@
       "RO041 Rome, Italy"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -40579,11 +40676,7 @@
     "aliases": [
       "Rockets"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -40745,9 +40838,7 @@
     "aliases": [
       "Rotorcraft/Helicopter"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -40851,8 +40942,7 @@
       "Radio Solar Telescope Network"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -41919,7 +42009,8 @@
       "Stratospheric Aerosol and Gas Experiment-III"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43026,7 +43117,9 @@
     "aliases": [
       "Short SC.7 Skyvan"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -43058,7 +43151,7 @@
       "Shumagin Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43158,7 +43251,7 @@
       "Silchar Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43191,7 +43284,7 @@
       "Simosato Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43248,7 +43341,7 @@
       "Observatory Station Code: SIT"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43467,7 +43560,7 @@
       "SMJ67 Sondrestrom AB, Greenland"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43594,7 +43687,7 @@
       "SN437 Osan AB, South Korea"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43677,7 +43770,7 @@
       "Sodankyla Geophysical Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43689,7 +43782,7 @@
       "Space Oriented Higashiosaka Leading Association-1"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -43779,7 +43872,7 @@
       "Solar Radiation Stations"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -43827,7 +43920,7 @@
       "Solar Radiation-1"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -43841,7 +43934,7 @@
       "Solar Radiation-10"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -43855,7 +43948,7 @@
       "Solar Radiation-7A"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -43869,7 +43962,7 @@
       "Solar Radiation 7B"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -43883,7 +43976,7 @@
       "Solar Radiation-8"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -43896,7 +43989,7 @@
       "Solar Radiation 9"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -44063,7 +44156,7 @@
       "South Georgia Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -44096,7 +44189,7 @@
       "South Pole Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -44496,7 +44589,7 @@
       "Space Technology 5"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -44684,7 +44777,7 @@
       "Stepanovka Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -44763,8 +44856,7 @@
       "Stochastic Time-Inverted Lagrangian Transport Model"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -44845,7 +44937,9 @@
       "Space Test Program Satellite 3",
       "U.S. Air Force Space Test Program Satellite 3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -45177,7 +45271,9 @@
       "STSAT-2A",
       "Science and Technology SATellite-2A"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -45337,7 +45433,7 @@
     ],
     "divisions": [
       "earth",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -45667,7 +45763,9 @@
       "Rockwell Sabreliner T-39",
       "Rockwell Sabreliner T 39"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -46207,7 +46305,7 @@
       "Technology Experiment Carrier-1"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -47069,7 +47167,7 @@
       "Tonghai Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -47102,7 +47200,7 @@
       "Toolangi Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -47136,8 +47234,7 @@
       "Tactical Operational Satellite"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -47266,7 +47363,9 @@
       "TRAJ3D",
       "Three-Dimensional Trajectory Model"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -47330,7 +47429,7 @@
       "Trelew Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -47586,7 +47685,7 @@
       "Tsumeb Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -47631,7 +47730,7 @@
       "Tucson Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -47675,7 +47774,7 @@
       "Tuntungan Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -47844,7 +47943,7 @@
       "Ujjain Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -48147,7 +48246,7 @@
       "Uppsala Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -48333,7 +48432,9 @@
     "aliases": [
       "USGS Reston Spectroscopy Laboratory"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -48477,7 +48578,9 @@
       "UTMB GCRC",
       "University of Texas Medical Branch Galveston Clinical Research Center"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -48579,7 +48682,7 @@
       "Valentia Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -48649,7 +48752,7 @@
       "Vanderbilt Dyer Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -48659,7 +48762,9 @@
     "aliases": [
       "VANGUARD"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -48823,7 +48928,7 @@
       "Vassouras Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49021,7 +49126,7 @@
       "Victoria Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49054,7 +49159,7 @@
       "Vieques Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49153,7 +49258,7 @@
       "Visakhapatnam Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49379,7 +49484,7 @@
       "Voyeykovo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49390,7 +49495,7 @@
       "VT139 San Vito, Italy"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49522,7 +49627,7 @@
       "Watheroo Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49559,7 +49664,7 @@
       "World Data Center Ground Observatories"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49638,7 +49743,6 @@
       "Western Pacific Laser Satellite"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -49798,7 +49902,7 @@
       "Wilkes Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49889,7 +49993,7 @@
       "Wingst Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -49945,7 +50049,7 @@
       "Witteveen Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50139,7 +50243,7 @@
       "WU430 Wuhan, China"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50172,7 +50276,7 @@
       "Wuhan Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50253,7 +50357,7 @@
       "YA462 Yakutsk, Russian Federation"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50286,7 +50390,7 @@
       "Yakutsk Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50341,7 +50445,7 @@
       "Yazhno Sakhalinsk Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50352,7 +50456,7 @@
       "Y. Basar Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50430,7 +50534,7 @@
       "Yogi"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -50532,7 +50636,7 @@
       "Zeya"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -50543,7 +50647,7 @@
       "ZH466 Zhigansk, Russian Federation"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50554,7 +50658,7 @@
       "Zhangheng 1"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -50599,7 +50703,7 @@
       "Zo Se Ground Observatory"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50610,7 +50714,7 @@
       "ZS36R Zhongshan, Antarctica"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   }

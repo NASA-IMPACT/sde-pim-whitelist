@@ -29,7 +29,7 @@
       "120-COLOR CIRCULAR-VARIABLE-FILTER PHOTOMETER"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -52,7 +52,7 @@
       "1DP"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -111,7 +111,7 @@
       "2 Channel Photometer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -135,7 +135,7 @@
       "2D-Gray Particle Probe"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -159,7 +159,7 @@
       "2D-STEREO PARTICLE PROBE"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -534,7 +534,7 @@
       "8 Color Photometric System"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -664,7 +664,6 @@
       "Abinger Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -687,7 +686,6 @@
       "Abisko Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -1166,7 +1164,7 @@
       "Atmospheric Density Accelerometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -1202,7 +1200,6 @@
       "Addis Ababa Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -2040,8 +2037,7 @@
       "Advanced Geostationary Radiation Imager"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2255,7 +2251,6 @@
       "AIRGLOW SENSOR"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -2350,9 +2345,7 @@
     "aliases": [
       "AIR PERMEAMETERS"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -2374,9 +2367,7 @@
     "aliases": [
       "AIRSAFE"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -2416,8 +2407,8 @@
       "Arizona Imager Spectrograph"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "heliophysics",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -2606,7 +2597,7 @@
       "Atmospheric Lyman-Alpha Emissions"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -2741,7 +2732,7 @@
       "Alice Ultraviolet Imaging Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -2752,7 +2743,7 @@
       "ALICE UV Imager"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -2902,7 +2893,7 @@
       "Alpha Scattering Instrument"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -2914,7 +2905,7 @@
       "ALPHA SPECTROMETERS"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -2926,7 +2917,7 @@
       "Alpha X-ray Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -3020,9 +3011,7 @@
     "aliases": [
       "ALTUS DATA COLLECTION SYSTEM"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -3910,7 +3899,6 @@
       "Apia Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -3934,8 +3922,7 @@
       "Ames Particle Measurement System"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -4448,7 +4435,6 @@
       "Arctowski Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -4577,7 +4563,7 @@
       "ARINA"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -4588,7 +4574,6 @@
       "Arkhangelsk Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -4612,7 +4597,7 @@
       "ARL-M Gamma-ray Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -4673,7 +4658,6 @@
       "Arti Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -4739,7 +4723,6 @@
       "Advanced Stellar Compass 2"
     ],
     "divisions": [
-      "earth",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -4763,7 +4746,6 @@
       "Ascension Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -4846,7 +4828,6 @@
       "Absolute Scalar Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -4858,7 +4839,6 @@
       "Aso Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -4892,9 +4872,7 @@
     "aliases": [
       "Aspect Indicator"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -4917,7 +4895,8 @@
       "Analyzer of Space Plasma and Energetic Atoms"
     ],
     "divisions": [
-      "heliophysics"
+      "heliophysics",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -5098,7 +5077,6 @@
       "THEMIS Ground Athabasca All Sky Imager"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -5122,7 +5100,6 @@
       "THEMIS GBO Athabasca Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -5196,7 +5173,6 @@
       "Atmospheric and Solar Corona Turbulence Experiment"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -5373,7 +5349,7 @@
       "Automatic Giant Nuclei Impactor"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -5687,9 +5663,7 @@
       "Amplitude Time Spectrum Analyser",
       "Amplitude-time Spectrum Analyser"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -5710,7 +5684,9 @@
     "aliases": [
       "AWE"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5760,7 +5736,9 @@
       "Automatic Weigh and Identification Nest System",
       "Automatic Weigh and Identification Nest-System"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -5853,7 +5831,6 @@
       "Baguio Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -5876,7 +5853,6 @@
       "Baker Lake Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -5921,7 +5897,6 @@
       "Bangui Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -5966,7 +5941,6 @@
       "Bar Gyora Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -6011,7 +5985,7 @@
       "BARREL 1A Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6022,7 +5996,7 @@
       "BARREL 1B Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6033,7 +6007,7 @@
       "BARREL 1C Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6044,7 +6018,7 @@
       "BARREL 1D Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6055,7 +6029,7 @@
       "BARREL 1G Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6066,7 +6040,7 @@
       "BARREL 1H Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6077,7 +6051,7 @@
       "BARREL 1I Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6088,7 +6062,7 @@
       "BARREL 1J Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6099,7 +6073,7 @@
       "BARREL 1K Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6110,7 +6084,7 @@
       "BARREL 1L Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6121,7 +6095,7 @@
       "BARREL 1M Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6132,7 +6106,7 @@
       "BARREL 1O Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6143,7 +6117,7 @@
       "BARREL 1Q Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6154,7 +6128,7 @@
       "BARREL 1R Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6165,7 +6139,7 @@
       "BARREL 1S Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6176,7 +6150,7 @@
       "BARREL 1T Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6187,7 +6161,7 @@
       "BARREL 1U Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6198,7 +6172,7 @@
       "BARREL 1V Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6209,7 +6183,7 @@
       "BARREL 2A Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6220,7 +6194,7 @@
       "BARREL 2B Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6231,7 +6205,7 @@
       "BARREL 2C Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6242,7 +6216,7 @@
       "BARREL 2D Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6253,7 +6227,7 @@
       "BARREL 2E Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6264,7 +6238,7 @@
       "BARREL 2F Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6275,7 +6249,7 @@
       "BARREL 2I Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6286,7 +6260,7 @@
       "BARREL 2K Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6297,7 +6271,7 @@
       "BARREL 2L Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6308,7 +6282,7 @@
       "BARREL 2M Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6319,7 +6293,7 @@
       "BARREL 2N Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6330,7 +6304,7 @@
       "BARREL 2O Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6341,7 +6315,7 @@
       "BARREL 2P Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6352,7 +6326,7 @@
       "BARREL 2Q Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6363,7 +6337,7 @@
       "BARREL 2T Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6374,7 +6348,7 @@
       "BARREL 2W Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6385,7 +6359,7 @@
       "BARREL 2X Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6396,7 +6370,7 @@
       "BARREL 2Y Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6803,7 +6777,7 @@
       "BARREL Balloon 1L Data Processing Unit"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6814,7 +6788,6 @@
       "BARREL Balloon 1L Tilt Compensated Magnetometer, TCM2, Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -6826,7 +6799,7 @@
       "BARREL Balloon 1L Trajectory Positions"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -7981,7 +7954,7 @@
       "BARREL Positions"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -7992,7 +7965,6 @@
       "Barrow Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8137,7 +8109,6 @@
       "Bay St. Louis Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8174,7 +8145,6 @@
       "Broad Spectral Bandpass Hemispherical Solar Radiometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8188,8 +8158,7 @@
       "Broad-Band Radiometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -8236,7 +8205,6 @@
       "Bear Island Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8314,7 +8282,6 @@
       "Beijing Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8338,7 +8305,6 @@
       "Beijing Ming Tombs Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8372,7 +8338,6 @@
       "Beloit Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8395,7 +8360,6 @@
       "Belsk Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8429,7 +8393,6 @@
       "Bennington Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8507,7 +8470,6 @@
       "Bereznyaki Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8568,7 +8530,7 @@
       "Bismuth Germanate Scintillator"
     ],
     "divisions": [
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -8579,7 +8541,6 @@
       "Big Delta Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8601,7 +8562,9 @@
     "aliases": [
       "BIG EYE BINOCULARS"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -8724,7 +8687,7 @@
       "BIOMETER"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -8813,7 +8776,7 @@
       "Bistatic Radar Experiment"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8926,7 +8889,6 @@
       "THEMIS Ground EPO Bay Mills Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -8995,7 +8957,6 @@
       "Borok Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -9040,7 +9001,7 @@
       "Bottles/Flasks/Jars"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9073,7 +9034,6 @@
       "Boulder Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -9151,7 +9111,7 @@
       "Box Core"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9162,7 +9122,9 @@
       "BR",
       "Benndorf Recorder"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -9320,7 +9282,6 @@
       "Brorfelde Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -9400,8 +9361,7 @@
       "Broadband Solar Radiometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9445,7 +9405,6 @@
       "Budkov Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -9512,7 +9471,6 @@
       "Burlington Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -9571,7 +9529,6 @@
       "Byrd Station Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -9712,7 +9669,6 @@
       "Cambridge Bay Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -9833,9 +9789,7 @@
     "aliases": [
       "Camera Suite"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -9958,7 +9912,7 @@
       "Canadian Meteor ORBIT Radar"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -9980,7 +9934,6 @@
       "Canberra Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10050,7 +10003,6 @@
       "CANOPUS All-Sky Imagers"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10074,7 +10026,6 @@
       "CANOPUS Baristatic Auroral Radar System"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10098,7 +10049,6 @@
       "CANOPUS Magnetometer and Riometer Array"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10123,7 +10073,6 @@
       "CANOPUS Meridian Scanning Photometer Array"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10147,7 +10096,6 @@
       "Cape Chelyuskin Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10181,7 +10129,7 @@
       "Capella SAR"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -10192,7 +10140,6 @@
       "Cape Town Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10215,7 +10162,6 @@
       "Cape Wellen Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10493,7 +10439,6 @@
       "Carrollton Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10540,8 +10485,7 @@
       "Concurrent Artificially-intelligent Spectrometry and Adaptive Lidar System (CASALS)"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -10552,7 +10496,6 @@
       "Casey Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -10791,7 +10734,6 @@
       "Castellaccio Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -11030,7 +10972,7 @@
       "CCD_VIS_bandwidth"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -11185,7 +11127,7 @@
       "Cedar Imager"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -11229,7 +11171,7 @@
       "Celestial Mechanics Experiment"
     ],
     "divisions": [
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -11287,7 +11229,10 @@
     "aliases": [
       "CENTRO DE ASTROBIOLOGIA"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -11335,7 +11280,9 @@
     "aliases": [
       "Ceptometers"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11346,7 +11293,7 @@
       "Coherent Electromagnetic Radiation"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -11492,7 +11439,7 @@
       "Coherent Electromagnetic Radio Tomography"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -11504,7 +11451,7 @@
       "Coherent Electromagnetic Radio Tomography / Triband Beacon Transmitter"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -11528,7 +11475,7 @@
       "Continuous Flow Diffusion Chamber"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -11637,7 +11584,7 @@
       "Chameleon Microstructure Profiler"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -11965,7 +11912,7 @@
       "Chemical Meters/Analyzers"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -11989,7 +11936,7 @@
       "Chemistry and Camera"
     ],
     "divisions": [
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -12044,7 +11991,7 @@
       "Cherenkov Counter"
     ],
     "divisions": [
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -12055,7 +12002,7 @@
       "Cherenkov Radiation Detector"
     ],
     "divisions": [
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -12100,8 +12047,7 @@
       "Copernicus Hyperspectral Imaging Mission for the Environment"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -12274,8 +12220,7 @@
       "CICERO Instrument for GNSS-RO"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -12528,8 +12473,7 @@
       "Multiple Axis Resonance Fluorescence Chemical Conversion Detector for ClO and BrO"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -13071,7 +13015,6 @@
       "Coimbra Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -13106,7 +13049,6 @@
       "College Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -13285,7 +13227,7 @@
       "Composition Analyzer"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -13411,7 +13353,7 @@
       "Coronagraph"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -13467,7 +13409,7 @@
       "Corers"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -13501,7 +13443,7 @@
       "Coronagraphs"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -13606,7 +13548,7 @@
       "Corea SAR Instrument"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -13630,7 +13572,7 @@
       "Cosmic Dust Detector"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -13641,7 +13583,7 @@
       "Cosmic Dust Experiment"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -13652,7 +13594,6 @@
       "Cosmic Radio Emission Receiver"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -13824,8 +13765,7 @@
       "Hydroinnova COSMOS Soil Moisture Rover"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -13838,8 +13778,7 @@
       "Hydroinnova COSMOS Stationary Soil Probe"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -13851,7 +13790,7 @@
       "Correlation Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -14054,9 +13993,7 @@
     "aliases": [
       "Coulometers"
     ],
-    "divisions": [
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -14949,7 +14886,7 @@
       "CONTOUR REMOTE IMAGING SPECTROGRAPH"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -15190,9 +15127,7 @@
       "CSR",
       "Compressive Strength Recorder"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -15801,7 +15736,9 @@
       "DBH Tape",
       "Diameter Measurement Tape"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -16209,8 +16146,7 @@
       "Difference Frequency Generation Absorption Spectrometer Developed by University of Colorado, Boulder"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16270,7 +16206,7 @@
       "Dielectric Probe"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16461,7 +16397,7 @@
       "Distance Sampling"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -16533,8 +16469,7 @@
       "DubaiSat 1 Medium Aperture Camera"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16724,6 +16659,7 @@
       "DMSP/F15, Gamma Ray Particle Detector, SSB/X 2"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -16735,8 +16671,7 @@
       "DMSP/F17, Operational Linescan System, OLS"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16805,9 +16740,7 @@
     "aliases": [
       "DOLORES"
     ],
-    "divisions": [
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -16872,8 +16805,7 @@
       "Doppler Beacons"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16896,7 +16828,7 @@
       "Dual Optical Pulse Sensor"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -17033,7 +16965,7 @@
       "Directional Polarization Camera"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17103,7 +17035,7 @@
       "Drag Measurements Experiment"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -17205,7 +17137,9 @@
       "DRS",
       "Disturbance Reduction System"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -17409,7 +17343,7 @@
       "Dual Frequency Occultation Experiment"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17431,7 +17365,6 @@
       "Dumont d'Urville Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -17727,7 +17660,6 @@
       "Easter Island Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -17764,7 +17696,6 @@
       "Ebro Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -17789,7 +17720,7 @@
       "Ebert Fastie Spectrometer"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -17907,7 +17838,7 @@
       "Energy Dispersive Analysis of X Ray"
     ],
     "divisions": [
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -18084,7 +18015,7 @@
       "Electrostatic Gravity Gradiometer"
     ],
     "divisions": [
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -18120,7 +18051,6 @@
       "Eights Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -18144,7 +18074,6 @@
       "Eilat Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -18495,7 +18424,7 @@
       "Electrofishing"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -19390,7 +19319,7 @@
       "Environmental Monitor Unit"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -19605,7 +19534,8 @@
       "Earth Network Lightning Sensor"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -19789,7 +19719,9 @@
       "EPDP",
       "Electric Propulsion Diagnostic Package"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -19996,8 +19928,7 @@
       "EPSONDE"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -20044,7 +19975,9 @@
     "aliases": [
       "Equilibrators"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -20273,8 +20206,7 @@
       "Electrically Scanning Microwave Radiometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -20389,8 +20321,7 @@
       "Electronically Scanned Thinned Array Radiometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -20559,7 +20490,7 @@
       "Event Monitoring Camera"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -20835,7 +20766,9 @@
       "Fan-Aspirated Radiation Shield",
       "FAN ASPIRATED RADIATION SHIELD"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -20868,7 +20801,7 @@
       "Faraday Effect Experiment"
     ],
     "divisions": [
-      "heliophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -21063,7 +20996,7 @@
       "Fly's Eye GLM Simulator"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -21161,7 +21094,7 @@
       "Field Scope"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -21183,8 +21116,7 @@
       "Field Spectroradiometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -22069,7 +22001,7 @@
       "Footpad Magnets"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -22202,8 +22134,7 @@
       "Fourier Spectrometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -22236,7 +22167,9 @@
     "aliases": [
       "Four Ion Thrusters"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -22336,7 +22269,7 @@
       "Framing Camera"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -22553,8 +22486,7 @@
       "FS / Infrared Spectrometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -22602,8 +22534,7 @@
       "Pointing FTS with 4 co-aligned detector arrays, 16 pixels each"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -22696,7 +22627,6 @@
       "Far Ultraviolet Imager / Geocorona Photometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -22709,7 +22639,6 @@
       "Far Ultra Violet Imaging Spectrograph"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -22722,7 +22651,6 @@
       "Far Ultraviolet Imager / Spectrographic Imager"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -22735,7 +22663,6 @@
       "Far Ultraviolet Imager / Wideband Imaging Camera"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -22829,7 +22756,6 @@
       "Gakona Riometer Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -22852,7 +22778,7 @@
       "Galactic Studies Experiment"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -22979,8 +22905,7 @@
       "Galactic Cosmic Ray Spectrometer / 1"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23000,7 +22925,7 @@
       "Gamma Radiation Detector"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23024,7 +22949,6 @@
       "Konus Gamma Ray Burst Studies Experiment"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -23037,7 +22961,6 @@
       "Gamma Ray Bursts Experiment"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -23049,7 +22972,7 @@
       "Gamma Ray Detector"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23060,7 +22983,7 @@
       "GAMMA RAY DETECTOR (SSB)"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23130,7 +23053,7 @@
       "Gamma Spectrometer"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23142,8 +23065,7 @@
       "Gas and Aerosol Measurement Sensor/Langley Airborne A-Band Spectrometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -23156,7 +23078,7 @@
       "Gamma Ray Burst Polarimeter"
     ],
     "divisions": [
-      "heliophysics",
+      "earth",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -23169,8 +23091,7 @@
       "The GAGG Radiation Instruments"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23199,8 +23120,7 @@
       "Greenhouse-gases Absorption Spectrometer - 2"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -23211,7 +23131,7 @@
       "Gas Chromatograph Package"
     ],
     "divisions": [
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -23222,7 +23142,7 @@
       "Gas Correlation Filters"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23236,8 +23156,7 @@
       "Gas Discharge Geiger Counters"
     ],
     "divisions": [
-      "astrophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23399,7 +23318,7 @@
       "Gas Chromatography Electron Impact Mass Spectrometer"
     ],
     "divisions": [
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -23412,7 +23331,7 @@
       "Gas Chromatography Electron Impact Time-of-flight Mass Spectrometer"
     ],
     "divisions": [
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -23454,7 +23373,7 @@
       "Gas Chromatography - Thermal Conductivity Detector"
     ],
     "divisions": [
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -23503,8 +23422,7 @@
       "Geiger Mueller Tube"
     ],
     "divisions": [
-      "astrophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23516,7 +23434,7 @@
       "Geiger Tubes and p on n Junction"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23769,7 +23687,8 @@
       "Geostationary Search and Rescue"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -23992,7 +23911,6 @@
       "Radiation Dosimeter (SSJ*)"
     ],
     "divisions": [
-      "heliophysics",
       "bps"
     ],
     "division_source": "openai"
@@ -24119,8 +24037,7 @@
       "GGAK-M / Radiation Monitoring System"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24134,7 +24051,6 @@
       "GGAK M / Spectrometer for Geoactive Measurements"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -24222,7 +24138,7 @@
       "THEMIS Ground Gillam All Sky Imager"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24234,7 +24150,6 @@
       "THEMIS GBO Gillam Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -24245,10 +24160,7 @@
     "aliases": [
       "GILLNETS"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -24372,7 +24284,6 @@
       "Glenlea Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -24460,8 +24371,7 @@
       "Global Oscillation Network Group at BBSO"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24472,8 +24382,7 @@
       "Global Oscillation Network Group at CTIO"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24484,8 +24393,7 @@
       "Global Oscillation Network Group at Learmonth"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24496,8 +24404,7 @@
       "Global Oscillation Network Group at MLSO"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24508,8 +24415,7 @@
       "Global Oscillation Network Group at TEIDE"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24520,8 +24426,7 @@
       "Global Oscillation Network Group at Udaipur"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24638,7 +24543,7 @@
       "Geological Long-Range Inclined ASDIC"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -24661,7 +24566,6 @@
       "Glyndon Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -24724,8 +24628,7 @@
       "GM Tubes and a PN Junction Semicon Ductor / Energetic Particle Experiment"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -24736,7 +24639,6 @@
       "Gnangara Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -24850,7 +24752,6 @@
       "Qeqertarsua Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -25228,7 +25129,6 @@
       "GOES 8 Solar X Ray Monitor"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -25496,7 +25396,6 @@
       "Golmud Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -25520,8 +25419,7 @@
       "GPS Occultation and Passive Reflection Experiment"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -25533,8 +25431,7 @@
       "Global Ozone Monitoring Experiment"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -25560,8 +25457,7 @@
       "Global Ozone Monitoring by Occultation of Stars"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -25607,7 +25503,6 @@
       "Gornotayezhnaya Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -25655,7 +25550,7 @@
       "GPR-2500 S Oxygen Analyzer"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -25678,7 +25573,6 @@
       "GPS Demonstration Receiver"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -25771,8 +25665,7 @@
       "Hemisphere Vector V103/113 GPS Compass"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -25784,8 +25677,7 @@
       "GEOSat Radar Altimeter"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -25890,8 +25782,7 @@
       "GRACE-FO Tri-GNSS Radio Occultation Receiver"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -25913,7 +25804,6 @@
       "Grahamstown Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -25961,8 +25851,7 @@
       "Global Navigation Satellite System Receiver for Atmospheric Sounding"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -26018,6 +25907,7 @@
       "Gravity Corer"
     ],
     "divisions": [
+      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -26040,7 +25930,6 @@
       "Gravity Science System"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -26081,7 +25970,6 @@
       "Great Whale River Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26150,7 +26038,7 @@
       "Grille Spectrometer"
     ],
     "divisions": [
-      "planetary"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -26162,8 +26050,7 @@
       "Geodetic Reference Instrument Transponder for Small Satellites"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -26174,7 +26061,6 @@
       "Grocka Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26278,7 +26164,7 @@
       "GR- Penetrometer"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -26318,7 +26204,6 @@
       "Germanium Semiconductor Detector"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -26355,8 +26240,7 @@
       "GSZ Gamma Ray Spectrometer"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -26399,7 +26283,6 @@
       "Guam Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26422,7 +26305,6 @@
       "Guangzhou Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26456,7 +26338,6 @@
       "Guimar Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26478,7 +26359,9 @@
     "aliases": [
       "Gun Detector"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -26538,7 +26421,7 @@
       "Gravitational Waves"
     ],
     "divisions": [
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -26562,7 +26445,6 @@
       "Goddard X-Ray Experiment - Gamma Ray Burst Spectrometer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -26576,7 +26458,6 @@
       "Goddard X Ray Experiment / Soft X Ray Spectrometer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -26598,7 +26479,10 @@
     "aliases": [
       "Gyros"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -26661,7 +26545,6 @@
       "Haleakala Neutron Monitor"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26673,7 +26556,6 @@
       "Halley Bay Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26813,6 +26695,7 @@
       "Hard Ionizing Radiation and Solar UV Radiation RKI 2"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26848,8 +26731,7 @@
       "HIAPER Airborne Radiation Package"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -26861,7 +26743,7 @@
       "Hyper-Angular Rainbow Polarimeter 2"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -26883,7 +26765,6 @@
       "Hartebeesthoek Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26906,7 +26787,6 @@
       "Hartland Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -26987,7 +26867,6 @@
       "Hatizyo Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -27010,7 +26889,6 @@
       "Havana Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -27266,7 +27144,6 @@
       "Heiss Island Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -27302,7 +27179,6 @@
       "Hel Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -27467,7 +27343,6 @@
       "Helium Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -27512,7 +27387,6 @@
       "Helwan Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -27921,8 +27795,7 @@
       "High Frequency Instrument"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -28066,8 +27939,7 @@
       "High-Resolution Imager"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -28240,9 +28112,7 @@
       "HKTLM",
       "Housekeeping Telemetry Data used to monitor ENVISAT functions"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -28252,9 +28122,7 @@
       "HKTM",
       "Housekeeping Telemetry"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -28504,8 +28372,7 @@
       "High Optical Resolution Utility Sensor"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -28574,7 +28441,8 @@
       "Harvard Hydroxyl Experiment"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -28586,7 +28454,8 @@
       "HOx Chemical Ionization Mass Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -28626,7 +28495,7 @@
       "Hyperpure Germanium"
     ],
     "divisions": [
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -28794,7 +28663,8 @@
       "High Resolution Mass Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -28873,9 +28743,7 @@
       "High Resolution Satellite 1",
       "High Resolution Satellite - 1"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -28910,7 +28778,7 @@
       "High Resolution Telescope and Spectrograph"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -32605,6 +32473,7 @@
       "IAGA:JKI Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32616,6 +32485,7 @@
       "IAGA:JMI Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32627,6 +32497,7 @@
       "IAGA:JOP Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32638,6 +32509,7 @@
       "IAGA:JRV Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32649,6 +32521,7 @@
       "IAGA:JSS Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32660,6 +32533,7 @@
       "IAGA:JUL Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32671,6 +32545,7 @@
       "IAGA:KAK Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32682,6 +32557,7 @@
       "IAGA:KAM Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32693,6 +32569,7 @@
       "IAGA:KAR Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32704,6 +32581,7 @@
       "IAGA:KAS Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32715,6 +32593,7 @@
       "IAGA:KAT Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32726,6 +32605,7 @@
       "IAGA:KDU Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32737,6 +32617,7 @@
       "IAGA:KEE Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32748,6 +32629,7 @@
       "IAGA:KEL Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32759,6 +32641,7 @@
       "IAGA:KEM Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32770,6 +32653,7 @@
       "IAGA:KEW Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32781,6 +32665,7 @@
       "IAGA:KFT Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32792,6 +32677,7 @@
       "IAGA:KGD Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32803,6 +32689,7 @@
       "IAGA:KGF Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32814,6 +32701,7 @@
       "IAGA:KGI Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32825,6 +32713,7 @@
       "IAGA:KGL Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32836,6 +32725,7 @@
       "IAGA:KHB Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32847,6 +32737,7 @@
       "IAGA:KHS Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32858,6 +32749,7 @@
       "IAGA:KIE Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32869,6 +32761,7 @@
       "IAGA:KIR Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32880,6 +32773,7 @@
       "IAGA:KIV Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32891,6 +32785,7 @@
       "IAGA:KLD Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32902,6 +32797,7 @@
       "IAGA:KLY Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32913,6 +32809,7 @@
       "IAGA:KND Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32924,6 +32821,7 @@
       "IAGA:KNG Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32935,6 +32833,7 @@
       "IAGA:KNT Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32946,6 +32845,7 @@
       "IAGA:KNY Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32957,6 +32857,7 @@
       "IAGA:KNZ Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32968,6 +32869,7 @@
       "IAGA:KOD Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32979,6 +32881,7 @@
       "IAGA:KOR Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -32990,6 +32893,7 @@
       "IAGA:KOT Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33001,6 +32905,7 @@
       "IAGA:KOU Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33012,6 +32917,7 @@
       "IAGA:KPT Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33023,6 +32929,7 @@
       "IAGA:KRC Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33034,6 +32941,7 @@
       "IAGA:KRE Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33045,6 +32953,7 @@
       "IAGA:KSA Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33056,6 +32965,7 @@
       "IAGA:KSH Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33067,6 +32977,7 @@
       "IAGA:KTC Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33078,6 +32989,7 @@
       "IAGA:KTG Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33089,6 +33001,7 @@
       "IAGA:KTS Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33100,6 +33013,7 @@
       "IAGA:KUM Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33111,6 +33025,7 @@
       "IAGA:KUP Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33122,6 +33037,7 @@
       "IAGA:KUY Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33133,6 +33049,7 @@
       "IAGA:KVA Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -33144,6 +33061,7 @@
       "IAGA:KWJ Magnetometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -37057,7 +36975,6 @@
       "Ibadan Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -37322,7 +37239,9 @@
       "IDCS",
       "Image Dissector Camera System"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -37569,7 +37488,8 @@
       "International GNSS Service GPS Receiver"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -37741,7 +37661,6 @@
       "IK- Dosimeter"
     ],
     "divisions": [
-      "heliophysics",
       "bps"
     ],
     "division_source": "openai"
@@ -37798,8 +37717,7 @@
       "Broadband SW Radiometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -38023,7 +37941,7 @@
       "Imaging Science System"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -38044,9 +37962,7 @@
     "aliases": [
       "Imaging System"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -38691,7 +38607,7 @@
       "Infrared Telescope"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -38906,7 +38822,7 @@
       "Instrument Using CCDs"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39125,7 +39041,6 @@
       "THEMIS Ground Inuvik All Sky Imager"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -39138,7 +39053,6 @@
       "THEMIS GBO Inuvik Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -39194,7 +39108,7 @@
       "Ion Chamber"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39205,7 +39119,7 @@
       "Ion Chambers and Geiger Tubes"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39293,7 +39207,7 @@
       "Ionization Chamber"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39304,7 +39218,7 @@
       "Ionization Pressure Gauges"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39315,8 +39229,7 @@
       "Ionizing Radiation Experiment"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39361,7 +39274,9 @@
       "Ion Microprobes"
     ],
     "divisions": [
-      "heliophysics"
+      "earth",
+      "planetary",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39427,6 +39342,10 @@
       "Ion Thrusters"
     ],
     "divisions": [
+      "earth",
+      "heliophysics",
+      "planetary",
+      "astrophysics",
       "bps"
     ],
     "division_source": "openai"
@@ -39439,7 +39358,8 @@
       "Ion Traps"
     ],
     "divisions": [
-      "bps"
+      "heliophysics",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39486,7 +39406,6 @@
       "Ionospheric Plasma and Electrodynamics Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -39534,7 +39453,6 @@
       "Iqaluit Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -39557,7 +39475,6 @@
       "Iqaluit Riometer Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -39571,7 +39488,6 @@
       "Infrared Instrument"
     ],
     "divisions": [
-      "earth",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -39597,8 +39513,7 @@
       "Infra Red Atmospheric Sounder"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -39660,7 +39575,6 @@
       "Iridium Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -39693,8 +39607,7 @@
       "Infra-Red Interferometer Spectrometer - B"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39708,8 +39621,7 @@
       "Infra-Red Interferometer Spectrometer - D"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39723,7 +39635,7 @@
       "IRIS on X Sat"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -39735,7 +39647,6 @@
       "Patrony Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -39747,10 +39658,7 @@
       "IRLS",
       "Interrogation, Recording and Location System"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -39858,8 +39766,7 @@
       "Infrared Radiometer/Spectrometer"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -40151,7 +40058,8 @@
       "Imaging Particle Spectrometer for Energetic Neutral Atoms"
     ],
     "divisions": [
-      "heliophysics"
+      "heliophysics",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -40283,7 +40191,9 @@
       "IST",
       "Italian Star Tracker"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -40293,7 +40203,6 @@
       "Istanbul Kandilli Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -40649,7 +40558,6 @@
       "Jovian Magnetic Field"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -40732,7 +40640,7 @@
       "Juno Nancay"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -40892,7 +40800,9 @@
     "aliases": [
       "KANZ"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -41007,7 +40917,7 @@
       "Kassiopeya KYa- Instrument for Measuring Intensity of Longwave Radio-radiation"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -41018,7 +40928,7 @@
       "Kassiopeya Radio Telescope"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -41452,7 +41362,9 @@
       "Kondor-2",
       "Data Collection System"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -41465,7 +41377,6 @@
       "X-ray and Gamma-ray Spectrometer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -41476,9 +41387,7 @@
     "aliases": [
       "KOPRI Unit"
     ],
-    "divisions": [
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -41665,7 +41574,7 @@
       "KS--V Infra-red Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -41689,7 +41598,7 @@
       "Heitronics KT15 Infrared Pyrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -41888,7 +41797,7 @@
       "LAC (Linear Etalon Imaging Spectrometer Array (LEISA) Atmospheric Corrector"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -41912,7 +41821,7 @@
       "Lyman Alpha Detector"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -41961,7 +41870,8 @@
       "Laser Ablation Inductively Coupled Plasma Mass Spectrometer"
     ],
     "divisions": [
-      "bps"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -42577,7 +42487,7 @@
       "Laser Altimeter"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -42621,7 +42531,7 @@
       "Laser Mass Spectrometer"
     ],
     "divisions": [
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -42679,7 +42589,8 @@
       "Laser Tracking Reflector"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -42955,7 +42866,9 @@
     "aliases": [
       "Leica CityMapper-2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -43305,7 +43218,8 @@
       "Lightning Imager"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43695,7 +43609,7 @@
       "Low Energy Imaging Particle Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43729,8 +43643,7 @@
       "LISA Technology Package"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -43919,8 +43832,7 @@
       "Lunar Laser Communications Demonstration Experiment"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -43944,7 +43856,7 @@
       "Lunar Laser Ranging"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -44094,7 +44006,7 @@
       "LONG STREAMERS"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -44223,7 +44135,9 @@
       "LORAN",
       "Long Range Navigation"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -44424,7 +44338,6 @@
       "Low Frequency Instrument"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -44530,7 +44443,9 @@
       "LPSP",
       "Multichannel High Resolution UV and Visible Spectrometer"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -44540,7 +44455,9 @@
       "LPT",
       "Light Particle Telescope"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -44561,7 +44478,9 @@
       "LR",
       "Laser Reflectors"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -44608,7 +44527,9 @@
       "LRIR",
       "Limb Radiance Inversion Radiometer"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -44631,7 +44552,9 @@
       "Low-Resolution Omnidirectional Radiometer",
       "Low Resolution Omnidirectional Radiometer"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -44720,7 +44643,6 @@
       "Luanda Capelo Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -44875,7 +44797,6 @@
       "Lunping Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -44937,7 +44858,6 @@
       "Lviv Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -44960,7 +44880,9 @@
       "LWCC",
       "Liquid Waveguide Capillary Cells"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -44970,7 +44892,6 @@
       "Lwiro Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -45018,7 +44939,6 @@
       "Lyford Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -45052,8 +44972,7 @@
       "LYMAN-ALPHA HYGROMETER"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -45064,7 +44983,6 @@
       "Lyman Alpha Scanning Telescope"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -45163,7 +45081,6 @@
       "Macquarie Island Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -45299,7 +45216,6 @@
       "Magadan Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -45337,7 +45253,6 @@
       "Magnetic Field Observations"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -46102,7 +46017,6 @@
       "Magnetometer on GOES R Series"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -46129,7 +46043,7 @@
       "MAGNAPROBE"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -46162,7 +46076,6 @@
       "Magnetic Field Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -46196,7 +46109,6 @@
       "Magnetic Field Measurement Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -46241,7 +46153,6 @@
       "Magnetic Fields Measurement Monitor"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -49609,7 +49520,9 @@
     "aliases": [
       "Magnets"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -49692,7 +49605,6 @@
       "Manhay Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -49726,7 +49638,6 @@
       "Manzhouli Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -49786,7 +49697,6 @@
       "Maputo Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -49935,7 +49845,9 @@
     "aliases": [
       "MARK IV Interferometer"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -50116,6 +50028,7 @@
       "Mars Express ASPERA-3"
     ],
     "divisions": [
+      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -50391,7 +50304,7 @@
       "High MASS Resolution Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -50508,7 +50421,8 @@
       "MAVEN Imaging Ultraviolet Spectrograph, IUVS, Instrument"
     ],
     "divisions": [
-      "heliophysics"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -50708,9 +50622,7 @@
       "On Board Radio Transmitters",
       "On-board Radio Transmitters"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -50909,7 +50821,7 @@
       "McMurdo Antenna Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50964,7 +50876,7 @@
       "McMurdo SearchCoil Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -50988,7 +50900,7 @@
       "Multi Channel Pulse Height Analyzer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -51048,7 +50960,7 @@
       "Michelson Doppler Imager"
     ],
     "divisions": [
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -51087,7 +50999,7 @@
       "Michelson Doppler Imager (MDI)/Solar Oscillations Investigation (SOI)"
     ],
     "divisions": [
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -51324,7 +51236,7 @@
       "Multispectral Electro-optical Imaging Sensor"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -51660,7 +51572,7 @@
       "MEdium Resolution Spectral Imager"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -51675,7 +51587,7 @@
       "Medium Resolution Spectral Imager -1"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -51690,7 +51602,7 @@
       "Medium Resolution Spectral Imager -2"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -51705,7 +51617,7 @@
       "Medium Resolution Spectral Imager - 3"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -51719,7 +51631,7 @@
       "Medium Resolution Spectral Imager - Low-Light"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -51913,7 +51825,7 @@
       "Multi Element Telescope for Imaging and Spectroscopy"
     ],
     "divisions": [
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -52271,7 +52183,6 @@
       "Micrometeorite Detectors"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -52283,7 +52194,6 @@
       "Micrometeoroid Analyzer"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -52295,7 +52205,6 @@
       "Micrometeoroid Counters"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -52308,7 +52217,6 @@
       "Micrometeoroid Detectors"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -52320,7 +52228,6 @@
       "Micrometeoroid Dust Particle Detectors"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -52332,7 +52239,6 @@
       "Micrometeoroid Momentum Spectrometer"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -52344,7 +52250,6 @@
       "Micrometeoroid Sensor"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -52356,7 +52261,7 @@
       "Micron Camera"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -52470,7 +52375,7 @@
       "Mid-infrared Cameras"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -52891,7 +52796,7 @@
       "Multi-purpose Infrared Imaging System / MIRIS Space Observation Camera"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -52950,7 +52855,7 @@
       "MIRO Multi-compound Gas Analyzer"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -54517,7 +54422,9 @@
       "MOBLAS",
       "Mobile Laser Systems"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -54540,7 +54447,9 @@
     "aliases": [
       "Moca Ground Magnetic Field Instrument"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -54624,7 +54533,9 @@
       "Multi Footprint Observation Lidar and Imager Lidar Componemt",
       "Multi-footprint Observation Lidar and Imager - Lidar Componemt"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -54634,7 +54545,6 @@
       "Molodezhnaya Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -54659,8 +54569,7 @@
       "Modular Optoelectronic Multispectral Scanner"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -54673,8 +54582,7 @@
       "Modular Optoelectronic Multispectral Stereo Scanner"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -54718,7 +54626,6 @@
       "Monte Capellino Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -54779,8 +54686,7 @@
       "MOP Imaging Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -54803,8 +54709,7 @@
       "Modular Optoelectronic Scanner"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -54816,7 +54721,6 @@
       "Kr. Pakhra Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -54851,7 +54755,6 @@
       "Mould Bay Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -54909,8 +54812,7 @@
       "TV Camera"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55000,8 +54902,7 @@
       "Medium Resolution Imager"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55013,8 +54914,7 @@
       "Medium Resolution Infrared Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55028,8 +54928,7 @@
       "Medium Resolution Infrared Radiometer on NIMBUS 2"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55043,8 +54942,7 @@
       "Medium Resolution Infrared Radiometer on NIMBUS 3"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55152,8 +55050,7 @@
       "Multispectral Imaging Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55167,8 +55064,7 @@
       "Multispectral Imaging System"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55193,8 +55089,7 @@
       "Multi-frequency Scanning Microwave Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55206,7 +55101,6 @@
       "Meridian Scanning Photometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -55219,8 +55113,7 @@
       "Multiangle SpectroPolarimetric Imager"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55327,8 +55220,7 @@
       "Multispectral High Resolution Electronic Scanner"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55341,8 +55233,7 @@
       "Multichannel High Resolution Electronic Scanner"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55356,8 +55247,7 @@
       "Multispectral Scanning Imager-radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55371,8 +55261,7 @@
       "Electro-L Imager for Arctica"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55386,8 +55275,7 @@
       "Electro GOMS Imager for Electro M"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55401,8 +55289,7 @@
       "Multi Channel Medium and Far IR Range Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55415,8 +55302,7 @@
       "MSU-EU"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55430,8 +55316,7 @@
       "Low-resolution Multispectral Scanning Imager-radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55445,8 +55330,7 @@
       "VIS/IR Imaging Radiometer for Meteor-MP"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55460,8 +55344,7 @@
       "Multispectral VNIR/IR Conical Scanning Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55475,8 +55358,7 @@
       "Multispectral VNIR/IR Conical Scanning Radiometer - 1"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55488,8 +55370,7 @@
       "Multispectral VIS/IR Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55513,7 +55394,7 @@
       "Magnetic Torque Rod"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -55571,8 +55452,7 @@
       "Imaging/Sounding Microwave Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55586,8 +55466,7 @@
       "Imaging/Sounding Microwave Radiometer - Improved"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55601,8 +55480,7 @@
       "Imaging/Sounding Microwave Radiometer for Meteor-MP"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55618,8 +55496,7 @@
       "Combined Microwave-Optical Imaging/Sounding Radiometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55630,8 +55507,7 @@
       "Mulltichannel Filter Radiometers"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55644,8 +55520,7 @@
       "Multi-band Imager"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55868,7 +55743,6 @@
       "Muntinlupa Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -55902,7 +55776,6 @@
       "Murchison Bay Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -55964,8 +55837,7 @@
       "Multi-spectral Optical Camera - NIR/SWIR"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55979,8 +55851,7 @@
       "Multi-spectral Optical Camera - UV/VIS/NIR"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -55996,8 +55867,7 @@
       "Multispectral CCD Camera"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -56207,8 +56077,7 @@
       "Modular X-ray and Gamma-ray Sensor"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -56222,8 +56091,7 @@
       "Multispectral - Long Wave Infrared"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -56236,8 +56104,7 @@
       "Multi-spectral Visible Near Infrared"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -56480,7 +56347,7 @@
       "Narrow-band Interference-polarization Photometer"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -56492,7 +56359,7 @@
       "Narrow-band Photometer"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -56592,7 +56459,9 @@
       "NASDAT",
       "NASA Airborne Science Data and Telemetry System"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -56646,8 +56515,7 @@
       "High Energy Radiation Spectrometer - Particles"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -56661,8 +56529,7 @@
       "High Energy Radiation Spectrometer - Radiation"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -56774,7 +56641,9 @@
     "aliases": [
       "Navigation Cameras C"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -56785,7 +56654,9 @@
       "ER 2 NAV RECORDER",
       "ER-2 NAV RECORDER"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -56869,7 +56740,7 @@
       "Near Infrared Camera Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -56924,7 +56795,7 @@
       "Near Infrared Spectrometers"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -57005,7 +56876,6 @@
       "NenuFAR Radio Imager"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -57017,7 +56887,6 @@
       "NenuFAR Standalone BeamFormer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -57287,7 +57156,7 @@
       "Narrow Field Imager Coronagraph"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -57299,7 +57168,7 @@
       "Narrow Field of View Radiometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -57668,9 +57537,7 @@
       "NOAA 11 Ephemeris",
       "NOAA 11 Positions"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -57692,9 +57559,7 @@
       "NOAA 13 Positions",
       "NOAA 13 Ephemeris"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -57824,9 +57689,7 @@
       "NOAA 9 Positions",
       "NOAA 9 Ephemeris"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -58215,7 +58078,9 @@
       "NS-001 Thematic Mapper Simulator",
       "NS 001 Thematic Mapper Simulator"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -58285,7 +58150,7 @@
       "Coronas Nucleon"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -58662,9 +58527,7 @@
     "aliases": [
       "Odometer/speedometer"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -58740,7 +58603,6 @@
       "Gas Plasma Environment Dual Frequency Experiment"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -58876,7 +58738,7 @@
       "OMEGASONDE"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -58933,7 +58795,7 @@
       "Omnidirectional Proportional Counter Telescope"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -59110,7 +58972,7 @@
       "Optical Beacon"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -59309,7 +59171,7 @@
       "Optical Photometer"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -59331,7 +59193,7 @@
       "Optical Sun Star Sensor"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -59342,7 +59204,7 @@
       "Optical Telescope"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -59603,7 +59465,7 @@
       "Optical, Spectroscopic, and Infrared Remote Imaging System"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -60019,8 +59881,7 @@
       "Particle Analysis By Laser Mass Spectrometry Next Generation"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -60121,7 +59982,6 @@
       "Payload for AntiMatter Exploration and Light-nuclei Astrophysics"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -60246,7 +60106,8 @@
       "Panchromatic and Multispectral Imager"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -60268,7 +60129,7 @@
       "Panoramic Cameras B"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -60279,7 +60140,7 @@
       "Panoramic Mast Assemblya"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -60291,8 +60152,7 @@
       "PAN and Trace Hydrohalocarbon ExpeRiment"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -60543,7 +60403,7 @@
       "Passive Acoustic Recorder"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -60613,7 +60473,8 @@
       "PAZ - Synthetic Aperture Radar (X-band)"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -60626,8 +60487,7 @@
       "Passive Cavity Aerosol Spectrometer Probe"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -60755,8 +60615,8 @@
       "Particle Environment Monitor / Atmospheric X-ray Imaging Spectrometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "heliophysics",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -60792,7 +60652,7 @@
       "Penetrometer"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -60803,7 +60663,7 @@
       "Penetrometers"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -60888,7 +60748,6 @@
       "Hard X Ray Polarimeter Spectrometer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -60935,7 +60794,7 @@
       "Permeameters"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -61017,7 +60876,7 @@
       "Petrographic Microscopes"
     ],
     "divisions": [
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -61087,7 +60946,7 @@
       "Particle Habit Imaging and Polar Scattering Probe"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -61155,7 +61014,7 @@
       "Multi Channel Ultraviolet Monitor"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -61225,11 +61084,7 @@
     "aliases": [
       "Photodetector"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -61238,11 +61093,7 @@
     "aliases": [
       "Photoelectric Sensor Trigger"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -61264,8 +61115,7 @@
       "Photo-emulsion Camera"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -61288,8 +61138,7 @@
       "photographic-TV Imaging System"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -61301,8 +61150,7 @@
       "Photo Identification Techniques"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -61339,7 +61187,6 @@
       "Photometric Instrument"
     ],
     "divisions": [
-      "earth",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -61362,8 +61209,7 @@
       "Photopolarimeter"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -61373,9 +61219,7 @@
     "aliases": [
       "Photo Scanning Device"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -61564,9 +61408,7 @@
     "aliases": [
       "Piezoelectric Detector"
     ],
-    "divisions": [
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -62134,7 +61976,6 @@
       "Plant Stress Monitor"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -62223,9 +62064,7 @@
     "aliases": [
       "Plasma Engines"
     ],
-    "divisions": [
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -62475,8 +62314,7 @@
       "Pleiades High Resolution Optical Instrument"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -62488,8 +62326,7 @@
       "Pleiades-Neo"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -62648,7 +62485,7 @@
       "Particle Measuring Systems 2D P Probe"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -62697,9 +62534,7 @@
     "aliases": [
       "PNEO"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -62847,7 +62682,7 @@
       "Polarimetric Radar"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -62982,7 +62817,7 @@
       "Polyus-V Side-looking Radar"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -63359,7 +63194,7 @@
       "Planetary Radio Astronomy Experiment"
     ],
     "divisions": [
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -63384,7 +63219,7 @@
       "Precise Range And Range-rate Equipment"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -63420,7 +63255,7 @@
       "Polar Radiant Energy in the Far InfraRed Experiment"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -63443,7 +63278,7 @@
       "pRES"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -63747,7 +63582,9 @@
     "aliases": [
       "PROP Penetrometer"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -63836,7 +63673,6 @@
       "Pruhonice Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -63925,7 +63761,8 @@
       "P-band Synthetic Aperture Radar (P-SAR)"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -64163,7 +64000,7 @@
       "High Pressure Gas Sampling System"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -64225,7 +64062,6 @@
       "THEMIS Ground EPO Petersburg Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -64269,7 +64105,6 @@
       "Purcell Fluxgate Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -64592,7 +64427,6 @@
       "Qianling Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -64615,7 +64449,6 @@
       "Qiongzhong Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -64638,7 +64471,6 @@
       "Qsaybeh Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -64695,7 +64527,6 @@
       "Quanzhou Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -64763,7 +64594,6 @@
       "Quetta Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -64981,7 +64811,8 @@
       "Radar Sounders"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -64992,7 +64823,8 @@
       "Radar Spectrometers"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -65051,6 +64883,7 @@
       "Radiation Dosimeters"
     ],
     "divisions": [
+      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -65062,6 +64895,7 @@
       "Radiation Sensors"
     ],
     "divisions": [
+      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -65263,7 +65097,7 @@
       "Radio Science and Gravimetry Experiment"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -65483,7 +65317,6 @@
       "Radio Sounders"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -65621,7 +65454,7 @@
       "Rutherford Appleton Laboratory Camera - 1"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -65957,7 +65790,7 @@
       "Red Coronagraph"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -65981,8 +65814,7 @@
       "Reflected Solar Instrument Suite (CLARREO)"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -66323,7 +66155,7 @@
       "RFL F Instrument for Detecting x Ray Fluorescence"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -66334,7 +66166,9 @@
       "R Gear Transmission Experiment",
       "R- Gear Transmission Experiment"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -66345,7 +66179,7 @@
       "Reflection Grating Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -66487,7 +66321,7 @@
       "RIFMA M x Ray Fluorescence Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -66511,7 +66345,9 @@
     "aliases": [
       "Ring Shear Testers"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -66547,7 +66383,7 @@
       "Retroreflector in Space"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -66570,8 +66406,7 @@
       "Raman Lidar"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -66634,7 +66469,7 @@
       "Radiation Measurement Complex"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -66647,7 +66482,6 @@
       "Radiation Measurement System - Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -66662,7 +66496,6 @@
       "Radiation Measurement System - Platform"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -66677,7 +66510,6 @@
       "Radiation Measurement System - Solar"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -66775,7 +66607,6 @@
       "Roburent Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -66834,8 +66665,8 @@
       "Rock Eval 6 Analyzer"
     ],
     "divisions": [
-      "planetary",
-      "bps"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -66971,7 +66802,6 @@
       "Roi Baudouin Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -67008,7 +66838,6 @@
       "Romo Magnetometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -67159,9 +66988,7 @@
     "aliases": [
       "Rotenone Stations"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -67347,8 +67174,7 @@
       "X-ray Semi-conductor Spectrometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -67397,8 +67223,7 @@
       "Retro-Reflector Array"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -67410,7 +67235,7 @@
       "Radio Receiver Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -67483,8 +67308,7 @@
       "Research Scanning Polarimeter"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -67497,8 +67321,7 @@
       "Research Scanning Polarimeter - 1"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -67512,8 +67335,7 @@
       "Research Scanning Polarimeter - 2"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -67552,7 +67374,7 @@
       "Roentgen Telescope 2"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -67613,7 +67435,6 @@
       "Rude Skov Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -67651,7 +67472,7 @@
       "RV-NLS Radiation Detector"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -67663,7 +67484,7 @@
       "RV-N Radiation Detector"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -67675,7 +67496,7 @@
       "Radial Velocity Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -67688,8 +67509,7 @@
       "50-MHz Radar Wind Profiler and Radio Acoustic Sounding System"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -67702,8 +67522,7 @@
       "915-MHz Radar Wind Profiler and Radio Acoustic Sounding System"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -67727,7 +67546,6 @@
       "Sabhawala Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -67786,8 +67604,7 @@
       "Scanning Actinic Flux Spectroradiometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -67885,7 +67702,6 @@
       "Saint Johns Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -68367,7 +68183,9 @@
       "SARR",
       "Search and Rescue Repeater"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -68389,7 +68207,9 @@
       "SARSAT",
       "Search and Rescue Satellite Aided Tracking System"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -68441,7 +68261,9 @@
       "SAS&R",
       "Advanced Aided Search & Rescue"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -68509,7 +68331,7 @@
       "Spectral Airglow Temperature Imager"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -68696,7 +68518,7 @@
       "SBM- Radiation Detector"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -68788,7 +68610,7 @@
       "SCATHA Engineering and Wave Experiment"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -68800,7 +68622,7 @@
       "SCATHA High Energy Particle Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -68812,7 +68634,7 @@
       "SCATHA Electron and Ion Beam Emission"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -68912,8 +68734,7 @@
       "The Scanner for Radiation Budget"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -69194,7 +69015,9 @@
       "SCR",
       "Selective Chopper Radiometer"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -69205,7 +69028,9 @@
       "SCR-HF",
       "Surface Current Radar"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -69251,7 +69076,9 @@
       "SDPTR",
       "Satellite Doppler Positioning Transit Receivers"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -69272,7 +69099,9 @@
       "SDTA",
       "Satellite Drag Tracking Apparatus"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -69285,8 +69114,7 @@
       "SEA-going POLarimetric Doppler Radar"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -69411,7 +69239,7 @@
       "Secchi Disks"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -69483,6 +69311,7 @@
       "Space Environment Data Acquisition Monitor"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -70055,7 +69884,9 @@
     "aliases": [
       "Separation Camera"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -70630,7 +70461,7 @@
       "Shortwave Detector"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -70861,7 +70692,7 @@
       "Silicon Photodiodes"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -70873,8 +70704,7 @@
       "Spectral Irradiance Monitor"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -70888,8 +70718,7 @@
       "Solar Irradiance Monitor - 1"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -70902,8 +70731,7 @@
       "Solar Irradiance Monitor - 2"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -70949,7 +70777,6 @@
       "SIM-RMCh Meteoroid Detector"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -70988,7 +70815,7 @@
       "Single-axis Seismometer"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -71010,9 +70837,7 @@
       "SIPS",
       "Smart Instrument Points"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -71576,7 +71401,7 @@
       "SMM Hard X-ray Imaging Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -71954,7 +71779,6 @@
       "Sodankyla Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -72003,7 +71827,7 @@
       "Sodium Iodide Scintillation Counter"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -72185,7 +72009,7 @@
       "Solar Cell Damage Experiment"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -72308,7 +72132,7 @@
       "Solar Simulators"
     ],
     "divisions": [
-      "heliophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -72627,7 +72451,7 @@
       "Measurement of the Solar Constant"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -72676,7 +72500,6 @@
       "X-ray and UV Telescope"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -72713,8 +72536,7 @@
       "Solar Spectrum Measurement"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -72939,7 +72761,6 @@
       "South Georgia Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -72962,7 +72783,7 @@
       "South Pole Antenna Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -72973,7 +72794,6 @@
       "South Pole Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -73040,7 +72860,6 @@
       "South Pole SearchCoil Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -73053,8 +72872,8 @@
       "Solar Constant Variability, Picard"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -73076,8 +72895,7 @@
       "Spacecraft Potential Control, Ion Beam Emitter"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -73121,8 +72939,7 @@
       "Space Radiation Dosimeter"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -73136,7 +72953,7 @@
       "SpaceView-110 Imaging System"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -73149,7 +72966,7 @@
       "SV-24"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -73263,7 +73080,6 @@
       "Spectrographs"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -73391,8 +73207,7 @@
       "Spectro-Polarimeter for Exploration Airborne"
     ],
     "divisions": [
-      "heliophysics",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -73404,7 +73219,6 @@
       "Spectro-polarimeter for Planetary Exploration one"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -73466,7 +73280,7 @@
       "Spectral and Photometric Imaging Receiver"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -73843,8 +73657,7 @@
       "Standard Radiation Environment Monitor - Dose"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -73858,8 +73671,7 @@
       "Standard Radiation Environment Monitor - Particles"
     ],
     "divisions": [
-      "heliophysics",
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -73978,6 +73790,7 @@
       "Shuttle Solar Backscatter Ultraviolet"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -74031,7 +73844,8 @@
       "Solid State Detector"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -74132,8 +73946,7 @@
       "Solar Spectral Irradiance Monitor"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -74310,7 +74123,9 @@
       "SSPD",
       "Data Collection and Transmission System"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -74321,7 +74136,7 @@
       "Solid State Telescope"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -74333,7 +74148,9 @@
       "Satellite-to-Satellite Tracking System",
       "Satellite-to-Satellite Tracking Instrument"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -74344,8 +74161,7 @@
       "S1-4 Imager"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -74394,7 +74210,7 @@
       "Galactic Gamma-ray Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -74481,7 +74297,7 @@
       "Star Tracker Assembly"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -74588,8 +74404,7 @@
       "Stardust Sample Collection"
     ],
     "divisions": [
-      "planetary",
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -74622,7 +74437,7 @@
       "Star Tracker Cameras"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -74693,7 +74508,7 @@
       "Student Thermal Activity Energetic Module"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -74773,7 +74588,7 @@
       "Step Frequency Radiometers"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -75192,7 +75007,9 @@
     "aliases": [
       "STILLING WELL"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -75254,7 +75071,7 @@
       "Stokes Polarimeter"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -75265,7 +75082,6 @@
       "Stonyhurst Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -75312,7 +75128,7 @@
       "Scanning TV Radiometer"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -75323,7 +75139,7 @@
       "Strain Gauge Wheatstone Bridge"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -75334,7 +75150,7 @@
       "Strain Meter"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -75344,7 +75160,9 @@
     "aliases": [
       "STRATOS"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -75365,7 +75183,7 @@
       "Stripping Voltammetry"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -75377,7 +75195,7 @@
       "Step Sampler"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -75389,8 +75207,7 @@
       "STS- Gas-discharge and Solid-state Detectors"
     ],
     "divisions": [
-      "planetary",
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -75472,7 +75289,6 @@
       "Sukkertoppen Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -75599,8 +75415,7 @@
       "Superconducting Gravimeter"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -75692,7 +75507,6 @@
       "Surface Radar Mapper"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -75748,7 +75562,6 @@
       "Surlari Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -75810,7 +75623,7 @@
       "Solar Ultraviolet Imager on GOES R Series"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -75822,7 +75635,7 @@
       "Stretched Visible and Infrared Spin Scan Radiometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -75913,7 +75726,7 @@
       "SWARM Laser Retro-Reflector"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -75926,7 +75739,7 @@
       "Swarm Star Tracker"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -75949,7 +75762,7 @@
       "Small Wind and Temperature Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -76046,7 +75859,7 @@
       "SWE Sampler"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -76128,8 +75941,7 @@
       "Surface Waves Investigation and Monitoring Instrument"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -76164,7 +75976,6 @@
       "SWIPS-SWFO"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -76324,7 +76135,7 @@
       "Short-wave Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -76454,6 +76265,7 @@
       "Multichannel Sun Photometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -76620,9 +76432,7 @@
     "aliases": [
       "Tally Counter"
     ],
-    "divisions": [
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -76880,7 +76690,7 @@
       "Total-Direct-Diffuse Multichannel Radiometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -76893,8 +76703,7 @@
       "Thermal Desoprtion Gas Chromatograph Mass Spectrometer"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -77005,7 +76814,7 @@
       "Total Energy Detector"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -77051,7 +76860,10 @@
     "aliases": [
       "TEKTRONIX 2048X2048 CCD"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -77418,7 +77230,7 @@
       "Terrain Camera"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -77458,7 +77270,7 @@
       "Tropospheric Emission Spectrometer - Limb"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -77471,7 +77283,7 @@
       "Tropospheric Emission Spectrometer - Nadir"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -77519,7 +77331,8 @@
       "TriG GNSS Radio Occultation System"
     ],
     "divisions": [
-      "heliophysics"
+      "heliophysics",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -78805,7 +78618,8 @@
       "Thermal Infrared Imager"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -78838,7 +78652,8 @@
       "Thermal Radiation Experiment"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -78904,7 +78719,9 @@
       "Thermo-detector",
       "Thermo Detector"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -79050,8 +78867,7 @@
       "Thermo Scientific Model 5030 Synchronized Hybrid Ambient Real Time Particulate Monitor"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -79408,7 +79224,6 @@
       "Tihany Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -79431,7 +79246,6 @@
       "Tikhaya Bay Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -79465,7 +79279,6 @@
       "Tilt Compensated Magnetometer 2"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -79479,8 +79292,7 @@
       "Total Irradiance Monitor"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -79569,7 +79381,6 @@
       "Tiny Atmospheric Photometer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -79645,7 +79456,6 @@
       "Tirunelveli Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -79713,7 +79523,6 @@
       "Tixie Bay Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -79737,7 +79546,7 @@
       "TL- Laser Reflector"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -79761,7 +79570,7 @@
       "Thermoluminescence Photon Counting System"
     ],
     "divisions": [
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -79773,7 +79582,7 @@
       "Transportable Laser Ranging Systems"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -79847,7 +79656,8 @@
       "TROPICS Millimeter-wave Sounder"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -79859,7 +79669,8 @@
       "TROPICS Microwave Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -79908,7 +79719,7 @@
     ],
     "divisions": [
       "earth",
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -79953,7 +79764,6 @@
       "Toledo Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -79988,7 +79798,6 @@
       "Tomsk Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80011,7 +79820,6 @@
       "Tondano Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80034,7 +79842,6 @@
       "Tonghai Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80057,7 +79864,6 @@
       "Toolangi Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80132,7 +79938,7 @@
       "Tracking, Occultation and Ranging"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -80154,7 +79960,7 @@
       "Total Detector"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -80176,7 +79982,7 @@
       "Total Luminescence Photometer"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -80256,7 +80062,7 @@
       "Thermal Plasma Analyzer"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -80268,7 +80074,6 @@
       "THEMIS Ground The Pas All Sky Imager"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80293,7 +80098,7 @@
       "Two Photon - Laser Induced Fluorescence"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -80318,7 +80123,8 @@
       "Transition Region and Coronal Explorer"
     ],
     "divisions": [
-      "heliophysics"
+      "heliophysics",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -80418,6 +80224,7 @@
       "Transponder To Measure Electron Densities"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80542,7 +80349,7 @@
       "Polarisation Spectro-radiometer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -80588,7 +80395,6 @@
       "Trelew Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80692,7 +80498,6 @@
       "Triple Coincidence Cosmic Ray Telescope"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -80703,7 +80508,9 @@
     "aliases": [
       "Trishna"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -80736,7 +80543,6 @@
       "Trivandrum Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80759,7 +80565,6 @@
       "Tromso Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80950,6 +80755,7 @@
       "Total and Spectral Solar Irradiance Sensor"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -80961,7 +80767,6 @@
       "Tsumeb Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -81027,7 +80832,6 @@
       "Tucson Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -81073,7 +80877,6 @@
       "Tuntungan Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -81124,7 +80927,10 @@
       "MR 2000M1",
       "Television Camera"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -81262,6 +81068,7 @@
       "Two-Component Current Langmuir Slit Probe, LSP"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -81284,7 +81091,10 @@
     "aliases": [
       "Two-Frequency Beacon Receiver"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -81411,8 +81221,7 @@
       "NOAA UAS O3 Photometer"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -81534,7 +81343,9 @@
       "Unifiller-electrometer",
       "Unifiller Electrometer"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -81634,7 +81445,6 @@
       "Ujjain Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -81764,7 +81574,7 @@
       "Ultraviolet Airglow Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -81775,7 +81585,7 @@
       "Ultraviolet and Visible Imaging Camera"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -81786,7 +81596,7 @@
       "Ultraviolet Imager/spectrometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -81819,7 +81629,7 @@
       "Ultraviolet Imaging System"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -81831,7 +81641,7 @@
       "Ultraviolet Nitric Oxide Experiment"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -81842,7 +81652,7 @@
       "Ultraviolet Occultation Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -81914,7 +81724,7 @@
       "ULYSSES JUPITER SPICE S- AND P-EPHEM. KERNELS"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -81959,7 +81769,7 @@
       "UMKEHR Observations"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -81970,7 +81780,7 @@
       "UMRM Hydrogen/helium Mass Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -82069,7 +81879,6 @@
       "Upper Atmosphere and Plasma Imager"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -82081,7 +81890,6 @@
       "Uppsala Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -82118,7 +81926,6 @@
       "URG-9000D Ambient Ion Monitor"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -82195,7 +82002,7 @@
       "US- Spectro-photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -82206,7 +82013,7 @@
       "USZ Ultraviolet Spectrometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -82255,7 +82062,9 @@
       "University of Texas Real-Time Position and Attitude System",
       "University of Texas Real Time Position and Attitude System"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -82404,7 +82213,7 @@
       "Ultraviolet Spectrometer and Polarimeter"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -82462,7 +82271,7 @@
       "Visible Airglow Photometer"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -82533,7 +82342,6 @@
       "Valentia Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -82556,7 +82364,6 @@
       "Val Joyeux Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -82601,7 +82408,6 @@
       "Vannovskaya Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -82669,7 +82475,6 @@
       "Vassouras Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -82731,7 +82536,7 @@
       "Vidicon Camera System - Medium Angle"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -82745,7 +82550,7 @@
       "Vidicon Camera System - Narrow Angle"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -82759,7 +82564,7 @@
       "Vidicon Camera System - Wide Angle"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -82771,7 +82576,6 @@
       "Sverdlovs Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -82900,7 +82704,7 @@
       "Vega Radio-altimeter"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -83000,7 +82804,6 @@
       "Venus Express Magnetometer"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -83134,7 +82937,8 @@
       "Vector Field Magnetometer"
     ],
     "divisions": [
-      "heliophysics"
+      "heliophysics",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -83208,7 +83012,7 @@
       "Very High Resolution Imager"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -83222,7 +83026,7 @@
       "Very High Resolution Imager - 100"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -83245,7 +83049,7 @@
       "Victoria Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -83301,7 +83105,7 @@
       "Vidicon TV Camera"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -83312,7 +83116,7 @@
       "Vieques Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -83369,10 +83173,7 @@
       "VIKT Technology Experiment",
       "VIKT- Technology Experiment"
     ],
-    "divisions": [
-      "planetary",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -83445,7 +83246,7 @@
       "Visible and Infrared Intelligent Spectrometer"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -83520,7 +83321,7 @@
       "Visakhapatnam Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -83575,8 +83376,7 @@
       "Visible and IR Spectrometer"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -84130,8 +83930,7 @@
       "Voyager 1 Planetary Radio Astronomy Experiment"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -84210,8 +84009,7 @@
       "Voyager 2 Planetary Radio Astronomy Experiment"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -84244,7 +84042,7 @@
       "Voyeykovo Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -84256,7 +84054,7 @@
       "VPM- Polarimeter Unit"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -84293,7 +84091,7 @@
       "Vibrating Sample Magnetometers"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -84436,9 +84234,7 @@
     "aliases": [
       "WATERGUNS"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -84481,7 +84277,7 @@
       "Watheroo Ground Magnetic Field Instrument"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -84761,8 +84557,7 @@
       "Wide Field Imager - 2"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -84902,10 +84697,7 @@
       "Wide Range Camera"
     ],
     "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -85045,6 +84837,7 @@
       "Wind Doppler Imaging Interferometer"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -85078,12 +84871,7 @@
     "aliases": [
       "Window Detector"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -85234,7 +85022,7 @@
       "Wide Swath and High Resolution Optical Imager"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -85385,7 +85173,8 @@
       "Wind Scatterometer"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -85620,7 +85409,7 @@
       "Gamma and X Ray Spectrometer"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -85673,7 +85462,7 @@
     ],
     "divisions": [
       "heliophysics",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -85684,8 +85473,7 @@
       "X-ray/Gamma Ray Spectrometer"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -85697,8 +85485,7 @@
       "X-rays and Gamma-ray Bursts Experiment"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -85710,8 +85497,7 @@
       "X-ray Scintillation Detectors"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -85776,8 +85562,7 @@
       "BARREL Balloon 2D X-ray Instrument"
     ],
     "divisions": [
-      "heliophysics",
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -85881,7 +85666,7 @@
       "Xylem Cond 1970i Portable conductivity measuring instrument"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },

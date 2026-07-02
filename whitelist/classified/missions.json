@@ -118,8 +118,7 @@
       "Active Cavity Radiometer Irradiance Monitor Satellite"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -153,9 +152,7 @@
     "aliases": [
       "Advanced Air Mobility"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -354,7 +351,6 @@
       "Alpha Magnetic Spectrometer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -488,7 +484,9 @@
       "ANS",
       "Astronomische Nederlandse Satelliet"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -697,7 +695,7 @@
       "ARCBedrest"
     ],
     "divisions": [
-      "heliophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -785,7 +783,7 @@
       "Ariel V"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -796,7 +794,7 @@
       "Ariel VI"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -822,7 +820,6 @@
       "Artemis I"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -834,7 +831,6 @@
       "Artemis III"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -846,7 +842,6 @@
       "Artemis IV"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -861,7 +856,7 @@
       "Fuji-OSCAR 81"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -907,7 +902,7 @@
       "Ascent Abort-2"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -958,7 +953,7 @@
       "Apollo–Soyuz Test Project"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -1054,7 +1049,9 @@
       "ATS",
       "Application Technology Satellites"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1064,7 +1061,9 @@
       "ATS-1",
       "Application Technology Satellites-1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1075,7 +1074,9 @@
       "ATS 2",
       "Application Technology Satellites-2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1085,7 +1086,9 @@
       "ATS-3",
       "Application Technology Satellites-3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1096,7 +1099,9 @@
       "ATS 4",
       "Application Technology Satellites-4"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1107,7 +1112,9 @@
       "ATS 5",
       "Application Technology Satellites-5"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1118,7 +1125,9 @@
       "ATS 6",
       "Application Technology Satellites-6"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1175,7 +1184,9 @@
     "aliases": [
       "Beijing"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1185,7 +1196,9 @@
       "Beijing-1",
       "Beijing 1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -1229,7 +1242,7 @@
       "Biomass"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -1510,7 +1523,7 @@
       "Balloon Rapid Response for ISON"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -1949,8 +1962,7 @@
       "Chandrayaan 1"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -1995,8 +2007,7 @@
       "Copernicus Hyperspectral Imaging Mission for the Environment"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2008,7 +2019,6 @@
       "Cosmic Hot Interstellar Plasma Spectrometer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -2021,7 +2031,8 @@
       "Community Initiative for Continuing Earth Radio Occultation"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -2140,7 +2151,7 @@
       "CLPS Deliveries"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -2174,7 +2185,6 @@
       "Communication/Navigation Outage Forecasting System"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -2259,7 +2269,8 @@
       "Coriolis"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -2311,7 +2322,7 @@
       "Hakucho"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -2413,8 +2424,7 @@
       "COSMIC-2 FM3"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2426,8 +2436,7 @@
       "COSMIC-2 FM4"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2439,8 +2448,7 @@
       "COSMIC-2 FM5"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2452,8 +2460,7 @@
       "COSMIC 2 FM6"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2464,7 +2471,7 @@
       "Cosmos 1129"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2475,7 +2482,7 @@
       "Cosmos 1514"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2486,7 +2493,7 @@
       "Cosmos 1667"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2497,7 +2504,7 @@
       "Cosmos 1887"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2508,7 +2515,7 @@
       "Cosmos 2044"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2519,7 +2526,7 @@
       "Cosmos 2229"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2530,7 +2537,7 @@
       "Cosmos 782"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2541,7 +2548,7 @@
       "Cosmos 936"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2612,7 +2619,7 @@
       "Cosmos Series"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2636,7 +2643,6 @@
       "Combined Release and Radiation Effects Satellite"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -2672,7 +2678,8 @@
       "China Seismo-Electromagnetic Satellite"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -2787,7 +2794,9 @@
     "aliases": [
       "CubeSat Proximity Operations Demonstration (CPOD)"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -2797,11 +2806,7 @@
       "CubeSats"
     ],
     "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2917,8 +2922,7 @@
       "Deep Space Atomic Clock (DSAC)"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -2928,7 +2932,9 @@
     "aliases": [
       "Deep Space Optical Communications (DSOC)"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -2950,7 +2956,7 @@
       "Deimos 1"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -2962,7 +2968,7 @@
       "Deimos 2"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -3060,7 +3066,8 @@
       "Defense Meteorological Satellite Program"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3073,7 +3080,8 @@
       "Defense Meteorological Satellite Program F-01"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3086,7 +3094,8 @@
       "Defense Meteorological Satellite Program F-02"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3098,7 +3107,8 @@
       "Defense Meteorological Satellite Program F-03"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3110,7 +3120,8 @@
       "Defense Meteorological Satellite Program F-04"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3122,7 +3133,8 @@
       "Defense Meteorological Satellite Program F-05"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3134,7 +3146,8 @@
       "Defense Meteorological Satellite Program F-06"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3146,7 +3159,8 @@
       "Defense Meteorological Satellite Program F-07"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3158,7 +3172,8 @@
       "Defense Meteorological Satellite Program F-08"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3171,7 +3186,8 @@
       "Defense Meteorological Satellite Program F-09"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3184,7 +3200,8 @@
       "Defense Meteorological Satellite Program F-10"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3196,7 +3213,8 @@
       "Defense Meteorological Satellite Program F-11"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3209,7 +3227,8 @@
       "Defense Meteorological Satellite Program F-12"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3221,7 +3240,8 @@
       "Defense Meteorological Satellite Program F-13"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3234,7 +3254,8 @@
       "Defense Meteorological Satellite Program F-14"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3247,7 +3268,8 @@
       "Defense Meteorological Satellite Program F-15"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3260,7 +3282,8 @@
       "Defense Meteorological Satellite Program F-16"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3272,7 +3295,8 @@
       "Defense Meteorological Satellite Program F-17"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3285,7 +3309,8 @@
       "Defense Meteorological Satellite Program F-18"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3297,7 +3322,8 @@
       "Defense Meteorological Satellite Program F-19"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -3310,9 +3336,7 @@
       "Demonstration of Technology 1",
       "Demonstration of Technology-1"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -3349,7 +3373,7 @@
       "Deep Space Gateway"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -3407,8 +3431,7 @@
       "INTERNATIONAL ROSETTA MISSION"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -3480,7 +3503,9 @@
       "EDRS",
       "European Data Relay System"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -3501,7 +3526,7 @@
       "Electrified Aircraft Propulsion"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -3511,7 +3536,10 @@
     "aliases": [
       "Electro"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3521,7 +3549,10 @@
       "Electro GOMS",
       "Electro-GOMS"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3531,7 +3562,10 @@
       "Electro-L N1",
       "Electro L N1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3540,7 +3574,10 @@
     "aliases": [
       "Electro-L N2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3549,7 +3586,10 @@
     "aliases": [
       "Electro-L N3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3559,7 +3599,10 @@
       "Electro-L N4",
       "Electro L N4"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3569,7 +3612,10 @@
       "Electro-L N5",
       "Electro L N5"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3578,7 +3624,10 @@
     "aliases": [
       "Electro-M N1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3588,7 +3637,10 @@
       "Electro-M N2",
       "Electro M N2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3597,7 +3649,10 @@
     "aliases": [
       "Electro-M N3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -3610,7 +3665,9 @@
       "Exploration Mission 2",
       "Exploration Mission-2"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -3658,7 +3715,7 @@
       ":envihab"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -3681,7 +3738,7 @@
       "EnVision"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -3741,7 +3798,7 @@
       "Extrasolar Planet Observations and Characterization"
     ],
     "divisions": [
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -3765,8 +3822,7 @@
       "Deep Impact"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -3909,7 +3965,9 @@
       "ESA SSA",
       "ESA Space Situational Awareness Programme"
     ],
-    "divisions": [],
+    "divisions": [
+      "heliophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -4043,7 +4101,9 @@
       "EURECA",
       "European Retrievable Carrier"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4067,7 +4127,6 @@
       "Extreme Ultraviolet Explorer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -4211,7 +4270,9 @@
     "aliases": [
       "Expedition 2"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4220,7 +4281,9 @@
     "aliases": [
       "Expedition 20"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4229,7 +4292,9 @@
     "aliases": [
       "Expedition 21"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4238,7 +4303,9 @@
     "aliases": [
       "Expedition 22"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4247,7 +4314,9 @@
     "aliases": [
       "Expedition 23"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4256,7 +4325,9 @@
     "aliases": [
       "Expedition 24"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4265,7 +4336,9 @@
     "aliases": [
       "Expedition 25"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4274,7 +4347,9 @@
     "aliases": [
       "Expedition 26"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4283,7 +4358,9 @@
     "aliases": [
       "Expedition 27"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4292,7 +4369,9 @@
     "aliases": [
       "Expedition 28"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4301,7 +4380,9 @@
     "aliases": [
       "Expedition 29"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4310,7 +4391,9 @@
     "aliases": [
       "Expedition 3"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4319,7 +4402,9 @@
     "aliases": [
       "Expedition 30"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4328,7 +4413,9 @@
     "aliases": [
       "Expedition 31"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4337,7 +4424,9 @@
     "aliases": [
       "Expedition 32"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4346,7 +4435,9 @@
     "aliases": [
       "Expedition 33"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4355,7 +4446,9 @@
     "aliases": [
       "Expedition 34"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4364,7 +4457,9 @@
     "aliases": [
       "Expedition 35"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4373,7 +4468,9 @@
     "aliases": [
       "Expedition 36"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4382,7 +4479,9 @@
     "aliases": [
       "Expedition 37"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4391,7 +4490,9 @@
     "aliases": [
       "Expedition 38"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4400,7 +4501,9 @@
     "aliases": [
       "Expedition 39"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4409,7 +4512,9 @@
     "aliases": [
       "Expedition 4"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4418,7 +4523,9 @@
     "aliases": [
       "Expedition 40"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4427,7 +4534,9 @@
     "aliases": [
       "Expedition 41"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4436,7 +4545,9 @@
     "aliases": [
       "Expedition 42"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4445,7 +4556,9 @@
     "aliases": [
       "Expedition 43"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4454,7 +4567,9 @@
     "aliases": [
       "Expedition 44"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4463,7 +4578,9 @@
     "aliases": [
       "Expedition 45"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4472,7 +4589,9 @@
     "aliases": [
       "Expedition 46"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4481,7 +4600,9 @@
     "aliases": [
       "Expedition 47"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4490,7 +4611,9 @@
     "aliases": [
       "Expedition 48"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4499,7 +4622,9 @@
     "aliases": [
       "Expedition 49"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4508,7 +4633,9 @@
     "aliases": [
       "Expedition 5"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4517,7 +4644,9 @@
     "aliases": [
       "Expedition 50"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4526,7 +4655,9 @@
     "aliases": [
       "Expedition 51"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4535,7 +4666,9 @@
     "aliases": [
       "Expedition 52"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4544,7 +4677,9 @@
     "aliases": [
       "Expedition 53"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4553,7 +4688,9 @@
     "aliases": [
       "Expedition 54"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4562,7 +4699,9 @@
     "aliases": [
       "Expedition 55"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4571,7 +4710,9 @@
     "aliases": [
       "Expedition 56"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4580,7 +4721,9 @@
     "aliases": [
       "Expedition 57"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4589,7 +4732,9 @@
     "aliases": [
       "Expedition 58"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4598,7 +4743,9 @@
     "aliases": [
       "Expedition 59"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4607,7 +4754,9 @@
     "aliases": [
       "Expedition 6"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4616,7 +4765,9 @@
     "aliases": [
       "Expedition 60"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4625,7 +4776,9 @@
     "aliases": [
       "Expedition 61"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4634,7 +4787,9 @@
     "aliases": [
       "Expedition 62"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4643,7 +4798,9 @@
     "aliases": [
       "Expedition 63"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4652,7 +4809,9 @@
     "aliases": [
       "Expedition 64"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -4662,7 +4821,7 @@
       "Expedition 65"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4673,7 +4832,7 @@
       "Expedition 66"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4684,7 +4843,7 @@
       "Expedition 67"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4695,7 +4854,7 @@
       "Expedition 68"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4706,7 +4865,7 @@
       "Expedition 69"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4717,7 +4876,7 @@
       "Expedition 7"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4728,7 +4887,7 @@
       "Expedition 70"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4739,7 +4898,7 @@
       "Expedition 71"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4750,7 +4909,7 @@
       "Expedition 72"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4761,7 +4920,7 @@
       "Expedition 73"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4772,7 +4931,7 @@
       "Expedition 74"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4783,7 +4942,7 @@
       "Expedition 8"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4794,7 +4953,7 @@
       "Expedition 9"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4805,7 +4964,7 @@
       "Exploration Flight Test-1"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -4816,7 +4975,8 @@
       "Explorer"
     ],
     "divisions": [
-      "heliophysics"
+      "heliophysics",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -4989,7 +5149,7 @@
       "Fluorescence Explorer"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -5070,7 +5230,7 @@
       "Far-infrared Outgoing Radiation Understanding and Monitoring"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -5614,7 +5774,7 @@
       "Gemini"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5625,7 +5785,7 @@
       "Gemini 1"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5636,7 +5796,7 @@
       "Gemini 10"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5647,7 +5807,7 @@
       "Gemini 11"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5658,7 +5818,7 @@
       "Gemini 12"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5669,7 +5829,7 @@
       "Gemini 2"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5680,7 +5840,7 @@
       "Gemini 3"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5691,7 +5851,7 @@
       "Gemini 4"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5702,7 +5862,7 @@
       "Gemini 5"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5713,7 +5873,7 @@
       "Gemini 6A"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5724,7 +5884,7 @@
       "Gemini 7"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5735,7 +5895,7 @@
       "Gemini 8"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5746,7 +5906,7 @@
       "Gemini 9A"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5757,7 +5917,7 @@
       "Gemini I"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5768,7 +5928,7 @@
       "Gemini II"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5779,7 +5939,7 @@
       "Gemini III"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5790,7 +5950,7 @@
       "Gemini IV"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5801,7 +5961,7 @@
       "Gemini IX"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5812,7 +5972,7 @@
       "Gemini V"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5823,7 +5983,7 @@
       "Gemini VI"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5834,7 +5994,7 @@
       "Gemini VII"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5845,7 +6005,7 @@
       "Gemini VIII"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5856,7 +6016,7 @@
       "Gemini X"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5867,7 +6027,7 @@
       "Gemini XI"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5878,7 +6038,7 @@
       "Gemini XII"
     ],
     "divisions": [
-      "astrophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -5889,7 +6049,7 @@
       "Genesis"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -6444,7 +6604,9 @@
     "aliases": [
       "Glory"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -6870,7 +7032,7 @@
       "Global-scale Observations of the Limb and Disk"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6895,9 +7057,7 @@
       "GOMX4",
       "GomSpace Express-4"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -6947,7 +7107,8 @@
       "Gravity Probe B"
     ],
     "divisions": [
-      "bps"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -6997,7 +7158,6 @@
       "Gravity Recovery and Interior Laboratory"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -7008,7 +7168,9 @@
     "aliases": [
       "Granat"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -7018,7 +7180,7 @@
       "Green Propellant Infusion Mission (GPIM)"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -7029,7 +7191,7 @@
       "HaloSat"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -7039,7 +7201,9 @@
     "aliases": [
       "Haughton Mars Project (HMP), Canadian Arctic"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -7147,7 +7311,9 @@
     "aliases": [
       "HERA"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -7156,7 +7322,9 @@
     "aliases": [
       "HERA Campaign 1"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -7165,7 +7333,9 @@
     "aliases": [
       "HERA Campaign 2"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -7174,7 +7344,9 @@
     "aliases": [
       "HERA Campaign 3"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -7183,7 +7355,9 @@
     "aliases": [
       "HERA Campaign 4"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -7192,7 +7366,9 @@
     "aliases": [
       "HERA Campaign 5"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -7201,7 +7377,9 @@
     "aliases": [
       "HERA Campaign 6"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -7236,7 +7414,9 @@
       "PAS-22",
       "AsiaSat 3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7282,7 +7462,9 @@
       "HJ",
       "Huan Jing"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7293,7 +7475,9 @@
       "HJ 1A",
       "Huan Jing-1A"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7304,7 +7488,9 @@
       "HJ-1B",
       "Huan Jing-1B"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7315,7 +7501,9 @@
       "HJ 1C",
       "Huan Jing-1C"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7326,7 +7514,9 @@
       "HJ-2A",
       "Huan Jing-2A"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7337,7 +7527,9 @@
       "HJ-2B",
       "Huan Jing-2B"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7347,7 +7539,9 @@
       "HRMX",
       "High Resolution Multi Spectral"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7357,7 +7551,9 @@
       "HRSAT",
       "High Resolution Satellite Constellation"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7367,7 +7563,9 @@
       "HRSAT-1A",
       "High Resolution Satellite 1A"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7378,7 +7576,9 @@
       "HRSAT 1B",
       "High Resolution Satellite 1B"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7389,7 +7589,9 @@
       "HRSAT 1C",
       "High Resolution Satellite 1C"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7629,7 +7831,9 @@
       "HY-3",
       "Hai Yang 3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7639,7 +7843,9 @@
       "HY 3A",
       "HY-3A"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7649,7 +7855,9 @@
       "HY 3B",
       "HY-3B"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7659,7 +7867,9 @@
       "HY 3C",
       "HY-3C"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7669,7 +7879,9 @@
       "HY 3D",
       "HY-3D"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -7679,8 +7891,7 @@
       "HydroGNSS"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -7792,7 +8003,6 @@
       "Ionospheric Connection Explorer"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -7817,7 +8027,7 @@
       "IKAROS"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -7828,7 +8038,7 @@
       "Ikonos"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -8129,7 +8339,7 @@
       "Interior Exploration Using Seismic Investigations, Geodesy and Heat Transport"
     ],
     "divisions": [
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -8140,8 +8350,7 @@
       "In-Situ Resource Utilization (ISRU)"
     ],
     "divisions": [
-      "planetary",
-      "bps"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -8163,7 +8372,9 @@
     "aliases": [
       "Integrated LCRD LEO User Modem and Amplifier Terminal"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -8175,8 +8386,7 @@
       "Hydro-meteorological Satellite Ionosphera-M N1"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -8188,8 +8398,7 @@
       "Ionosphera-M N1 & N2"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -8202,8 +8411,7 @@
       "Hydro Meteorological Satellite Ionosphera M N2"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -8217,8 +8425,7 @@
       "Hydro Meteorological Satellite Ionosphera M N3"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -8276,9 +8483,7 @@
     "aliases": [
       "iRATS14"
     ],
-    "divisions": [
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -8409,8 +8614,6 @@
       "International Space Station"
     ],
     "divisions": [
-      "earth",
-      "astrophysics",
       "bps"
     ],
     "division_source": "openai"
@@ -8558,7 +8761,7 @@
       "ISS LIS"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -8900,7 +9103,6 @@
       "Kaguya"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -8912,8 +9114,7 @@
       "Kalpana"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -8925,8 +9126,7 @@
       "Kalpana 1"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -9349,9 +9549,7 @@
     "aliases": [
       "LAFS"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -9360,9 +9558,7 @@
     "aliases": [
       "LAFSP2"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -9536,7 +9732,8 @@
       "LAser RElativity Satellite"
     ],
     "divisions": [
-      "bps"
+      "earth",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -9547,7 +9744,8 @@
       "LARES-1"
     ],
     "divisions": [
-      "bps"
+      "earth",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -9560,7 +9758,8 @@
       "LAser RElativity Satellite 2"
     ],
     "divisions": [
-      "bps"
+      "earth",
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -9570,7 +9769,9 @@
     "aliases": [
       "Laser Communications Relay Demonstration (LCRD)"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -9582,7 +9783,7 @@
       "Low Boom Flight Demonstration"
     ],
     "divisions": [
-      "earth"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -9643,7 +9844,9 @@
       "Light-1",
       "Light 1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -9653,7 +9856,7 @@
       "LISA Pathfinder"
     ],
     "divisions": [
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -9698,7 +9901,10 @@
     "aliases": [
       "Low-Earth Orbit Flight Test of an Inflatable Decelerator (LOFTID)"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -10063,7 +10269,7 @@
       "Lunar Laser Communications Demonstration (LLCD)"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -10183,9 +10389,7 @@
     "aliases": [
       "Lunar Outpost"
     ],
-    "divisions": [
-      "planetary"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -10410,8 +10614,7 @@
       "Multi-Angle Imager for Aerosols"
     ],
     "divisions": [
-      "earth",
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -10992,7 +11195,8 @@
       "Mesospheric Airglow/Aerosol Tomography and Spectroscopy"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -11029,7 +11233,9 @@
       "Mass Change Continuity",
       "Mass Change - Continuity"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11041,7 +11247,9 @@
       "Mass Change Sustaining",
       "Mass Change - Sustaining"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11050,7 +11258,9 @@
     "aliases": [
       "MDASat 1a"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11060,7 +11270,9 @@
       "MDASat 1b",
       "MDASat-1b"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11070,7 +11282,9 @@
       "MDASat 1c",
       "MDASat-1c"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11095,7 +11309,7 @@
       "Human Spaceflight Program"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -11106,7 +11320,7 @@
       "Mercury 2"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -11117,7 +11331,7 @@
       "Mercury 3"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -11128,7 +11342,7 @@
       "Mercury 4"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -11139,7 +11353,7 @@
       "Mercury 5"
     ],
     "divisions": [
-      "planetary"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -11262,7 +11476,7 @@
       "Methane Remote Sensing Lidar Mission"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -11285,7 +11499,9 @@
       "Meteor-1",
       "Meteor 1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11295,7 +11511,9 @@
       "Meteor-1 1",
       "Meteor-1-1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11305,7 +11523,9 @@
       "Meteor-1 10",
       "Meteor 1 10"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11315,7 +11535,9 @@
       "Meteor-1 11",
       "Meteor 1 11"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11325,7 +11547,9 @@
       "Meteor-1 12",
       "Meteor-1-12"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11335,7 +11559,9 @@
       "Meteor-1 13",
       "Meteor-1-13"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11345,7 +11571,9 @@
       "Meteor-1 14",
       "Meteor-1-14"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11355,7 +11583,9 @@
       "Meteor-1 15",
       "Meteor 1 15"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11365,7 +11595,9 @@
       "Meteor-1 16",
       "Meteor 1 16"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11375,7 +11607,9 @@
       "Meteor-1 17",
       "Meteor 1 17"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11385,7 +11619,9 @@
       "Meteor-1 19",
       "Meteor 1 19"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11395,7 +11631,9 @@
       "Meteor-1 2",
       "Meteor-1-2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11405,7 +11643,9 @@
       "Meteor-1 20",
       "Meteor-1-20"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11415,7 +11655,9 @@
       "Meteor-1 21",
       "Meteor 1 21"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11425,7 +11667,9 @@
       "Meteor-1 22",
       "Meteor 1 22"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11435,7 +11679,9 @@
       "Meteor-1 23",
       "Meteor-1-23"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11445,7 +11691,9 @@
       "Meteor-1 24",
       "Meteor-1-24"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11455,7 +11703,9 @@
       "Meteor-1 26",
       "Meteor-1-26"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11465,7 +11715,9 @@
       "Meteor-1 27",
       "Meteor 1 27"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11475,7 +11727,9 @@
       "Meteor-1 3",
       "Meteor 1 3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11485,7 +11739,9 @@
       "Meteor-1 4",
       "Meteor-1-4"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11495,7 +11751,9 @@
       "Meteor-1 5",
       "Meteor-1-5"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11505,7 +11763,9 @@
       "Meteor-1 6",
       "Meteor 1 6"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11515,7 +11775,9 @@
       "Meteor-1 7",
       "Meteor-1-7"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11525,7 +11787,9 @@
       "Meteor-1 8",
       "Meteor 1 8"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11535,7 +11799,9 @@
       "Meteor-1 9",
       "Meteor-1-9"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11545,7 +11811,9 @@
       "Meteor-2",
       "Meteor 2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11555,7 +11823,9 @@
       "Meteor-2 1",
       "Meteor 2 1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11565,7 +11835,9 @@
       "Meteor-2 10",
       "Meteor 2 10"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11575,7 +11847,9 @@
       "Meteor-2 11",
       "Meteor 2 11"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11585,7 +11859,9 @@
       "Meteor-2 12",
       "Meteor 2 12"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11595,7 +11871,9 @@
       "Meteor-2 13",
       "Meteor-2-13"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11605,7 +11883,9 @@
       "Meteor-2 14",
       "Meteor-2-14"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11615,7 +11895,9 @@
       "Meteor-2 15",
       "Meteor-2-15"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11625,7 +11907,9 @@
       "Meteor-2 16",
       "Meteor-2-16"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11635,7 +11919,9 @@
       "Meteor-2 17",
       "Meteor 2 17"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11645,7 +11931,9 @@
       "Meteor-2 18",
       "Meteor 2 18"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -11655,7 +11943,9 @@
       "Meteor-2 19",
       "Meteor-2-19"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -12267,7 +12557,9 @@
     "aliases": [
       "MeznSat"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -12289,7 +12581,7 @@
       "MicroDragon"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -12300,7 +12592,7 @@
       "Mini-RF"
     ],
     "divisions": [
-      "earth"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -12511,7 +12803,9 @@
     "aliases": [
       "Mohammed VI"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -12521,7 +12815,9 @@
       "Mohammed VI A",
       "Mohammed VI-A"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -12531,7 +12827,9 @@
       "Mohammed VI-B",
       "Mohammed VI B"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -12603,7 +12901,8 @@
       "MIDCOURSE SPACE EXPERIMENT"
     ],
     "divisions": [
-      "earth"
+      "earth",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -12688,7 +12987,7 @@
       "Lomonosov"
     ],
     "divisions": [
-      "bps"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -12699,7 +12998,9 @@
       "N1 Launch Test, 7K-L1S No. 2",
       "N1 Launch Test, 7K L1S No. 2"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -12709,7 +13010,9 @@
       "N1 Launch Test, 7K-LOK No. 6A",
       "N1 Launch Test, 7K LOK No. 6A"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -12719,7 +13022,9 @@
       "N1 Test Flight, 7K-L1S",
       "N1 Test Flight, 7K L1S"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -12740,7 +13045,7 @@
       "NanoDragon"
     ],
     "divisions": [
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -12750,7 +13055,9 @@
     "aliases": [
       "NASA’s Boeing Crew Flight Test"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12759,7 +13066,9 @@
     "aliases": [
       "NASA’s Northrop Grumman CRS-19"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12768,7 +13077,9 @@
     "aliases": [
       "NASA’s Northrop Grumman CRS-20"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12777,7 +13088,9 @@
     "aliases": [
       "NASA’s Northrop Grumman CRS-21"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12786,7 +13099,9 @@
     "aliases": [
       "NASA’s Northrop Grumman CRS-23"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12795,7 +13110,9 @@
     "aliases": [
       "NASA’s Northrop Grumman CRS-24"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12815,7 +13132,9 @@
     "aliases": [
       "NASA’s SpaceX Crew-10"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12824,7 +13143,9 @@
     "aliases": [
       "NASA’s SpaceX Crew-11"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12833,7 +13154,9 @@
     "aliases": [
       "NASA’s SpaceX Crew-12"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12842,7 +13165,9 @@
     "aliases": [
       "NASA’s SpaceX Crew-13"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12851,7 +13176,9 @@
     "aliases": [
       "NASA’s SpaceX Crew-7"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12860,7 +13187,9 @@
     "aliases": [
       "NASA’s SpaceX Crew-8"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12869,7 +13198,9 @@
     "aliases": [
       "NASA’s SpaceX Crew-9"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12878,7 +13209,9 @@
     "aliases": [
       "NASA’s SpaceX CRS-28"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12887,7 +13220,9 @@
     "aliases": [
       "NASA’s SpaceX CRS-29"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12896,7 +13231,9 @@
     "aliases": [
       "NASA’s SpaceX CRS-30"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12905,7 +13242,9 @@
     "aliases": [
       "NASA’s SpaceX CRS-31"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12914,7 +13253,9 @@
     "aliases": [
       "NASA’s SpaceX CRS-32"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12923,7 +13264,9 @@
     "aliases": [
       "NASA’s SpaceX CRS-33"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12932,7 +13275,9 @@
     "aliases": [
       "NASA’s SpaceX CRS-34"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -12967,7 +13312,6 @@
       "NASA Extreme Environment Mission Operations"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -12979,7 +13323,6 @@
       "NEEMO 1"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -12991,7 +13334,6 @@
       "NEEMO 10"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13003,7 +13345,6 @@
       "NEEMO 11"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13015,7 +13356,6 @@
       "NEEMO 12"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13027,7 +13367,6 @@
       "NEEMO 13"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13039,7 +13378,6 @@
       "NEEMO 14"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13051,7 +13389,6 @@
       "NEEMO 15"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13063,7 +13400,6 @@
       "NEEMO 16"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13075,7 +13411,6 @@
       "NEEMO 18"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13087,7 +13422,6 @@
       "NEEMO 19"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13099,7 +13433,6 @@
       "NEEMO 2"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13111,7 +13444,6 @@
       "NEEMO 3"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13123,7 +13455,6 @@
       "NEEMO 4"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13135,7 +13466,6 @@
       "NEEMO 5"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13147,7 +13477,6 @@
       "NEEMO 6"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13159,7 +13488,6 @@
       "NEEMO 7"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13171,7 +13499,6 @@
       "NEEMO 8"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13183,7 +13510,6 @@
       "NEEMO 9"
     ],
     "divisions": [
-      "earth",
       "bps"
     ],
     "division_source": "openai"
@@ -13194,7 +13520,9 @@
     "aliases": [
       "NEK and SIRIUS"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -13218,8 +13546,7 @@
       "Near-Earth Object Surveyor"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -13231,8 +13558,7 @@
       "Near-Earth Object Wide-field Infrared Survey Explorer"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -13266,7 +13592,9 @@
       "NG-11",
       "NG 11"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -13849,7 +14177,7 @@
       "Nozomi"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -13861,7 +14189,7 @@
       "Navigation Radar Detector Test Mission"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -13968,7 +14296,9 @@
       "Obzor-O N4",
       "Obzor O N4"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -13980,7 +14310,9 @@
       "Operative Monitoring Satellite Radar",
       "Operative Monitoring Satellite - Radar"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -13991,7 +14323,9 @@
       "Obzor R N1",
       "SAR Operative Monitoring Satellite Obzor-R N1"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -14001,7 +14335,9 @@
       "Obzor-R N2",
       "Obzor R N2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -14010,7 +14346,9 @@
     "aliases": [
       "Obzor-R N3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -14020,7 +14358,9 @@
       "Obzor-R N4",
       "Obzor R N4"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -14095,8 +14435,7 @@
       "Orbiting Carbon Observatory"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -14109,8 +14448,7 @@
       "Orbiting Carbon Observatory-2"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -14124,8 +14462,7 @@
       "ISS/Orbiting Carbon Observatory 3"
     ],
     "divisions": [
-      "earth",
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -14136,7 +14473,7 @@
       "Odin"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -14149,7 +14486,7 @@
       "Orbiting Frog Otolith-A"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -14161,7 +14498,6 @@
       "Orbiting Geophysical Observatory"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -14289,7 +14625,9 @@
     "aliases": [
       "On-orbit Servicing, Assembly, and Manufacturing 1 (OSAM-1)"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -14298,7 +14636,9 @@
     "aliases": [
       "On-Orbit Servicing, Assembly, and Manufacturing 2 (OSAM-2)"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -14390,7 +14730,9 @@
       "Orion",
       "Orion Spacecraft"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -14400,7 +14742,9 @@
       "ORS 3",
       "Operationally Responsive Space-3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -14410,7 +14754,9 @@
       "ORS 4",
       "Operationally Responsive Space-4"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -14523,7 +14869,7 @@
       "P78 1"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -14546,7 +14892,9 @@
     "aliases": [
       "Pad Abort-1"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -14717,9 +15065,7 @@
     "aliases": [
       "PExT"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -14810,7 +15156,8 @@
       "PIONEER 10"
     ],
     "divisions": [
-      "heliophysics"
+      "heliophysics",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14821,7 +15168,8 @@
       "Pioneer 11"
     ],
     "divisions": [
-      "heliophysics"
+      "heliophysics",
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14832,7 +15180,7 @@
       "Pioneer 2"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14843,7 +15191,7 @@
       "Pioneer 3"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14854,7 +15202,7 @@
       "Pioneer 4"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14865,7 +15213,7 @@
       "Pioneer 5"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14876,7 +15224,7 @@
       "Pioneer 8"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14887,7 +15235,7 @@
       "Pioneer 9"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14899,7 +15247,7 @@
       "Pioneer-E"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14910,7 +15258,7 @@
       "Pioneer II"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14921,7 +15269,7 @@
       "Pioneer III"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14932,7 +15280,7 @@
       "Pioneer IV"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14943,7 +15291,7 @@
       "Pioneer IX"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14955,7 +15303,7 @@
       "Pioneer P 3"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14967,7 +15315,7 @@
       "Pioneer P 30"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14979,7 +15327,7 @@
       "Pioneer P 31"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -14990,7 +15338,7 @@
       "Pioneer V"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -15002,7 +15350,7 @@
       "PIONEER VENUS"
     ],
     "divisions": [
-      "heliophysics",
+      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -15014,7 +15362,7 @@
       "Pioneer Venus 1"
     ],
     "divisions": [
-      "heliophysics",
+      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -15026,7 +15374,7 @@
       "Pioneer Venus 2"
     ],
     "divisions": [
-      "heliophysics",
+      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -15038,7 +15386,6 @@
       "Pioneer VI"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -15050,7 +15397,6 @@
       "Pioneer VII"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -15062,7 +15408,6 @@
       "Pioneer VIII"
     ],
     "divisions": [
-      "heliophysics",
       "planetary"
     ],
     "division_source": "openai"
@@ -15085,7 +15430,7 @@
       "Planetscope"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15107,7 +15452,7 @@
       "Pléiades"
     ],
     "divisions": [
-      "astrophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15118,7 +15463,7 @@
       "Pléiades-1A"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15129,7 +15474,7 @@
       "Pléiades-1B"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15140,7 +15485,7 @@
       "Pléiades-Neo"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15152,7 +15497,7 @@
       "Pléiades Neo 3"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15164,7 +15509,7 @@
       "Pléiades Neo 4"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15176,7 +15521,7 @@
       "Pléiades Neo C"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15188,7 +15533,7 @@
       "Pléiades Neo D"
     ],
     "divisions": [
-      "planetary"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15204,7 +15549,6 @@
       "Space Environment Monitor"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -15216,10 +15560,7 @@
       "Polarlight",
       "Polarimeter Light"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -15229,7 +15570,6 @@
       "Polar Resources Ice Mining Experiment 1 (PRIME-1)"
     ],
     "divisions": [
-      "earth",
       "planetary"
     ],
     "division_source": "openai"
@@ -15267,12 +15607,7 @@
       "Project for On Board Autonomy",
       "Project for On-Board Autonomy"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -15283,10 +15618,7 @@
       "PROBA 1"
     ],
     "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15298,10 +15630,7 @@
       "PROBA 2"
     ],
     "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15313,10 +15642,7 @@
       "PROBA V"
     ],
     "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -15339,7 +15665,7 @@
       "Prognoz 2"
     ],
     "divisions": [
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -15350,7 +15676,7 @@
       "Prognoz 6"
     ],
     "divisions": [
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -15361,7 +15687,7 @@
       "Prognoz 7"
     ],
     "divisions": [
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -15372,7 +15698,7 @@
       "Prognoz 9"
     ],
     "divisions": [
-      "planetary"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -15429,7 +15755,7 @@
       "Quesst"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -16184,7 +16510,6 @@
       "Rossi X-ray Timing Explorer"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -16322,7 +16647,7 @@
       "Sakigake"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -16333,7 +16658,9 @@
       "Salyut-4",
       "Salyut 4"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -16471,8 +16798,7 @@
       "Saturn Occultation of 28 Sagittarius 1989"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -16483,8 +16809,7 @@
       "Saturn Ring Plane Crossing 1995"
     ],
     "divisions": [
-      "planetary",
-      "astrophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -16507,8 +16832,7 @@
       "Surface Biology and Geology Constellation Pathfinder"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16521,8 +16845,7 @@
       "Surface Biology and Geology Thermal Infrared Free Flyer"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16536,8 +16859,7 @@
       "Surface Biology and Geology Visible and Short-Wave Infrared Free Flyer"
     ],
     "divisions": [
-      "earth",
-      "bps"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16607,7 +16929,7 @@
       "Scientific Balloons"
     ],
     "divisions": [
-      "earth"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -16620,8 +16942,7 @@
       "SCISAT-I/ACE"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -16633,8 +16954,7 @@
       "Science Satellite / Atmospheric Chemistry Experiment"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17025,6 +17345,7 @@
       "Space Environment Suite, Improved SEM"
     ],
     "divisions": [
+      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -17037,7 +17358,7 @@
       "SES-14"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17060,7 +17381,7 @@
       "Shin’e 2"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -17071,7 +17392,7 @@
       "Shin’en"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -17083,7 +17404,6 @@
       "Shuttle-Mir"
     ],
     "divisions": [
-      "heliophysics",
       "bps"
     ],
     "division_source": "openai"
@@ -17096,7 +17416,7 @@
       "SICH 1"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17107,7 +17427,7 @@
       "SICH-1M"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17119,7 +17439,7 @@
       "SICH 2"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17131,7 +17451,7 @@
       "SICH 2 30"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17143,7 +17463,7 @@
       "Gamma D2B and Sneg-3"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17156,8 +17476,7 @@
       "Scientific International Research in Unique Terrestrial Station 17"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -17170,8 +17489,7 @@
       "Scientific International Research in Unique Terrestrial Station 19"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "bps"
     ],
     "division_source": "openai"
   },
@@ -17196,8 +17514,7 @@
       "Shijian 9"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17210,8 +17527,7 @@
       "Shijian 9A"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17224,8 +17540,7 @@
       "Shijian 9B"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17531,9 +17846,7 @@
     "aliases": [
       "Small Satellites"
     ],
-    "divisions": [
-      "earth"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -17629,8 +17942,7 @@
       "Suomi NPP"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -17641,6 +17953,7 @@
       "SOFIA"
     ],
     "divisions": [
+      "earth",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -17723,13 +18036,7 @@
     "aliases": [
       "Sounding Rockets"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -17756,13 +18063,7 @@
     "aliases": [
       "Space Shuttle"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -17771,13 +18072,7 @@
     "aliases": [
       "Space Shuttle Missions"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -17786,13 +18081,7 @@
     "aliases": [
       "Space Station"
     ],
-    "divisions": [
-      "earth",
-      "heliophysics",
-      "planetary",
-      "astrophysics",
-      "bps"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -17982,7 +18271,7 @@
       "Spartan 1"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -17994,8 +18283,6 @@
       "Spectro-Photometer for the History of the Universe and Ices Explorer"
     ],
     "divisions": [
-      "earth",
-      "planetary",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -18149,7 +18436,7 @@
       "Spectr-Roentgen-Gamma"
     ],
     "divisions": [
-      "heliophysics"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -18161,7 +18448,7 @@
       "Stretched Rohini Satellite Series"
     ],
     "divisions": [
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -18290,7 +18577,9 @@
     "aliases": [
       "Stella"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -18396,7 +18685,9 @@
     "aliases": [
       "StriX"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -18406,7 +18697,9 @@
       "STS-1",
       "STS 1"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18416,7 +18709,9 @@
       "STS-100",
       "STS 100"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18425,7 +18720,9 @@
     "aliases": [
       "STS-101"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18435,7 +18732,9 @@
       "STS-102",
       "STS 102"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18445,7 +18744,9 @@
       "STS-103",
       "STS 103"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18455,7 +18756,9 @@
       "STS-104",
       "STS 104"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18464,7 +18767,9 @@
     "aliases": [
       "STS-105"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18474,7 +18779,9 @@
       "STS-106",
       "STS 106"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18484,7 +18791,9 @@
       "STS-107",
       "STS 107"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18493,7 +18802,9 @@
     "aliases": [
       "STS-108"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18502,7 +18813,9 @@
     "aliases": [
       "STS-109"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18512,7 +18825,9 @@
       "STS-110",
       "STS 110"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18522,7 +18837,9 @@
       "STS-111",
       "STS 111"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18532,7 +18849,9 @@
       "STS-112",
       "STS 112"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18541,7 +18860,9 @@
     "aliases": [
       "STS-113"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18550,7 +18871,9 @@
     "aliases": [
       "STS-114"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18560,7 +18883,9 @@
       "STS-115",
       "STS 115"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18570,7 +18895,9 @@
       "STS-116",
       "STS 116"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18580,7 +18907,9 @@
       "STS-117",
       "STS 117"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18589,7 +18918,9 @@
     "aliases": [
       "STS-118"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18599,7 +18930,9 @@
       "STS-119",
       "STS 119"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18608,7 +18941,9 @@
     "aliases": [
       "STS-120"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18617,7 +18952,9 @@
     "aliases": [
       "STS-121"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18626,7 +18963,9 @@
     "aliases": [
       "STS-122"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18635,7 +18974,9 @@
     "aliases": [
       "STS-123"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18644,7 +18985,9 @@
     "aliases": [
       "STS-124"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18654,7 +18997,9 @@
       "STS-125",
       "STS 125"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18663,7 +19008,9 @@
     "aliases": [
       "STS-126"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18673,7 +19020,9 @@
       "STS-127",
       "STS 127"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18683,7 +19032,9 @@
       "STS-128",
       "STS 128"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18693,7 +19044,9 @@
       "STS-129",
       "STS 129"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18702,7 +19055,9 @@
     "aliases": [
       "STS-130"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18711,7 +19066,9 @@
     "aliases": [
       "STS-131"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18720,7 +19077,9 @@
     "aliases": [
       "STS-132"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18730,7 +19089,9 @@
       "STS-133",
       "STS 133"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18740,7 +19101,9 @@
       "STS-134",
       "STS 134"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18750,7 +19113,9 @@
       "STS-135",
       "STS 135"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18759,7 +19124,9 @@
     "aliases": [
       "STS-2"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18768,7 +19135,9 @@
     "aliases": [
       "STS-26"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18777,7 +19146,9 @@
     "aliases": [
       "STS-27"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18787,7 +19158,9 @@
       "STS-28",
       "STS 28"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18797,7 +19170,9 @@
       "STS-29",
       "STS 29"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18807,7 +19182,9 @@
       "STS-3",
       "STS 3"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18817,7 +19194,9 @@
       "STS-30",
       "STS 30"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18826,7 +19205,9 @@
     "aliases": [
       "STS-31"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18836,7 +19217,9 @@
       "STS-32",
       "STS 32"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18845,7 +19228,9 @@
     "aliases": [
       "STS-33"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18855,7 +19240,9 @@
       "STS-34",
       "STS 34"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18864,7 +19251,9 @@
     "aliases": [
       "STS-35"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18874,7 +19263,9 @@
       "STS-36",
       "STS 36"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18884,7 +19275,9 @@
       "STS-37",
       "STS 37"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18894,7 +19287,9 @@
       "STS-38",
       "STS 38"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18904,7 +19299,9 @@
       "STS-39",
       "STS 39"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18914,7 +19311,9 @@
       "STS-4",
       "STS 4"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18923,7 +19322,9 @@
     "aliases": [
       "STS-40"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18933,7 +19334,9 @@
       "STS-41",
       "STS 41"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18942,7 +19345,9 @@
     "aliases": [
       "STS-41B"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18951,7 +19356,9 @@
     "aliases": [
       "STS-41C"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18961,7 +19368,9 @@
       "STS-41D",
       "STS 41D"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18970,7 +19379,9 @@
     "aliases": [
       "STS-41G"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18979,7 +19390,9 @@
     "aliases": [
       "STS-42"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18988,7 +19401,9 @@
     "aliases": [
       "STS-43"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -18997,7 +19412,9 @@
     "aliases": [
       "STS-44"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19006,7 +19423,9 @@
     "aliases": [
       "STS-45"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19015,7 +19434,9 @@
     "aliases": [
       "STS-46"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19024,7 +19445,9 @@
     "aliases": [
       "STS-47"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19034,7 +19457,9 @@
       "STS-48",
       "STS 48"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19044,7 +19469,9 @@
       "STS-49",
       "STS 49"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19053,7 +19480,9 @@
     "aliases": [
       "STS-5"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19063,7 +19492,9 @@
       "STS-50",
       "STS 50"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19073,7 +19504,9 @@
       "STS-51",
       "STS 51"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19083,7 +19516,9 @@
       "STS-51A",
       "STS 51A"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19093,7 +19528,9 @@
       "STS-51B",
       "STS 51B"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19103,7 +19540,12 @@
       "STS-51C",
       "STS 51C"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19113,7 +19555,12 @@
       "STS-51D",
       "STS 51D"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19123,7 +19570,12 @@
       "STS-51F",
       "Spacelab 2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19133,7 +19585,12 @@
       "STS-51G",
       "STS 51G"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19143,7 +19600,12 @@
       "STS-51I",
       "STS 51I"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19152,7 +19614,12 @@
     "aliases": [
       "STS-51J"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19161,7 +19628,12 @@
     "aliases": [
       "STS-51L"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19170,7 +19642,12 @@
     "aliases": [
       "STS-52"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19180,7 +19657,12 @@
       "STS-53",
       "STS 53"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19190,7 +19672,12 @@
       "STS-54",
       "STS 54"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19199,7 +19686,12 @@
     "aliases": [
       "STS-55"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19208,7 +19700,12 @@
     "aliases": [
       "STS-56"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19217,7 +19714,12 @@
     "aliases": [
       "STS-57"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19226,7 +19728,12 @@
     "aliases": [
       "STS-58"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19236,7 +19743,12 @@
       "STS-59",
       "STS 59"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19245,7 +19757,12 @@
     "aliases": [
       "STS-6"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19255,7 +19772,12 @@
       "STS-60",
       "STS 60"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19265,7 +19787,12 @@
       "STS-61",
       "STS 61"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19275,7 +19802,12 @@
       "STS-61A",
       "STS 61A"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19284,7 +19816,12 @@
     "aliases": [
       "STS-61B"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19293,7 +19830,12 @@
     "aliases": [
       "STS-61C"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19302,7 +19844,12 @@
     "aliases": [
       "STS-62"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19311,7 +19858,12 @@
     "aliases": [
       "STS-63"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19321,7 +19873,12 @@
       "STS-64",
       "STS 64"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19330,7 +19887,12 @@
     "aliases": [
       "STS-65"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19340,7 +19902,12 @@
       "STS-66",
       "STS 66"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19349,7 +19916,12 @@
     "aliases": [
       "STS-67"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19359,7 +19931,12 @@
       "STS-68",
       "STS 68"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19368,7 +19945,12 @@
     "aliases": [
       "STS-69"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19378,7 +19960,12 @@
       "STS-7",
       "STS 7"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19387,7 +19974,12 @@
     "aliases": [
       "STS-70"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19397,7 +19989,12 @@
       "STS-71",
       "STS 71"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19407,7 +20004,12 @@
       "STS-72",
       "STS 72"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19417,7 +20019,12 @@
       "STS-73",
       "STS 73"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19427,7 +20034,12 @@
       "STS-74",
       "STS 74"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19437,7 +20049,12 @@
       "STS-75",
       "STS 75"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19446,7 +20063,12 @@
     "aliases": [
       "STS-76"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19456,7 +20078,12 @@
       "STS-77",
       "STS 77"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19466,7 +20093,12 @@
       "STS-78",
       "STS 78"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19475,7 +20107,12 @@
     "aliases": [
       "STS-79"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19485,7 +20122,12 @@
       "STS-8",
       "STS 8"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19495,7 +20137,12 @@
       "STS-80",
       "STS 80"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19504,7 +20151,12 @@
     "aliases": [
       "STS-81"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19513,7 +20165,12 @@
     "aliases": [
       "STS-82"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19523,7 +20180,12 @@
       "STS-83",
       "STS 83"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19533,7 +20195,12 @@
       "STS-84",
       "STS 84"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19542,7 +20209,12 @@
     "aliases": [
       "STS-85"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19552,7 +20224,12 @@
       "STS-86",
       "STS 86"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19562,7 +20239,12 @@
       "STS-87",
       "STS 87"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19572,7 +20254,12 @@
       "STS-88",
       "STS 88"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth",
+      "heliophysics",
+      "astrophysics",
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19582,7 +20269,9 @@
       "STS-89",
       "STS 89"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19593,7 +20282,9 @@
       "STS-41A",
       "Spacelab 1"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19602,7 +20293,9 @@
     "aliases": [
       "STS-90"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19611,7 +20304,9 @@
     "aliases": [
       "STS-91"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19621,7 +20316,9 @@
       "STS-92",
       "STS 92"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19630,7 +20327,9 @@
     "aliases": [
       "STS-93"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19640,7 +20339,9 @@
       "STS-94",
       "STS 94"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19650,7 +20351,9 @@
       "STS-95",
       "STS 95"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19659,7 +20362,9 @@
     "aliases": [
       "STS-96"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19668,7 +20373,9 @@
     "aliases": [
       "STS-97"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19677,7 +20384,9 @@
     "aliases": [
       "STS-98"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19687,7 +20396,9 @@
       "STS-99",
       "STS 99"
     ],
-    "divisions": [],
+    "divisions": [
+      "bps"
+    ],
     "division_source": "openai"
   },
   {
@@ -19697,10 +20408,7 @@
       "STSat",
       "Science and Technology Satellite"
     ],
-    "divisions": [
-      "earth",
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -19710,10 +20418,7 @@
       "STSat-1",
       "STSat 1"
     ],
-    "divisions": [
-      "earth",
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -19723,10 +20428,7 @@
       "STSat 2",
       "STSat-2"
     ],
-    "divisions": [
-      "earth",
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -19736,10 +20438,7 @@
       "STSat 2C",
       "STSat-2C"
     ],
-    "divisions": [
-      "earth",
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -19751,10 +20450,7 @@
       "STSAT-3",
       "Science & Technology SATellite-3"
     ],
-    "divisions": [
-      "earth",
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -19765,7 +20461,7 @@
       "Suisei"
     ],
     "divisions": [
-      "heliophysics"
+      "planetary"
     ],
     "division_source": "openai"
   },
@@ -19845,7 +20541,9 @@
     "aliases": [
       "Surveyor"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19856,7 +20554,9 @@
       "Surveyor i",
       "Surveyor I"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19867,7 +20567,9 @@
       "Surveyor ii",
       "Surveyor II"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19878,7 +20580,9 @@
       "Surveyor iii",
       "Surveyor III"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19889,7 +20593,9 @@
       "Surveyor iv",
       "Surveyor IV"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19900,7 +20606,9 @@
       "Surveyor v",
       "Surveyor V"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19911,7 +20619,9 @@
       "Surveyor vi",
       "Surveyor VI"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19922,7 +20632,9 @@
       "Surveyor vii",
       "Surveyor VII"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19931,7 +20643,9 @@
     "aliases": [
       "Surveyor Model 1"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19940,7 +20654,9 @@
     "aliases": [
       "Surveyor Model 2"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19950,7 +20666,9 @@
       "Surveyor Model SD 1",
       "Surveyor Model SD-1"
     ],
-    "divisions": [],
+    "divisions": [
+      "planetary"
+    ],
     "division_source": "openai"
   },
   {
@@ -19961,7 +20679,6 @@
       "Astro-E2"
     ],
     "divisions": [
-      "heliophysics",
       "astrophysics"
     ],
     "division_source": "openai"
@@ -20101,7 +20818,9 @@
       "TacSat",
       "Tactical Satellite"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -20111,7 +20830,9 @@
       "TacSat 2",
       "TacSat-2"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -20172,7 +20893,9 @@
       "TD 1A",
       "TD-1A"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -20203,7 +20926,9 @@
     "aliases": [
       "Tenma"
     ],
-    "divisions": [],
+    "divisions": [
+      "astrophysics"
+    ],
     "division_source": "openai"
   },
   {
@@ -20275,8 +21000,7 @@
       "TriG GNSS Radio-occultation System"
     ],
     "divisions": [
-      "earth",
-      "heliophysics"
+      "earth"
     ],
     "division_source": "openai"
   },
@@ -20469,7 +21193,6 @@
       "Thermosphere, Ionosphere, Mesosphere Energetics and Dynamics Mission"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -20862,7 +21585,6 @@
       "Upper Atmosphere Radiation Satellite"
     ],
     "divisions": [
-      "earth",
       "heliophysics"
     ],
     "division_source": "openai"
@@ -20936,9 +21658,7 @@
     "aliases": [
       "VaPER"
     ],
-    "divisions": [
-      "heliophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -20948,7 +21668,9 @@
       "VDES Test Mission",
       "VHF Data Exchange System Test Mission"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   },
   {
@@ -20982,7 +21704,7 @@
       "Vela 5A"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -20993,7 +21715,7 @@
       "Vela 5B"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -21004,7 +21726,7 @@
       "Vela 6A/B"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -21270,7 +21992,7 @@
       "Vigil L5"
     ],
     "divisions": [
-      "earth"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -21356,6 +22078,7 @@
       "VOYAGER"
     ],
     "divisions": [
+      "heliophysics",
       "planetary",
       "astrophysics"
     ],
@@ -21368,6 +22091,7 @@
       "Voyager 1"
     ],
     "divisions": [
+      "heliophysics",
       "planetary",
       "astrophysics"
     ],
@@ -21380,6 +22104,7 @@
       "Voyager 1 and 2"
     ],
     "divisions": [
+      "heliophysics",
       "planetary",
       "astrophysics"
     ],
@@ -21392,6 +22117,7 @@
       "Voyager 2"
     ],
     "divisions": [
+      "heliophysics",
       "planetary",
       "astrophysics"
     ],
@@ -21592,8 +22318,7 @@
       "a Balloon Borne X-ray Telescope"
     ],
     "divisions": [
-      "astrophysics",
-      "bps"
+      "astrophysics"
     ],
     "division_source": "openai"
   },
@@ -21645,7 +22370,7 @@
       "X-ray Pulsar Navigation"
     ],
     "divisions": [
-      "astrophysics"
+      "heliophysics"
     ],
     "division_source": "openai"
   },
@@ -21680,9 +22405,7 @@
       "X-Sat",
       "X Sat"
     ],
-    "divisions": [
-      "astrophysics"
-    ],
+    "divisions": [],
     "division_source": "openai"
   },
   {
@@ -21963,7 +22686,9 @@
       "Zi Yuan - 3-03",
       "Zi Yuan 3 Number 3"
     ],
-    "divisions": [],
+    "divisions": [
+      "earth"
+    ],
     "division_source": "openai"
   }
 ]
