@@ -213,6 +213,13 @@ tempCodeRunnerFile.py
 # Ruff stuff:
 .ruff_cache/
 
+# AWS CDK
+cdk.out/
+*.cdk.staging/
+# Lambda deploy artifacts produced by the build script
+requirements-lambda.txt
+app.zip
+
 # PyPI configuration file
 .pypirc
 

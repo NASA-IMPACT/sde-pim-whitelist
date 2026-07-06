@@ -1,0 +1,14 @@
+{
+  "app": "python app.py",
+  "watch": {
+    "include": ["**"],
+    "exclude": ["README.md", "*.pyc", ".venv/**"]
+  },
+  "context": {
+    "github_owner": "REPLACE_WITH_GITHUB_ORG",
+    "github_repo": "sde-pim-whitelist",
+    "@aws-cdk/core:newStyleStackSynthesis": true,
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/core:checkSecretUsage": true
+  }
+}

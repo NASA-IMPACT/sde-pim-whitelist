@@ -1,0 +1,72 @@
+name: deploy
+
+# On merge to main: build the Lambda zip (code + data), upload it to S3, and
+# point the function at it via update-function-code. Static infra (bucket,
+# Lambda, API Gateway, CloudFront) is provisioned separately with CDK — this
+# workflow only ships code+data, so it needs minimal AWS privilege.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "whitelist/classified/**"
+      - "whitelist/*.txt"
+      - "scripts/build_lambda_zip.sh"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/deploy.yml"
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: false
+
+permissions:
+  id-token: write # assume the deploy role via GitHub OIDC
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up uv + Python
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      # PR checks already ran this, but re-running on main is cheap insurance
+      # that what actually ships is green.
+      - name: Tests
+        run: |
+          uv sync --extra api
+          uv run pytest -q
+
+      - name: Build Lambda zip
+        run: bash scripts/build_lambda_zip.sh
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
+
+      - name: Upload artifact to S3
+        run: |
+          KEY="app/${GITHUB_SHA}.zip"
+          aws s3 cp app.zip "s3://${{ secrets.CODE_BUCKET }}/${KEY}"
+          echo "ARTIFACT_KEY=${KEY}" >> "$GITHUB_ENV"
+
+      - name: Update Lambda code
+        run: |
+          aws lambda update-function-code \
+            --function-name pim-api \
+            --s3-bucket "${{ secrets.CODE_BUCKET }}" \
+            --s3-key "${ARTIFACT_KEY}" \
+            --publish
+          aws lambda wait function-updated-v2 --function-name pim-api
+
+      - name: Smoke test through CloudFront
+        run: |
+          curl -fsS "https://${{ secrets.CF_DOMAIN }}/healthz" \
+            | tee /dev/stderr | grep -q '"status": "ok"'

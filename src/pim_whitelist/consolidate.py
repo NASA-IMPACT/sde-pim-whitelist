@@ -72,9 +72,7 @@ _TOKEN_RE = re.compile(r"[0-9]+|[^\W\d_]+", re.UNICODE)
 # Roman numerals (I..XV) that mark a generation/series member, e.g. "ACRIM II".
 # An explicit set keeps real words that happen to be roman-letters-only ("mix",
 # "did", "mild") from being misread as enumerators.
-_ROMAN = frozenset(
-    "i ii iii iv v vi vii viii ix x xi xii xiii xiv xv".split()
-)
+_ROMAN = frozenset("i ii iii iv v vi vii viii ix x xi xii xiii xiv xv".split())
 
 
 def _is_enum_token(token: str) -> bool:

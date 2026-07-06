@@ -12,6 +12,17 @@ dependencies = [
     "requests>=2.31",
 ]
 
+[project.optional-dependencies]
+# Runtime dependencies for the read API only. Deliberately excludes the sync-only
+# deps (click/openai/requests) so the Lambda zip stays lean. This is the set
+# exported to requirements-lambda.txt for the deploy build.
+api = [
+    "fastapi>=0.110",
+    "mangum>=0.17",
+    "pydantic>=2",
+    "pydantic-settings>=2",
+]
+
 [project.scripts]
 pim-whitelist = "pim_whitelist.cli:main"
 
@@ -19,6 +30,12 @@ pim-whitelist = "pim_whitelist.cli:main"
 dev = [
     "pytest>=8.0",
     "pre-commit>=3.8",
+    # API test/dev tooling: TestClient needs httpx; local run needs uvicorn.
+    "httpx>=0.27",
+    "uvicorn>=0.30",
+    "fastapi>=0.110",
+    "mangum>=0.17",
+    "pydantic-settings>=2",
 ]
 
 [build-system]
