@@ -47,14 +47,26 @@ class BootstrapStack(Stack):
                 client_ids=["sts.amazonaws.com"],
             )
 
-        subject = f"repo:{github_owner}/{github_repo}:ref:refs/heads/{deploy_branch}"
+        # deploy.yml pins the job to a GitHub Environment (dev/test/prod, same
+        # name as the branch). When a job references an Environment, GitHub's
+        # default OIDC `sub` claim is the ENVIRONMENT form
+        # (`...:environment:dev`), NOT the branch-ref form
+        # (`...:ref:refs/heads/dev`). Trust both so the role is assumable whether
+        # or not the workflow keeps the `environment:` pin — both subjects are
+        # only ever issued from a deploy on this account's branch, so scoping is
+        # unchanged.
+        repo = f"repo:{github_owner}/{github_repo}"
+        subjects = [
+            f"{repo}:environment:{deploy_branch}",
+            f"{repo}:ref:refs/heads/{deploy_branch}",
+        ]
         principal = iam.OpenIdConnectPrincipal(provider).with_conditions(
             {
                 "StringEquals": {
                     "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
                 },
                 "StringLike": {
-                    "token.actions.githubusercontent.com:sub": subject,
+                    "token.actions.githubusercontent.com:sub": subjects,
                 },
             }
         )
