@@ -246,8 +246,8 @@ Share this out-of-band; it is not stored in the repo.
 CF=d2vzyrjsfbe2fn.cloudfront.net   # dev CloudFront domain (from Step 6)
 KEY=<the dev api key value>
 
-# health probe — no key required
-curl -fsS "https://$CF/healthz" | grep -q '"status": "ok"' && echo OK
+# health probe — no key required (grep tolerates compact or spaced JSON)
+curl -fsS "https://$CF/healthz" | grep -Eq '"status": ?"ok"' && echo OK
 
 # a real query — requires the key
 curl -s -H "x-api-key: $KEY" \
@@ -292,6 +292,7 @@ Interactive docs: `https://$CF/docs` (requires the key).
 | `UpdateFunctionCode` fails: `not authorized to perform: s3:GetObject on .../app/<sha>.zip` | `lambda:UpdateFunctionCode` reads the S3 artifact as the **calling** principal, so the deploy role needs `s3:GetObject` (not just `s3:PutObject`) on `app/*`. Fixed in `bootstrap_stack.py`; if your role predates the fix, re-run `cdk deploy -c env=dev PimApiBootstrapStack` (admin creds), then re-run the deploy job. |
 | `/healthz` returns 503 | A sidecar didn't load / the placeholder is still live (no CI deploy yet, or a platform-stack redeploy reverted it). Merge to `dev` to ship real code; check CloudWatch `/aws/lambda/pim-api`. |
 | First smoke test fails but function works | CloudFront still propagating (up to ~15 min on first create). Re-run the job. |
+| Smoke test step exits 1 even though the curl printed `{"status":"ok",...}` | Whitespace-matching bug: the API emits compact JSON (`"status":"ok"`, no space) but an old `grep -q '"status": "ok"'` expected a space. Fixed to `grep -Eq '"status": ?"ok"'` in `deploy.yml`. The deploy itself succeeded — only the assertion was wrong. |
 | `cdk` prints a big `!!` banner: "not been tested with node vXX" | Benign — you're on a newer Node (e.g. v25) than CDK's tested LTS lines (20/22/24). The deploy still works. Silence it with `export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1`, or install Node 22 LTS to match the Prerequisites. |
 | "current credentials could not be used to assume `...cdk-hnb659fds-*-role...`, but are for the right account. Proceeding anyway." | Benign for admin creds — CDK couldn't assume its scoped bootstrap roles so it falls back to your `work` admin identity, which has the rights. Not an error as long as the account ID matches. |
 | `SSM parameter /cdk-bootstrap/hnb659fds/version not found. Has the environment been bootstrapped?` | Step 4 (`cdk bootstrap aws://998871305517/us-east-1`) hasn't run yet in this account/region. Run it, then re-run the `cdk deploy`. |
@@ -373,7 +374,8 @@ Runs on **push to `dev`** when the push touches any path filter (`src/**`,
    --s3-bucket $CODE_BUCKET --s3-key app/<sha>.zip --publish`, then
    `aws lambda wait function-updated-v2` to block until the update settles.
 9. **Smoke test** — `curl -fsS https://$CF_DOMAIN/healthz` must contain
-   `"status": "ok"`, or the job fails red.
+   `"status":"ok"` (matched with a whitespace-tolerant `grep -Eq '"status": ?"ok"'`,
+   since the API emits compact JSON), or the job fails red.
 
 ### Triggering a deploy manually / re-running
 
