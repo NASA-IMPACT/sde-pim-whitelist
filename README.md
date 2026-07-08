@@ -33,6 +33,73 @@ uv run pim-whitelist update --dataset all
 uv run pim-whitelist consolidate --dataset all
 ```
 
+## HTTP read API
+
+Alongside the sync CLI, the repo ships a read-only FastAPI app
+(`pim_whitelist.api.app:app`) that serves the classified whitelists from
+`whitelist/classified/`. The same app runs locally under `uvicorn` and on AWS
+Lambda via `pim_whitelist.api.handler` (see `docs/read-api-architecture.md` and
+`docs/fastapi-lambda-serving.md`).
+
+```bash
+uv sync
+
+# Run locally on :8000 with autoreload:
+uv run uvicorn pim_whitelist.api.app:app --reload --port 8000
+```
+
+Then open <http://localhost:8000/docs> for the interactive Swagger UI.
+
+### Endpoints
+
+All list endpoints live under `/fetch_pims_records` and share one response shape:
+a pagination envelope (`items`, `page`, `page_size`, `total`, `total_pages`) whose
+items are `{canonical_name, aliases[], division[], source ("SDE"|"LLM"), type}`.
+Each response carries an `ETag` and `Cache-Control` so an edge cache can honor
+`If-None-Match` → `304`.
+
+| Method + path                         | Description                                  |
+| ------------------------------------- | -------------------------------------------- |
+| `GET /healthz`                        | Readiness probe (no auth); `200` when every dataset loaded ≥1 record, else `503` with per-type counts. |
+| `GET /fetch_pims_records`             | All PIMs, flat + paginated (each item carries a `type`). |
+| `GET /fetch_pims_records/instruments` | Instruments only.                            |
+| `GET /fetch_pims_records/platforms`   | Platforms only.                              |
+| `GET /fetch_pims_records/missions`    | Missions only.                               |
+
+Query params (list endpoints): `page` (≥1, default 1), `page_size` (50–100,
+default 50), and `division` (`earth`/`heliophysics`/`planetary`/`astrophysics`/`bps`).
+Out-of-range or unknown values return `422`.
+
+```bash
+BASE=http://localhost:8000
+
+# Readiness probe
+curl -s $BASE/healthz | jq
+
+# All PIMs (default page=1, page_size=50)
+curl -s "$BASE/fetch_pims_records" | jq
+
+# A single type, paginated
+curl -s "$BASE/fetch_pims_records/missions?page=2&page_size=100" | jq '.page, .total, .total_pages'
+
+# Division filter
+curl -s "$BASE/fetch_pims_records/instruments?division=earth" | jq '.total'
+
+# Conditional GET: grab the ETag, send it back → 304
+ETAG=$(curl -sI "$BASE/fetch_pims_records/platforms" | tr -d '\r' | awk -F': ' 'tolower($1)=="etag"{print $2}')
+curl -s -o /dev/null -w "%{http_code}\n" -H "If-None-Match: $ETAG" "$BASE/fetch_pims_records/platforms"
+```
+
+### Configuration
+
+Settings are read from `PIM_*` env vars (or a local `.env` off-Lambda):
+
+| Env var             | Default               | Effect                                            |
+| ------------------- | --------------------- | ------------------------------------------------- |
+| `PIM_DATA_DIR`      | `whitelist/classified`| Directory holding `{instruments,platforms,missions}.json`. |
+| `PIM_CORS_ORIGINS`  | `["*"]`               | Browser origins allowed by CORS (JSON list).      |
+| `PIM_CACHE_MAX_AGE` | `300`                 | `Cache-Control` max-age (seconds); `0` disables edge/client caching. |
+
 ## Sources
 
 | Dataset      | Source(s)                                                                                | Format            |

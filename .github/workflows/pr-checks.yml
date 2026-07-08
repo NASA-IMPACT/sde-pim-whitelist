@@ -1,10 +1,11 @@
 name: pr-checks
 
-# Quality gate for pull requests into main. No AWS access. Make the `quality`
-# job a required status check in the branch protection rules for `main`.
+# Quality gate for pull requests into any deploy branch. No AWS access. Make the
+# `quality` job a required status check in the branch protection rules for
+# `dev`, `test`, and `prod`.
 on:
   pull_request:
-    branches: [main]
+    branches: [dev, test, prod]
 
 jobs:
   quality:

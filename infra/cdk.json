@@ -5,8 +5,14 @@
     "exclude": ["README.md", "*.pyc", ".venv/**"]
   },
   "context": {
-    "github_owner": "REPLACE_WITH_GITHUB_ORG",
+    "github_owner": "NASA-IMPACT",
     "github_repo": "sde-pim-whitelist",
+    "environments": {
+      "dev": { "account": "998871305517", "branch": "dev" },
+      "test": { "account": "119417011911", "branch": "test" },
+      "prod": { "account": "756157247091", "branch": "prod" }
+    },
+    "@aws-cdk/core:bootstrapQualifier": "sde",
     "@aws-cdk/core:newStyleStackSynthesis": true,
     "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
     "@aws-cdk/core:checkSecretUsage": true

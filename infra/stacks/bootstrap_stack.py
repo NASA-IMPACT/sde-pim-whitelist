@@ -3,8 +3,9 @@
 Deployed once per account with admin credentials, separately from the app stacks
 (you cannot use the deploy role to create the deploy role). The role is what the
 `deploy.yml` GitHub Actions workflow assumes via OIDC; its trust is scoped to the
-repo's ``main`` ref so only post-merge runs can assume it, and its permissions are
-limited to pushing the code artifact and updating the one Lambda.
+env's deploy branch (``dev``/``test``/``prod``) so only post-merge runs on
+that branch can assume it, and its permissions are limited to pushing the code
+artifact and updating the one Lambda.
 """
 
 from __future__ import annotations
@@ -24,21 +25,29 @@ class BootstrapStack(Stack):
         *,
         github_owner: str,
         github_repo: str,
+        deploy_branch: str,
+        oidc_provider_arn: str | None = None,
         **kwargs,
     ) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
-        # If the account already has a GitHub OIDC provider, import it instead of
-        # creating a second one (only one provider per URL is allowed per account):
-        #   iam.OpenIdConnectProvider.from_open_id_connect_provider_arn(...)
-        provider = iam.OpenIdConnectProvider(
-            self,
-            "GitHubOidcProvider",
-            url="https://token.actions.githubusercontent.com",
-            client_ids=["sts.amazonaws.com"],
-        )
+        # Only one OIDC provider per URL is allowed per account. When an ARN is
+        # given (the default in this multi-account setup — every target account
+        # already has a provider from sde-elastic-wrapper) import it; otherwise
+        # create one for a brand-new account (app: -c create_oidc=true).
+        if oidc_provider_arn:
+            provider = iam.OpenIdConnectProvider.from_open_id_connect_provider_arn(
+                self, "GitHubOidcProvider", oidc_provider_arn
+            )
+        else:
+            provider = iam.OpenIdConnectProvider(
+                self,
+                "GitHubOidcProvider",
+                url="https://token.actions.githubusercontent.com",
+                client_ids=["sts.amazonaws.com"],
+            )
 
-        subject = f"repo:{github_owner}/{github_repo}:ref:refs/heads/main"
+        subject = f"repo:{github_owner}/{github_repo}:ref:refs/heads/{deploy_branch}"
         principal = iam.OpenIdConnectPrincipal(provider).with_conditions(
             {
                 "StringEquals": {
@@ -56,7 +65,7 @@ class BootstrapStack(Stack):
             role_name="pim-api-github-deploy",
             assumed_by=principal,
             max_session_duration=Duration.hours(1),
-            description="Assumed by GitHub Actions (main branch) to deploy the PIM API",
+            description="Assumed by GitHub Actions (deploy branch) to deploy the PIM API",
         )
 
         bucket_arn = f"arn:aws:s3:::{code_bucket_name()}"
