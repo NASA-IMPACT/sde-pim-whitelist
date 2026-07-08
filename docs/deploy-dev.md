@@ -42,7 +42,9 @@ account. That is your safety net against a wrong-account deploy.
   **admin-level** credentials in account `998871305517` (admin is only needed for
   this one-time bootstrap; CI later uses the tightly-scoped `pim-api-github-deploy`
   role).
-- **Node.js 20 or 22 LTS** — the CDK CLI is a Node tool.
+- **Node.js 22 or 24 LTS** — the CDK CLI is a Node tool (20 also works but is
+  deprecated; newer non-LTS versions like 25 only print an untested-version
+  warning — see troubleshooting).
 - **Python 3.12**.
 - **GitHub access** to `NASA-IMPACT/sde-pim-whitelist` with permission to create
   Environments, add secrets, and set branch protection.
@@ -143,12 +145,18 @@ to finish globally on first create.
 
 Copy these from the CDK output (you'll need them in Part 2 and Part 4):
 
-| CDK output | Use it as | Expected dev value |
+| CDK output | Use it as | Actual dev value (from the initial deploy) |
 |---|---|---|
 | `PimApiBootstrapStack.DeployRoleArn` | GitHub secret `AWS_DEPLOY_ROLE_ARN` | `arn:aws:iam::998871305517:role/pim-api-github-deploy` |
 | `PimApiPlatformStack.CodeBucketName` | GitHub secret `CODE_BUCKET` | `pim-api-code-998871305517-us-east-1` |
-| `PimApiEdgeStack.CloudFrontDomain` | GitHub secret `CF_DOMAIN` | `dxxxx.cloudfront.net` |
-| `PimApiEdgeStack.ApiKeyId` | fetch key value in Part 4 | (an API key ID) |
+| `PimApiEdgeStack.CloudFrontDomain` | GitHub secret `CF_DOMAIN` | `d2vzyrjsfbe2fn.cloudfront.net` |
+| `PimApiEdgeStack.ApiKeyId` | fetch key value in Part 4 | `umhd5so9q8` |
+| `PimApiEdgeStack.RestApiUrl` | direct origin URL (bypasses CloudFront/API key) | `https://a6sloobw0j.execute-api.us-east-1.amazonaws.com/prod/` |
+
+> These are the concrete outputs recorded from the first `cdk deploy` of the dev
+> account. The CloudFront domain and API-key **ID** are stable identifiers (not the
+> key **value**, which is fetched out-of-band in Step 9). If you re-create the edge
+> stack from scratch they will change — re-read them from the `cdk deploy` output.
 
 ---
 
@@ -164,7 +172,7 @@ selects the `dev` Environment automatically for pushes to the `dev` branch):
 |---|---|
 | `AWS_DEPLOY_ROLE_ARN` | `arn:aws:iam::998871305517:role/pim-api-github-deploy` |
 | `CODE_BUCKET` | `pim-api-code-998871305517-us-east-1` |
-| `CF_DOMAIN` | that dev `dxxxx.cloudfront.net` |
+| `CF_DOMAIN` | `d2vzyrjsfbe2fn.cloudfront.net` |
 
 Optional repo **variable** `AWS_REGION=us-east-1` (the workflow already defaults
 to `us-east-1` if unset).
@@ -235,7 +243,7 @@ Share this out-of-band; it is not stored in the repo.
 ### Step 10 — Call the deployed dev endpoints
 
 ```bash
-CF=<dev CloudFront domain>
+CF=d2vzyrjsfbe2fn.cloudfront.net   # dev CloudFront domain (from Step 6)
 KEY=<the dev api key value>
 
 # health probe — no key required
@@ -279,10 +287,13 @@ Interactive docs: `https://$CF/docs` (requires the key).
 | `cdk deploy` errors that credentials don't match the account | Your `work` profile isn't in `998871305517`. Re-run `aws sts get-caller-identity --profile work`. The pinned account in `cdk.json` is refusing the mismatch (working as intended). |
 | `EntityAlreadyExists` on the OIDC provider | You passed `-c create_oidc=true` but the provider already exists. Drop the flag — the default import path is correct for dev. |
 | Bootstrap stack deploy fails on the OIDC provider not found | The provider genuinely doesn't exist. Re-run Step 5's first command **with** `-c create_oidc=true`. |
-| Deploy workflow can't assume the role | `AWS_DEPLOY_ROLE_ARN` wrong, or the push wasn't on the `dev` branch — the role only trusts `refs/heads/dev` of `NASA-IMPACT/sde-pim-whitelist`. |
+| Deploy step fails: `Could not assume role with OIDC: Not authorized to perform sts:AssumeRoleWithWebIdentity` | The token's `sub` doesn't match the role's trust policy. Most common cause: the `deploy` job pins `environment: dev`, so GitHub sends the **environment** sub (`repo:NASA-IMPACT/sde-pim-whitelist:environment:dev`), not the branch-ref sub. The bootstrap stack now trusts **both** — if you deployed the role before this fix, re-run `cdk deploy -c env=dev PimApiBootstrapStack` (admin creds) to update the trust policy, then re-run the deploy job. Also verify `AWS_DEPLOY_ROLE_ARN` is set in the **dev Environment** (not repo-level) and the push was on the `dev` branch. |
 | `update-function-code` AccessDenied | Re-run `cdk deploy -c env=dev PimApiBootstrapStack` (the deploy role's permissions live there). |
 | `/healthz` returns 503 | A sidecar didn't load / the placeholder is still live (no CI deploy yet, or a platform-stack redeploy reverted it). Merge to `dev` to ship real code; check CloudWatch `/aws/lambda/pim-api`. |
 | First smoke test fails but function works | CloudFront still propagating (up to ~15 min on first create). Re-run the job. |
+| `cdk` prints a big `!!` banner: "not been tested with node vXX" | Benign — you're on a newer Node (e.g. v25) than CDK's tested LTS lines (20/22/24). The deploy still works. Silence it with `export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1`, or install Node 22 LTS to match the Prerequisites. |
+| "current credentials could not be used to assume `...cdk-hnb659fds-*-role...`, but are for the right account. Proceeding anyway." | Benign for admin creds — CDK couldn't assume its scoped bootstrap roles so it falls back to your `work` admin identity, which has the rights. Not an error as long as the account ID matches. |
+| `SSM parameter /cdk-bootstrap/hnb659fds/version not found. Has the environment been bootstrapped?` | Step 4 (`cdk bootstrap aws://998871305517/us-east-1`) hasn't run yet in this account/region. Run it, then re-run the `cdk deploy`. |
 
 See also `docs/deploy-three-account.md` (full promotion flow) and `docs/deploy.md`
 (single-account reference this guide specializes).
@@ -303,13 +314,18 @@ AWS with short-lived credentials via **OIDC**.
 
 1. The `deploy` job requests a signed **OIDC token** from GitHub (enabled by
    `permissions: id-token: write` in the workflow).
-2. The token's `sub` claim is `repo:NASA-IMPACT/sde-pim-whitelist:ref:refs/heads/dev`.
+2. Because the `deploy` job pins `environment: dev`, GitHub issues the token with
+   the **environment-form** `sub` claim
+   `repo:NASA-IMPACT/sde-pim-whitelist:environment:dev` — **not** the branch-ref
+   form `...:ref:refs/heads/dev`. (An `environment:` pin always wins the `sub`
+   claim.) The deploy role therefore trusts **both** subjects; both are only ever
+   issued from a dev-branch deploy, so the scoping is identical.
 3. `aws-actions/configure-aws-credentials@v4` presents it to AWS STS and assumes
    `AWS_DEPLOY_ROLE_ARN`.
 4. The `pim-api-github-deploy` role (from `PimApiBootstrapStack`) trusts the dev
-   account's OIDC provider **only** for that exact `sub` — so only a push on the
-   `dev` branch of this repo can assume it. A fork, another branch, or another
-   repo cannot.
+   account's OIDC provider **only** for those exact subjects — so only a deploy on
+   the `dev` branch/environment of this repo can assume it. A fork, another branch,
+   or another repo cannot.
 5. STS returns 1-hour credentials scoped to just `s3:PutObject` on `app/*` and a
    few `lambda:*` actions on `pim-api`. Nothing wider.
 
