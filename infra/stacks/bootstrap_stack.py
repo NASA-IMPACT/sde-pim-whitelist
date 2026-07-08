@@ -85,10 +85,12 @@ class BootstrapStack(Stack):
             f"arn:aws:lambda:{self.region}:{self.account}:function:{FUNCTION_NAME}"
         )
 
-        # Push the built artifact under app/ in the code bucket.
+        # Push the built artifact under app/ in the code bucket, and read it back:
+        # `lambda:UpdateFunctionCode` with an S3 source validates that the CALLING
+        # principal can GetObject the artifact, so PutObject alone is not enough.
         role.add_to_policy(
             iam.PolicyStatement(
-                actions=["s3:PutObject"],
+                actions=["s3:PutObject", "s3:GetObject"],
                 resources=[f"{bucket_arn}/app/*"],
             )
         )

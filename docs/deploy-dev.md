@@ -289,6 +289,7 @@ Interactive docs: `https://$CF/docs` (requires the key).
 | Bootstrap stack deploy fails on the OIDC provider not found | The provider genuinely doesn't exist. Re-run Step 5's first command **with** `-c create_oidc=true`. |
 | Deploy step fails: `Could not assume role with OIDC: Not authorized to perform sts:AssumeRoleWithWebIdentity` | The token's `sub` doesn't match the role's trust policy. Most common cause: the `deploy` job pins `environment: dev`, so GitHub sends the **environment** sub (`repo:NASA-IMPACT/sde-pim-whitelist:environment:dev`), not the branch-ref sub. The bootstrap stack now trusts **both** — if you deployed the role before this fix, re-run `cdk deploy -c env=dev PimApiBootstrapStack` (admin creds) to update the trust policy, then re-run the deploy job. Also verify `AWS_DEPLOY_ROLE_ARN` is set in the **dev Environment** (not repo-level) and the push was on the `dev` branch. |
 | `update-function-code` AccessDenied | Re-run `cdk deploy -c env=dev PimApiBootstrapStack` (the deploy role's permissions live there). |
+| `UpdateFunctionCode` fails: `not authorized to perform: s3:GetObject on .../app/<sha>.zip` | `lambda:UpdateFunctionCode` reads the S3 artifact as the **calling** principal, so the deploy role needs `s3:GetObject` (not just `s3:PutObject`) on `app/*`. Fixed in `bootstrap_stack.py`; if your role predates the fix, re-run `cdk deploy -c env=dev PimApiBootstrapStack` (admin creds), then re-run the deploy job. |
 | `/healthz` returns 503 | A sidecar didn't load / the placeholder is still live (no CI deploy yet, or a platform-stack redeploy reverted it). Merge to `dev` to ship real code; check CloudWatch `/aws/lambda/pim-api`. |
 | First smoke test fails but function works | CloudFront still propagating (up to ~15 min on first create). Re-run the job. |
 | `cdk` prints a big `!!` banner: "not been tested with node vXX" | Benign — you're on a newer Node (e.g. v25) than CDK's tested LTS lines (20/22/24). The deploy still works. Silence it with `export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1`, or install Node 22 LTS to match the Prerequisites. |
@@ -326,8 +327,10 @@ AWS with short-lived credentials via **OIDC**.
    account's OIDC provider **only** for those exact subjects — so only a deploy on
    the `dev` branch/environment of this repo can assume it. A fork, another branch,
    or another repo cannot.
-5. STS returns 1-hour credentials scoped to just `s3:PutObject` on `app/*` and a
-   few `lambda:*` actions on `pim-api`. Nothing wider.
+5. STS returns 1-hour credentials scoped to just `s3:PutObject`/`s3:GetObject` on
+   `app/*` (GetObject is required because `lambda:UpdateFunctionCode` reads the
+   artifact as the calling principal) and a few `lambda:*` actions on `pim-api`.
+   Nothing wider.
 
 This is why Part 1 records `DeployRoleArn` and Part 2 sets it as a secret — the
 trust (branch → account) is established in AWS, the ARN pointer lives in GitHub.

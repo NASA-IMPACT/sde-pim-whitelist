@@ -12,6 +12,13 @@ subjects. This runbook applies it to the live dev account and re-runs the deploy
 > Both subjects are only ever issued from a deploy on this account's branch, so the
 > scoping is unchanged.
 
+> **Second fix bundled in the same redeploy.** `bootstrap_stack.py` also now grants
+> the deploy role `s3:GetObject` (not just `s3:PutObject`) on `app/*`.
+> `lambda:UpdateFunctionCode` reads the S3 artifact **as the calling principal**, so
+> without GetObject the deploy fails with
+> `not authorized to perform: s3:GetObject on .../app/<sha>.zip` — *after* OIDC
+> already succeeded. Step 1 below applies both fixes at once.
+
 ---
 
 ## 1. Redeploy the bootstrap stack (updates the role's trust policy)
@@ -47,6 +54,13 @@ You want to see **both** subjects listed:
 ```
 repo:NASA-IMPACT/sde-pim-whitelist:environment:dev
 repo:NASA-IMPACT/sde-pim-whitelist:ref:refs/heads/dev
+```
+
+And confirm the deploy role can now read the artifact (both actions present):
+
+```bash
+aws iam list-role-policies --role-name pim-api-github-deploy --profile work
+# then inspect the inline policy and check for s3:PutObject AND s3:GetObject on app/*
 ```
 
 ## 3. Confirm the secret is on the dev Environment
