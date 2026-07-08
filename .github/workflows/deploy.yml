@@ -75,7 +75,33 @@ jobs:
           aws lambda wait function-updated-v2 --function-name pim-api
 
       - name: Smoke test through CloudFront
+        env:
+          CF: ${{ vars.CF_DOMAIN || secrets.CF_DOMAIN }}
         run: |
           # -E + `: ?` tolerates compact JSON ("status":"ok") and spaced ("status": "ok").
-          curl -fsS "https://${{ secrets.CF_DOMAIN }}/healthz" \
+          curl -fsS "https://${CF}/healthz" \
             | tee /dev/stderr | grep -Eq '"status": ?"ok"'
+
+      - name: Output deployment info
+        if: success()
+        # CF_DOMAIN is a public DNS name — store it as an Environment *variable*
+        # (not a secret) so it prints here. If it's still a secret, GitHub masks it
+        # as *** in the log.
+        env:
+          CF: ${{ vars.CF_DOMAIN || secrets.CF_DOMAIN }}
+        run: |
+          ACCOUNT="$(aws sts get-caller-identity --query Account --output text)"
+          echo "=========================================="
+          echo "✅ Deployment Complete!"
+          echo "=========================================="
+          echo "Environment: ${{ github.ref_name }}"
+          echo "AWS Account: ${ACCOUNT}"
+          echo "Lambda Function: pim-api"
+          echo "Commit: ${GITHUB_SHA:0:7}"
+          echo ""
+          echo "🌐 CloudFront Domain: https://${CF}"
+          echo "❤️  Health Check: https://${CF}/healthz"
+          echo "🔍 Records API: https://${CF}/fetch_pims_records"
+          echo "📖 API Docs: https://${CF}/docs"
+          echo ""
+          echo "🔑 API key required (x-api-key header) — issued via API Gateway usage plan (sensitive — not printed)"
