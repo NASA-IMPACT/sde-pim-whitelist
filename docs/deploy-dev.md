@@ -194,8 +194,9 @@ to `us-east-1` if unset).
 ## Part 3 — First deploy to dev (and every deploy after)
 
 Deploys to dev are fully automated by `.github/workflows/deploy.yml`, triggered by
-a push to the **`dev`** branch that touches `src/**`,
-`whitelist/classified/**`, `whitelist/*.txt`, the build script, or deps.
+**any push to the `dev` branch** — i.e. every merge into `dev` ships, with no path
+filter. The job re-runs the tests first and aborts before deploying if they fail,
+so a merge only reaches the Lambda if its code is green.
 
 ```
 open a PR into dev ─► pr-checks (pre-commit + pytest) green ─► merge to dev
@@ -215,7 +216,7 @@ To trigger the very first real deploy:
 ```bash
 git checkout dev
 git pull
-# merge a feature branch (or a trivial change touching src/**) into dev via PR
+# merge any feature branch into dev via PR (any merge triggers a deploy)
 git push
 ```
 
@@ -246,8 +247,8 @@ Share this out-of-band; it is not stored in the repo.
 CF=d2vzyrjsfbe2fn.cloudfront.net   # dev CloudFront domain (from Step 6)
 KEY=<the dev api key value>
 
-# health probe — no key required
-curl -fsS "https://$CF/healthz" | grep -q '"status": "ok"' && echo OK
+# health probe — no key required (grep tolerates compact or spaced JSON)
+curl -fsS "https://$CF/healthz" | grep -Eq '"status": ?"ok"' && echo OK
 
 # a real query — requires the key
 curl -s -H "x-api-key: $KEY" \
@@ -292,6 +293,7 @@ Interactive docs: `https://$CF/docs` (requires the key).
 | `UpdateFunctionCode` fails: `not authorized to perform: s3:GetObject on .../app/<sha>.zip` | `lambda:UpdateFunctionCode` reads the S3 artifact as the **calling** principal, so the deploy role needs `s3:GetObject` (not just `s3:PutObject`) on `app/*`. Fixed in `bootstrap_stack.py`; if your role predates the fix, re-run `cdk deploy -c env=dev PimApiBootstrapStack` (admin creds), then re-run the deploy job. |
 | `/healthz` returns 503 | A sidecar didn't load / the placeholder is still live (no CI deploy yet, or a platform-stack redeploy reverted it). Merge to `dev` to ship real code; check CloudWatch `/aws/lambda/pim-api`. |
 | First smoke test fails but function works | CloudFront still propagating (up to ~15 min on first create). Re-run the job. |
+| Smoke test step exits 1 even though the curl printed `{"status":"ok",...}` | Whitespace-matching bug: the API emits compact JSON (`"status":"ok"`, no space) but an old `grep -q '"status": "ok"'` expected a space. Fixed to `grep -Eq '"status": ?"ok"'` in `deploy.yml`. The deploy itself succeeded — only the assertion was wrong. |
 | `cdk` prints a big `!!` banner: "not been tested with node vXX" | Benign — you're on a newer Node (e.g. v25) than CDK's tested LTS lines (20/22/24). The deploy still works. Silence it with `export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1`, or install Node 22 LTS to match the Prerequisites. |
 | "current credentials could not be used to assume `...cdk-hnb659fds-*-role...`, but are for the right account. Proceeding anyway." | Benign for admin creds — CDK couldn't assume its scoped bootstrap roles so it falls back to your `work` admin identity, which has the rights. Not an error as long as the account ID matches. |
 | `SSM parameter /cdk-bootstrap/hnb659fds/version not found. Has the environment been bootstrapped?` | Step 4 (`cdk bootstrap aws://998871305517/us-east-1`) hasn't run yet in this account/region. Run it, then re-run the `cdk deploy`. |
@@ -350,10 +352,10 @@ the merge — and therefore blocks the deploy, since deploy only fires *after* m
 
 ### The deploy — `deploy.yml`, step by step
 
-Runs on **push to `dev`** when the push touches any path filter (`src/**`,
-`whitelist/classified/**`, `whitelist/*.txt`, `scripts/build_lambda_zip.sh`,
-`pyproject.toml`, `uv.lock`, or the workflow itself). A docs-only merge does
-**not** redeploy.
+Runs on **every push to `dev`** (every merge) — there is no `paths:` filter, so
+even a docs-only merge redeploys. It also exposes `workflow_dispatch` for
+on-demand runs from the Actions tab. The Tests step (below) is the gate: a merge
+of failing code aborts before the Lambda is touched.
 
 1. The job resolves `environment: dev` (from the `github.ref_name == ...` ternary),
    so `secrets.AWS_DEPLOY_ROLE_ARN`, `secrets.CODE_BUCKET`, and `secrets.CF_DOMAIN`
@@ -373,15 +375,16 @@ Runs on **push to `dev`** when the push touches any path filter (`src/**`,
    --s3-bucket $CODE_BUCKET --s3-key app/<sha>.zip --publish`, then
    `aws lambda wait function-updated-v2` to block until the update settles.
 9. **Smoke test** — `curl -fsS https://$CF_DOMAIN/healthz` must contain
-   `"status": "ok"`, or the job fails red.
+   `"status":"ok"` (matched with a whitespace-tolerant `grep -Eq '"status": ?"ok"'`,
+   since the API emits compact JSON), or the job fails red.
 
 ### Triggering a deploy manually / re-running
 
-- **Normal:** merge a PR into `dev` (Part 3).
+- **Normal:** merge a PR into `dev` (Part 3) — any merge deploys.
 - **Force a redeploy without code changes** (e.g. to overwrite a placeholder after
-  a platform-stack redeploy): push an empty-ish change that hits a path filter, or
-  from the **Actions** tab open the failed/last **deploy** run and click
-  **Re-run jobs** (re-runs on the same commit).
+  a platform-stack redeploy): from the **Actions** tab open the **deploy** workflow
+  and click **Run workflow** (the `workflow_dispatch` trigger), or open the last
+  **deploy** run and click **Re-run jobs** (re-runs on the same commit).
 - **Watch it:** repo **Actions** tab → **deploy** workflow → the `dev`-branch run.
 
 ### First-run ordering gotcha
