@@ -7,16 +7,16 @@ name: deploy
 # code+data, so it needs minimal AWS privilege. Per-account credentials and
 # targets come from the GitHub Environment selected below.
 on:
+  # Every push to a deploy branch (i.e. every merge into dev/test/prod) deploys.
+  # No `paths:` filter: a merge must always ship, even a docs-only one, so the
+  # live function never lags the branch. The job re-runs the tests first and
+  # aborts before deploying if they fail, so "merge => deploy" still means
+  # "merge of green code => deploy".
   push:
     branches: [dev, test, prod]
-    paths:
-      - "src/**"
-      - "whitelist/classified/**"
-      - "whitelist/*.txt"
-      - "scripts/build_lambda_zip.sh"
-      - "pyproject.toml"
-      - "uv.lock"
-      - ".github/workflows/deploy.yml"
+  # Allow on-demand deploys from the Actions tab (e.g. to restore live code after
+  # a platform-stack redeploy reverted the Lambda to its placeholder).
+  workflow_dispatch:
 
 concurrency:
   group: deploy-${{ github.ref_name }}

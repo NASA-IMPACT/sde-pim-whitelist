@@ -194,8 +194,9 @@ to `us-east-1` if unset).
 ## Part 3 — First deploy to dev (and every deploy after)
 
 Deploys to dev are fully automated by `.github/workflows/deploy.yml`, triggered by
-a push to the **`dev`** branch that touches `src/**`,
-`whitelist/classified/**`, `whitelist/*.txt`, the build script, or deps.
+**any push to the `dev` branch** — i.e. every merge into `dev` ships, with no path
+filter. The job re-runs the tests first and aborts before deploying if they fail,
+so a merge only reaches the Lambda if its code is green.
 
 ```
 open a PR into dev ─► pr-checks (pre-commit + pytest) green ─► merge to dev
@@ -215,7 +216,7 @@ To trigger the very first real deploy:
 ```bash
 git checkout dev
 git pull
-# merge a feature branch (or a trivial change touching src/**) into dev via PR
+# merge any feature branch into dev via PR (any merge triggers a deploy)
 git push
 ```
 
@@ -351,10 +352,10 @@ the merge — and therefore blocks the deploy, since deploy only fires *after* m
 
 ### The deploy — `deploy.yml`, step by step
 
-Runs on **push to `dev`** when the push touches any path filter (`src/**`,
-`whitelist/classified/**`, `whitelist/*.txt`, `scripts/build_lambda_zip.sh`,
-`pyproject.toml`, `uv.lock`, or the workflow itself). A docs-only merge does
-**not** redeploy.
+Runs on **every push to `dev`** (every merge) — there is no `paths:` filter, so
+even a docs-only merge redeploys. It also exposes `workflow_dispatch` for
+on-demand runs from the Actions tab. The Tests step (below) is the gate: a merge
+of failing code aborts before the Lambda is touched.
 
 1. The job resolves `environment: dev` (from the `github.ref_name == ...` ternary),
    so `secrets.AWS_DEPLOY_ROLE_ARN`, `secrets.CODE_BUCKET`, and `secrets.CF_DOMAIN`
@@ -379,11 +380,11 @@ Runs on **push to `dev`** when the push touches any path filter (`src/**`,
 
 ### Triggering a deploy manually / re-running
 
-- **Normal:** merge a PR into `dev` (Part 3).
+- **Normal:** merge a PR into `dev` (Part 3) — any merge deploys.
 - **Force a redeploy without code changes** (e.g. to overwrite a placeholder after
-  a platform-stack redeploy): push an empty-ish change that hits a path filter, or
-  from the **Actions** tab open the failed/last **deploy** run and click
-  **Re-run jobs** (re-runs on the same commit).
+  a platform-stack redeploy): from the **Actions** tab open the **deploy** workflow
+  and click **Run workflow** (the `workflow_dispatch` trigger), or open the last
+  **deploy** run and click **Re-run jobs** (re-runs on the same commit).
 - **Watch it:** repo **Actions** tab → **deploy** workflow → the `dev`-branch run.
 
 ### First-run ordering gotcha
