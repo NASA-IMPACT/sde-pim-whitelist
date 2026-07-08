@@ -1,0 +1,5 @@
+# CDK app dependencies — kept OUT of the project's pyproject.toml so aws-cdk-lib
+# never lands in the Lambda zip. Install into a dedicated venv:
+#   python -m venv infra/.venv && infra/.venv/bin/pip install -r infra/requirements.txt
+aws-cdk-lib>=2.150,<3
+constructs>=10.0,<11

@@ -1,0 +1,28 @@
+name: pr-checks
+
+# Quality gate for pull requests into any deploy branch. No AWS access. Make the
+# `quality` job a required status check in the branch protection rules for
+# `dev`, `test`, and `prod`.
+on:
+  pull_request:
+    branches: [dev, test, prod]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up uv + Python
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: uv sync --extra api
+
+      - name: Pre-commit (black / isort / flake8 / pyupgrade)
+        run: uv run pre-commit run --all-files
+
+      - name: Tests
+        run: uv run pytest -q

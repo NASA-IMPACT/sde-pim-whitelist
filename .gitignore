@@ -1,5 +1,9 @@
 # Raw upstream response cache (reproducibility snapshots, not source of truth)
-data/raw/
+data/raw/*
+# …except the SDE provenance crawl, which the classifier reads at runtime and
+# must therefore be present in cloud deployments (see classify._provenance_divisions).
+!data/raw/sde_instruments.json
+!data/raw/sde_platforms.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -139,6 +143,8 @@ celerybeat.pid
 *.aof
 *.pid
 
+ #MacOS
+.DS_Store
 # RabbitMQ
 mnesia/
 rabbitmq/
@@ -208,6 +214,13 @@ tempCodeRunnerFile.py
 
 # Ruff stuff:
 .ruff_cache/
+
+# AWS CDK
+cdk.out/
+*.cdk.staging/
+# Lambda deploy artifacts produced by the build script
+requirements-lambda.txt
+app.zip
 
 # PyPI configuration file
 .pypirc
