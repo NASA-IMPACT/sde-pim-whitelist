@@ -76,5 +76,6 @@ jobs:
 
       - name: Smoke test through CloudFront
         run: |
+          # -E + `: ?` tolerates compact JSON ("status":"ok") and spaced ("status": "ok").
           curl -fsS "https://${{ secrets.CF_DOMAIN }}/healthz" \
-            | tee /dev/stderr | grep -q '"status": "ok"'
+            | tee /dev/stderr | grep -Eq '"status": ?"ok"'
