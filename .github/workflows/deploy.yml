@@ -79,7 +79,7 @@ jobs:
           CF: ${{ vars.CF_DOMAIN || secrets.CF_DOMAIN }}
         run: |
           # -E + `: ?` tolerates compact JSON ("status":"ok") and spaced ("status": "ok").
-          curl -fsS "https://${CF}/healthz" \
+          curl -fsS "https://${CF}/health" \
             | tee /dev/stderr | grep -Eq '"status": ?"ok"'
 
       - name: Output deployment info
@@ -100,7 +100,7 @@ jobs:
           echo "Commit: ${GITHUB_SHA:0:7}"
           echo ""
           echo "🌐 CloudFront Domain: https://${CF}"
-          echo "❤️  Health Check: https://${CF}/healthz"
+          echo "❤️  Health Check: https://${CF}/health"
           echo "🔍 Records API: https://${CF}/fetch_pims_records"
           echo "📖 API Docs: https://${CF}/docs"
           echo ""

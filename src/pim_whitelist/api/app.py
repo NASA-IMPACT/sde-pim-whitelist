@@ -1,7 +1,7 @@
 """FastAPI application factory for the PIM read API.
 
 Wires CORS, the ``/fetch_pims_records`` routes, and an unauthenticated
-``/healthz`` readiness probe. The same ``app`` runs locally under ``uvicorn`` and
+``/health`` readiness probe. The same ``app`` runs locally under ``uvicorn`` and
 on Lambda via :mod:`pim_whitelist.api.handler`.
 """
 
@@ -40,8 +40,8 @@ def create_app() -> FastAPI:
 
     app.include_router(routes.router)
 
-    @app.get("/healthz", tags=["meta"], summary="Readiness probe (no auth)")
-    def healthz(
+    @app.get("/health", tags=["meta"], summary="Readiness probe (no auth)")
+    def health(
         index: Annotated[PimIndex, Depends(get_index)],
     ) -> JSONResponse:
         """Structured readiness check.

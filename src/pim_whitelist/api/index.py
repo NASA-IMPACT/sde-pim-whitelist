@@ -45,7 +45,7 @@ class PimIndex:
         """Load and validate all sidecars under ``data_dir``.
 
         Tolerant of a missing file (that type loads empty) so the app can still
-        start and ``/healthz`` can report the gap as 503 rather than crashing the
+        start and ``/health`` can report the gap as 503 rather than crashing the
         whole handler at import time.
         """
         by_type: dict[PimType, list[PimRecord]] = {}

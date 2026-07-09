@@ -171,7 +171,7 @@ open a PR ─► pr-checks (pre-commit + pytest) passes ─► merge to main
           3. assume AWS_DEPLOY_ROLE_ARN via OIDC (no stored keys)
           4. aws s3 cp app.zip  s3://$CODE_BUCKET/app/<git-sha>.zip
           5. aws lambda update-function-code  (points pim-api at the new zip)
-          6. smoke test  https://$CF_DOMAIN/healthz
+          6. smoke test  https://$CF_DOMAIN/health
 ```
 
 Watch it under the repo's **Actions** tab. When the `deploy` job is green, the new
@@ -199,7 +199,7 @@ CF=<your CloudFront domain>
 KEY=<the api key value>
 
 # health probe — no key required
-curl -s "https://$CF/healthz"
+curl -s "https://$CF/health"
 
 # a real query — requires the key
 curl -s -H "x-api-key: $KEY" \
@@ -267,7 +267,7 @@ Or revert the offending commit on `main` and let the pipeline redeploy.
 
 | Symptom | Likely cause / fix |
 |---|---|
-| `/healthz` returns 503 | A sidecar didn't load. Check the zip bundled `whitelist/classified/*.json` at the root; check CloudWatch logs `/aws/lambda/pim-api`. |
+| `/health` returns 503 | A sidecar didn't load. Check the zip bundled `whitelist/classified/*.json` at the root; check CloudWatch logs `/aws/lambda/pim-api`. |
 | Cold-start `invalid ELF header` / `_pydantic_core` import error | The zip was built with non-Linux wheels. The build script pins `manylinux2014`; ensure `LAMBDA_ARCH` matches the CDK function architecture. |
 | Deploy workflow fails assuming the role | `AWS_DEPLOY_ROLE_ARN` wrong, or the OIDC trust `sub` doesn't match — it only trusts `refs/heads/main` of the org/repo in `cdk.json`. |
 | `update-function-code` AccessDenied | Redeploy `PimApiBootstrapStack` (the deploy role's permissions live there). |

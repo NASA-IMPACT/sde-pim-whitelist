@@ -267,7 +267,7 @@ jobs:
 ```
 
 Nothing else in the job body changes: `--function-name pim-api`, the S3 upload,
-and the `/healthz` smoke test all work per-account because the names match.
+and the `/health` smoke test all work per-account because the names match.
 
 ## 5. `.github/workflows/pr-checks.yml` — gate every long-lived branch
 
@@ -389,7 +389,7 @@ Per env (fetch the key once with `aws apigateway get-api-key --api-key <ApiKeyId
 
 ```bash
 CF=<env CloudFront domain>; KEY=<env api key>
-curl -fsS "https://$CF/healthz" | grep -q '"status": "ok"'
+curl -fsS "https://$CF/health" | grep -q '"status": "ok"'
 curl -s -H "x-api-key: $KEY" "https://$CF/fetch_pims_records?page_size=1" | jq '.total'
 ```
 
