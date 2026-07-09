@@ -195,7 +195,7 @@ backs UI "concept" views.
 |---|---|---|
 | `POST` | `/v1/{dataset}/validate` | Bulk "is each of these a known term?" → booleans + canonical. |
 | `GET` | `/v1/stats` | Per-dataset counts, alias totals, data version, build time. |
-| `GET` | `/healthz` | Liveness — index built, file checksums present. (No auth.) |
+| `GET` | `/health` | Liveness — index built, file checksums present. (No auth.) |
 | `GET` | `/v1/openapi.json`, `/docs` | FastAPI auto-generated schema + Swagger UI. |
 
 `validate` is `resolve:batch` minus the concept payload — cheap gate for ingest pipelines.
@@ -293,7 +293,7 @@ cold start, optionally overlay a newer copy from S3 if `WHITELIST_S3_URI` is set
   REST API supports this natively without custom code; the Lambda stays auth-agnostic.
 - Each consumer (batch pipeline, UI backend) gets its own API key → independent throttling and per-key
   CloudWatch metrics. Keys passed via `x-api-key` header.
-- `GET /healthz` (and optionally `/docs`) left unauthenticated for load-balancer/uptime checks.
+- `GET /health` (and optionally `/docs`) left unauthenticated for load-balancer/uptime checks.
 - Add **WAF** (rate-based rule, IP allow/deny) in front if exposed beyond a trusted network.
 - The Lambda still validates input (batch size caps, query length) — defense in depth; never rely on
   the gateway alone for payload sanity.
@@ -461,7 +461,7 @@ End-to-end verification for the **read service (Scenario 1)** once implemented:
    → MISR; canonical vs alias `match_type`; unknown string → `matched: false`; batch ordering preserved.
    Reuse fixtures from `tests/` patterns.
 2. **App (local):** `uvicorn pim_whitelist.api.app:app`; hit `GET /v1/instruments/resolve?q=modis`,
-   `POST /v1/instruments/resolve:batch`, `/v1/platforms/search?q=terra`, `/v1/datasets`, `/healthz`,
+   `POST /v1/instruments/resolve:batch`, `/v1/platforms/search?q=terra`, `/v1/datasets`, `/health`,
    `/docs`. Confirm payload shapes match §8 and ETag/304 works.
 3. **Lambda parity:** `docker build` the image; invoke locally with the Lambda Runtime Interface
    Emulator (RIE) and a sample API Gateway event; confirm Mangum returns correct status/body.

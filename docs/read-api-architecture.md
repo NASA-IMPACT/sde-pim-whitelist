@@ -218,13 +218,13 @@ facet** is applied uniformly: every resolve/search/browse/validate endpoint take
 | `GET` | `/v1/divisions` | The 5 divisions, descriptions, and per-(dataset×division) counts. **New.** |
 | `POST` | `/v1/{dataset}/validate` | Bulk "is each a known term?" → booleans + canonical (+ optional `division`). |
 | `GET` | `/v1/stats` | Per-dataset counts, alias totals, **unclassified count**, data version, build time. |
-| `GET` | `/healthz` | Multi-step readiness probe (see below). **No auth.** |
+| `GET` | `/health` | Multi-step readiness probe (see below). **No auth.** |
 | `GET` | `/docs`, `/v1/openapi.json` | FastAPI Swagger UI + schema. |
 
 `GET /v1/divisions` is sourced directly from `config.DIVISIONS` + `config.DIVISION_DESCRIPTIONS`
 (`config.py:71,95`) joined with the sidecar counts.
 
-**`/healthz` — multi-step readiness, not a bare 200.** Modeled on `sde-elastic-wrapper`'s
+**`/health` — multi-step readiness, not a bare 200.** Modeled on `sde-elastic-wrapper`'s
 `app/api/health.py`, the probe runs ordered checks and returns a structured per-step report, with
 **503** (not 200) if any critical step fails — so a load balancer / deploy gate fails fast on a
 broken image:
@@ -344,7 +344,7 @@ consumer concern); only the resolved `divisions` list is served.
   supports this natively; the Lambda stays auth-agnostic.
 - Each consumer (batch pipeline, UI backend) gets its own key (`x-api-key` header) → independent
   throttling + per-key CloudWatch metrics.
-- `GET /healthz` (and optionally `/docs`) left unauthenticated for uptime checks.
+- `GET /health` (and optionally `/docs`) left unauthenticated for uptime checks.
 - **CloudFront + WAFv2 in front (standard, not optional)** — matching `sde-elastic-wrapper`'s
   `terraform/modules/cdn`: the **AWS Managed Common Rule Set** + a **rate-based rule** (e.g. 1,000
   req / 5 min per IP). The Lambda still validates input (batch caps, query length, division name) —
@@ -549,7 +549,7 @@ End-to-end checks once implemented:
 2. **App (local):** `uvicorn pim_whitelist.api.app:app`; hit `/v1/instruments/resolve?q=modis`,
    `/v1/instruments/resolve?q=modis&division=earth`, `/v1/instruments/resolve:batch`,
    `/v1/platforms/search?q=terra`, `/v1/divisions`, `/v1/datasets?division=heliophysics`,
-   `/v1/stats`, `/healthz`, `/docs`. Confirm shapes match §6 and ETag/304 works.
+   `/v1/stats`, `/health`, `/docs`. Confirm shapes match §6 and ETag/304 works.
 3. **Data consistency:** counts in `/v1/datasets?division=…` and `/v1/divisions` match the
    `classified/*.json` sidecar; `unclassified_count` in `/v1/stats` equals concepts present in the
    `.txt` but missing from the sidecar.
@@ -559,7 +559,7 @@ End-to-end checks once implemented:
 5. **Cold start budget:** log index build time (incl. sidecar join) at import; confirm it is well
    within timeout and acceptable for the UI (provisioned concurrency if p99 too high).
 6. **Auth (deployed):** call without `x-api-key` → 403; throttled key over quota → 429.
-7. **Health probe:** `/healthz` returns 200 with all steps green on a good image; simulate a missing
+7. **Health probe:** `/health` returns 200 with all steps green on a good image; simulate a missing
    sidecar / unreadable file and confirm it returns **503** with the failing step named (§5).
 8. **Contract:** validate `/v1/openapi.json` against expected schema; smoke a real batch from a
    consumer pipeline.

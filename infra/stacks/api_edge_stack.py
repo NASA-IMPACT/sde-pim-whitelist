@@ -2,7 +2,8 @@
 
 The request front door. A REGIONAL REST API (not edge-optimized — CloudFront sits
 in front, so an edge-optimized API would mean double CloudFront) proxies to the
-Lambda. Every route requires an API key except ``/healthz`` (uptime probes). A
+Lambda. Every route requires an API key except ``/health`` (uptime probes) and
+the ``/docs`` + ``/openapi.json`` API documentation (public). A
 CloudFront distribution fronts the API and forwards ``x-api-key`` + query strings
 to the origin; caching is disabled so the usage-plan quota meters every request
 (cache hits would otherwise bypass API Gateway).
@@ -49,12 +50,21 @@ class ApiEdgeStack(Stack):
 
         integration = apigw.LambdaIntegration(lambda_function)
 
-        # /healthz — no API key (uptime / deploy-gate probes).
-        api.root.add_resource("healthz").add_method(
+        # /health — no API key (uptime / deploy-gate probes).
+        api.root.add_resource("health").add_method(
             "GET", integration, api_key_required=False
         )
 
-        # Everything else (incl. /fetch_pims_records, /docs) requires an API key.
+        # Public API documentation — no API key. /docs (Swagger UI) fetches
+        # /openapi.json, so both must be reachable without a key.
+        api.root.add_resource("docs").add_method(
+            "GET", integration, api_key_required=False
+        )
+        api.root.add_resource("openapi.json").add_method(
+            "GET", integration, api_key_required=False
+        )
+
+        # Everything else (incl. /fetch_pims_records) requires an API key.
         api.root.add_method("ANY", integration, api_key_required=True)
         api.root.add_resource("{proxy+}").add_method(
             "ANY", integration, api_key_required=True

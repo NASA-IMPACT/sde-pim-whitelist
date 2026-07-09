@@ -208,7 +208,7 @@ open a PR into dev ─► pr-checks (pre-commit + pytest) green ─► merge to 
           3. assume AWS_DEPLOY_ROLE_ARN via OIDC (no stored keys)
           4. aws s3 cp app.zip s3://pim-api-code-998871305517-us-east-1/app/<sha>.zip
           5. aws lambda update-function-code (points pim-api at the new zip)
-          6. smoke test https://<CF_DOMAIN>/healthz  → must return "status": "ok"
+          6. smoke test https://<CF_DOMAIN>/health  → must return "status": "ok"
 ```
 
 To trigger the very first real deploy:
@@ -248,7 +248,7 @@ CF=d2vzyrjsfbe2fn.cloudfront.net   # dev CloudFront domain (from Step 6)
 KEY=<the dev api key value>
 
 # health probe — no key required (grep tolerates compact or spaced JSON)
-curl -fsS "https://$CF/healthz" | grep -Eq '"status": ?"ok"' && echo OK
+curl -fsS "https://$CF/health" | grep -Eq '"status": ?"ok"' && echo OK
 
 # a real query — requires the key
 curl -s -H "x-api-key: $KEY" \
@@ -291,7 +291,7 @@ Interactive docs: `https://$CF/docs` (requires the key).
 | Deploy step fails: `Could not assume role with OIDC: Not authorized to perform sts:AssumeRoleWithWebIdentity` | The token's `sub` doesn't match the role's trust policy. Most common cause: the `deploy` job pins `environment: dev`, so GitHub sends the **environment** sub (`repo:NASA-IMPACT/sde-pim-whitelist:environment:dev`), not the branch-ref sub. The bootstrap stack now trusts **both** — if you deployed the role before this fix, re-run `cdk deploy -c env=dev PimApiBootstrapStack` (admin creds) to update the trust policy, then re-run the deploy job. Also verify `AWS_DEPLOY_ROLE_ARN` is set in the **dev Environment** (not repo-level) and the push was on the `dev` branch. |
 | `update-function-code` AccessDenied | Re-run `cdk deploy -c env=dev PimApiBootstrapStack` (the deploy role's permissions live there). |
 | `UpdateFunctionCode` fails: `not authorized to perform: s3:GetObject on .../app/<sha>.zip` | `lambda:UpdateFunctionCode` reads the S3 artifact as the **calling** principal, so the deploy role needs `s3:GetObject` (not just `s3:PutObject`) on `app/*`. Fixed in `bootstrap_stack.py`; if your role predates the fix, re-run `cdk deploy -c env=dev PimApiBootstrapStack` (admin creds), then re-run the deploy job. |
-| `/healthz` returns 503 | A sidecar didn't load / the placeholder is still live (no CI deploy yet, or a platform-stack redeploy reverted it). Merge to `dev` to ship real code; check CloudWatch `/aws/lambda/pim-api`. |
+| `/health` returns 503 | A sidecar didn't load / the placeholder is still live (no CI deploy yet, or a platform-stack redeploy reverted it). Merge to `dev` to ship real code; check CloudWatch `/aws/lambda/pim-api`. |
 | First smoke test fails but function works | CloudFront still propagating (up to ~15 min on first create). Re-run the job. |
 | Smoke test step exits 1 even though the curl printed `{"status":"ok",...}` | Whitespace-matching bug: the API emits compact JSON (`"status":"ok"`, no space) but an old `grep -q '"status": "ok"'` expected a space. Fixed to `grep -Eq '"status": ?"ok"'` in `deploy.yml`. The deploy itself succeeded — only the assertion was wrong. |
 | `cdk` prints a big `!!` banner: "not been tested with node vXX" | Benign — you're on a newer Node (e.g. v25) than CDK's tested LTS lines (20/22/24). The deploy still works. Silence it with `export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1`, or install Node 22 LTS to match the Prerequisites. |
@@ -374,7 +374,7 @@ of failing code aborts before the Lambda is touched.
 8. **Update** — `aws lambda update-function-code --function-name pim-api
    --s3-bucket $CODE_BUCKET --s3-key app/<sha>.zip --publish`, then
    `aws lambda wait function-updated-v2` to block until the update settles.
-9. **Smoke test** — `curl -fsS https://$CF_DOMAIN/healthz` must contain
+9. **Smoke test** — `curl -fsS https://$CF_DOMAIN/health` must contain
    `"status":"ok"` (matched with a whitespace-tolerant `grep -Eq '"status": ?"ok"'`,
    since the API emits compact JSON), or the job fails red.
 

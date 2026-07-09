@@ -160,8 +160,8 @@ def test_etag_and_304(small_index):
     assert r2.status_code == 304
 
 
-def test_healthz_ok(small_index):
-    r = _client(small_index).get("/healthz")
+def test_health_ok(small_index):
+    r = _client(small_index).get("/health")
     assert r.status_code == 200
     assert r.json()["status"] == "ok"
 
@@ -183,7 +183,7 @@ def test_data_dir_falls_back_to_repo_root_off_lambda(monkeypatch):
     assert s._default_data_dir() == config.REPO_ROOT / "whitelist" / "classified"
 
 
-def test_healthz_unhealthy_when_a_dataset_empty():
+def test_health_unhealthy_when_a_dataset_empty():
     index = _index(
         {
             PimType.instrument: [
@@ -193,6 +193,6 @@ def test_healthz_unhealthy_when_a_dataset_empty():
             PimType.mission: [],
         }
     )
-    r = _client(index).get("/healthz")
+    r = _client(index).get("/health")
     assert r.status_code == 503
     assert r.json()["status"] == "unhealthy"

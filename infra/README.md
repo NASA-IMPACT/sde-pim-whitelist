@@ -14,7 +14,7 @@ merge to `main` via `aws lambda update-function-code` (see
 | `PimApiEdgeStack` | API Gateway REST (regional) + API key/usage plan + CloudFront | rare |
 
 Request path: **CloudFront → API Gateway (API key) → Lambda (Mangum → FastAPI)**.
-`/healthz` is the only key-free route (uptime/deploy probes).
+`/health` is the only key-free route (uptime/deploy probes).
 
 ## One-time setup (admin credentials)
 
@@ -51,7 +51,7 @@ with consumers out-of-band; it is not stored in the repo.
 ## Deploy flow after setup
 
 `PR → pr-checks (pre-commit + pytest) → merge to main → deploy.yml builds the
-Linux-targeted zip → S3 → update-function-code → smoke test /healthz`.
+Linux-targeted zip → S3 → update-function-code → smoke test /health`.
 
 Infra changes (rare) are applied manually with `npx cdk@2 deploy <stack>` using
 admin credentials — CI is not granted infra privileges. Because the deploy

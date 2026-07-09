@@ -60,7 +60,7 @@ Each response carries an `ETag` and `Cache-Control` so an edge cache can honor
 
 | Method + path                         | Description                                  |
 | ------------------------------------- | -------------------------------------------- |
-| `GET /healthz`                        | Readiness probe (no auth); `200` when every dataset loaded ≥1 record, else `503` with per-type counts. |
+| `GET /health`                        | Readiness probe (no auth); `200` when every dataset loaded ≥1 record, else `503` with per-type counts. |
 | `GET /fetch_pims_records`             | All PIMs, flat + paginated (each item carries a `type`). |
 | `GET /fetch_pims_records/instruments` | Instruments only.                            |
 | `GET /fetch_pims_records/platforms`   | Platforms only.                              |
@@ -74,7 +74,7 @@ Out-of-range or unknown values return `422`.
 BASE=http://localhost:8000
 
 # Readiness probe
-curl -s $BASE/healthz | jq
+curl -s $BASE/health | jq
 
 # All PIMs (default page=1, page_size=50)
 curl -s "$BASE/fetch_pims_records" | jq
