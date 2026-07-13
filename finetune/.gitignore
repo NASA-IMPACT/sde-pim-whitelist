@@ -1,0 +1,10 @@
+# Isolated fine-tune workspace — ignore the venv and all generated artifacts.
+# Kept local so the repo-root .gitignore is not modified.
+.venv/
+data/
+models/
+runs/
+__pycache__/
+*.pt
+*.safetensors
+requirements-lock.txt
