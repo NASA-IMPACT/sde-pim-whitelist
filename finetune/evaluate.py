@@ -42,6 +42,43 @@ def _load_model(model_name_or_path: str, device: str):
         return SentenceTransformer(modules=[word, pooling], device=device)
 
 
+def _build_classifiers():
+    """The supervised heads evaluated over the frozen embeddings.
+
+    Each is a distinct inductive bias on the same features: kNN (local, cosine),
+    Random Forest (non-linear, axis-aligned splits), Logistic Regression (linear
+    decision boundary). ``class_weight="balanced"`` counters the division
+    imbalance for the two parametric heads; kNN has no such knob.
+    """
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.neighbors import KNeighborsClassifier
+
+    return {
+        "knn": KNeighborsClassifier(n_neighbors=5, metric="cosine"),
+        "random_forest": RandomForestClassifier(
+            n_estimators=300, class_weight="balanced", random_state=cfg.SEED, n_jobs=-1
+        ),
+        "logistic_regression": LogisticRegression(
+            max_iter=1000, class_weight="balanced", random_state=cfg.SEED
+        ),
+    }
+
+
+def _score_classifier(clf, train_emb, train_labels, test_emb, test_labels) -> dict:
+    clf.fit(train_emb, train_labels)
+    pred = clf.predict(test_emb)
+    per_division: dict[str, float] = {}
+    for div, div_id in cfg.DIVISION_TO_ID.items():
+        mask = test_labels == div_id
+        if mask.any():
+            per_division[div] = float((pred[mask] == test_labels[mask]).mean())
+    return {
+        "accuracy": float((pred == test_labels).mean()),
+        "accuracy_per_division": per_division,
+    }
+
+
 def evaluate_model(model, train_rows: list[dict], test_rows: list[dict]) -> dict:
     import numpy as np
     from sklearn.cluster import KMeans
@@ -51,7 +88,6 @@ def evaluate_model(model, train_rows: list[dict], test_rows: list[dict]) -> dict
         homogeneity_score,
         silhouette_score,
     )
-    from sklearn.neighbors import KNeighborsClassifier
 
     train_texts = [r["text"] for r in train_rows]
     train_labels = np.array([r["label"] for r in train_rows])
@@ -74,22 +110,19 @@ def evaluate_model(model, train_rows: list[dict], test_rows: list[dict]) -> dict
         "silhouette": float(silhouette_score(test_emb, test_labels)),
     }
 
-    # Supervised: does a name land near same-division names? (kNN over train.)
-    knn = KNeighborsClassifier(n_neighbors=5, metric="cosine")
-    knn.fit(train_emb, train_labels)
-    knn_pred = knn.predict(test_emb)
-    overall = float((knn_pred == test_labels).mean())
-
-    per_division: dict[str, float] = {}
-    for div, div_id in cfg.DIVISION_TO_ID.items():
-        mask = test_labels == div_id
-        if mask.any():
-            per_division[div] = float((knn_pred[mask] == test_labels[mask]).mean())
+    # Supervised: does a name land near same-division names? Train each head on
+    # the train embeddings, score on test. Different biases, same features.
+    classifiers = {
+        name: _score_classifier(clf, train_emb, train_labels, test_emb, test_labels)
+        for name, clf in _build_classifiers().items()
+    }
 
     return {
         "clustering": clustering,
-        "knn_accuracy": overall,
-        "knn_accuracy_per_division": per_division,
+        "classifiers": classifiers,
+        # Back-compat aliases: kNN was the original single-classifier metric.
+        "knn_accuracy": classifiers["knn"]["accuracy"],
+        "knn_accuracy_per_division": classifiers["knn"]["accuracy_per_division"],
         "test_rows": len(test_rows),
     }
 
@@ -103,12 +136,18 @@ def compare(tuned_model_path: str, *, device: str | None = None, limit: int | No
     base = evaluate_model(_load_model(cfg.BASE_MODEL, dev), train_rows, test_rows)
     tuned = evaluate_model(_load_model(tuned_model_path, dev), train_rows, test_rows)
 
+    classifier_delta = {
+        name: tuned["classifiers"][name]["accuracy"] - base["classifiers"][name]["accuracy"]
+        for name in tuned["classifiers"]
+    }
+
     return {
         "device": dev,
         "base": base,
         "tuned": tuned,
         "delta": {
             "knn_accuracy": tuned["knn_accuracy"] - base["knn_accuracy"],
+            "classifier_accuracy": classifier_delta,
             "ari": tuned["clustering"]["ari"] - base["clustering"]["ari"],
             "homogeneity": tuned["clustering"]["homogeneity"] - base["clustering"]["homogeneity"],
             "silhouette": tuned["clustering"]["silhouette"] - base["clustering"]["silhouette"],

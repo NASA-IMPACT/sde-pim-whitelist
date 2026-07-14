@@ -50,11 +50,15 @@ def build_model(base_model: str, device: str, max_seq_length: int):
     it explicitly so the pooling mode (mean) is unambiguous and matches the
     bi-encoder the base was trained as.
     """
+    import torch
     from sentence_transformers import SentenceTransformer, models
 
     word = models.Transformer(base_model, max_seq_length=max_seq_length)
     pooling = models.Pooling(word.get_embedding_dimension(), pooling_mode="mean")
-    return SentenceTransformer(modules=[word, pooling], device=device)
+    model = SentenceTransformer(modules=[word, pooling], device=device)
+    # The base ships bf16 weights, but fp16 AMP's GradScaler has no bf16 unscale
+    # kernel. Keep fp32 master weights; autocast casts to fp16 inside fit().
+    return model.to(torch.float32)
 
 
 def train(args: argparse.Namespace) -> dict:
