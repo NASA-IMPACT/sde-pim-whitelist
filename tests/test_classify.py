@@ -359,6 +359,20 @@ def test_classified_record_round_trips_to_same_fields():
     assert ClassifiedRecord.model_validate(data).model_dump() == data
 
 
+def test_record_excludes_canonical_from_aliases_and_nulls_when_empty():
+    no_alternates = classify._record(
+        Concept(aliases=["MODIS"]), ["earth"], "provenance"
+    )
+    assert no_alternates.aliases is None
+
+    with_alternates = classify._record(
+        Concept(aliases=["MODIS", "Moderate Resolution Imaging Spectroradiometer"]),
+        ["earth"],
+        "provenance",
+    )
+    assert with_alternates.aliases == ["Moderate Resolution Imaging Spectroradiometer"]
+
+
 def test_classified_record_rejects_invalid_division_source():
     with pytest.raises(ValidationError):
         ClassifiedRecord(
