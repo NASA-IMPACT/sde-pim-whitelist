@@ -66,7 +66,8 @@ class PimRecord(BaseModel):
     """A single served PIM record (the public response shape)."""
 
     canonical_name: str
-    aliases: list[str]
+    # Mirrors the on-disk record: true alternates only, null when there are none.
+    aliases: list[str] | None
     division: list[Division]
     source: Literal["SDE", "LLM"]
     type: PimType

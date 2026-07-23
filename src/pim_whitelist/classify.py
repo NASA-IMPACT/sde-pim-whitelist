@@ -55,7 +55,8 @@ class ClassifiedRecord(BaseModel):
 
     match_key: str
     canonical: str
-    aliases: list[str]
+    # True alternates only — the canonical is not repeated here; null when none.
+    aliases: list[str] | None
     divisions: list[str]
     division_source: Literal["provenance", "openai"]
 
@@ -384,10 +385,12 @@ def classify_concepts(
 
 
 def _record(concept: Concept, divisions: list[str], source: str) -> ClassifiedRecord:
+    # Concept.aliases[0] is the canonical itself; persist only true alternates.
+    aliases = [a for a in concept.aliases if a != concept.canonical]
     return ClassifiedRecord(
         match_key=match_key(concept.canonical),
         canonical=concept.canonical,
-        aliases=list(concept.aliases),
+        aliases=aliases or None,
         divisions=divisions,
         division_source=source,
     )
@@ -418,7 +421,7 @@ def _resolved_cache(
         if not divisions:
             continue
         value = (divisions, record.division_source)
-        keys = [match_key(a) for a in record.aliases]
+        keys = [match_key(a) for a in record.aliases or []]
         if record.match_key:
             keys.append(record.match_key)
         for key in keys:
